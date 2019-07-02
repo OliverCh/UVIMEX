@@ -1,0 +1,179 @@
+.act-column-right{
+  width: 83%;
+  display: inline-block;
+  margin-left: 20px;
+}
+.tipo-de-actividad{
+  height: 100%;
+}
+.den-popup-estilo button.act-plus-btnstyle{
+    display: inline-block;
+    margin: 20px 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    color: #8ad3a0;
+    font-size: 35px;
+}
+.den-popup-estilo button.act-plus-btnstyle:hover{
+  color: #6aaa7d;
+    background-color: transparent;
+  cursor: pointer;
+}
+input.act-input-question, input.act-input-respuesta{
+  font-size: 18px;
+  font-weight: 400;
+  width: 35%;
+  margin: 10px 0;
+}
+input.act-input-qavalor {
+margin-left: 10px;
+background-color: #555555;
+width: 100%;
+color: #fff;
+font-size: 16px;
+display: inline-block;
+padding: 10px;
+    padding-right: 0;
+}
+.act-valor-hover{
+  position: relative;
+  display: inline-block;
+  width: 7%;
+}
+span.act-span-valor, span.act-span-valor:hover{
+  position: absolute;
+      top: -27px;
+      right: -104px;
+      width: 84px;
+      height: 32px;
+      color: #555;
+      border-radius: 10px;
+      padding: 3px 8px;
+      cursor: pointer;
+      background-color: #dbdbdb9e;
+      font-size: 10px;
+      text-align: center;
+      display: none;
+}
+.act-valor-hover:hover .act-span-valor{
+  display: block;
+}
+.act-pregunta-row {
+  padding: 15px 0;
+  padding-left: 10px;
+  position: relative;
+}
+.act-delete-question{
+  background-color: #ede8e8;
+  padding: 5px 10px 7px 10px;
+  border-radius: 7px;
+}
+/* ////// BOTONES SECCIÓN */
+.act-btns-container{
+    width: fit-content;
+    display: inline-block;
+    float: right;
+    position: fixed;
+}
+.den-popup-estilo button.act-green-btnstyle{
+      margin: 20px 20px;
+      padding: 10px;
+      background-color: #8ad3a0;
+      color: #fff;
+      font-size: 13px;
+      float: none;
+      width: 95px;
+      display: block;
+}
+.den-popup-estilo button.act-green-btnstyle:hover{
+  background-color: #6aaa7d;
+  cursor: pointer;
+}
+.act-valorSection{
+  position: relative;
+  width: 120px;
+  margin: auto;
+  margin-top: 40px;
+}
+.act-valorSection p{
+text-align: center;
+font-weight: 300;
+width: 95px;
+margin-top: 38px;
+margin: 10px auto;
+color: #fff;
+background-color: #555;
+letter-spacing: 3px;
+padding: 4px 0;
+}
+.qa-selected-value{}
+.containerValor {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-left: 8px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 60px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.containerValor input {
+    display: none;
+}
+
+.checkmarkValor {
+      position: absolute;
+      top: 11px;
+      left: 9px;
+      height: 15px;
+      width: 15px;
+      background-color: #eee;
+      border-radius: 50%;
+}
+
+
+
+.checkmarkValor:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.qa-selected-value .checkmarkValor:after {
+    display: block;
+}
+.qa-selected-value .checkmarkValor {
+    background-color: #555;
+}
+.containerValor .checkmarkValor:after {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+.qAndA-row{
+  display: inline-block;
+}
+
+@media (min-width: 1300px) and (max-width:1721px){
+input.act-input-question, input.act-input-respuesta{
+  width: 28%;
+margin: 24px 8px 0;
+}
+.act-column-right{
+  width: 73%;
+}
+.act-valor-hover{
+  width: 9%;
+}
+}

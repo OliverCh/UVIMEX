@@ -1,0 +1,44 @@
+<div id="contenedorCurso">
+  <div class="tem-general-container">
+  <h2 class="tem-title"></h2>
+  <h3 class="tem-subtitle"></h3>
+    <div class="tem-full-container audios">
+        <div id="seccionVideo" class="tem-video-container tem-audioHeight">
+          <video id="videoCurso" preload="" autoplay>
+            <source id="urlVideo" type="video/mp4" src="https://storage.googleapis.com/denlin-cursos/alz/Alternativas%20de%20bienestar/IntroModulo4.mp4">
+          </video>
+          <div class="input-range-span-video">
+            <input type="range" min="0" value="0" id="controlVideo" step="0.01">
+            <span class="currentTimeMinutes"></span>
+          </div>
+        </div>
+        <div class="tem-video-btns-container">
+          <nav id="colorNav">
+	        	<div class="icon-home-cont"></div>
+			       <ul>
+				      <li class="green">
+					     <a href="#" id="diapMenu" class="icon-home " onclick="cargaMenu();" title="Inicio"></a>
+				      </li>
+				      <li class="pink">
+					    <a href="#" id="mediaPlay" title="Reproducir Video" class="icon-pause"></a>
+				      </li>
+              <li class="blue">
+                <a href="#" class="icon-file "></a>
+              </li>
+              <div class="icon-home-teme den-hide"  data-idmenu="icon-file ">
+              </div>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    <div class="tem-full-container">
+      <div class="tem-images-container">
+        <img src="">
+      </div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/template3.css" />
+<link rel="stylesheet" href="../css/stylesForVideo.css" />
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+<script type="text/javascript" src="../js/template3.js"></script>

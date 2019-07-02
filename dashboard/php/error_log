@@ -1,0 +1,546 @@
+[01-Jun-2019 19:29:26 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 8
+[01-Jun-2019 19:30:54 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:31:44 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 8
+[01-Jun-2019 19:32:57 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:33:18 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:36:46 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:37:14 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:37:15 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:37:17 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:37:21 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:37:56 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:38:21 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:38:27 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:38:30 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:38:38 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:38:43 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:40:13 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:40:15 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:40:40 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:41:02 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 8
+[01-Jun-2019 19:41:08 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 8
+[01-Jun-2019 19:41:48 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 8
+[01-Jun-2019 19:42:08 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:42:28 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:44:15 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:44:25 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:44:26 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:45:00 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:45:11 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:45:11 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:45:12 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:45:36 America/Monterrey] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 5
+[01-Jun-2019 19:45:36 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:45:58 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 10
+[01-Jun-2019 19:46:35 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 9
+[01-Jun-2019 19:47:19 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 13
+[01-Jun-2019 19:47:21 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 13
+[01-Jun-2019 19:48:01 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 13
+[01-Jun-2019 19:48:03 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getActivitiesFromTopics.php on line 13
+[02-Jun-2019 23:57:56 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 22
+[02-Jun-2019 23:57:56 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:00:02 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 22
+[03-Jun-2019 00:00:02 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:12:34 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 22
+[03-Jun-2019 00:12:34 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:29:23 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 22
+[03-Jun-2019 00:29:23 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:33:46 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 23
+[03-Jun-2019 00:33:46 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:35:28 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[02-Jun-2019 19:36:32 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 18
+[03-Jun-2019 00:36:32 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:38:41 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 24
+[03-Jun-2019 00:38:41 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:40:01 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 24
+[03-Jun-2019 00:40:01 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[02-Jun-2019 19:41:19 America/Monterrey] PHP Notice:  Array to string conversion in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 16
+[03-Jun-2019 00:41:19 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[03-Jun-2019 00:44:41 UTC] PHP Parse error:  syntax error, unexpected 'actividad6' (T_STRING) in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 103
+[02-Jun-2019 19:47:50 America/Monterrey] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 27
+[02-Jun-2019 19:49:11 America/Monterrey] PHP Notice:  Use of undefined constant idActividad - assumed 'idActividad' in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 27
+[02-Jun-2019 19:49:11 America/Monterrey] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 27
+[02-Jun-2019 19:49:32 America/Monterrey] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 28
+[02-Jun-2019 19:49:43 America/Monterrey] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 28
+[02-Jun-2019 19:50:36 America/Monterrey] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 28
+[02-Jun-2019 21:09:56 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[02-Jun-2019 21:10:09 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[02-Jun-2019 21:10:25 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[02-Jun-2019 21:10:31 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[02-Jun-2019 21:10:35 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[02-Jun-2019 21:10:47 America/Monterrey] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/admin/public_html/XD/dashboard/classes/clsCourse.php on line 128
+[03-Jun-2019 03:03:40 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 115
+[03-Jun-2019 03:03:45 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 115
+[03-Jun-2019 04:32:24 UTC] PHP Parse error:  syntax error, unexpected '"s"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 134
+[03-Jun-2019 04:32:28 UTC] PHP Parse error:  syntax error, unexpected '"s"' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 134
+[03-Jun-2019 02:37:01 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:38:55 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:40:32 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:41:01 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:41:11 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:42:09 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:45:00 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:45:10 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 02:45:48 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[03-Jun-2019 07:47:55 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 9
+[13-Jun-2019 23:28:43 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[13-Jun-2019 23:36:28 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[13-Jun-2019 23:57:47 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 00:04:02 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 00:28:43 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 01:47:40 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 02:18:09 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:19:43 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:30:22 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:31:31 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:33:03 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:34:42 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:36:34 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:37:26 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:42:50 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:43:11 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:45:29 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 06:45:32 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:51:07 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:53:19 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:54:47 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 06:55:36 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 17:22:28 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:22:46 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:23:19 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:28:30 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 17:28:49 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:31:54 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:32:06 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[14-Jun-2019 17:32:13 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 12:35:32 America/Monterrey] PHP Notice:  Undefined index: idTemas in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 9
+[14-Jun-2019 12:35:32 America/Monterrey] PHP Warning:  Invalid argument supplied for foreach() in /home/admin/public_html/XD/dashboard/php/getQuestionsFromTopics.php on line 12
+[14-Jun-2019 20:59:53 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:00:19 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:03:31 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:04:04 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:05:04 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:05:47 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:06:43 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:08:02 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:08:40 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:09:10 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:12:42 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 21:57:42 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 22:02:51 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[14-Jun-2019 22:04:16 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[17-Jun-2019 02:22:47 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '1'
+[17-Jun-2019 18:47:04 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[17-Jun-2019 18:49:53 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[17-Jun-2019 18:50:52 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[17-Jun-2019 18:54:25 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[17-Jun-2019 18:54:51 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'
+[17-Jun-2019 18:55:42 UTC] Error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_i' at line 2 de la base de datos de WordPress para la consulta SELECT t3.display_name,
+					FROM   wp_lifterlms_user_postmeta t1
+					JOIN   wp_posts t2
+					ON t1.post_id = t2.id
+					JOIN wp_users t3
+					ON t2.post_author = t3.id
+			WHERE t1.meta_value = 'enrolled' AND t3.id = '904'

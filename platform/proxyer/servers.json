@@ -1,0 +1,10 @@
+[
+	{
+		"name": "tokenizer",
+		"port": 3333
+	},
+	{
+		"name": "accountServer",
+		"port": 3000
+	}
+]

@@ -1,0 +1,17 @@
+<div id="contenedorCurso">
+  <h2 class="tem-title"></h2>
+  <h3 class="tem-subtitle"></h3>
+  <div class="tem-general-container">
+    <div class="tem-half-container">
+      <div class="tem-images-container">
+        <img src="img/kungfukeny.png" style="width: 400px;">
+      </div>
+    </div>
+    <div class="tem-half-container">
+      <p class="parrafo-hijo"></p>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/template5.css" />
+<link rel="stylesheet" href="../css/stylesForVideo.css" />
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">

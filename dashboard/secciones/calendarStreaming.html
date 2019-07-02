@@ -1,0 +1,183 @@
+<div class="rowDash">
+  <div class="bgfullcont">
+    <div class="cursoTop">
+      <h1>Calendario Streaming</h1>
+      <button type="button" name="button" class="greenbtncontorno popupBtn" id="popFechaStream"><i class="fas fa-calendar-plus"></i> Crear Evento</button>
+    </div>
+  </div>
+</div>
+<div class="rowDash">
+  <div class="bgfullcont">
+    <div>
+    <h2> Periodo: <span class="periododeVentas">De 26 de Mayo a 01 de Junio de 2019</span></h2>
+    </div>
+    <div class="topstreamCalendario">
+      <button type="button" name="button" class="greenbtncontorno shomediaselect"> <i class="fas fa-calendar-day"></i></button>
+      <input type="date" name="" value="" class="displayhide">
+      <button type="button" name="button" class="verfechabtn displayhide">Ver Fecha</button>
+    </div>
+    <div class="fullCalendarContainer">
+      <div class="topFullCalendar">
+        <div class="hourscolumn">
+          <p class="zonaHoraria">GMT-05</p>
+        </div>
+        <!-- dias de la semana -->
+        <div class="diascontenedor">
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Dom</h2>
+            <p class="numdiacalendar">26</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Lun</h2>
+            <p class="numdiacalendar">27</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Mar</h2>
+            <p class="numdiacalendar">28</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Mie</h2>
+            <p class="numdiacalendar">29</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Jue</h2>
+            <p class="numdiacalendar">30</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Vie</h2>
+            <p class="numdiacalendar">31</p>
+          </div>
+          <div class="diaSemCont">
+            <h2 class="diadelasemana">Sab</h2>
+            <p class="numdiacalendar">01</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- Aquí se vana ir incertando las equiquetas -->
+      <div class="containerCalendar">
+        <div class="hourscolumn">
+            <div class="indivhora">
+              <p>01 am</p>
+            </div>
+            <div class="indivhora">
+              <p>02 am</p>
+            </div>
+            <div class="indivhora">
+              <p>03 am</p>
+            </div>
+            <div class="indivhora">
+              <p>04 am</p>
+            </div>
+            <div class="indivhora">
+              <p>05 am</p>
+            </div>
+            <div class="indivhora">
+              <p>06 am</p>
+            </div>
+            <div class="indivhora">
+              <p>07 am</p>
+            </div>
+            <div class="indivhora">
+              <p>08 am</p>
+            </div>
+            <div class="indivhora">
+              <p>09 am</p>
+            </div>
+            <div class="indivhora">
+              <p>10 am</p>
+            </div>
+            <div class="indivhora">
+              <p>11 am</p>
+            </div>
+            <div class="indivhora">
+              <p>12 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>01 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>02 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>03 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>04 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>05 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>06 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>07 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>08 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>09 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>10 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>11 pm</p>
+            </div>
+            <div class="indivhora">
+              <p>12 pm</p>
+            </div>
+        </div>
+        <div class="caltableContainer">
+          <div class="diaSemCont">
+            <div class="caltabletd">
+
+            </div>
+            <div class="caltabletd">
+              <!--div class="contregEvento popupBtnEvento">
+                <p class="nameEvento">Nombre Lorem Ipsum Dolor Sit</p>
+                <p class="horadeevento">1am - 2am</p>
+              </div-->
+            </div>
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+          <div class="diaSemCont">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    function functioncalnedar(){
+      var eventocontainer = "<div class='contregEvento popupBtnEvento'><p class='nameEvento'>Nombre Lorem Ipsum Dolor Sit</p><p class='horadeevento'>1am - 2am</p></div>";
+      var dias = "<div class='diaSemCont'>";
+      for (var i = 0; i < 24; i++){
+          dias += "<div class='caltabletd'></div>";
+      }
+      dias += "</div>";
+      $('.caltableContainer').html(dias+dias+dias+dias+dias+dias+dias+dias);
+     }
+    
+    //functioncalnedar();
+    });
+</script>

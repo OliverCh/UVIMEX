@@ -1,0 +1,50 @@
+<div class="rowDash forprofilechanges">
+  <form id="saveProfileForm" action="php/saveProfile.php" name="saveProfileForm" method="post" enctype="multipart/form-data">
+    <div class="halfcont">
+      <div class="indivdatauser">
+        <h2>Usuario</h2>
+        <p class="usuariopgreen" id="nickNameProfile"></p>
+      </div>
+      <div class="indivdatauser">
+        <h2>Nombre</h2>
+        <input type="hidden" id="userIdWP" name="userIdWP">
+        <input type="text"  id="name" name="name" value="">
+      </div>
+      <div class="indivdatauser">
+        <h2>Telefóno</h2>
+        <input type="number" name="phone" id="phone" value="">
+      </div>
+      <div class="indivdatauser">
+        <h2>Dirección</h2>
+        <input type="text" name="address" id="address" value="">
+      </div>
+      <div class="indivdatauser">
+        <h2>Cumpleaños</h2>
+        <input type="date" name="bday" id="bday" value="">
+      </div>
+    </div>
+    <div class="halfcont">
+      <div class="indivdatauser">
+        <h2>Email</h2>
+        <input type="text" id="email" name="email" value="">
+      </div>
+      <div class="indivdatauser">
+        <h2>Poto de Perfil</h2>
+        <div class="circlecontainer">
+          <div class="circlefigure" id="idPruebaAlumno">
+          </div>
+        </div>
+        <div class="uploaddedContainer">
+                <input type="hidden" id="hprofileImg" name="hprofileImg">
+                <input type="file" class="file" value="" id="profileImg" name="profileImg">
+                <button for="file" class="fullblackbtn">Subir Imagen</button>
+                <input disabled="" class="strNameFile" value="" type="text">
+        </div>
+        <button for="file" class="" id="saveProfile">Guardar</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script type="text/javascript">
+  profile.loadUserProfile();
+</script>

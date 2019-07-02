@@ -1,0 +1,40 @@
+[
+    {
+        "activityAnswers": [
+            {
+                "idActividad": "198",
+                "answer": "119",
+                "time": "05\/09\/2019 03:24:53 pm"
+            },
+            {
+                "idActividad": "199",
+                "answer": "120",
+                "time": "05\/09\/2019 03:24:53 pm"
+            },
+            {
+                "idActividad": "197",
+                "answer": "118",
+                "time": "05\/09\/2019 03:24:53 pm"
+            }
+        ]
+    },
+    {
+        "activityAnswers": [
+            {
+                "idActividad": "198",
+                "answer": "123",
+                "time": "05\/09\/2019 03:25:16 pm"
+            },
+            {
+                "idActividad": "199",
+                "answer": "120",
+                "time": "05\/09\/2019 03:25:16 pm"
+            },
+            {
+                "idActividad": "197",
+                "answer": "118",
+                "time": "05\/09\/2019 03:25:16 pm"
+            }
+        ]
+    }
+]

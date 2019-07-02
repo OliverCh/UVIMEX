@@ -1,0 +1,48 @@
+<div id="contenedorCurso">
+  <h2 class="tem-title"></h2>
+  <h3 class="tem-subtitle"></h3>
+  <div class="tem-full-container audios">
+        <div id="seccionVideo" class="tem-video-container">
+          <input type="range" min="0" value="0" id="controlVideo">
+        </div>
+        <div class="tem-video-btns-container">
+          <nav id="colorNav">
+	        	<div class="icon-home-cont"></div>
+			       <ul>
+				      <li class="green">
+					     <a href="#" id="diapMenu" class="icon-home " onclick="cargaMenu();" title="Inicio"></a>
+				      </li>
+				      <li class="pink">
+					    <a href="#" id="mediaPlay" title="Reproducir Video" class="icon-play"></a>
+				      </li>
+              <li class="blue">
+                <a href="#" class="icon-file "></a>
+              </li>
+              <div class="icon-home-teme den-hide"  data-idmenu="icon-file "><div class="materialAdicional">
+          <div><img src="img/ico-pdf.png"><section>Libro 1</section></div>
+          <div><img src="img/ico-png.png"><section>Actividad</section></div>
+          <div><img src="img/ico-jpg.png"><section>Cuestionario</section></div>
+          </div>
+          <div class="materialAdicional">
+          <div><img src="img/ico-pdf.png"><section>Libro 1</section></div>
+          <div><img src="img/ico-png.png"><section>Actividad</section></div>
+          <div><img src="img/ico-jpg.png"><section>Cuestionario</section></div>
+          </div></div>
+            </ul>
+          </nav>
+        </div>
+    </div>
+  <div class="tem-general-container">
+    <div class="tem-half-container">
+      <div class="tem-images-container">
+        <img src="img/kungfukeny.png" style="width: 400px;">
+      </div>
+    </div>
+    <div class="tem-half-container">
+      <p class="parrafo-hijo"></p>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/template4.css" />
+<link rel="stylesheet" href="../css/stylesForVideo.css" />
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">

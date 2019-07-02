@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="icon/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <input type="hidden" id="selectedCourse" value="">
+  <div class="topdash">
+    <nav>
+      <figure>
+        <img src="img/logowhite.png" alt="">
+      </figure>
+      <div class="righttopnav">
+        <div class="indivrtn" title="Cerrar Sesión">
+          <i class="fas fa-power-off"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="formContInstructor">
+    <div class="">
+      <div class="linkback">
+        <p id="formIns__cancel_btn"><i class="fas fa-arrow-circle-left"></i> volver</p>
+      </div>
+    </div>
+    <div class="whiteFintPop">
+       <h1>Convertirme en Intructor</h1>
+       <div class="">
+         <form id="fCreateCourse" name="fCreateCourse" method="post" enctype="multipart/form-data" action="php/storeCourse.php">
+           <div class="columnhalfpop">
+             <div class="indivNc">
+               <label>Nombre Completo</label>
+               <input type="text" value="">
+             </div>
+             <div class="indivNc">
+               <label>Dirección</label>
+               <input type="text" value="">
+             </div>
+             <div class="indivNc">
+               <label>Teléfono</label>
+               <input type="text" value="">
+             </div>
+             <div class="indivNc">
+               <label>RFC</label>
+               <input type="text" value="">
+             </div>
+           </div>
+           <div class="columnhalfpop">
+             <div class=infoinstructor>
+              <h1>¡Empieza a crear tu curso o capacitación online!</h1>
+              <ul>
+                <li><span><i class="fas fa-medal"></i> Vende tu curso en todo el mundo:</span>
+                Gracias a las nuevas tecnologías de la información, tu curso online puede ser visto en todo el mundo. </li>
+                <li><span><i class="fas fa-medal"></i> Creación de actividades:</span>Podrás crear diversas actividades de aprendizaje para aplicarlas a tu curso o capacitación. Contamos con un catálogo pensado para maximizar el aprendizaje de tu contenido.</li>
+                <li><span><i class="fas fa-medal"></i> Streaming:</span>Actualiza a tus alumnos, crea clases en vivo y webinars de tus cursos o capacitaciones con nuestra herramienta de streaming.</li>
+                <li><span><i class="fas fa-medal"></i> Seguimiento de alumnos:</span>Podrás visualizar el avance de cada alumno, los temas que ha visto, las actividades y resultados que ha realizado, el tiempo que ha estado en tu curso y si ha empezado o no.</li>
+              </ul>
+              <p>¡Se parte de nuestra comunidad de instructores!</p>
+             </div>
+           </div>
+         </form>
+       </div>
+       <div class="bottompopcont">
+         <button type="button" name="button" class="greenbtncontorno" id="formIns__save_btn">Registrarme</button>
+       </div>
+  </div>
+  </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript">
+    var setClicks = function(){
+
+      // Form instructor func
+      $(document).on("click", "#formIns__save_btn", function(){
+        popupYesNo("Felicidades. Ya eres un instructor", 
+          function(){
+            $.ajax({
+              url: "../../platformComms.php",
+              type: 'GET',
+              data: {
+                actionAPI: 'crookToBoss'
+              },
+              dataType: 'json',
+              async: false,
+              contentType: "application/json",
+              success: function(arrayResponse){
+                //console.log(arrayResponse);
+                window.location.assign("index.html");
+              },
+              error: function(e){
+                console.log(e);
+                //alert("Error ajax");
+                window.location.assign("index.html");
+              }
+            });
+            $(".popop").remove();
+          }
+        );
+      });
+      $(document).on("click", "#formIns__cancel_btn",function(){
+        popupYesNo("¿Estás seguro que quieres salir?", 
+          function(){
+            $(".popop").remove();
+            window.location.assign("index.html");
+          },
+          function(){
+            $(".popop").remove();
+          });
+      });
+    };
+
+      function popupYesNo(pregunta, acceptCallback, cancelCallback){
+        var cancelHTML = `<button type="button" name="button" class="fullblackbtn" id=":cancel_functionName:">Cancelar</button>`;
+        var closePopup = `<button type="button" name="button" id=":close_functionName:">Cerrar <i class="fas fa-times-circle"></i></button>`;
+
+        var popups = `
+          <div class="fullblockback injectPopInfo popop">
+            <div class="popFitContainer">
+              <div class="closeRowBtnPop">
+                :closePopup:
+              </div>
+              <div class="whiteFintPop">
+                <h2 class"wpHone">:question:</h2>
+                <div class="bottompopcont">
+                 <button type="button" name="button" class="greenbtncontorno" id=":accept_functionName:">Aceptar</button>
+                  :cancelHTML:
+                </div>
+              </div>
+            </div>
+          </div>`;
+
+        acceptID = "popupYesNo_accept";
+        cancelID = "popupYesNo_cancel";
+        closeID = "popupYesNo_close";
+        popups = popups.replace(":question:", pregunta)
+                       .replace(":accept_functionName:", acceptID)
+                       .replace(":cancel_functionName:", cancelID)
+                       .replace(":close_functionName:", closeID);
+        if(cancelCallback != undefined){
+          popups = popups.replace(":cancelHTML:", cancelHTML)
+                          .replace(":closePopup:", closePopup);
+        }
+        else{
+         popups = popups.replace(":cancelHTML:", "")
+                        .replace(":closePopup:", "");
+        }
+        $(popups).prependTo('body');
+
+        $("#"+acceptID).off('click');
+        $("#"+cancelID).off('click');
+        $("#"+closeID).off('click');
+        $("#"+acceptID).on('click', acceptCallback);
+        $("#"+cancelID).on('click', cancelCallback);
+        $("#"+closeID).on('click', cancelCallback);
+      }
+
+    $(document).ready(function(){
+
+      setClicks();
+
+    });
+  </script>
+</html>

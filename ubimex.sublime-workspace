@@ -1,0 +1,1154 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g_",
+				"g_idCourse"
+			],
+			[
+				"arra",
+				"arrayResponse"
+			],
+			[
+				"instructo",
+				"instructor"
+			],
+			[
+				"load",
+				"loadHTML"
+			],
+			[
+				"sc",
+				"screen"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"Th",
+				"THIS_SECTION"
+			],
+			[
+				"al",
+				"alot"
+			],
+			[
+				"button",
+				"work__finish_button"
+			],
+			[
+				"max",
+				"maxCap"
+			],
+			[
+				"capa",
+				"alot__capacity_text"
+			],
+			[
+				"text",
+				"alot__name_text"
+			],
+			[
+				"alot__",
+				"alot__capacity_text"
+			],
+			[
+				"input",
+				"work__weight_input"
+			],
+			[
+				"work__",
+				"work__weight_input"
+			],
+			[
+				"tabab",
+				"tabableInputs"
+			],
+			[
+				"Opti",
+				"selectOptionTemplate"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"SIN",
+				"SINIGA"
+			],
+			[
+				"SI",
+				"SINIGA"
+			],
+			[
+				"breed",
+				"heads__breed"
+			],
+			[
+				"hea",
+				"heads__breed"
+			],
+			[
+				"SINIGA",
+				"heads__SINIGA"
+			],
+			[
+				"item",
+				"headItemTemplate"
+			],
+			[
+				"headList",
+				"heads__headList"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"heads-head",
+				"heads-headList-element"
+			],
+			[
+				"in",
+				"inset\tborder-style"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"lorry",
+				"lorry__name"
+			],
+			[
+				"proto",
+				"nursing__addTreatment_protocol"
+			],
+			[
+				"pro",
+				"nursing__addTreatment_protocol"
+			],
+			[
+				"date",
+				"nusring__addTreatment_date"
+			],
+			[
+				"treat",
+				"treatments"
+			],
+			[
+				"Rei",
+				"ReimplantsHandler"
+			],
+			[
+				"implan",
+				"implants"
+			],
+			[
+				"implants",
+				"implants__implants"
+			],
+			[
+				"addIMplant",
+				"implants__addImplantButton"
+			],
+			[
+				"protocol",
+				"implants__addImplant_protocol"
+			],
+			[
+				"addImpla",
+				"implants__addImplant_protocol"
+			],
+			[
+				"addIMplan",
+				"implants__addImplant_button"
+			],
+			[
+				"im",
+				"implants__addImplant"
+			],
+			[
+				"impl",
+				"implants__implants"
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"nurs",
+				"nursing__treatments"
+			],
+			[
+				"sea",
+				"nursing__searchSINIGA"
+			],
+			[
+				"prot",
+				"nusring__addTreatment_protocol"
+			],
+			[
+				"trea",
+				"treatments"
+			],
+			[
+				"nursin",
+				"nursing__SINIGA"
+			],
+			[
+				"addSongCa",
+				"portal_addSongCategory"
+			],
+			[
+				"portal_addVideo",
+				"portal_addVideoCategory"
+			],
+			[
+				"answr",
+				"answers"
+			],
+			[
+				"ques",
+				"questions"
+			],
+			[
+				"mysqli_fetch",
+				"mysqli_fetch_assoc"
+			],
+			[
+				"portal_",
+				"portal_setMotd"
+			],
+			[
+				"portal",
+				"portal_getVideoCategories"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"song",
+				"songRootDir"
+			],
+			[
+				"alb",
+				"album"
+			],
+			[
+				"idSong",
+				"idSongCategory"
+			],
+			[
+				"album",
+				"albumRootDir"
+			],
+			[
+				"INse",
+				"INSERT"
+			],
+			[
+				"Uplo",
+				"Tab_UploadVideo"
+			],
+			[
+				"val",
+				"val"
+			],
+			[
+				"tab_upload",
+				"tab_uploadSong"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"art",
+				"tab_uploadSong_artist"
+			],
+			[
+				"name",
+				"tab_uploadSong_name"
+			],
+			[
+				"mp3",
+				"tab_uploadSong_mp3"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"idQue",
+				"idQuestion"
+			],
+			[
+				"idVideo",
+				"idVideoCategory"
+			],
+			[
+				"mysql_fe",
+				"mysql_fetch_assoc"
+			],
+			[
+				"local",
+				"localCows"
+			],
+			[
+				"BI",
+				"BINARY_NAME"
+			],
+			[
+				"Lib",
+				"LIB_TARGET"
+			],
+			[
+				"Bina",
+				"BINARY_NAME"
+			],
+			[
+				"BINA",
+				"BINARY_NAME"
+			],
+			[
+				"LIB",
+				"LIB"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Ing",
+				"IngresosEgresosHandler"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"data_boa",
+				"data_boardingData"
+			],
+			[
+				"where",
+				"whereStatement"
+			],
+			[
+				"passeng",
+				"passenger_tb"
+			],
+			[
+				"boar",
+				"boardingPosition"
+			],
+			[
+				"fligh",
+				"flightNumber"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"find",
+				"findMe_button"
+			],
+			[
+				"MY",
+				"MyStateHandler_findSection"
+			],
+			[
+				"air",
+				"airlineID"
+			],
+			[
+				"las",
+				"lastServiceNumber_Row"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"tab",
+				"tabableInputs"
+			],
+			[
+				"taba",
+				"tabable"
+			],
+			[
+				"len",
+				"tabableInputs_length"
+			],
+			[
+				"work-lo",
+				"work-lote-name"
+			],
+			[
+				"work",
+				"work-column-left"
+			],
+			[
+				"lote",
+				"work-lote"
+			],
+			[
+				"ov",
+				"overflow-x\tproperty"
+			],
+			[
+				"text-dec",
+				"text-decoration-color\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"border-",
+				"border-radius\tproperty"
+			],
+			[
+				"table",
+				"table-cell\tdisplay"
+			],
+			[
+				"fiel",
+				"fieldName"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"style",
+				"font-style\tproperty"
+			],
+			[
+				"pror_",
+				"pror_id"
+			],
+			[
+				"exec",
+				"executeSQL"
+			],
+			[
+				"empresa",
+				"empresa_cliente"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"db",
+				"dbH"
+			],
+			[
+				"opera",
+				"operation"
+			],
+			[
+				"oper",
+				"operations"
+			],
+			[
+				"field_date",
+				"field_dateCheckInHotel_input"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"select",
+				"field_protection_select"
+			],
+			[
+				"cancell",
+				"cancellationReasons"
+			],
+			[
+				"airpo",
+				"airports"
+			],
+			[
+				"field_airportName",
+				"field_airportName_input_ValidOptions"
+			],
+			[
+				"airportCode",
+				"field_airportCode_input"
+			],
+			[
+				"valid",
+				"field_airportCode_input_ValidOptions"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dashboard/json/getAdquiredCourses.php",
+			"settings":
+			{
+				"buffer_size": 3678,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dashboard/js/studentAdquiredCourses.js",
+			"settings":
+			{
+				"buffer_size": 10236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dashboard/js/generalStudent.js",
+			"settings":
+			{
+				"buffer_size": 7412,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "platform/js/script.js",
+			"settings":
+			{
+				"buffer_size": 193528,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "platform/js/streamLogin.js",
+			"settings":
+			{
+				"buffer_size": 649,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "platform/js/roomsHandler.js",
+			"settings":
+			{
+				"buffer_size": 1390,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/martin/Documents/uvimex/ubimex",
+		"/home/martin/Documents/uvimex/ubimex/dashboard",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/js",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/php",
+		"/home/martin/Documents/uvimex/ubimex/platform",
+		"/home/martin/Documents/uvimex/ubimex/platform/js",
+		"/home/martin/Documents/uvimex/ubimex/platform/json",
+		"/home/martin/Documents/uvimex/ubimex/platform/php"
+	],
+	"file_history":
+	[
+		"/home/martin/Documents/uvimex/ubimex/platform/js/script.js",
+		"/home/martin/Documents/uvimex/ubimex/platform/js/preview.js",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/php/getModuleTopics.php",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/php/dbHandler.php",
+		"/home/martin/Documents/uvimex/ubimex/platform/json/verifyAccessPreview.php",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/createAnswerJSON.php",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/registerSeenTopic.php",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/storeFilledActivity.php",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/secciones/calendarStreaming.html",
+		"/home/martin/Documents/uvimex/ubimex/platform/css/stylesForPreview.css",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/preview.php",
+		"/home/martin/Documents/uvimex/ubimex/dashboard/js/generalStudent.js",
+		"/home/martin/Documents/uvimex/ubimex/platform/css/stylesForVideo.css",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/preview.html",
+		"/home/martin/Documents/uvimex/ubimex/platform/php/mailSender/sendToCalo.php",
+		"/C/xampp/htdocs/main/ubimex/ubimex/platform/js/script.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/json/getAdquiredCourses.php",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/php/createEvent.php",
+		"/C/xampp/htdocs/main/ubimex/ubimex/platform/php/index.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/secciones/detalleavance.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/index.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/js/dash.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/js/students.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/secciones/usuariosdash.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/js/DetalleAvanceHandler.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/secciones/alumGeneralDash.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/secciones/cursosdash.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/php/getQuestionsFromTopics.php",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/php/getAnswersFromTopics.php",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/js/DetalleRendimientoHandler.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/formInstructor.html",
+		"/C/xampp/htdocs/main/projs/weeb/menu.html",
+		"/C/xampp/htdocs/main/projs/weeb/index.html",
+		"/C/xampp/htdocs/main/ubimex/ubimex/platform/js/preview.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/platform/js/index.js",
+		"/C/xampp/htdocs/main/ubimex/ubimex/dashboard/php/dbHandler.php",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/ScreenTemplate1.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/RegisterHandler_lorry.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/ReportsHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/FeedHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/CaptureHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/capture/index.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/index.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/IndexMaster.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/capture/registerHandler_lorry.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/capture/RegisterHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/RegisterHeadsHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/register_heads.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/register_lorry.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/RegisterLorryHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/register.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/EnfermeriaHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/WorkHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/work.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/arrival_lorry.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/FeedingHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/ArrivalLorryHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/ArrivalHeadsHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/feed.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/reimplants.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/ReimplantsHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/nursing.html",
+		"/C/xampp/htdocs/main/projs/protepec/pag/php/owo.php",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/arrival_heads.html",
+		"/C/Users/Martin RB/OneDrive - Instituto Tecnologico y de Estudios Superiores de Monterrey/Documentos/Clases/8vo/Calidad/Practicas calidad/Programa5/src/Programa5.cpp",
+		"/C/xampp/htdocs/main/projs/protepec/pag/css/materialize.css",
+		"/C/xampp/htdocs/main/MyMixer/admin/index.html",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_UploadVideo.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_UploadSong.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_Motd.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_Poll.js",
+		"/C/xampp/htdocs/main/MyMixer/src/MyMixer.php",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_VideoCategory.js",
+		"/C/Users/Martin RB/sql.sql",
+		"/C/Users/Martin RB/sqleros.sql",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/Makefile",
+		"/C/Users/Martin RB/Desktop/db.sql",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/Tab_SongCategory.js",
+		"/C/xampp/htdocs/main/MyMixer/info.php",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/tab_uploadVideo.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/tab_poll.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/tab_motd.js",
+		"/C/xampp/htdocs/main/MyMixer/admin/js/tab_uploadSong.js",
+		"/C/xampp/htdocs/main/pst/index.html",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/FileLineCounter.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Results.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/FileLineCounter.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Results.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Programa1.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Validator.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Validator.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/FileLineCounter.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/Validator.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/Validator.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/FileLineCounter.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/Results.h",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/Results.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Programa1/Programa1.cpp",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Banco.src",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Banco.txt",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Cliente.src",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Cuenta.txt",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Tipo2.src",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Tipo2.idk",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Tipo1.src",
+		"/C/Users/Martin RB/source/repos/ProgramasLab/Debug/Tipo0.src",
+		"/C/xampp/htdocs/main/projs/protepec/pag/js/IndexHandler.js",
+		"/C/xampp/htdocs/main/projs/protepec/pag/screens/search.html",
+		"/C/Users/Martin RB/Desktop/PracticaLab2/Zip/Banco.src",
+		"/C/Users/Martin RB/Desktop/PracticaLab2/Zip/Banco.txt",
+		"/C/Users/Martin RB/Desktop/PracticaLab2/Zip/Cliente.src",
+		"/C/Users/Martin RB/Desktop/PracticaLab2/Zip/Cuenta.txt",
+		"/C/xampp/htdocs/pags/test_weeb/index.html",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/H8P1PA00818919_A01039707",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/Makefile-3",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/Makefile 2",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/MakeFile",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/Makefile-1",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/owo",
+		"/C/Users/Martin RB/AppData/Local/Temp/fz3temp-2/A00818919",
+		"/C/xampp/htdocs/pags/weeb/api/v1/index.php",
+		"/C/xampp/htdocs/pags/weeb/js/IngresosEgresosHandler.js",
+		"/C/xampp/htdocs/pags/weeb/mixingresosegresos.html",
+		"/C/xampp/htdocs/pags/pst/index.html",
+		"/C/xampp/htdocs/pags/weeb/js/ingresosegresos.js",
+		"/C/Users/Martin RB/Downloads/561119701543-k2kt236or8gd089v982832in5da8sovc.apps.googleusercontent.com_secreto_cliente.json",
+		"/C/xampp/htdocs/pags/weeb/package-lock.json",
+		"/C/xampp/htdocs/pags/weeb/ingresosegresos.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\main\\ubimex\\ubimex"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"registerSeen",
+			"checkaut",
+			"check",
+			"checkout",
+			"idc",
+			"course",
+			"curso",
+			"course",
+			"PENNEEEEE",
+			"arrayResponse",
+			"funcionvalor",
+			"checkmarkValor",
+			"funcionvalor",
+			"val('')",
+			"form",
+			"ajaxSubmit",
+			"formActivities",
+			"saveChangesActivity",
+			"storefille",
+			"storefilled",
+			"saveChangesActivity",
+			"guardar",
+			"funcionvalor",
+			"checkmarkValor",
+			"act-btn-plus-pregunta",
+			"agregar pregunta",
+			"linkto",
+			"linktouserinfo",
+			"forminstructor",
+			"data)",
+			"getActivities",
+			"getTopics",
+			"loadActivitiesSection",
+			"fillActivities",
+			"activityTemplate",
+			"main__",
+			"window.location.reload();",
+			"main__",
+			"linktoprofileedit",
+			"idPruebaCreador",
+			"$.ajax",
+			"changevideo",
+			"cargamenu",
+			"diapMenu",
+			"home",
+			"changeVideo",
+			"$.ajax",
+			"seccionVideo",
+			"loadVideo",
+			"loadFiles",
+			"changeVideo",
+			"change",
+			"changeVideo",
+			"loadVideo",
+			"idTema",
+			"$.a",
+			"n load",
+			"load",
+			"loadImages",
+			"ASD",
+			"loadImage",
+			"loadImages",
+			"dibujado",
+			"echo",
+			"singleActivContainer",
+			"green-btn agregar-actividad-btn",
+			"el url",
+			"singleActivContainer",
+			"green-btn agregar-actividad-btn",
+			"readVideoUrl",
+			"form-control-file",
+			"saveChangesActivity",
+			"den_save",
+			"agregar-actividad-btn",
+			"addInstrucch3",
+			"ingresa ",
+			"titulos_option"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dashboard/json/getAdquiredCourses.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3678,
+								3678
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dashboard/js/studentAdquiredCourses.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10236,
+								10236
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dashboard/js/generalStudent.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7412,
+								7412
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "platform/js/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 193528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								434,
+								434
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "platform/js/streamLogin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "platform/js/roomsHandler.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 413.0
+	},
+	"pinned_build_system": "",
+	"project": "ubimex.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 333.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,92 @@
+.act-column-right {
+  width: 89%;
+  display: block;
+  position: relative;
+  height: fit-content;
+  margin: auto;
+  top: 100px;
+  text-align: center;
+}
+.act-container-activity{
+  height: 40px;
+padding-top: 40px;
+}
+.act-column-right button{
+  display: block;
+    padding: 10px 20px;
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    float: inherit;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.tipo-de-actividad{
+  height: 100%;
+}
+.den-popup-estilo button.act-plus-btnstyle{
+    display: inline-block;
+    margin: 20px 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    color: #8ad3a0;
+    font-size: 35px;
+}
+.den-popup-estilo button.act-plus-btnstyle:hover{
+  color: #6aaa7d;
+    background-color: transparent;
+  cursor: pointer;
+}
+input.act-input-question{
+  font-size: 20px;
+  font-weight: 400;
+  width: 85%;
+  margin: 10px 0;
+}
+input.act-valor-pregunta{
+margin-left: 10px;
+background-color: #555555;
+width: 100%;
+color: #fff;
+font-size: 16px;
+display: inline-block;
+padding: 10px;
+padding-right: 0;
+}
+.respuestahover.act-valor-hover{
+  position: absolute;
+  display: inline-block;
+  width: 9%;
+  top: 17px;
+  right: -65px;
+}
+.preguntahover.act-valor-hover {
+    position: absolute;
+    display: inline-block;
+    width: 7%;
+    top: 37px;
+    right: 72px;
+}
+span.act-span-valor, span.act-span-valor:hover{
+  position: absolute;
+      top: -27px;
+      right: -104px;
+      width: 84px;
+      height: 32px;
+      color: #555;
+      border-radius: 10px;
+      padding: 3px 8px;
+      cursor: pointer;
+      background-color: #dbdbdb9e;
+      font-size: 10px;
+      text-align: center;
+      display: none;
+}
+.act-valor-hover:hover .act-span-valor{
+  display: block;
+}

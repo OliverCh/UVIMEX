@@ -1,0 +1,4 @@
+[27-Feb-2019 14:52:44 America/Monterrey] PHP Notice:  Undefined index: idTema in /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php on line 23
+[27-Feb-2019 14:52:44 America/Monterrey] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php:23) in /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php on line 360
+[27-Feb-2019 15:03:16 America/Monterrey] PHP Notice:  Undefined index: idTema in /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php on line 23
+[27-Feb-2019 15:03:16 America/Monterrey] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php:23) in /home/admin/public_html/wp-content/CreateCourse/php/storeFilledTemplate.php on line 360

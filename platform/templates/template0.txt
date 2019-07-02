@@ -1,0 +1,46 @@
+<div id="contenedorCurso" class="template0_selecttxt">
+  <div class="den-popup-eliminarfile den-popup-estilo den-hide">
+        <span class="closethisPop">x</span>
+        <h2></h2>
+        <button type="button" name="button" class="closethisPop">Cancelar</button>
+  			<button type="button" name="button" class="eliminarEstaSeccion">Eliminar</button>
+  </div>
+	<div style="width: 100%;">
+					<section id="tituloCurso" class="base-container-title">
+            <input type="text" name="title" id="title" value="" class="base-title" placeholder="Ingresa Un Nuevo Título"></section>
+					<section id="subtituloCurso" class="base-container-subtitle" >
+            <input type="text" name="subtitle" id="subtitle" value="" class="base-subtitle" placeholder="Ingresa un subtítulo"></section>
+	</div>
+	<div class="template-sec1">
+    <div class="template-container">
+    	<div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpTempVideo">?</div>
+			<div class="form-group base-agregar-imagevideoaudio base-only-video" id="wrapVideos" >
+
+					<div class="base-agrega-material base-agregar-video">
+							<div class="base-herramientas-video base-display-hidden">
+									<div class='base-fileedit tooltip editvideo'>
+											<i class='fas fa-edit'></i><span class='tooltiptext'>Editar</span>
+									</div>
+									<div class='base-filedelete delete-this-video tooltip'>
+											<i class='fas fa-trash-alt'></i><span class='tooltiptext'>Eliminar</span>
+									</div>
+							</div>
+							<span class="base-plus-span">+</span>
+							<input type="file" accept="video/*" type="file" class="form-control-file" name="video[]" onchange="readVideoUrl(this)">
+							<div class="base-nameoffile"></div>
+					</div>
+
+          <!-- aqui va otro -->
+			</div>
+    </div>
+    <div class="template-container">
+      <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpTempImage">?</div>
+			<div class="form-group base-agregar-imagevideoaudio base-only-images" id="wrapImages">
+
+
+
+			</div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/template0.css" />

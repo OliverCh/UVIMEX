@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			type: "post",
+			url: "getActivitiesFromTopics.php",
+			data: {idTemas: [33,34]},
+			//dataType: 'json',
+			success: function(d){
+				console.log(d);
+			}
+		});
+	</script>
+</html>

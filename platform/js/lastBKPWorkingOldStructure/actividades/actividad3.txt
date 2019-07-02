@@ -1,0 +1,38 @@
+  <input type="hidden" name="belongerActivity[]" id="" value="" >
+  <input type="hidden" name="templateActivity" id="" value="" >
+  <input type="hidden" name="idTemaActivity"  id="" value="" >  
+  <div class="act-column-right">
+    <div class="act-pregunta-row act-pregunta-oculta">
+      <div class="base-filedelete act-delete-question tooltip den-hide">
+        <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+      </div>
+      <input type="text" name="" value="" class="act-input-question" placeholder="Pregunta">
+      <div class='act-valor-hover preguntahover'>
+          <input type='number' min='0' class='act-input-qavalor' value='0'>
+          <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+        </div>
+      <div class="qAndA-row act-respuesta-row act-respuesta-oculta">
+        <div class="base-filedelete act-delete-answer tooltip">
+          <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+        </div>
+        <input type="text" name="" value="" class="act-input-respuesta" placeholder="Respuesta" disabled>
+      </div>
+    </div>
+  </div>
+  <div class="act-btns-container">
+    <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpActivbtn">?</div>
+    <button class="act-green-btnstyle act-btn-plus-pregunta" type="button">Agregar Pregunta</button>
+    <div class="act-valorSection den-hide">
+      <p>Valor</p>
+      <label class="containerValor qa-selected-value"> Pregunta
+      <input type="radio" name="valorLugar" checked="checked" value="valoraPregunta">
+      <span class="checkmarkValor"></span>
+      </label>
+      <label class="containerValor"> Respuesta
+      <input type="radio" name="valorLugar" value="valoraRespuesta">
+      <span class="checkmarkValor"></span>
+      </label>
+    </div>
+  </div>
+
+<link rel="stylesheet" href="../css/actividad3.css" />

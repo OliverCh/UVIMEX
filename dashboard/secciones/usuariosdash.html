@@ -1,0 +1,33 @@
+<div class="rowDash">
+  <div class="bgfullcont">
+    <h2>Alumnos</h2>
+    <div class="tableContainer">
+      <div class="filtrogeneral">
+          <i class="fas fa-search"></i> <input type="text" placeholder="Filtrar Tabla...">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Nombre Completo</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Último Acceso</th>
+            <th>Avance</th>
+          </tr>
+        </thead>
+        <tbody id="studentsTblBody" class="searchonthistable">
+          <tr>
+            <td colspan="6" class="linktouserinfo" tittle="Ver Informaciòn del Usuario">No tiene alumnos registrados todavía</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+<script type="text/javascript">
+  $("body").append(`<div class="pantalladecarga"><img src="img/uvimex_load.gif" alt=""></div>`);
+  students.initStudentListCourses();
+</script>

@@ -1,0 +1,116 @@
+{
+	"curso":
+		{
+			"nombre":"finanzas",
+				"modulo 1":
+					{
+						"Tema":"Finanzas Personales",	
+							"sub tema 1":
+								{
+									"nombre":"que son las finanzas?",
+
+									"multimedia":
+										{
+											"1":[
+												{
+													"tipo":"video",
+													"url":"urlVideo",
+													"img":
+														{
+															"1":{
+																"url":"urlImagen",
+																"time":"tiempo Imagen"
+															},
+															"2":{
+																"url":"urlImagen",
+																"time":"tiempo imagen"
+															}
+															
+														}
+													
+
+												}
+											],
+											"2":[
+												{
+													"tipo":"video",
+													"url":"urlVideo",
+													"img":
+														{
+															"1":{
+																"url":"urlImagen",
+																"time":"tiempo Imagen"
+															},
+															"2":{
+																"url":"urlImagen",
+																"time":"tiempo imagen"
+															}
+															
+														}
+													
+
+												}
+											]
+											
+										}
+									
+
+								}
+							,
+							"sub tema 2":
+								{
+									"nombre":"que son las finanzas?",
+									"multimedia":
+										{
+											"1":[
+												{
+													"tipo":"video",
+													"url":"urlVideo",
+													"img":
+														{
+															"1":{
+																"url":"urlImagen",
+																"time":"tiempo Imagen"
+															},
+															"2":{
+																"url":"urlImagen",
+																"time":"tiempo imagen"
+															}
+															
+														}
+													
+
+												}
+											],
+											"2":[
+												{
+													"tipo":"video",
+													"url":"urlVideo",
+													"img":
+														{
+															"1":{
+																"url":"urlImagen",
+																"time":"tiempo Imagen"
+															},
+															"2":{
+																"url":"urlImagen",
+																"time":"tiempo imagen"
+															}
+															
+														}
+													
+
+												}
+											]
+											
+										}
+									
+
+								}
+							
+					}
+
+				
+		}
+	
+}

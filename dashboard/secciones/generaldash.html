@@ -1,0 +1,51 @@
+<div class="rowDash">
+  <div class="colTresCont">
+    <h1><i class="fas fa-book"></i> <span class="datoinject" id="activeCourse">0</span></h1>
+    <h2>Cursos Activos</h2>
+    <div class="barragenerica">
+    </div>
+  </div>
+  <div class="colTresCont">
+    <h1><i class="fas fa-graduation-cap"></i> <span class="datoinject" id="registeredStudents">0</span></h1>
+    <h2>Alumnos Registrados</h2>
+    <div class="barragenerica">
+    </div>
+  </div>
+  <div class="colTresCont">
+    <h1><i class="fas fa-wallet"></i> <span class="datoinject" id="totalMoney">$ 0.00 MX</span></h1>
+    <h2>Saldos Totales</h2>
+    <div class="barragenerica">
+    </div>
+  </div>
+</div>
+<div class="rowDash">
+  <div class="bgfullcont">
+    <div class="changePeriodo">
+
+    </div>
+    <h2>Totales del Periodo:
+      <select class="periododeVentas"  id="selectPeriod">
+      </select>
+      <!-- <span class="periododeVentas" id="sellingPeriod" data-dateindex="0" > De 01 a 20 de Enero de 2019 </span> -->
+    </h2>
+    <div class="barraventarPercent">
+      <div class="percentindiv">
+        <h3>Cursos Vendidos</h3>
+        <p id="totalSoldCourses">0 Cursos</p>
+      </div>
+      <div class="percentindiv">
+        <h3>Usuarios Nuevos</h3>
+        <p id="newUsers">0 Usuarios</p>
+      </div>
+      <div class="percentindiv">
+        <h3>Ingresos a Retirar</h3>
+        <p id="totalIncome">$0.00</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $("body").append(`<div class="pantalladecarga"><img src="img/uvimex_load.gif" alt=""></div>`);
+  general.initComponets();
+  general.initGeneralDash();
+</script>

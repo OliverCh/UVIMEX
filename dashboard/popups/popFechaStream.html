@@ -1,0 +1,78 @@
+<div class="popFitContainer">
+  <div class="closeRowBtnPop">
+      <button type="button" name="button">Cerrar <i class="fas fa-times-circle"></i></button>
+  </div>
+  <div class="whiteFintPop">
+   <h1>Nueva Fecha Streaming</h1>
+   <div class="posoforscrolcont">
+     <div class="columnhalfpop">
+       <div class="indivNc">
+         <label>Curso</label>
+           <select class="" id="courseSelect">
+            <option>Cargando...</option>
+           </select>
+       </div>
+       <div class="indivNc">
+         <label>Nombre de Evento</label>
+           <input type="text" id="eventName" class="inputnameevento">
+       </div>
+       <div class="indivNc">
+         <label>Descripción</label>
+         <textarea name="courseDesc" id="courseDesc" rows="8" cols="80"></textarea>
+       </div>
+     </div>
+     <div class="columnhalfpop">
+       <div class="indivNc">
+         <label>Fecha</label>
+          <input type="date" id="eventDate">
+       </div>
+       <div class="indivNc">
+         <label>Hora</label>
+         <div class="">
+           <div class="horainicial">
+             <select class="selectohorariocont" id="eventStarto">
+               <option value="1">01:00</option>
+               <option value="2">02:00</option>
+               <option value="3">03:00</option>
+               <option value="4">04:00</option>
+               <option value="5">05:00</option>
+               <option value="6">06:00</option>
+               <option value="7">07:00</option>
+               <option value="8">08:00</option>
+               <option value="9">09:00</option>
+               <option value="10">10:00</option>
+               <option value="11">11:00</option>
+               <option value="12">12:00</option>
+             </select>
+             <p class="styleampnspan" id="eventStartotype">AM</p>
+           </div>
+           <div class="horafinal">
+             <p class="forhoura">a</p>
+             <select class="selectohorariocont" id="eventEnd">
+               <option value="1">01:59</option>
+               <option value="2">02:59</option>
+               <option value="3">03:59</option>
+               <option value="4">04:59</option>
+               <option value="5">05:59</option>
+               <option value="6">06:59</option>
+               <option value="7">07:59</option>
+               <option value="8">08:59</option>
+               <option value="9">09:59</option>
+               <option value="10">10:59</option>
+               <option value="11">11:59</option>
+               <option value="12" selected>12:59</option>
+             </select>
+             <p class="styleampnspan" id="eventEndBtn">PM</p>
+           </div>
+       </div>
+     </div>
+   </div>
+   <div class="bottompopcont">
+     <button type="button" name="button" class="greenbtncontorno creareventonuevo" id="createEvent">Crear</button>
+   </div>
+  </div>
+</div>
+<script type="text/javascript">
+  //myCourses.loadCoursesOnPoPUp();
+  //myCourses.loadCategoriesOnPoPUp();
+</script>

@@ -1,0 +1,23 @@
+<div class="act-column-right">
+  <input type="text" name="" value="" class="act-input-question" placeholder="Ingresa Una Pregunta">
+  <div class='act-valor-hover'>
+    <input type='number' min='0' class='act-valor-pregunta' value='0'>
+    <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+  </div>
+</div>
+<div class="act-btns-container">
+  <button class="act-green-btnstyle" type="button">Agregar Pregunta</button>
+  <button class="act-green-btnstyle" type="button">Agregar Rrespuesta</button>
+  <div class="act-valorSection">
+    <p>Valor</p>
+    <label class="containerValor"> Pregunta
+    <input type="radio" checked="checked" name="radio" value="valoraPregunta">
+    <span class="checkmarkValor"></span>
+    </label>
+    <label class="containerValor"> Respuesta
+    <input type="radio" name="radio" value="valoraRespuesta">
+    <span class="checkmarkValor"></span>
+    </label>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/actividad0.css" />

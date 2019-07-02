@@ -1,0 +1,68 @@
+[
+    {
+        "activityAnswers": [
+            {
+                "idActividad": "279",
+                "answer": "149",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:19 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "150",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:19 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "151",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:19 pm"
+            }
+        ]
+    },
+    {
+        "activityAnswers": [
+            {
+                "idActividad": "279",
+                "answer": "149",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:56 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "150",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:56 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "151",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:50:56 pm"
+            }
+        ]
+    },
+    {
+        "activityAnswers": [
+            {
+                "idActividad": "279",
+                "answer": "149",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:53:05 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "150",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:53:05 pm"
+            },
+            {
+                "idActividad": "279",
+                "answer": "151",
+                "accurate": "1",
+                "time": "05\/14\/2019 05:53:05 pm"
+            }
+        ]
+    }
+]

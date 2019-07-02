@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link href="icon/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <input type="hidden" id="selectedCourse" value="">
+  <div class="topdash">
+    <nav>
+      <figure>
+        <img src="img/logowhite.png" alt="">
+      </figure>
+      <div class="righttopnav">
+        <!-- <div class="indivrtn">
+          <i class="fas fa-bell"></i>
+        </div> -->
+        <!-- <div class="indivrtn">
+          <i class="fas fa-cog"></i>
+        </div> -->
+        <div class="indivrtn" title="Cerrar Sesión">
+          <i class="fas fa-power-off"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="centerdhash">
+    <!-- Left column -->
+    <div class="leftdash">
+       <div class="leftopcont">
+         <div class="circlecontainer">
+           <div class="circlefigure linktoprofileedit" id="idPruebaCreador">
+
+           </div>
+         </div>
+         <h3 class="userleftTop" id="nick">yaresiSS</h3>
+         <h2 id="userN">Yaresi Marlene Hernandez Saavedra</h2>
+
+       </div>
+       <div class="tipoaluminstuc">
+         <!-- <p>Alumno</p> -->
+         <p id="userR">Instructor</p>
+       </div>
+       <div class="shortdata">
+         <div class="indivsd">
+           <p>Cuenta</p>
+           <h3 id="tipoCuenta">Premium</h3>
+         </div>
+         <div class="tipodevista" title="Click Aquí para Cambiar de Vista" id="main__changeView">Quiero ser instructor</div>
+       </div>
+       <div class="navleft">
+         <div class="indivnavleft selectedinl" id="generaldash">
+           General
+         </div>
+         <!-- este es el general de alumno -->
+         <div class="indivnavleft" id="alumGeneralDash">
+           General
+         </div>
+         <div class="indivnavleft" id="usuariosdash">
+           Alumnos
+         </div>
+         <div class="indivnavleft" id="cursosdash">
+           Manejo de Cursos
+         </div>
+         <div class="indivnavleft" id="catalogousuarios">
+           Catálogo de Usuarios
+         </div>
+         <!-- <div class="indivnavleft" id="seguimientodash">
+           Seguimiento Cursos
+         </div> -->
+         <div class="indivnavleft" id="cursoscompradosdash">
+           Cursos Adquiridos
+         </div>
+         <div class="indivnavleft" id="catalogocursos">
+           Catálogo de Cursos
+         </div>
+         <div class="indivnavleft" id="streamingDash">
+           Seguimiento Streaming
+         </div>
+         <div class="indivnavleft" id="calendarStreaming">
+           Calendario Streaming
+         </div>
+         <!-- este es para el  alumno -->
+         <div class="indivnavleft" id="instructoresdash">
+           Instructores
+         </div>
+         <!-- este es para el  alumno -->
+         <div class="indivnavleft" id="detalleavancealumno">
+           Avance General
+         </div>
+         <!-- este es para el  alumno -->
+         <div class="indivnavleft" id="cursoscompradosdash">
+           Mis Cursos
+         </div>
+       </div>
+    </div>
+    <!-- Aquí se va a incertar todo -->
+    <div class="rightdash">
+       <div class="injectfullinfo">
+
+       </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $.ajaxSetup({
+      beforeSend: function(){
+        $("body").append(`<div class="pantalladecarga"><img src="img/uvimex_load.gif" alt=""></div>`);
+      },
+      complete: function(){
+      $(".pantalladecarga").remove();
+      }
+    });
+    $("body").append(`<div class="pantalladecarga"><img src="img/uvimex_load.gif" alt=""></div>`);
+  </script>
+  <script src="plugins/ajaxform.js"></script>
+  <script src="plugins/moment.js"></script>
+  <script type="text/javascript" src="js/proxyer.js"></script>
+  <script type="text/javascript" src="js/eventEditor.js"></script>
+  <script type="text/javascript" src="js/streamEvent.js"></script>
+  <script type="text/javascript" src="js/streammingCalendar.js"></script>
+  <script type="text/javascript" src="js/courseModule.js"></script>
+  <script type="text/javascript" src="js/categoryModule.js"></script>
+  <script type="text/javascript" src="js/dash.js"></script>
+  <script type="text/javascript" src="js/myCourses.js"></script>
+  <script type="text/javascript" src="js/students.js"></script>
+  <script type="text/javascript" src="js/general.js"></script>
+  <script type="text/javascript" src="js/studentAdquiredCourses.js"></script>
+  <script type="text/javascript" src="js/DetalleRendimientoHandler.js"></script>
+  <script type="text/javascript" src="js/myInstructorList.js"></script>
+  <script type="text/javascript" src="js/generalStudent.js"></script>
+  <script type="text/javascript" src="js/DetalleAvanceHandler_Alumno.js"></script>
+  <script type="text/javascript" src="js/DetalleRendimientoHandler_Alumno.js"></script>
+  <script type="text/javascript" src="js/profile.js"></script>
+
+  <script type="text/javascript">
+    dash.initDashBoardPage();
+  </script>
+
+  </body>
+</html>

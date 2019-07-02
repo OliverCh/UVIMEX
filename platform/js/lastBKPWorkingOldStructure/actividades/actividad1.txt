@@ -1,0 +1,32 @@
+<div class="act-column-right">
+  <div class="act-pregunta-row act-pregunta-oculta">
+    <div class="base-filedelete act-delete-question tooltip den-hide">
+      <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+    </div>
+    <div class="qAndA-row">
+      <input type="text" name="" value="" class="act-input-question" placeholder="A">
+      <input type="text" name="" value="" class="act-input-respuesta" placeholder="B">
+      <div class='act-valor-hover'>
+        <input type='number' min='0' class='act-input-qavalor' value='0'>
+        <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="act-btns-container">
+  <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpActivbtn">?</div>
+  <button class="act-green-btnstyle act-btn-plus-pregunta" type="button">Agregar Relación</button>
+  <div class="act-valorSection den-hide">
+    <div class="den-help effect-1 sub-a" title="¿Qué es esto?">?</div>
+    <p>Valor</p>
+    <label class="containerValor qa-selected-value"> Pregunta
+    <input type="radio" name="valorLugar" checked="checked" value="valoraPregunta">
+    <span class="checkmarkValor"></span>
+    </label>
+    <label class="containerValor"> Respuesta
+    <input type="radio" name="valorLugar" value="valoraRespuesta">
+    <span class="checkmarkValor"></span>
+    </label>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/actividad1.css" />

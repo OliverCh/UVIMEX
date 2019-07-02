@@ -1,0 +1,46 @@
+<div id="contenedorCurso" class="template2_selecttxt">
+  <div class="den-popup-eliminarfile den-popup-estilo den-hide">
+        <span class="closePopUp">x</span>
+        <h2></h2>
+        <button type="button" name="button" class="closePopUp">Cancelar</button>
+  			<button type="button" name="button" class="eliminarEstaSeccion">Eliminar</button>
+  </div>
+	<div class="template-sec1">
+    <div class="template-container">
+      <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpTempVideo">?</div>
+			<div class="form-group base-agregar-imagevideoaudio base-only-video" id="wrapVideos">
+					<div class="base-agrega-material base-agregar-video">
+							<div class="base-herramientas-video base-display-hidden">
+									<div class='base-fileedit tooltip editvideo'>
+											<i class='fas fa-edit'></i><span class='tooltiptext'>Editar</span>
+									</div>
+									<div class='base-filedelete delete-this-video tooltip'>
+											<i class='fas fa-trash-alt'></i><span class='tooltiptext'>Eliminar</span>
+									</div>
+							</div>
+							<span class="base-plus-span">+</span>
+              <input type="hidden" name="belonger[]" value="">
+							<input data-consecutivo="0" type="file" accept="video/*" type="file" class="form-control-file" id="video0" name="video[]" onChange="readVideoUrl(this);">
+							<div class="base-nameoffile"></div>
+					</div>
+			</div>
+    </div>
+
+			<div class="form-group base-inline-column">
+            <div class=base-titles-half>
+              <section id="tituloCurso" class="base-container-title">
+                <input type="text" name="title" id="title" value="" class="base-title" placeholder="Ingresa Un Nuevo Título"></section>
+              <section id="subtituloCurso" class="base-container-subtitle" >
+                <input type="text" name="subtitle" id="subtitle" value="" class="base-subtitle" placeholder="Ingresa un subtítulo"></section>
+            </div>
+            <div class="template-container">
+              <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpTempActividad">?</div>
+            <div class="base-agregar-actividad">
+              <textarea name="descripcionCurso" id="descripcionCursoPlantilla" class="input-popup-newdescription" value="" placeholder="Escriba una actividad"></textarea>
+            </div>
+			</div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="../css/template2.css" />
+<script type="text/javascript" src="../js/template2.js"></script>

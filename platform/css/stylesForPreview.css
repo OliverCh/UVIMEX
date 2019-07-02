@@ -1,0 +1,448 @@
+#lista5 {
+counter-reset: li;
+list-style: none;
+*
+list-style: decimal;
+font-family: 'OpenSansRegular';
+/* color: #54c76c; */
+font-size: 1.5em;
+/* font: 24px 'trebuchet MS', 'lucida sans'; */
+padding: 0;
+margin-bottom: 4em;
+/* text-shadow: 0 1px 0 rgba(255,255,255,.5); */
+margin: 6% 0 0 3%;
+
+}
+#lista5 > li:hover {
+    padding-left: 4.5em;
+    font-weight: bolder;
+    -webkit-transition: padding 2s;
+    transition: padding 1s;
+}
+#lista5 ol {
+margin: 0 0 0 2em;
+}
+
+#lista5 {
+list-style-type: none;
+list-style-type: decimal !ie; /*IE 7- hack*/
+margin: 6%;
+margin-left: 12em;
+padding: 0;
+counter-reset: li-counter;
+}
+
+
+#lista5 > li{
+ position: relative;
+margin-bottom: 1.5em;
+padding-left: 4em;
+padding-top: 0.5em;
+/* background-color: #eaeaea; */
+padding-bottom: .5em;
+
+}
+
+
+#lista5 > li:before {
+  position: absolute;
+  top: 6px;
+  left: 23px;
+  width: 1.8em;
+  height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 4px 0px;
+  /* font-weight: bold; */
+  text-align: center;
+  color: #fff;
+  background-color: #44cb96;
+  border-radius: 38px;
+  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  /* z-index: 99; */
+  overflow: hidden;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+}
+
+.themeFiles{
+  cursor:pointer;
+}
+
+/* #videoCurso{
+	border-radius:3%;
+} */
+/* .tem-images-container img{
+	border-radius: 3%;
+} */
+section#temaTexto {
+    padding: 10px;
+    letter-spacing: 1px;
+}
+#seccionVideo.shortervideo{
+  width: 73%;
+}
+.input-range-span-video{
+	display: inherit;
+  position: relative;
+  width: 100%;
+  bottom:-45px;
+}
+.currentTimeMinutes{
+	display: inherit;
+	width: auto;
+  margin: auto;
+	padding: 20px 0px;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  font-size: 13.5px;
+}
+
+.actContfull {
+    /* border-radius: 20px; */
+    background-color: #efefef;
+    padding: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 37%;
+    height: 68%;
+    float: left;
+    margin-left: 10%;
+    overflow: auto;
+}
+
+.renglonAct input.shortanswerdact  {
+    margin-bottom: 20px;
+    width:95%;
+    font-size: 1em;
+    padding: 20px;
+    font-weight: 300;
+    color: #555;
+    border: none;
+    background-color: #fafafa;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.actContainer {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.actContainer input {
+    width: fit-content;
+    cursor: pointer;
+    vertical-align: middle;
+    transform: scale(1.8);
+    margin-right: 10px;
+}
+
+.multianswerdRow {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.multianswerdRow p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* margin-bottom: 20px; */
+}
+.renglonAct h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 500;
+    color: #008f37;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+}
+
+.numbersAct {
+    background-color: #009037;
+    padding: 1px 8px 3px 8px;
+    border-radius: 24px;
+    color: #fff;
+    font-size: .8em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.renglonAct{
+  height: auto;
+  overflow: hidden;
+}
+
+.finishActivity{
+  background-color: #44cb96;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+/* MEY STYLES NUEVOS */
+.actContfull::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+.actContfull::-webkit-scrollbar-track {
+  background-color: #c3c2c2;
+}
+
+.actContfull::-webkit-scrollbar-thumb {
+  background:  #44cb96;
+  border-radius: 10px;
+}
+
+.actContfull::-webkit-scrollbar-thumb:hover {
+  background: #009037;
+}
+.injStreaming{
+      z-index: 1000000;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #44cb96;
+  width: 19%;
+  position: absolute;
+  height: 600px;
+  right: 3.5%;
+  margin: auto;
+  top: 20%;
+  text-align: center;
+}
+.bgContainerFull{
+  display: flex;
+  width: 95%;
+}
+#contenedor.shorterCont{
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}
+.streamMenuTop {
+    background-color: black;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: right;
+    font-size: 1.2em;
+    height: 5%;
+}
+.streamIndivmtBtn {
+    text-align: -webkit-match-parent;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.streamcontainer {
+    background-color: #dcdcdcv;
+    width: 93%;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 4%;
+    height: 80%;
+    position: relative;
+}
+.sIndivActBtn {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #07a97c;
+    text-align: center;
+    width: 10%;
+    font-size: 2em;
+    color: #106950;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 1%;
+    position: relative;
+}
+.steamBarButtons {
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+.streamvideo {
+    background-color: #a5a5a5;
+    display: block;
+    margin: auto;
+    height: 47.5%;
+    position: absolute;
+    width: 95%;
+    margin: 2% auto;
+    left: 0;
+    right: 0;
+}
+.streamvideosecond{
+   bottom:0;
+   background-color: #dedede;
+}
+
+.negativeline {
+    position: absolute;
+    width: 3px;
+    height: 49px;
+    background-color: #106950;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    left: 0;
+    right: 0;
+}
+.sIndivActBtn:hover .infoBtnStream{
+  display: block !important;
+}
+.infoBtnStream {
+    display: none;
+    position: absolute;
+    top: -25px;
+    padding: 10px 0;
+    margin: auto;
+    right: 14px;
+    background-color: black;
+    color: #fff;
+    min-width: 190px;
+    text-align: center;
+    font-size: .6em;
+    z-index: 9;
+    border-radius: 5px 5px 0 5px;
+}
+.injStreaming.fullinjcontStream {
+    width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 760px;
+}
+.fullinjcontStream .streamMenuTop {
+    height: 3.5%;
+}
+.fullinjcontStream .streamcontainer {
+    width: 96%;
+    margin-top: 2%;
+    height: 80%;
+    text-align: center;
+}
+.fullinjcontStream .streamvideo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 2%;
+}
+.fullinjcontStream #selfView{
+  display: none;
+
+}
+.fullinjcontStream .steamBarButtons {
+    padding: 1%;
+}
+.fullinjcontStream .sIndivActBtn {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #07a97c;
+    text-align: center;
+    width: 8%;
+    font-size: 2em;
+    color: #106950;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 4px;
+    position: relative;
+}
+#noRoomPanel{
+  text-align: center;
+}
+#loginPanel h1, #noRoomPanel h1 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    border-bottom: 1px dotted #fff;
+    padding: 10px;
+    margin: 10px;
+}
+#loginPanel input, #noRoomPanel input {
+    padding: 10px 6px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+#loginStream {
+    background-color: #000;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    cursor:pointer;
+  }
+  #startCall {
+    background-color: #368666;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.actfb{
+  background-color: #7b7b7b;
+    width: 22px;
+    border-radius: 5px;
+    height: 22px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.falseanswerd {
+    background-color: red;
+}
+
+.trueanswerd {
+    background-color: green;
+}
+.input-range-span-video input[type="range" i] {
+    width: 55%;
+    display: block;
+    /* bottom: -38px; */
+}
+
+label.RightTimeMinutes {
+    position: absolute;
+    left: 49%;
+}

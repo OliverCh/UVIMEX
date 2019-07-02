@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/wplogin.css">
+    <title>UVIMEX</title>
+  </head>
+  <body>
+    <div class="form" style="background-image:url('../img/elegant.jpg')">
+      <div class="thumbnail"><img src="../img/graduatehat.svg"></div>
+      <div>
+        <form class="register-form">
+          <input type="text" placeholder="nombre" autocomplete="off" value="">
+          <input type="password" placeholder="contraseña" autocomplete="off" value="">
+          <input type="text" placeholder="correo electrónico" autocomplete="off" value="">
+          <button>create</button>
+          <p class="message">Ya estás registrado? <a href="#">Inicia Sesión</a></p>
+        </form>
+      </div>
+      <div>
+            <span id="errors">errores</span>
+        <form class="login-form" id="login">
+          <input type="text" placeholder="usuario" autocomplete="off" id="user" name="user" value="">
+          <input type="password" placeholder="contraseña" autocomplete="off" name="pwd" id="pwd" value="">
+          <button id="loginButton">login</button>
+          <p class="message">No te has registrado? <a href="#">Regístrate</a></p>
+        </form>
+      </div>
+    </div>
+    <div id="userContent" class="hiddenContent">
+      <div>
+        <h1>Bienvenido <span id="userField"></span></h1>
+      </div>
+      <div>
+        <h2>Tus cursos adquiridos son:</h2>
+      </div>
+      <ol id="courseList">
+      </ol>
+    </div>
+  </body>
+  <script src="../plugins/jquery/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="../js/wplogin.js"></script>
+</html>

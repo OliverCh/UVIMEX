@@ -1,0 +1,2 @@
+[02-Jun-2019 22:43:52 America/Monterrey] PHP Fatal error:  Cannot use object of type stdClass as array in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 36
+[02-Jun-2019 22:45:04 America/Monterrey] PHP Notice:  Trying to get property of non-object in /home/admin/public_html/XD/dashboard/php/getAnswersFromTopics.php on line 51

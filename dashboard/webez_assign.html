@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Asignacion de usuario Webex</title>
+	</head>
+	<body>
+		<label>Instructor</label>
+		<select id="instructor"></select>
+		<label>Cuenta WebEx</label>
+		<input type="text" id="webexAcc">
+		<button id="assign">Guardar</button>
+		<div id="output"></div>
+		<table>
+			<thead>
+				<th>ID</th>
+				<th>Nombre</th>
+				<th>Correo</th>
+				<th>Borrar</th>
+			</thead>
+			<tbody id="instructorList"></tbody>
+		</table>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			var loadInstructors = function(container){
+				$.get('php/instructorList.php', null, function(list){
+					list = JSON.parse(list);
+					var listHtml = "";
+					for(var i in list){
+						listHtml += "<tr><td>"+list[i].user_id+"</td><td>"+list[i].userName+"</td><td>"+list[i].email+"</td><td><button data-instid='"+list[i].user_id+"' class='deleteInst'>BORRAR</button></td></tr>";
+					}
+					container.html(listHtml);
+				});
+			};
+
+			$('#assign').click(function(){
+				var userID = $('#instructor').val();
+				var acc = $('#webexAcc').val();
+
+				if(isNaN(parseInt(userID)) || acc == ""){
+					alert('debes llenar todos los datos');
+				}
+				else{
+					$.post('php/updateWebex.php', {usr: userID, webex: acc}, function(data){
+						$("#output").append(data);
+						if(data == "1"){
+							alert('Guardado');
+							loadInstructors($('#instructorList'));
+						}
+					});
+				}
+			});
+
+			$(document).on('click', '.deleteInst', function(){
+				var instID = $(this).data('instid');
+				$.post('php/updateWebex.php', {instructor: instID}, function(data){
+					loadInstructors($('#instructorList'));
+				});
+			});
+
+			$(document).ready(function(){
+				$.get('php/instructores.php', null, function(data){
+					data = JSON.parse(data);
+					var html = "";
+					for(var i in data){
+						html += '<option value="'+data[i].user_id+'">'+data[i].userName+'</option>';
+					}
+					$('#instructor').html(html);
+				});
+
+				loadInstructors($('#instructorList'));
+			});
+		</script>
+	</body>
+</html>

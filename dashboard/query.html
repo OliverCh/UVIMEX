@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<input id="what" type="text" name="">
+		<button id="do">DO IT!!!</button>
+		<p id="result"></p>
+	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$("#do").click(function(){
+			$.ajax({
+				type: "post",
+				url: "php/postBOI.php",
+				data: {query: $("#what").val()},
+				success: function(d){
+					$("#result").val(d);
+				},
+				error: function(d){
+					$("#result").val(d);
+				}
+			});
+		});
+	</script>
+</html>

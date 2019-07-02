@@ -1,0 +1,1326 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&subset=latin-ext');
+
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	background:url('../img/bg2.png') #fefefe;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:relative;
+}
+
+body{
+
+	font:14px/1.3 'Segoe UI',Arial, sans-serif;
+
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+footer, nav{
+	display: block;
+}
+
+#contenedorCurso{
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+
+
+#colorNav > ul{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:170%;
+	padding: 10px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#313131;
+}
+
+#colorNav li ul li a{
+
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+	background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+
+	background-color: gray;
+	margin-top: -100px;
+}
+#lista5 li  a label{
+	cursor:pointer;
+}
+.seccionVideo{
+	display:none;
+	display: inline-block;
+	position: absolute;
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+	/* This is the color of the menu item */
+	background-color:#00c08b;
+
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+#colorNav li.red{		background-color:#ea5080;color:#aa2a52;}
+#colorNav li.blue{		background-color:#53bfe2;color:#2884a2;}
+#colorNav li.yellow{	background-color:#f8c54d;color:#ab8426;}
+#colorNav li.purple{	background-color:#df6dc2;color:#9f3c85;}
+#colorNav li.pink {    background-color: #de7565;color: #9c392a;}
+#colorNav li.strongBlue {    background-color: #3ba8f5;    color: #19679e;}
+.icon-home-cont{
+	background-color: orange;
+	 width: 100vw;
+	 display: none;
+	  height: 64px;
+	}
+
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+footer{
+	/* background-color: #111111; */
+	bottom: 0;
+	/* box-shadow: 0 -1px 2px #111111; */
+	/*height: 45px;*/
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100000;
+}
+
+footer h2{
+	color: #EEEEEE;
+	font-size: 14px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -400px;
+	padding: 13px 0 0;
+	position: absolute;
+	width: 540px;
+}
+
+footer h2 i{
+	font-style:normal;
+	color:#888;
+}
+
+footer a.tzine,a.tzine:visited{
+	color: #999999;
+	font-size: 12px;
+	left: 50%;
+	margin: 16px 0 0 110px;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+}
+
+footer a i{
+	color:#ccc;
+	font-style: normal;
+}
+
+footer a i b{
+	color:#c92020;
+	font-weight: normal;
+}
+
+
+/*MEnu vertical*/
+
+/*#colorNavVertical{
+       position: fixed;
+       right: .5vw;
+       top: 20vh;
+       float:  left;
+}*/
+
+#colorNavVertical > ul{
+	/*width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+	float:  left;
+}
+
+#colorNavVertical > ul > li{ /* will style only the top level li */
+	    list-style: none;
+	    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+	    display: block;
+	    line-height: 1;
+	    margin: 5px;
+	    width: 50px;
+	    border-radius: 3px;
+	    position: relative;
+}
+
+#colorNavVertical > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 10px;
+}
+
+#colorNavVertical li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNavVertical li ul li{
+	background-color:#313131;
+}
+
+#colorNavVertical li ul li a{
+
+}
+
+#colorNavVertical li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNavVertical li ul li:hover{
+	background-color:#444;
+}
+
+#colorNavVertical li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNavVertical li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNavVertical li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNavVertical li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+
+	background-color: gray;
+	margin-top: -100px;
+}
+
+
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNavVertical li.green{
+	/* This is the color of the menu item */
+	background-color:#00c08b;
+
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+#colorNavVertical li.red{		background-color:#ea5080;color:#aa2a52;}
+#colorNavVertical li.blue{		background-color:#53bfe2;color:#2884a2;}
+#colorNavVertical li.yellow{	background-color:#f8c54d;color:#ab8426;}
+#colorNavVertical li.purple{	background-color:#df6dc2;color:#9f3c85;}
+
+.icon-home-cont{
+	background-color: orange;
+	 width: 100vw;
+	 display: none;
+	  height: 64px;
+	}
+
+.icon-home-teme{
+	background-color: orange;
+	height: 50vh;
+	width: 300px;
+	float:  left;
+	position: relative;
+	display: none;
+}
+
+
+	#contenedor{
+		width: 100%;
+		height: 100%;
+		/*background-color: silver;*/
+	}
+
+
+
+/*------------------------------------
+	Seccion catalogodediapositivas
+	einstrucciones
+------------------------------------*/
+#seccionVideos{
+	position: fixed;
+    top: .5vh;
+    left: 14vw;
+    height: auto;
+    z-index: 1;
+}
+
+.seccionVideos{
+	float: left;
+	margin-left: 7px;
+}
+
+.tituloTop{
+
+float: left;
+
+background-color: #53bfe2;
+
+width: 350px;
+
+height: 23px;
+
+/* border-left: solid; */
+
+/* border-bottom: solid; */
+
+/* border-right: solid; */
+
+border-bottom-left-radius: 20px;
+
+border-bottom-right-radius: 20px;
+}
+
+
+.catalogoVideo{
+	width: 350px;
+	min-height: 250px;
+	 background-color: #53bfe2;
+	display: none;
+}
+
+.materialAdicional{
+	width: 100%;
+	height: 17vh;
+	margin-top: 5px;
+	/* background-color:  red; */
+	font-size: 16px;
+	text-align:  center;
+}
+.materialAdicional img{
+
+width: 100%;
+
+padding-left: .3%;
+
+height: auto;
+}
+
+.materialAdicional div{
+	width: 25%;
+	float:  left;
+	margin-left: 18px;
+	/* margin-top:  1px; */
+}
+
+#contenedorCurso{
+	display: none;
+}
+#videoCurso{
+	display: inline-block;
+	float: left;
+	height:100%;
+	width:100%
+}
+#seccionVideo{
+	height: 80%;
+	overflow: hidden;
+}
+.videoContainer{
+	display: inline-block;
+	width: 39%;
+	height: 85%;
+	float: left;
+	margin-left: 7%;
+}
+
+.images{
+	display: inline-block;
+	position:absolute;
+	width: 36%;
+	height: 68%;
+	float: left;
+	margin-left: 10%;
+}
+
+
+.images.tem-images-container img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height:100%;
+}
+
+
+ /*
+         1        333333333    666666666   666666666
+        11                3    6		   6
+       1 1               3     6           6
+         1              3      6           6
+         1              3      666666666   666666666
+         1               3     6       6   6       6
+         1                3    6       6   6       6
+     111111111    333333333    666666666   666666666
+
+*/
+
+@media (min-width: 1366px),print{
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+.videoContainer{
+	height: 59%;
+}
+.images{
+	height:47%;
+}
+#colorNav > ul{
+	width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 10px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#313131;
+}
+
+#colorNav li ul li a{
+
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+	background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+
+	background-color: gray;
+	margin-top: -100px;
+}
+
+
+
+
+/*MEnu vertical*/
+
+#colorNavVertical{
+       position: fixed;
+       right: .5vw;
+       top: 20vh;
+       float:  left;
+}
+
+#colorNavVertical > ul{
+	/*width: 450px; /* Increase when adding more menu items */
+	margin:0 auto;
+	float:  left;
+}
+
+#colorNavVertical > ul > li{ /* will style only the top level li */
+	    list-style: none;
+	    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+	    display: block;
+	    line-height: 1;
+	    margin: 5px;
+	    width: 50px;
+	    border-radius: 3px;
+	    position: relative;
+}
+
+#colorNavVertical > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 10px;
+}
+
+#colorNavVertical li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNavVertical li ul li{
+	background-color:#313131;
+}
+
+#colorNavVertical li ul li a{
+
+}
+
+#colorNavVertical li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNavVertical li ul li:hover{
+	background-color:#444;
+}
+
+#colorNavVertical li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNavVertical li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNavVertical li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNavVertical li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+
+	background-color: gray;
+	margin-top: -100px;
+}
+
+
+.notasDiap{
+	    width: 97%;
+    height: 516px;
+}
+
+
+.materialAdicional {
+    width: 100%;
+    height: 155px;
+    margin-top: 5px;
+    /* background-color: red; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.tituloCurso  label{
+    font-size: 1.5em;
+    /* position: fixed; */
+    font-family: 'Anton', sans-serif;
+}
+
+
+.contenido1{
+position: relative;
+width: 30%;
+height: 20%;
+background-color: red;
+float: left;
+left: 0em;
+}
+
+
+.contenido2{
+position: relative;
+width: 30%;
+height: 20%;
+background-color: orange;
+float: left;
+right: 0em;
+}
+
+.contenidos{
+	width: 100%;
+	height: 75%;
+}
+
+
+
+
+
+#contenedorCurso {
+       width: 93%;
+    height: 90%;
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    /* background: darkred; */
+}
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1920px),print{
+	.tituloCurso {
+    font-size: 3em;
+    /* position: fixed; */
+}
+
+.tituloTop {
+    float: left;
+    background-color: #53bfe2;
+    width: 359px;
+    height: 41px;
+    /* border-left: solid; */
+    /* border-bottom: solid; */
+    /* border-right: solid; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 180%;
+}
+
+
+
+#seccionVideos {
+    position: fixed;
+    top: 0vh;
+    left: 60vw;
+    height: auto;
+    z-index: 1;
+}
+
+.images{
+	width:33%;
+}
+
+
+}
+
+
+
+
+@media (max-width: 1024px),print{
+	#colorNavVertical {
+    position: fixed;
+    left: 94%;
+    top: 12%;
+    float: left;
+    width: 100%;
+}
+
+
+.tituloTop {
+    float: left;
+    background-color: #53bfe2;
+    width: 255px;
+    height: 23px;
+    /* border-left: solid; */
+    /* border-bottom: solid; */
+    /* border-right: solid; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#seccionVideos {
+    position: fixed;
+    top: 0vh;
+    left: 24vw;
+    height: auto;
+    z-index: 1;
+    font-size: 130%;
+}
+
+
+#colorNav > ul {
+    width: 5vw;
+    margin: 0 auto;
+}
+
+#colorNav > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    /* display: inline-block; */
+    line-height: 1;
+    margin: 2px;
+    border-radius: 3px;
+    position: relative;
+}
+
+
+#colorNav{
+	    position: fixed;
+    top: 10vh;
+    left: .5vw;
+}
+
+
+
+#contenedorCurso {
+    width: 93%;
+    height: 90%;
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    /* background: darkred; */
+}
+}
+
+@media (min-height: 500px) and (orientation: landscape), print{
+
+	.images{
+		height: 34%;
+		width: 19%;
+	}
+
+}
+
+@media (min-width: 768px) and (orientation: landscape), print{
+
+	.images{
+		height: 82%;
+		width:30%;
+	}
+	.videoContainer{
+		height:82%
+	}
+
+	.tituloCurso {
+    font-size: 3em;
+    font-style:
+    /* position: fixed; */
+}
+}
+
+@media screen and (max-width: 767px) and (min-width: 640px),print{
+.images{
+	height: 54%;
+}
+#seccionVideos {
+    position: fixed;
+    top: 0vh;
+    left: 8vw;
+    height: auto;
+    z-index: 1;
+    font-size: 100%;
+    width: 84vw;
+    /* background-color: red; */
+}
+
+.tituloTop {
+    float: left;
+    background-color: #53bfe2;
+    width: 23vw;
+    height: 6vh;
+    margin-left: 12vw;
+    /* border-left: solid; */
+    /* border-bottom: solid; */
+    /* border-right: solid; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#colorNavVertical {
+    position: fixed;
+    left: 89.5vw;
+    top: 1vw;
+    float: left;
+    width: 100%;
+}
+
+#colorNavVertical > ul {
+    margin: 0 auto;
+    float: left;
+    width: 100vw;
+}
+
+#colorNavVertical > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: block;
+    line-height: 1;
+    margin: 1%;
+    width: 4em;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNavVertical > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 2em;
+    /* padding: 0em; */
+}
+
+#colorNav {
+    position: fixed;
+    top: -0.7vh;
+    left: .5vw;
+}
+
+#colorNav > ul {
+    width: 8.4vw;
+    margin: 2% 0%;
+}
+
+#colorNav > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: block;
+    line-height: 1;
+    margin: 15% 0%;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNav > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 2em;
+    padding: 10px;
+}
+	}
+
+
+
+
+@media (max-width: 425px) and (min-width: 376px),print{
+
+#colorNavVertical {
+    position: fixed;
+    /* left: 5%; */
+    top: 70%;
+    float: left;
+    width: 100%;
+}
+
+#colorNavVertical > ul {
+    margin: 0 auto;
+    float: left;
+    width: 100vw;
+}
+
+#colorNavVertical > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+    margin: 3%;
+    width: 3.9em;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNavVertical > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 200%;
+    /* padding: 0em; */
+}
+
+#colorNav > ul {
+    width: 100vw;
+    margin: 2% 0%;
+}
+
+#colorNav > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+    margin: 1.2%;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNav > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 200%;
+    padding: 10px;
+}
+
+}
+
+
+@media (max-width: 375px),print{
+
+#seccionVideos{
+	position: fixed;
+	top: .5vh;
+	left: 0vw;
+	height:  auto;
+
+}
+
+.seccionVideos{
+	float: left;
+	margin-left: 7px;
+	z-index: 4;
+}
+
+#colorNavVertical {
+    position: fixed;
+    /* left: 1%; */
+    top: 76%;
+    float: left;
+    /* width: 100%; */
+}
+
+#colorNavVertical > ul {
+    margin: 0 auto;
+    float: left;
+    width: 100vw;
+}
+
+#colorNavVertical > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+    margin: 2.7%;
+    width: 3.5em;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNavVertical > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 170%;
+    /* padding: 0em; */
+}
+
+#colorNav > ul {
+    width: 100vw;
+    margin: 2% 0%;
+}
+
+#colorNav > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+    margin: 0.7%;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNav > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 190%;
+    padding: 2.5vw;
+}
+
+
+.icon-home-teme {
+    background-color: orange;
+    height: 74vh;
+    width: 100vw;
+    float: left;
+    position: relative;
+    margin-top: -136%;
+    display: none;
+}
+
+
+.tituloCurso {
+    font-size: 6em;
+    /* position: fixed; */
+}
+
+}
+
+#tituloCurso {
+    font-size: 3em;
+    font-family: monospace;
+}
+
+#subtituloCurso{
+	margin: 5px;
+	font-size: 2em;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 1vh;
+}
+ #temaCurso{
+
+font-size: 1.5em;
+
+font-family: monospace;
+    }
+
+
+@media (max-width: 320px),print{
+
+
+#colorNavVertical {
+    position: fixed;
+    /* left: 5%; */
+    top: 81%;
+    float: left;
+    width: 100%;
+}
+
+#colorNavVertical > ul {
+    margin: 0 auto;
+    float: left;
+    width: 100vw;
+}
+
+#colorNavVertical > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+    margin: 2.8%;
+    width: 3.5em;
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNavVertical > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 170%;
+    /* padding: 0em; */
+}
+
+#colorNav > ul {
+    width: 100vw;
+    margin: 2% 0%;
+}
+
+#colorNav > ul > li {
+    list-style: none;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+    display: inline-block;
+    line-height: 1;
+
+    border-radius: 3px;
+    position: relative;
+}
+
+#colorNav > ul > li > a {
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 170%;
+    padding: 6px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+.notasDiap{
+
+	width: 100%;
+	height: 65vh;
+
+}
+
+
+/*------------------------------
+Efectos de elementos
+
+---------------------------*/
+
+
+.rotate{
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg); // Mozilla
+  -o-transform: rotate(180deg); // Opera
+  -webkit-transform: rotate(180deg); // Webkit
+
+}
+
+
+.trancision{
+transition:all 2s linear 1s;
+  -webkit-transition: all 3s linear;
+ -moz-transition: all 3s linear;
+ -ms-transition: all 3s linear;
+}
+
+
+
+
+
+
+#contenedor{
+       /* background-image: url("../../text/text4.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+    }
+
+
+input[type="range" i] {
+ width: 100%;
+ color: red;
+ margin-top: 1%;
+ /* margin-left: -2px; */
+}
+
+video{
+	display: none;
+}
+
+canvas{
+	background: black;
+	width: 100%;
+	height: 100%;
+}
+
+.icon-home-teme{
+  height: auto;
+}
+@media (min-height:728px),print{
+	.videoContainer{
+		height: 53%!important;
+	}
+	.images{
+		height:43%!important;
+	}
+}
+@media (min-width: 1366px),print{
+		.videoContainer{
+			height: 70%;
+		}
+		.images{
+			height: 61%;
+			width: 33%;
+		}
+}
+
+
+@media (min-width: 2475),print{
+		.videoContainer{
+			height: 65%;
+		}
+		.images{
+			height: 54%;
+			width: 33%;
+		}
+}

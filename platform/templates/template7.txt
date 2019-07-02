@@ -1,0 +1,35 @@
+<div id="contenedorCurso" class="template4_selecttxt">
+<div class="den-popup-eliminarfile den-popup-estilo den-hide">
+      <span class="closethisPop">x</span>
+      <h2></h2>
+      <button type="button" name="button" class="closethisPop">Cancelar</button>
+			<button type="button" name="button" class="fake">Eliminar</button>
+</div>
+				<div style="width: 100%;">
+					<section id="tituloCurso" class="base-container-title">
+            <input type="text" name="title"  id="title" value="" class="base-title" autocomplete="off" onpaste="return false;" placeholder="Ingresa Un Nuevo Título">
+          </section>
+					<section id="subtituloCurso" class="base-container-subtitle" >
+            <input type="text" name="subtitle" id="subtitle" value="" class="base-subtitle" autocomplete="off" onpaste="return false;" placeholder="Ingresa un subtítulo">
+          </section>
+				</div>
+				<div class="template-sec1">
+        <div class="template-container">
+
+          <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id='helpTempParrafo'>?</div>
+          <div class="den-audio-container" >
+            <button type="button" id="btnSpeaker">Leer Texto</button>
+            <audio id="audioPlayback" controls>
+      	        <source id="audioSource" type="audio/mp3" src="">
+    		        <p id="result">result</p>
+            </audio>
+          </div>
+          <div class="page-wrapper box-content">
+            <textarea name="descripcionCurso" id="descripcionCursoPlantilla" class="content-template7" value="" placeholder="Ingresa Tu Texto"></textarea>
+          </div>
+          <!-- <div class="base-agregar-parrafo">
+              <textarea class='textarea-visible' name="descripcionCurso" id="descripcionCurso" placeholder='Escribe Un Texto'></textarea>
+          </div> -->
+        </div>
+				 <link rel="stylesheet" href="../css/template7.css" />
+         <script type="text/javascript" src="../js/template7.js"></script>

@@ -1,0 +1,77 @@
+<div class="popFitContainer pophalfcont">
+  <div class="closeRowBtnPop">
+      <button type="button" name="button">Cerrar <i class="fas fa-times-circle"></i></button>
+  </div>
+  <div class="whiteFintPop">
+    <div class="barraherramientaspop">
+        <button type="button" name="button" class="eventAction" data-course="" data-action="update" data-eid=""><i class="fas fa-edit editthispop"></i></button>
+        <button type="button" name="button" class="eventAction" data-course="" data-action="delete" data-eid=""><i class="fas fa-trash-alt"></i></button>
+    </div>
+    <div class="indivNc">
+       <label>Evento</label>
+      <input type="text" id="eventName" value="Nombre del Evento" class="disabledinput editableControl" disabled>
+    </div>
+   <div class="indivNc">
+     <label>Curso</label>
+     <input type="text" id="courseName" value="Nombre del Evento" class="editableControl" disabled>
+   </div>
+   <div class="indivNc">
+     <label>Descripción</label>
+     <textarea name="name" rows="8" id="eventDesc" cols="80" class="disabledtextarea editableControl" disabled></textarea>
+   </div>
+   <div class="indivNc">
+     <label>Fecha</label>
+     <label id="date" class="disabledinput editableControl"></label>
+   </div>
+   <div class="indivNc">
+     <label>Hora</label>
+     <div class="">
+       <div class="horainicial">
+         <input type="number" min="1" max="12" id="hourStart" class="disabledinput editableControl" disabled style="display: inline-block; width: auto;">
+         <p class="styleampnspan disbledampm editableControl" id="H1P" style="display: inline-block; width: auto;">PM</p>
+       </div>
+       <div class="horafinal">
+         <p class="forhoura">a</p>
+         <input type="number" min="1" max="12" id="hourEnd" class="disabledinput editableControl" disabled style="display: inline-block; width: auto;">
+         <p class="styleampnspan disbledampm editableControl" id="H2P" style="display: inline-block; width: auto;">PM</p>
+         <!-- <select class="selectohorariocont disabledSelect" name="" disabled>
+           <option value="1">01:00</option>
+           <option value="2">02:00</option>
+           <option value="3">03:00</option>
+           <option value="4">04:00</option>
+           <option value="5">05:00</option>
+           <option value="6">06:00</option>
+           <option value="7">07:00</option>
+           <option value="8">08:00</option>
+           <option value="9">09:00</option>
+           <option value="10">10:00</option>
+           <option value="11">11:00</option>
+           <option value="12">12:00</option>
+         </select>
+         <p class="styleampnspan disbledampm">PM</p>
+       </div>
+       <div class="horafinal">
+         <p class="forhoura">a</p>
+         <select class="selectohorariocont disabledSelect" name="" disabled>
+           <option value="1">01:59</option>
+           <option value="2">02:59</option>
+           <option value="3">03:59</option>
+           <option value="4">04:59</option>
+           <option value="5">05:59</option>
+           <option value="6">06:59</option>
+           <option value="7">07:59</option>
+           <option value="8">08:59</option>
+           <option value="9">09:59</option>
+           <option value="10">10:59</option>
+           <option value="11">11:59</option>
+           <option value="12">12:59</option>
+         </select>
+         <p class="styleampnspan disbledampm">PM</p> -->
+       </div>
+    </div>
+   </div>
+   <div class="bottompopcont displayhide">
+     <button type="button" name="button" class="greenbtncontorno eventAction" data-course="" data-action="save" data-eid="" id="btnEvent">Guardar</button>
+   </div>
+  </div>
+</div>

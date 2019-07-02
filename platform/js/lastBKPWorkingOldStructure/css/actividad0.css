@@ -1,0 +1,160 @@
+.act-column-right{
+  width: 72%;
+  display: inline-block;
+  margin-left: 20px;
+}
+.tipo-de-actividad{
+  height: 100%;
+}
+.den-popup-estilo button.act-plus-btnstyle{
+    display: inline-block;
+    margin: 20px 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    color: #8ad3a0;
+    font-size: 35px;
+}
+.den-popup-estilo button.act-plus-btnstyle:hover{
+  color: #6aaa7d;
+    background-color: transparent;
+  cursor: pointer;
+}
+input.act-input-question{
+  font-size: 20px;
+  font-weight: 400;
+  width: 85%;
+  margin: 10px 0;
+}
+input.act-valor-pregunta{
+margin-left: 10px;
+background-color: #555555;
+width: 100%;
+color: #fff;
+font-size: 16px;
+display: inline-block;
+padding: 10px;
+padding-right: 0;
+}
+.act-valor-hover{
+  position: relative;
+  display: inline-block;
+  width: 7%;
+}
+span.act-span-valor, span.act-span-valor:hover{
+  position: absolute;
+      top: -27px;
+      right: -104px;
+      width: 84px;
+      height: 32px;
+      color: #555;
+      border-radius: 10px;
+      padding: 3px 8px;
+      cursor: pointer;
+      background-color: #dbdbdb9e;
+      font-size: 10px;
+      text-align: center;
+      display: none;
+}
+.act-valor-hover:hover .act-span-valor{
+  display: block;
+}
+
+/* ////// BOTONES SECCIÓN */
+.act-btns-container{
+    width: fit-content;
+    display: inline-block;
+    float: right;
+}
+.den-popup-estilo button.act-green-btnstyle{
+      margin: 20px 20px;
+      padding: 10px;
+      background-color: #8ad3a0;
+      color: #fff;
+      font-size: 13px;
+      float: none;
+      width: 95px;
+      display: block;
+}
+.den-popup-estilo button.act-green-btnstyle:hover{
+  background-color: #6aaa7d;
+  cursor: pointer;
+}
+.act-valorSection{
+  position: relative;
+  width: 120px;
+  margin: auto;
+  margin-top: 40px;
+}
+.act-valorSection p{
+text-align: center;
+font-weight: 300;
+width: 95px;
+margin-top: 38px;
+margin: 10px auto;
+color: #fff;
+background-color: #555;
+letter-spacing: 3px;
+padding: 4px 0;
+}
+
+.containerValor {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-left: 8px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      cursor: pointer;
+      font-size: 12px;
+      width: 60px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+
+.containerValor input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+        display: none;
+}
+
+.checkmarkValor {
+      position: absolute;
+      top: 11px;
+      left: 9px;
+      height: 15px;
+      width: 15px;
+      background-color: #eee;
+      border-radius: 50%;
+}
+
+.containerValor:hover input ~ .checkmarkValor {
+    background-color: #ccc;
+}
+
+.containerValor input:checked ~ .checkmarkValor {
+    background-color: #555;
+}
+
+.checkmarkValor:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerValor input:checked ~ .checkmarkValor:after {
+    display: block;
+}
+
+.containerValor .checkmarkValor:after {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}

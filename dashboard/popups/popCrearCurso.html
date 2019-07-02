@@ -1,0 +1,143 @@
+<div class="popFitContainer">
+  <div class="closeRowBtnPop">
+      <button type="button" name="button">Cerrar <i class="fas fa-times-circle"></i></button>
+  </div>
+  <div class="whiteFintPop">
+   <h1>Nuevo Curso</h1>
+   <div class="posoforscrolcont">
+     <form id="fCreateCourse" name="fCreateCourse" method="post" enctype="multipart/form-data" action="php/storeCourse.php">
+       <div class="columnhalfpop">
+         <div class="indivNc">
+           <label>Nombre</label>
+           <input type="text" name="courseName" id="courseName" value="">
+           <input type="hidden" name="hidCurso" id="hidCurso" value="">
+         </div>
+         <div class="indivNc">
+           <label>Descripción</label>
+           <textarea name="courseDesc" id="courseDesc" rows="8" cols="80"></textarea>
+         </div>
+         <div class="indivNc">
+           <label>Categoría</label>
+           <select name="courseCategory" id="courseCategory">
+             <option value="1">Otro</option>
+             <option value="2">Salud</option>
+             <option value="3">Desarollo Humano</option>
+             <option value="4">Dirección de Proyectos</option>
+             <option value="5">Emprendimiento</option>
+             <option value="6">Educación</option>
+             <option value="7">Ingeniería</option>
+             <option value="8">Programación</option>
+             <option value="9">Diseño</option>
+             <option value="10">Finanzas</option>
+           </select>
+         </div>
+         <div class="indivNc">
+           <label>Portada</label>
+           <div class="questionMark">
+             <i class="fas fa-question-circle"></i>
+             <p>Sube una Imagen de 1800px x 1350px o Utiliza la predeterminada por categoría</p>
+           </div>
+            <div class="contPopPrevew"><img src="img/plantillau.png" id="previewImg" alt=""></div>
+           <div class="uploaddedContainer">
+                <input type="file" class="file" value="" id="portrait" name="portrait" accept="image/*">
+                <button for="file" class="fullblackbtn" type="button">Subir Imagen</button>
+                <input readonly="true" class="strNameFile" value="" type="text" id="hportrait" name="hportrait">
+          </div>
+          <div class="check-portada">
+            <i class="far fa-square"></i> Usar Portada Predeterminada Por Categoría
+          </div>
+         </div>
+         <div class="indivNc">
+           <label>Costo</label>
+           <div class="preciocontainer">
+             <i class="fas fa-dollar-sign"></i><input type="number" name="courseCost" id="courseCost" value="">
+           </div>
+         </div>
+
+         <div class="indivNc">
+           <label>Tag</label>   <div class="questionMark">
+                <i class="fas fa-question-circle"></i>
+                <p>Presiona Enter para agregar un Tag</p>
+              </div>
+          <div class="bgtagcontainer">
+
+          </div>
+           <input type="text" value="" class="tagkeydown">
+           <input type="hidden" value="" id="courseTag" name="courseTag">
+         </div>
+       </div>
+       <div class="columnhalfpop">
+         <div class="indivNc">
+           <label>Cursos Obligatorios</label>
+           <div class="questionMark">
+             <i class="fas fa-question-circle"></i>
+             <p>Selecciona los cursos que debío haber cursado previamente el usuario antes de tomar este curso.</p>
+           </div>
+           <div class="submenupopbgcont">
+             <button type="button" name="button" class="fullblackbtn submenupopbtn" id="spopCursorOblig">Seleccionar</button>
+             <div class="injectSubPopInfo">
+               <div class="subpop spwidthmedium" id="coursesCreateList">
+               </div>
+             </div>
+           </div>
+
+         </div>
+         <div class="indivNc">
+           <label>Streaming</label>
+          <div class="containertoggle">
+            <p class="negativetg">NO</p>
+            <div class="movetoggle">
+              <div class="mtggcontainer">
+                <div class="circletoggle">
+                </div><p>SÍ</p>
+              </div>
+
+            </div>
+          </div>
+         </div>
+         <div class="indivNc">
+           <label>Duración Total</label>
+           <div class="questionMark">
+             <i class="fas fa-question-circle"></i>
+             <p>Tiempo estimado que tarda un alumno en completar y aprobar este curso. Debe tener el formato "1:00"</p>
+           </div>
+           <div class="cursomininst"><input type="text" placeholder="1:00" name="totalCourseTime" value="" id="totalCourseTime" name="totalCourseTime" onkeyup=" this.value.match(/^([0-9]?[0-9]?([:]{1}[0-9]?[0-9]?)?)$/) ? this.value=this.value : this.value='' ;">
+            <!-- <p>Minutos</p> -->
+         </div>
+       </div>
+
+         <div class="indivNc">
+           <label>Duración de Multimedia</label>
+           <div class="questionMark">
+             <i class="fas fa-question-circle"></i>
+             <p>Esta información se irá completando conforme agregues contenido multimedia al curso</p>
+           </div>
+           <p class="pindivNc" id="duration">n/a</p>
+         </div>
+         <div class="indivNc">
+           <label>Actividades</label>
+           <div class="questionMark" >
+             <i class="fas fa-question-circle"></i>
+             <p>Esta información se irá completando conforme agregues actividades al curso</p>
+           </div>
+           <p class="pindivNc" id="totalAct">n/a</p>
+         </div>
+         <div class="indivNc">
+           <label>Estatus</label>
+           <div class="statuscontainerPop">
+             <p class="" id="statusOnCreate"></p>
+             <!-- <button type="button" name="button" class="fullblackbtn">Pausar</button> -->
+           </div>
+         </div>
+       </div>
+     </form>
+   </div>
+   <div class="bottompopcont">
+     <button type="button" name="button" class="greenbtncontorno" id="saveCourseDash">Guardar</button>
+   </div>
+  </div>
+</div>
+<script type="text/javascript">
+  myCourses.loadCoursesOnPoPUp();
+  myCourses.loadCategoriesOnPoPUp();
+</script>

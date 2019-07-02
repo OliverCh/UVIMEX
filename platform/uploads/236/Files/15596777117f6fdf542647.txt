@@ -1,0 +1,24 @@
+Ranking de C.
+C en cuestión de ranking va muy arriba en comparación a lenguajes aparentemente populares como Python y javascrpt. El lenguaje C va en los primeros lugares (seegundo) dado a que se usa como intermediario entre hardware y software. Junto a el se encuentran Java (primer lugar) y C++ junto a Python (tercer lugar)
+
+Ansi C
+Es un estándar de estructura de compilación de C, este le permite a los programas poder compilarse en cualquier plataforma que siga el estándar.
+
+tar zxvf: 
+z: Filtra el archivo por gzip
+x: Extraer del archivo
+v: verbose para decir lo que esta haciendo
+f: File, archivo al que se le harán las operaciones
+
+Inicio con lib:
+Se inicia con lib porque para que un programa compile, se requiere que todas sus librerias esten compiladas. Asi que iremos a lib a compilar las librerias
+
+Uso de ar. Significado de cr
+Crea, modifica y extrae de archivos. Estos archivos especiales pueden ayudar a crear librerias estaticas. Las opciones cr significan crear archivo y reemplazar aquellos archivos existentes por los nuevos
+
+que es I en: gcc -c -I../lib main.cpp
+-I = Include from ../lib
+
+g++ -o main main.o -L../lib -ltestlib
+-L directorio de libreria
+-ltestlib nombre de la libreria: archivo = libtestlib/se busca como = testlib

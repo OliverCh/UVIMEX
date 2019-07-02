@@ -1,0 +1,83 @@
+#lista5 {
+counter-reset: li;
+list-style: none;
+*
+list-style: decimal;
+font: 24px 'trebuchet MS', 'lucida sans';
+padding: 0;
+margin-bottom: 4em;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+margin: 6% 0 0 3%;
+
+}
+
+#lista5 ol {
+margin: 0 0 0 2em;
+}
+
+#lista5 {
+list-style-type: none;
+list-style-type: decimal !ie; /*IE 7- hack*/
+margin: 6%;
+margin-left: 12em;
+padding: 0;
+counter-reset: li-counter;
+}
+
+
+#lista5 > li{
+ position: relative;
+margin-bottom: 1.5em;
+padding-left: 4em;
+padding-top: 0.5em;
+/* background-color: #eaeaea; */
+padding-bottom: .5em;
+
+}
+
+
+#lista5 > li:before {
+position: absolute;
+top: -0.3em;
+left: -0.5em;
+width: 1.8em;
+height: 1.2em;
+font-size: 36px;
+line-height: 1.2;
+font-weight: bold;
+text-align: center;
+color: #464646;
+background-color: #d0d0d0;
+transform: rotate(-20deg);
+-ms-transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+z-index: 99;
+overflow: hidden;
+content: counter(li-counter);
+counter-increment: li-counter;
+}
+
+.themeFiles{
+  cursor:pointer;
+}
+
+#videoCurso{
+	border-radius:3%;
+}
+.tem-images-container img{
+	border-radius: 3%;
+}
+.input-range-span-video{
+	display: flex;
+  width: 100%;
+}
+.currentTimeMinutes{
+	display: inline-block;
+	width: auto;
+  margin: auto;
+	padding: 20px 0px;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  font-size: 13.5px;
+}

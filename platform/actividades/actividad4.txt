@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="../css/actividad4.css" />
+<div class="act-column-right">
+  <button class="click-fake-input">Sube la actividad</button>
+  <div class='act-container-activity'>
+
+    <input type='file' accept='image/*' onchange='readFileActivityUrl(this)' class='tem4-control den-hide'>
+    <div class='base-nameoffile'></div>
+  </div>
+
+</div>
