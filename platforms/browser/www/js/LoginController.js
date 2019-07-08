@@ -12,30 +12,64 @@ define(function(require){
 	};
 
 	publics.draw = function(){
-		container.load("login.html", function(login){
-			user_in = container.find("#user_in");
-			pass_in = container.find("#pass_in");
-			container.find('#login_submit').click(loginClick);
-		});
+		if(localStorage.getItem('user_id')){
+			$.post(masterPath + "autoLogin.php", {userID: localStorage.getItem('user_id')}, function(data){
+				if(data.login == true){
+					NavController.setHome();
+				}
+				else{
+					container.load("login.html", function(login){
+						user_in = container.find("#user_in");
+						pass_in = container.find("#pass_in");
+						container.find('#login_submit').click(loginClick);
+					});		
+				}
+			});
+		}
+		else{
+			container.load("login.html", function(login){
+				user_in = container.find("#user_in");
+				pass_in = container.find("#pass_in");
+				container.find('#login_submit').click(loginClick);
+			});
+		}
 	}
 
 
 	var loginClick = function(){
-		$.ajax({
-			type: "post",
-			url: "http://uvimex.mx/movile/php/uviMovil.php/login",
-			data: {usr: user_in.val(), pass: pass_in.val()},
-			contentType: "application/json",
-			dataType: "json",
-			success: function(data){
-				if(data.XD == true){
+		var usr = user_in.val();
+		var pass = pass_in.val();
 
+		if(usr == "" && pass == ""){
+			alert('Debes de llenar ambos campos');
+		}
+		else if(usr == ""){
+			alert('Debes de poner un nombre de usuario');
+		}
+		else if(pass == ""){
+			alert('Debes de poner una contraseña');
+		}
+		else{
+			$.ajax({
+				type: "POST",
+				url: "https://uvimex.com.mx/movimex/login.php",
+				data: {user: usr, pass: pass},
+				contentType: "application/json",
+				dataType: "json",
+				success: function(data){
+					if(data.login == "error"){
+						console.log(data);
+					}
+					else if(data.login == true){
+						localStorage.setItem('user_id', data.id);
+						NavController.setHome();
+					}
+					else if(data.login == false){
+						alert('Credenciales incorrectas');
+					}
 				}
-				else{
-
-				}
-			}
-		});
+			});
+		}
 	}
 	return publics;
 });
