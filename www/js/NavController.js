@@ -2,12 +2,12 @@ var NavController = (function(window, document, undefined){
 	var publics = {};
 	var screenStack = [];
 	var popStack = [];
-	var container = $("#container");
+	var container = null;
 
 	publics.pushScreen = function(obj, data){
 		screenStack.push(obj);
 		
-		var XD = obj.setContainer($("#content"))
+		var XD = obj.setContainer(container)
 		if(data){
 			XD.setData(data);
 		}
@@ -21,12 +21,17 @@ var NavController = (function(window, document, undefined){
 		// FALTA
 		screenStack.pop();
 		if(screenStack.length != 0){
-			var XD = screenStack[screenStack.length-1].setContainer($("#content"));
+			var XD = screenStack[screenStack.length-1].setContainer(container);
 			if(data){
 				XD.setData(data);
 			}
 			XD.draw();
 		}
+	}
+
+	publics.setContainer = function(cnt){
+		container = cnt;
+		return this;
 	}
 
 	publics.pushPop = function(CarritoController_Popup, id){

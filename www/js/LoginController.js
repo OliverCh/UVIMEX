@@ -15,7 +15,9 @@ define(function(require){
 		if(localStorage.getItem('user_id')){
 			$.post(masterPath + "autoLogin.php", {userID: localStorage.getItem('user_id')}, function(data){
 				if(data.login == true){
-					NavController.setHome();
+					require(["AppBaseController"], function(AppBaseController){
+						NavController.pushScreen(AppBaseController);
+					});
 				}
 				else{
 					container.load("login.html", function(login){
@@ -62,7 +64,7 @@ define(function(require){
 					}
 					else if(data.login == true){
 						localStorage.setItem('user_id', data.id);
-						NavController.setHome();
+						NavController.goHome();
 					}
 					else if(data.login == false){
 						alert('Credenciales incorrectas');
