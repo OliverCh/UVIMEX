@@ -15,9 +15,7 @@ define(function(require){
 		if(localStorage.getItem('user_id')){
 			$.post(masterPath + "autoLogin.php", {userID: localStorage.getItem('user_id')}, function(data){
 				if(data.login == true){
-					require(["AppBaseController"], function(AppBaseController){
-						NavController.pushScreen(AppBaseController);
-					});
+					goToApp();
 				}
 				else{
 					container.load("login.html", function(){
@@ -35,6 +33,12 @@ define(function(require){
 				container.find('#login_submit').click(loginClick);
 			});
 		}
+	}
+
+	var goToApp = function(){
+		require(["AppBaseController"], function(AppBaseController){
+			NavController.pushScreen(AppBaseController);
+		});
 	}
 
 
@@ -66,7 +70,7 @@ define(function(require){
 					}
 					else if(data.login == true){
 						localStorage.setItem('user_id', data.id);
-						NavController.goHome();
+						goToApp();
 					}
 					else if(data.login == false){
 						alert('Credenciales incorrectas');
