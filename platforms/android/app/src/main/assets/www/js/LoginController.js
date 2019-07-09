@@ -56,23 +56,21 @@ define(function(require){
 				type: "POST",
 				url: "https://uvimex.com.mx/movimex/login.php",
 				data: {user: usr, pass: pass},
-				contentType: "application/json",
 				dataType: "json",
 				error: function(jqXHR, textStatus, errorThrown){
 					console.log(jqXHR);
-					alert(errorThrown);
 				},
 				success: function(data){
 					if(data.login == "error"){
 						console.log(data);
 					}
 					else if(data.login == true){
+						alert('🅱ogueado como ' + usr);
 						localStorage.setItem('user_id', data.id);
 						NavController.goHome();
 					}
 					else if(data.login == false){
 						alert('Credenciales incorrectas');
-						alert(JSON.stringify(data));
 					}
 				}
 			});
