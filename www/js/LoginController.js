@@ -65,7 +65,6 @@ define(function(require){
 						console.log(data);
 					}
 					else if(data.login == true){
-						alert('🅱ogueado como ' + usr);
 						localStorage.setItem('user_id', data.id);
 						NavController.goHome();
 					}
