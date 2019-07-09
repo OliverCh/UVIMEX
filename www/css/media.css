@@ -1,0 +1,299 @@
+
+@media  only screen and (max-width: 1800px){
+  .logo-description img {
+      width: 300px;
+  }
+    .logo-description p {
+      font-size: 1.35em;
+  }
+  .texto-middlecont p{
+    font-size: 1.5em;
+  }
+  .texto-middlecont img {
+      width: 60px;
+  }
+  .half_paragraph {
+      width: 90%;
+      font-size: 1em;
+  }
+  .topservRow p{
+    font-size: 1em;
+  }
+  .topservRow img {
+      width: 60px;
+  }
+  .formcontacto input {
+      width: 80%;
+  }
+  .formcontacto textarea {
+      width: 80%;
+  }
+  .btnleft-cont {
+      width: 84%;
+  }
+  .formcontacto{
+    margin-left: 15%;
+  }
+}
+@media  only screen and (max-width: 1266px){
+  .texto-middlecont p{
+    color:#fff;
+    font-size: 1.2em;
+  }
+    .logo-description img {
+      width: 250px;
+    }
+  .containerMenu ul li{
+    margin: 0 7px;
+  }
+}
+@media  only screen and (max-width: 1044px){
+  .topnavul{
+    margin: 0;
+  }
+  #contactoBack .cener-leftcont {
+      margin-top: 40%;
+  }
+  .injectservicio{
+    width: 76%;
+    margin-left: 3%;
+  }
+}
+@media  only screen and (max-width: 991px){
+  .half-column {
+    width: 100%;
+  }
+  #contactoBack {
+    height: 30%;
+  }
+  #contactoBack .cener-leftcont {
+    margin-top: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .logo-description p {
+    font-size: 1em;
+  }
+  #contactoBack .logo-description{
+    display: inline-block;vertical-align: top;
+    width: 45%;
+  }
+  #contactoBack .info-bottom-cont{
+    display: inline-block;vertical-align: top;
+    width: 45%;
+    position: relative;
+  }
+  .logo-description img {
+    width: 180px;
+  }
+  form.formcontacto {
+    bottom: auto;
+    top: 5%;
+    margin-left: 26%;
+  }
+  .topservRow img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  .individualbtnServ {
+    font-size: 1em;
+  }
+  .arrow-right img, .arrow-left img{
+    width: 25px;
+  }
+  .half_paragraph {
+    width: 100%;
+  }
+  .nav-servicios-col {
+    width: 100%;
+  }
+  .individualbtnServ {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 70px;
+  }
+  .injectservicio {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+    border-top: 3px dotted #0068e6;
+    padding-top: 30px;
+    height: 300px;
+    }
+    #homeBack .cener-leftcont {
+        margin-top: 30%;
+    }
+    #homeBack .logo-description img {
+    width: 300px;
+   }
+     #homeBack .logo-description p {
+    font-size: 1.4em;
+    }
+    .texto-middlecont p {
+    color: #fff;
+    font-size: 1.6em;
+  }
+}
+@media  only screen and (max-width: 767px){
+  .logo-col {
+    width: 13%;
+    margin-bottom: 35px;
+  }
+  .formcontacto {
+    bottom: auto;
+    top: 8%;
+    margin-left: 20%;
+  }
+  form.formcontacto {
+    bottom: auto;
+    top: 5%;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+  }
+  #contactoBack .cener-leftcont {
+    padding-left: 40px;
+  }
+  .logo-description img {
+    width: 130px;
+  }
+  .logo-description p {
+    font-size: .8em;
+  }
+  .info-bottom-cont {
+    font-size: .9em;
+  }
+  .info-bottom-cont p{
+    margin-top:0;
+  }
+  #homeBack .logo-description img {
+    width: 230px;
+  }
+  .texto-middlecont p {
+      font-size: 1.2em;
+  }
+  .cont-col {
+    width: 85%;
+  }
+  .containerMenu ul li{
+    font-size: .7em;
+  }
+  .half_paragraph {
+    line-height: 1.8em;
+  }
+  .individualbtnServ {
+    margin-right: 56px;
+  }
+  .individualbtnServ:last-child{
+    margin:0;
+  }
+}
+@media  only screen and (max-width: 576px){
+  .containerMenu figure{
+        width: 50px;
+        border-radius: 0 0 0 10px;
+  }
+  .nav-general{
+    height: 45px;
+  }
+  .containerMenu figure img{
+    height: 60%;
+  }
+  .idiomacontainer{
+    width: 30%;
+  }
+  .containerMenu{
+    width: 70%;
+  }
+  .idiomacontainer button {
+    top: -4px;
+    right: 10px;
+    padding: 5px 7px;
+    font-size: .7em;
+ }
+ .fullheight-container {
+    padding-left:0;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+  .logo-description figure {
+    width: fit-content;
+    margin: auto;
+  }
+  #homeBack .logo-description p {
+    font-size: 1em;
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+  }
+  .texto-middlecont p {
+    font-size: 1em;
+    color: #0068e6;
+    letter-spacing: 1px;
+  }
+  .texto-middlecont img {
+    width: 39px;
+    margin-right: 0;
+  }
+  .texto-middlecont {
+    margin-top: 20px;
+  }
+  #homeBack .cener-leftcont {
+    position: absolute;
+    height: fit-content;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .arrow-right{
+        right: 15px;
+  }
+  .arrow-left{
+    left:15px;
+  }
+  .logo-col {
+    width: 20%;
+    margin-bottom: 26px;
+  }
+  .bgheight-container {
+    margin: auto;
+    width: 85%;
+    margin-top: 70px;
+  }
+  .cont-col {
+    width: 95%;
+    margin: 0;
+    margin-left: 15px;
+  }
+  .half_paragraph {
+      line-height: 1.7em;
+      font-size: .8em;
+  }
+  .individualbtnServ {
+    font-size: .8em;
+    margin-right: 46px;
+  }
+  .topservRow img {
+    width: 27px;
+    margin-right: 0;
+  }
+  .topservRow p {
+      font-size: 1em;
+      width: 90%;
+      font-size: .8em;
+  }
+  #contactoBack .logo-description figure {
+    margin-left: 0;
+  }
+  #contactoBack .cener-leftcont {
+    padding-left: 40px;
+    margin-top: 70px;
+  }
+    .arrow-right img, .arrow-left img {
+    width: 14px;
+  }
+}

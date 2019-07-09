@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>U V I M E X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="icon/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+  </head>
+  <body>
+  	<div id="content">
+  		
+  	</div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script type="text/javascript" src="js/NavController.js"></script>
+    <!-- <script type="text/javascript" src="js\script.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+				var masterPath = "https://uvimex.com.mx/movimex/";
+				$.ajaxSetup({
+					type: "pOst",
+					contentType: "application/json",
+					dataType: "json",
+					error: function(d){
+						console.log(d);
+					}
+				});
+				require.config({baseUrl: "js"});
+				require(["LoginController"], function(LoginController){
+					NavController.setContainer($("#content")).pushScreen(LoginController);
+				});
+			});
+    </script>
+  </body>
+</html>

@@ -20,7 +20,7 @@ define(function(require){
 					});
 				}
 				else{
-					container.load("login.html", function(login){
+					container.load("login.html", function(){
 						user_in = container.find("#user_in");
 						pass_in = container.find("#pass_in");
 						container.find('#login_submit').click(loginClick);
@@ -54,9 +54,12 @@ define(function(require){
 		else{
 			$.ajax({
 				type: "POST",
-				//url: "http://104.154.247.218/test.php",
 				url: "https://uvimex.com.mx/movimex/login.php",
 				data: {user: usr, pass: pass},
+				dataType: "json",
+				error: function(jqXHR, textStatus, errorThrown){
+					console.log(jqXHR);
+				},
 				success: function(data){
 					if(data.login == "error"){
 						console.log(data);
