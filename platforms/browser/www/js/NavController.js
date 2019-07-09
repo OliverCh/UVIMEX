@@ -1,33 +1,72 @@
 var NavController = (function(window, document, undefined){
 	var publics = {};
 	var screenStack = [];
-	var container = $("#container");
+	var popStack = [];
+	var container = null;
 
-	publics.pushScreen = function(obj){
+	publics.pushScreen = function(obj, data){
 		screenStack.push(obj);
-		obj.setContainer($("#content")).draw();
+		
+		var XD = obj.setContainer(container);
+		if(data){
+			XD = XD.setData(data);
+		}
+		XD = XD.draw();
 	}
 
-	publics.popScreen = function(){
+	publics.popScreen = function(data){
 		screenStack.pop();
-		if(screenStack.length == 0){
-			$("body").html("");
-			$("body").append("Stop it, find some help");
-		}
-		else{
-			screenStack[screenStack.length-1].setContainer($("#content")).draw();
+		if(screenStack.length != 0){
+			var XD = screenStack[screenStack.length-1].setContainer(container);
+			if(data){
+				XD = XD.setData(data);
+			}
+			XD = XD.draw();
 		}
 	}
 
-	publics.pushPop = function(CarritoController_Popup, id){
-		CarritoController_Popup.setContainer(container.prepend(`<div class="pop_"`+id+`></`)).draw();
+	publics.setContainer = function(cnt){
+		container = cnt;
+		return this;
+	}
+
+	publics.pushPop = function(popupObj, id, data){
+		popStack.push(popupObj);
+		popupObj.id = id;
+
+		var XD = popupObj.setContainer(container.prepend(`<div class="popop pop_"`+id+`></div>`));
+		if(data){
+			XD = XD.setData(data);
+		}
+
+		XD = XD.draw();
 	}
 
 	publics.popPop = function(id){
-		container.find("pop_"+id).endMyLife();
+		popStack.pop();
+		container.find(".pop_"+id).remove();
 	}
 
-	document.addEventListener("backbutton", publics.popScreen, false);
+	publics.setHome = function(){
+		screenStack = [];
+	}
+
+	publics.goHome = function(){
+		var screen = screenStack[0];
+		screenStack = [];
+		publics.pushScreen(screen);
+	}
+
+	var popSomething = function(){
+		if(popStack.length > 0){
+			popPop(popStack[popStack.length -1].id);
+		}
+		else{
+			popScreen();
+		}
+	}
+
+	document.addEventListener("backbutton", popSomething, false);
 
 	return publics;
 })(window, document);
