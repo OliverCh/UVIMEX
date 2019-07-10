@@ -36,7 +36,7 @@ define(function(require){
 	}
 
 	var goToApp = function(){
-		require(["AppBaseController"], function(AppBaseController){
+		window.require(["AppBaseController"], function(AppBaseController){
 			NavController.pushScreen(AppBaseController);
 		});
 	}

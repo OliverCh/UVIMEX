@@ -4,6 +4,7 @@ define(function(require){
 
 	//Controllers
 	var modulesContainer = null;
+	var f_back = null;
 	var myData;
 
 	publics.setContainer = function(cnt){
@@ -17,7 +18,7 @@ define(function(require){
 	}
 
 	publics.draw = function(){
-		screenContainer.load("Modules.html", function(){
+		screenContainer.load("secciones/moduloscursos.html", function(){
 			findFields();
 			setEvents();
 			getModules(function(d){
@@ -28,26 +29,35 @@ define(function(require){
 
 	var findFields = function(){
 		modulesContainer = screenContainer.find("#modulesContainer");
+		f_back = screenContainer.find(".f_back");
 	}
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
-			require(["WatchCourseController_pop"], function(WatchCourseController_pop){
 				var moduleID = $(this).data("id");
-				NavController.pushPopup(WatchCourseController_pop, "course",
+			require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+				NavController.pushPop(WatchCourseController_pop, "course",
 					{userID: localStorage.getItem("user_id"), moduleID: moduleID});
-				//window.location.href = `https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${id}`;
 			});
 		});
+		f_back.click(function(){NavController.popScreen();});
 	}
 
 	var loadModules = function(d){
+		modulesContainer.html("");
 		if(d == null){
 			modulesContainer.append(`Este curso no tiene modulos disponibles. El instructor subirá el contenido en un futuro.`);
 		}
 		for (var i = 0; i < d.length; i++) {
 			var v = d[i];
-			modulesContainer.append(`<li class="f_module" data-id="${v.idModulo}">${v.nombre}</li>`);
+			modulesContainer.append(
+			`
+			<div class="modulocontainer">
+				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p>${v.nombre}</p>
+				<button class="go-tomarcurso f_module" data-id="${v.idModulo}"><i class="fas fa-arrow-circle-right"></i></button>
+			</div>
+			`);
+			//modulesContainer.append(`<li class="f_module" data-id="${v.idModulo}">${v.nombre}</li>`);
 		}
 	}
 

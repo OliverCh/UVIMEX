@@ -34,7 +34,7 @@ var NavController = (function(window, document, undefined){
 		popStack.push(popupObj);
 		popupObj.id = id;
 
-		var XD = popupObj.setContainer(container.prepend(`<div class="popop pop_"`+id+`></div>`));
+		var XD = popupObj.setContainer(container.prepend(`<div class="popop pop_`+id+`"></div>`).find(`.pop_`+id+``));
 		if(data){
 			XD = XD.setData(data);
 		}

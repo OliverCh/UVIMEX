@@ -38,7 +38,7 @@ body{
   font-family: 'OpenSansRegular';
   overflow-y: hidden;
 }
-.bgfullcont {
+.login-bgfullcont {
     background: #fff;
     width: 80%;
     margin: auto;
@@ -54,7 +54,7 @@ body{
     box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.08);
     padding-bottom: 20px;
 }
-.bgfullcont figure {
+.login-bgfullcont figure {
     margin: 0;
     background-color: #000;
     height: 50px;
@@ -62,7 +62,7 @@ body{
     position: relative;
     border-radius: 10px 10px 0 0;
 }
-.bgfullcont figure img{
+.login-bgfullcont figure img{
   height: 90%;
   position: absolute;
   margin: auto;
@@ -71,7 +71,7 @@ body{
   right: 0;
   left: 0;
 }
-.bgfullcont h2 {
+.login-bgfullcont h2 {
     text-align: center;
     letter-spacing: 4px;
     font-family: 'OpenSansBold';
@@ -97,7 +97,7 @@ body{
     background-color: #e2e2e2;
     border: none;
 }
-.stylelink {
+.login-stylelink {
     display: block;
     margin: auto;
     margin-bottom: 10px;
@@ -107,7 +107,7 @@ body{
     color: var(--colorTitles);
     cursor: pointer;
 }
-.styleSend {
+.login-styleSend {
     margin: auto;
     display: block;
     margin-bottom: 25px;

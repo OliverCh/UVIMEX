@@ -17,9 +17,9 @@ define(function(require){
 	}
 
 	publics.draw = function(){
-		var moduleID = data.moduleID;
-		var userID = data.userID;
-		screenContainer.prepend(`https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${userID}`);
+		var moduleID = myData.moduleID;
+		var userID = myData.userID;
+		screenContainer.prepend(`<iframe src="https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${userID}"></iframe>`);
 	}
 	
 	return publics;

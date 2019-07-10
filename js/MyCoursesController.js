@@ -35,7 +35,7 @@ define(function(require){
 	var setEvents = function(){
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
-			requiere(["ModulesController"], function(ModulesController){
+			require(["ModulesController"], function(ModulesController){
 				NavController.pushScreen(ModulesController, idCourse);
 			});
 		});
@@ -54,12 +54,11 @@ define(function(require){
 			var v = d[i];
 			courseContainer.append(
 			`<div class="indiv-displaycurso">
-				<div class="curso-imagecontainer">
-					<img src="https://uvimex.com.mx/dashboard/dashboard/assets/courseAssets/${v.idUsuario}/${v.idCurso}/portraits/${v.urlPortada}">
+				<div class="curso-imagecontainer" style="background-image: url('https://uvimex.com.mx/dashboard/dashboard/assets/courseAssets/${v.idUsuario}/${v.idCurso}/portraits/${v.urlPortada}');">
 				</div>
 				<div class="curso-infocont">
-					<p class="categoria">Categoría</p>
-					<h3>Titulo Generico Largo Para probar Donde Se Corta</h3>
+					<p class="categoria">${v.strCategoria}</p>
+					<h3>${v.nombre}</h3>
 				</div>
 				<button class="go-to-curso full-color-btn f_course" data-id="${v.idCurso}"><i class="fas fa-book"></i> Ir al Curso</button>
 				<button class="showme-info-btn"><i class="fas fa-arrow-circle-right"></i></button>
@@ -76,7 +75,7 @@ define(function(require){
 		console.log("XD");
 		$.ajax({
 			url: masterPath + "movileComms.php",
-			data: null,
+			data: {idUser: localStorage.getItem("user_id")},
 			success: callback
 		});
 	}
