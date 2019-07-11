@@ -19,6 +19,7 @@ define(function(require){
 	publics.draw = function(){
 		var moduleID = myData.moduleID;
 		var userID = myData.userID;
+		screen.orientation.lock('landscape-primary');
 		screenContainer.prepend(`<iframe src="https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${userID}"></iframe>`);
 	}
 	

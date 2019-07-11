@@ -4,6 +4,32 @@ var NavController = (function(window, document, undefined){
 	var popStack = [];
 	var container = null;
 
+	var popScreen = function(data){
+		if(screenStack.length != 1){
+			screenStack.pop();
+			var XD = screenStack[screenStack.length-1].setContainer(container);
+			if(data){
+				XD = XD.setData(data);
+			}
+			XD = XD.draw();
+		}
+	};
+
+	var popSomething = function(){
+		if(popStack.length > 0){
+			screen.orientation.unlock();
+			popPop(popStack[popStack.length -1].id);
+		}
+		else{
+			popScreen();
+		}
+	};
+
+	var popPop = function(id){
+		popStack.pop();
+		container.find(".pop_"+id).remove();
+	};
+
 	publics.pushScreen = function(obj, data){
 		screenStack.push(obj);
 		
@@ -12,23 +38,13 @@ var NavController = (function(window, document, undefined){
 			XD = XD.setData(data);
 		}
 		XD = XD.draw();
-	}
+	};
 
-	publics.popScreen = function(data){
-		screenStack.pop();
-		if(screenStack.length != 0){
-			var XD = screenStack[screenStack.length-1].setContainer(container);
-			if(data){
-				XD = XD.setData(data);
-			}
-			XD = XD.draw();
-		}
-	}
 
 	publics.setContainer = function(cnt){
 		container = cnt;
 		return this;
-	}
+	};
 
 	publics.pushPop = function(popupObj, id, data){
 		popStack.push(popupObj);
@@ -40,31 +56,30 @@ var NavController = (function(window, document, undefined){
 		}
 
 		XD = XD.draw();
-	}
+	};
 
-	publics.popPop = function(id){
-		popStack.pop();
-		container.find(".pop_"+id).remove();
-	}
 
 	publics.setHome = function(){
 		screenStack = [];
-	}
+	};
 
 	publics.goHome = function(){
 		var screen = screenStack[0];
 		screenStack = [];
 		publics.pushScreen(screen);
-	}
+	};
 
-	var popSomething = function(){
+	publics.popSomething = function(){
 		if(popStack.length > 0){
 			popPop(popStack[popStack.length -1].id);
 		}
 		else{
 			popScreen();
 		}
-	}
+	};
+
+	publics.popScreen = popScreen;
+	publics.popPop = popPop;
 
 	document.addEventListener("backbutton", popSomething, false);
 
