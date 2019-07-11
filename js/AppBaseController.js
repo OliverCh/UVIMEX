@@ -1,6 +1,7 @@
 define(function(require){
 	var publics = {};
 	var container = null;
+	var nav = new NavController();
 
 	//Controllers
 	var nav_buttons = null;
@@ -12,13 +13,16 @@ define(function(require){
 
 	publics.draw = function(){
 		container.load("appBase.html" ,function(){
-			NavController.setHome();
-			NavController.setContainer(container.find("#appContent"));
-			console.log(container.find("#appContent"));
+			nav.setContainer(container.find("#appContent"));
 			loadMyCourses();
+
 			findFields();
 			setEvents();
 		});
+	}
+
+	publics.popSubscreen = function(){
+		nav.popScreen();
 	}
 
 	var findFields = function(){
@@ -32,7 +36,7 @@ define(function(require){
 	var loadMyCourses = function(){
 		require(["MyCoursesController"], function(MyCoursesController){
 			console.log("XD");
-			NavController.pushScreen(MyCoursesController);
+			nav.pushScreen(MyCoursesController);
 		});
 	}
 
@@ -49,7 +53,7 @@ define(function(require){
 			screen = screen[1];
 			switch(screen){
 				case "miscursos":
-					NavController.pushScreen(MyCoursesController);
+					loadMyCourses();
 					break;
 				case "allcursos":
 

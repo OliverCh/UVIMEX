@@ -1,13 +1,14 @@
-var NavController = function(){
+var NavController = (function(window, document, undefined){
 	var publics = {};
 	var screenStack = [];
-	var popStack = [];
-	var container = null;
+	var container = $("#appContent");
 
 	publics.pushScreen = function(obj, data, load = true){
 		screenStack.push(obj);
+		if(screenStack.length > 0)
+			screenStack[screenStack.length-1].setBackground(true);
 		
-		var XD = obj.setContainer(container).setParentNav(this);
+		var XD = obj.setContainer(container);
 		if(data){
 			XD = XD.setData(data);
 		}
@@ -21,11 +22,13 @@ var NavController = function(){
 		}
 		
 		if(screenStack.length != 0){
+			screenStack[screenStack.length-1].setBackground(false);
 			var XD = screenStack[screenStack.length-1].setContainer(container);
 			if(data){
 				XD = XD.setData(data);
 			}
 			XD = XD.draw();
+			XD = XD.setNav()
 		}
 	}
 
@@ -74,7 +77,11 @@ var NavController = function(){
 		}
 	}
 
-	document.addEventListener("backbutton", popSomething, false);
+	document.addEventListener("backbutton", popClicked, false);
+
+	var popClicked = function(){
+		screenStack[screenStack.length-1].popSubscreen();
+	}
 
 	return publics;
-};
+})(window, document);

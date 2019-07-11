@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/lib/require.js"></script>
-    <script type="text/javascript" src="js/NavController.js"></script>
+    <script type="text/javascript" src="js/NavMaster.js"></script>
     <!-- <script type="text/javascript" src="js\script.js"></script> -->
     <script type="text/javascript">
 			window.masterPath = "http://uvimex.com.mx/movimex/";
@@ -36,7 +36,7 @@
 				});
 				require.config({baseUrl: "js"});
 				require(["LoginController"], function(LoginController){
-					NavController.setContainer($("#content")).pushScreen(LoginController);
+					NavMaster.setContainer($("#content")).pushScreen(LoginController);
 				});
 			});
     </script>

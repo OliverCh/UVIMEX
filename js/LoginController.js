@@ -37,7 +37,8 @@ define(function(require){
 
 	var goToApp = function(){
 		window.require(["AppBaseController"], function(AppBaseController){
-			NavController.pushScreen(AppBaseController);
+			NavMaster.setHome();
+			NavMaster.pushScreen(AppBaseController);
 		});
 	}
 

@@ -1,6 +1,7 @@
 define(function(require){
 	var publics = {};
 	var screenContainer = null;
+	var parentNav = null;
 
 	//Controllers
 	var courseContainer = null;
@@ -28,6 +29,10 @@ define(function(require){
 		});
 	}
 
+	publics.setParentNav = function(nav){
+		parentNav = nav;
+	}
+
 	var findFields = function(){
 		courseContainer = screenContainer.find("#courseContainer");
 	}
@@ -36,7 +41,7 @@ define(function(require){
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
 			require(["ModulesController"], function(ModulesController){
-				NavController.pushScreen(ModulesController, idCourse);
+				parentNav.pushScreen(ModulesController, idCourse);
 			});
 		});
 	}

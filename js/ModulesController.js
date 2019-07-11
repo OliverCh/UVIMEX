@@ -1,6 +1,7 @@
 define(function(require){
 	var publics = {};
 	var screenContainer = null;
+	var parentNav = null;
 
 	//Controllers
 	var modulesContainer = null;
@@ -15,6 +16,10 @@ define(function(require){
 	publics.setData = function(data){
 		myData = data;
 		return this;
+	}
+
+	publics.setParentNav = function(nav){
+		parentNav = nav;
 	}
 
 	publics.draw = function(){
@@ -35,6 +40,15 @@ define(function(require){
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
 				var moduleID = $(this).data("id");
+
+			require(["AppBaseController", "CourseBaseController"], function(AppBaseController, CourseBaseController){
+				NavMaster.pushScreen();
+				NavController.setHome();
+				NavController.setContainer($("#appContent"));
+				NavController.pushStack(AppBaseController, undefined, false);
+				NavController.pushStack(CourseBaseController);
+			});			
+
 			require(["WatchCourseController_pop"], function(WatchCourseController_pop){
 				NavController.pushPop(WatchCourseController_pop, "course",
 					{userID: localStorage.getItem("user_id"), moduleID: moduleID});
