@@ -46,6 +46,14 @@ define(function(require){
 				parentNav.pushScreen(ModulesController, idCourse);
 			});
 		});
+
+		courseContainer.on('click', '.course_details', function(){
+			var idCourse = $(this).data("id");
+			require(["detailsController"], function(detailsController){
+				detailsController.setParentNav(parentNav);
+				parentNav.pushScreen(detailsController, idCourse);
+			});
+		});
 	}
 
 	var loadCourses = function(d){
@@ -68,7 +76,7 @@ define(function(require){
 					<h3>${v.nombre}</h3>
 				</div>
 				<button class="go-to-curso full-color-btn f_course" data-id="${v.idCurso}"><i class="fas fa-book"></i> Ir al Curso</button>
-				<button class="showme-info-btn"><i class="fas fa-arrow-circle-right"></i></button>
+				<button class="showme-info-btn course_details" data-id="${v.idCurso}"><i class="fas fa-arrow-circle-right"></i></button>
 			</div>`);
 
 			/*courseContainer.append(`<li class="f_course" data-id="${v.idCurso}">
