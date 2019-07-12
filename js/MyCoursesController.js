@@ -31,6 +31,7 @@ define(function(require){
 
 	publics.setParentNav = function(nav){
 		parentNav = nav;
+		return this;
 	}
 
 	var findFields = function(){
@@ -41,6 +42,7 @@ define(function(require){
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
 			require(["ModulesController"], function(ModulesController){
+				ModulesController.setParentNav(parentNav);
 				parentNav.pushScreen(ModulesController, idCourse);
 			});
 		});

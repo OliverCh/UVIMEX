@@ -41,12 +41,14 @@ define(function(require){
 		modulesContainer.on("click", ".f_module",function(){
 				var moduleID = $(this).data("id");
 
-			require(["AppBaseController", "CourseBaseController"], function(AppBaseController, CourseBaseController){
-				NavMaster.pushScreen();
-				NavController.setHome();
+			require(["CourseBaseController"], function(CourseBaseController){
+
+				NavMaster.pushScreen(CourseBaseController);
+				/*
 				NavController.setContainer($("#appContent"));
 				NavController.pushStack(AppBaseController, undefined, false);
 				NavController.pushStack(CourseBaseController);
+				*/
 			});			
 
 			require(["WatchCourseController_pop"], function(WatchCourseController_pop){

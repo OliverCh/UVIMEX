@@ -22,11 +22,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/lib/require.js"></script>
     <script type="text/javascript" src="js/NavMaster.js"></script>
+    <script type="text/javascript" src="js/NavController.js"></script>
     <!-- <script type="text/javascript" src="js\script.js"></script> -->
     <script type="text/javascript">
 			window.masterPath = "http://uvimex.com.mx/movimex/";
       $(document).ready(function(){
-				window.masterPath = "https://uvimex.com.mx/movimex/";
 				$.ajaxSetup({
 					type: "pOst",
 					dataType: "json",
@@ -36,6 +36,7 @@
 				});
 				require.config({baseUrl: "js"});
 				require(["LoginController"], function(LoginController){
+          LoginController.setContainer($("#content"));
 					NavMaster.setContainer($("#content")).pushScreen(LoginController);
 				});
 			});

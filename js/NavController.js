@@ -3,11 +3,13 @@ var NavController = function(){
 	var screenStack = [];
 	var popStack = [];
 	var container = null;
+	var self = this;
 
 	publics.pushScreen = function(obj, data, load = true){
+		console.log(obj);
 		screenStack.push(obj);
 		
-		var XD = obj.setContainer(container).setParentNav(this);
+		var XD = obj.setContainer(container);
 		if(data){
 			XD = XD.setData(data);
 		}
@@ -74,7 +76,7 @@ var NavController = function(){
 		}
 	}
 
-	document.addEventListener("backbutton", popSomething, false);
+//	document.addEventListener("backbutton", popSomething, false);
 
 	return publics;
 };

@@ -35,7 +35,7 @@ define(function(require){
 
 	var loadMyCourses = function(){
 		require(["MyCoursesController"], function(MyCoursesController){
-			console.log("XD");
+			MyCoursesController.setParentNav(nav);
 			nav.pushScreen(MyCoursesController);
 		});
 	}

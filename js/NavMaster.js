@@ -1,13 +1,13 @@
-var NavController = (function(window, document, undefined){
+var NavMaster = (function(window, document, undefined){
 	var publics = {};
 	var screenStack = [];
 	var container = $("#appContent");
 
 	publics.pushScreen = function(obj, data, load = true){
-		screenStack.push(obj);
-		if(screenStack.length > 0)
+		if(screenStack.length != 0)
 			screenStack[screenStack.length-1].setBackground(true);
 		
+		screenStack.push(obj);
 		var XD = obj.setContainer(container);
 		if(data){
 			XD = XD.setData(data);
