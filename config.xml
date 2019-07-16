@@ -16,8 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="Fullscreen" value="true" />
-    <preference name="DisallowOverscroll" value="true"/>
+
     <platform name="android">
         <allow-intent href="market:*" />
         <icon src="icons/logo_36.png" density="ldpi" />
