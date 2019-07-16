@@ -1,6 +1,7 @@
 define(function(require){
 	var publics = {};
 	var container = null;
+	var me = this;
 
 	//Controllers
 	var user_in = null;
@@ -37,8 +38,7 @@ define(function(require){
 
 	var goToApp = function(){
 		window.require(["AppBaseController"], function(AppBaseController){
-			NavMaster.setHome();
-			NavMaster.pushScreen(AppBaseController);
+			NavMaster.setHome(AppBaseController);
 		});
 	}
 

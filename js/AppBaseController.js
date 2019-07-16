@@ -5,6 +5,7 @@ define(function(require){
 
 	//Controllers
 	var nav_buttons = null;
+	var myData = "";
 
 	publics.setContainer = function(cnt){
 		container = cnt;
@@ -13,12 +14,25 @@ define(function(require){
 
 	publics.draw = function(){
 		container.load("appBase.html" ,function(){
+			alturaInjec();
 			nav.setContainer(container.find("#appContent"));
-			loadMyCourses();
 
 			findFields();
 			setEvents();
+
+			if(nav.isStackEmpty())
+				loadMyCourses();
+			else
+				nav.reloadActual();
 		});
+	}
+
+	publics.setData = function(data){
+		if(data.restartNav && data.restartNav === true){
+			nav.goHome();
+		}
+		myData = data;
+		return this;
 	}
 
 	publics.popSubscreen = function(){

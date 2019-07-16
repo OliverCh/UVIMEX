@@ -79,7 +79,6 @@ define(function(require){
 	}
 
 	var getCourses = function(callback){
-		console.log("XD");
 		$.ajax({
 			url: masterPath + "movileComms.php",
 			data: {idUser: localStorage.getItem("user_id")},

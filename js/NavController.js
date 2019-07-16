@@ -10,7 +10,7 @@ var NavController = function(){
 		screenStack.push(obj);
 		
 		var XD = obj.setContainer(container);
-		if(data){
+		if(data !== undefined){
 			XD = XD.setData(data);
 		}
 		if(load)
@@ -24,7 +24,7 @@ var NavController = function(){
 		
 		if(screenStack.length != 0){
 			var XD = screenStack[screenStack.length-1].setContainer(container);
-			if(data){
+			if(data !== undefined){
 				XD = XD.setData(data);
 			}
 			XD = XD.draw();
@@ -40,12 +40,14 @@ var NavController = function(){
 		return this;
 	}
 
-	publics.pushPop = function(popupObj, id, data){
+	publics.pushPop = function(popupObj, id, data, customClass="popop"){
 		popStack.push(popupObj);
 		popupObj.id = id;
 
-		var XD = popupObj.setContainer(container.prepend(`<div class="popop pop_`+id+`"></div>`).find(`.pop_`+id+``));
-		if(data){
+		var XD = popupObj.setContainer(container.prepend(`
+			<div class="${customClass} pop_`+id+`" style="z-index:${popStack.length*10};"></div>`).find(`.pop_${id}`)
+		);
+		if(data !== undefined && data !== null){
 			XD = XD.setData(data);
 		}
 
@@ -57,14 +59,32 @@ var NavController = function(){
 		container.find(".pop_"+id).remove();
 	}
 
-	publics.setHome = function(){
+	publics.setHome = function(obj){
+		if(!obj){
+			console.error("SetHome debe tener una pantalla", 
+				console.trace());
+		}
 		screenStack = [];
+		publics.pushScreen(obj);
 	}
 
 	publics.goHome = function(){
 		var screen = screenStack[0];
 		screenStack = [];
 		publics.pushScreen(screen);
+	}
+
+	publics.isStackEmpty = function(){
+		return screenStack.length == 0;
+	}
+
+	publics.reloadActual = function(){
+		getLast()	.setContainer(container)
+					.draw();
+	}
+
+	var getLast = function(){
+		return screenStack[screenStack.length-1];
 	}
 
 	var popSomething = function(){

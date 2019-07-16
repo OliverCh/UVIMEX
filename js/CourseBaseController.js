@@ -2,9 +2,11 @@ define(function(require){
 	var publics = {};
 	var container = null;
 	var nav = new NavController();
+	var me = this;
 
 	//Controllers
 	var nav_buttons = null;
+	var myData = "";
 
 	publics.setContainer = function(cnt){
 		container = cnt;
@@ -12,16 +14,29 @@ define(function(require){
 	};
 
 	publics.draw = function(){
-		container.load("moduloCursos.html" ,function(){
-			nav.setContainer(container.find("#appContent"));
+		container.load("secciones/platform/courseBase.html" ,function(){
+			var courseContent = container.find("#courseContent");
+			nav.setContainer(courseContent);
+			alturaInjecInfo(courseContent);
 
 			findFields();
 			setEvents();
+			console.log(myData);
+			loadModule(myData);
 		});
 	}
 
+	publics.setData = function(data){
+		console.log(data);
+		if(data.moduleID){
+			myData = data;
+			console.log(myData);
+		}
+		return this;
+	}
+
 	publics.popSubscreen = function(){
-		nav.popScreen();
+		nav.popSomething();
 	}
 
 	var findFields = function(){
@@ -32,44 +47,68 @@ define(function(require){
 		nav_buttons.click(navClick);
 	}
 
-	// var loadMyCourses = function(){
-	// 	require(["MyCoursesController"], function(MyCoursesController){
-	// 		MyCoursesController.setParentNav(nav);
-	// 		nav.pushScreen(MyCoursesController);
-	// 	});
-	// }
+	var loadModule = function(idModule){
+		require(["ModuleController"], function(ModuleController){
+			var button = container.find("#nav_modulo");
+			var barrita = container.find(".barrita-select-gen");
+			
+			button.addClass('bottom_btn_slct');
+			var position = button.parent().offset();
+			position = (position.left);
+			barrita.animate({
+				left:0
+			},800);
+
+			ModuleController.setParentNav(nav);
+			console.log(idModule);
+			nav.pushScreen(ModuleController, idModule);
+		});
+	}
+
+	var loadCourse = function(){
+		NavMaster.popScreen();
+	}
+
+	var loadStart = function(){
+		NavMaster.popScreen({restartNav: true});
+	}
 
 	var navClick = function(){
-		if(!$(this).hasClass('bottom_btn_slct')){
+		console.log("clicked bottom");
+		nav_buttons.removeClass('bottom_btn_slct');
+		$(this).addClass('bottom_btn_slct');
 
-			nav_buttons.removeClass('bottom_btn_slct');
-			$(this).addClass('bottom_btn_slct');
-
-			var position = $(this).parent().offset();
-			position = (position.left);
-			var screen = $(this).attr('id');
-			screen = screen.split('_');
-			screen = screen[1];
-			switch(screen){
-				case "miscursos":
-					loadMyCourses();
-					break;
-				case "allcursos":
-
-					break;
-				case "inicial":
-					break;
-			}
-			container.find('.barrita-select').animate({
-				left:position
-			},800);
+		var position = $(this).parent().offset();
+		position = (position.left);
+		var screen = $(this).attr('id');
+		screen = screen.split('_');
+		screen = screen[1];
+		switch(screen){
+			case "volver":
+				loadStart();
+				break;
+			case "modulo":
+				loadModule(myData);
+				break;
+			case "micursos":
+				loadCourse();
+				break;
 		}
+		container.find('.barrita-select').animate({
+			left:position
+		},800);
 	}
 
 	// FUncs Mei
 	function alturaInjec(){
     	var altura = $(window).height()-100;
 	    $('.inject-information').height(altura);
+	}
+
+	// tamaño de Inject
+	function alturaInjecInfo(container){
+		var altura = $(window).height()-50;
+		container.height(altura);
 	}
 
 	return publics;

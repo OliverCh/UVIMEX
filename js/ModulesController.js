@@ -20,6 +20,7 @@ define(function(require){
 
 	publics.setParentNav = function(nav){
 		parentNav = nav;
+		return this;
 	}
 
 	publics.draw = function(){
@@ -39,22 +40,19 @@ define(function(require){
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
-				var moduleID = $(this).data("id");
+			var moduleID = $(this).data("id");
+			var moduleName = $(this).parent().find(".moduleName").html();
 
 			require(["CourseBaseController"], function(CourseBaseController){
 
-				NavMaster.pushScreen(CourseBaseController);
+				console.log(moduleID);
+				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName});
 				/*
 				NavController.setContainer($("#appContent"));
 				NavController.pushStack(AppBaseController, undefined, false);
 				NavController.pushStack(CourseBaseController);
 				*/
 			});			
-
-			require(["WatchCourseController_pop"], function(WatchCourseController_pop){
-				NavController.pushPop(WatchCourseController_pop, "course",
-					{userID: localStorage.getItem("user_id"), moduleID: moduleID});
-			});
 		});
 		f_back.click(function(){NavController.popScreen();});
 	}
@@ -69,7 +67,7 @@ define(function(require){
 			modulesContainer.append(
 			`
 			<div class="modulocontainer">
-				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p>${v.nombre}</p>
+				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p class="moduleName">${v.nombre}</p>
 				<button class="go-tomarcurso f_module" data-id="${v.idModulo}"><i class="fas fa-arrow-circle-right"></i></button>
 			</div>
 			`);
