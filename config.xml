@@ -29,5 +29,22 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <icon src="icons/logo_180.png" width="180" height="180" />
+        <icon src="icons/logo_60.png" width="60" height="60" />
+        <icon src="icons/logo_120.png" width="120" height="120" />
+        <icon src="icons/logo_76.png" width="76" height="76" />
+        <icon src="icons/logo_152.png" width="152" height="152" />
+        <icon src="icons/logo_40.png" width="40" height="40" />
+        <icon src="icons/logo_80.png" width="80" height="80" />
+        <icon src="icons/logo_58.png" width="57" height="57" />
+        <icon src="icons/logo_120.png" width="114" height="114" />
+        <icon src="icons/logo_72.png" width="72" height="72" />
+        <icon src="icons/logo_144.png" width="144" height="144" />
+        <icon src="icons/logo_167.png" width="167" height="167" />
+        <icon src="icons/logo_36.png" width="29" height="29" />
+        <icon src="icons/logo_58.png" width="58" height="58" />
+        <icon src="icons/logo_87.png" width="87" height="87" />
+        <icon src="icons/logo_58.png" width="50" height="50" />
+        <icon src="icons/logo_167.png" width="167" height="167" />
     </platform>
 </widget>
