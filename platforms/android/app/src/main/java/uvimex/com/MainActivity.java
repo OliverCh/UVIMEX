@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.uvimex.cursos;
+package uvimex.com;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

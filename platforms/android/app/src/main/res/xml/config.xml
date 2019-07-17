@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.uvimex.cursos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="uvimex.com" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
@@ -7,12 +7,12 @@
     <feature name="CDVOrientation">
         <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
     </feature>
-    <name>Uvicursos</name>
+    <name>Uvimex</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Aplicacion para consumo de cursos de plataforma Uvimex
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="m.rivas@denlin.com.mx" href="https://uvimex.com.mx">
+        UVIMEX
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -23,5 +23,11 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon density="ldpi" src="icons/logo_36.png" />
+    <icon density="mdpi" src="icons/logo_48.png" />
+    <icon density="hdpi" src="icons/logo_72.png" />
+    <icon density="xhdpi" src="icons/logo_96.png" />
+    <icon density="xxhdpi" src="icons/logo_144.png" />
+    <icon density="xxxhdpi" src="icons/logo_192.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>
