@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="uvimex.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CDVOrientation">
+        <param name="android-package" value="cordova.plugins.screenorientation.CDVOrientation" />
+    </feature>
+    <name>Uvimex</name>
+    <description>
+       App de cursos Uvimex
+    </description>
+    <author email="m.rivas@denlin.com.mx" href="https://uvimex.com.mx">
+        Uvimex
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="icons/android/mipmap-ldpi/ic_launcher.png" />
+    <icon density="mdpi" src="icons/android/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="icons/android/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="icons/android/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="icons/android/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="icons/android/mipmap-xxxhdpi/ic_launcher.png" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>
