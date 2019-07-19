@@ -43,7 +43,7 @@
         <icon src="icons/ios/icon-App-40x40@1x.png" width="40" height="40" />
         <icon src="icons/ios/icon-App-40x40@2x.png" width="80" height="80" />
         <!-- iPad -->
-        <icon src="icons/ios/icon-App-72@1x.png" width="72" height="72" />
+        <icon src="icons/ios/icon-App-72.png" width="72" height="72" />
         <icon src="icons/ios/icon-App-72@2x.png" width="144" height="144" />
         <!-- iPad Pro -->
         <icon src="icons/ios/icon-App-83.5x83.5@x2.png" width="167" height="167" />
