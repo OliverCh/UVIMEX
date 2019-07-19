@@ -1,5 +1,7 @@
 define(function(require){
 
+	var imageTemplate = `<img class="f_image t1--video-display--image-display" style="display:none" src=":url:"/>`;
+
 	var publics = {};
 	var screenContainer = null;
 	var videoURL = null;
@@ -58,7 +60,7 @@ define(function(require){
 		}
 		if(screenContainer == null){
 			console.error("Establece el contenedor con 'obj.setContainer(container)'");
-			return;	
+			return;
 		}
 
 		findFields();
@@ -67,7 +69,6 @@ define(function(require){
 	}
 
 	publics.setData = function(data){
-		console.log("mod Received" + data);
 		myData = data;
 		return this;
 	}
@@ -100,6 +101,7 @@ define(function(require){
 
 	var fillFields = function(){
 		video_.append(videoHTML);
+		files_.html(files.length);
 	}
 
 	var setChanges = function(bool){
@@ -110,7 +112,6 @@ define(function(require){
 		else if(bool == false){
 			videoObj.play();
 		}
-		console.log("asd " + bool);
 	}
 
 	var setEvents = function(){
@@ -118,7 +119,6 @@ define(function(require){
 			setChanges(true);
 			if(isVideoReady){
 				changeTimeAction(this.value);
-				
 			}
 			setChanges(false);
 		};
@@ -198,7 +198,6 @@ define(function(require){
 		play_.addClass("fas fa-pause");
 
 		videoObj.play();
-		console.log(videoObj);
 	}
 
 	var pauseAction = function(){
@@ -244,13 +243,23 @@ define(function(require){
 	}
 
 	var findImageToShow = function(time){
-		console.log(videoImageHandler.nextImageTime());
-		if(videoImageHandler.nextImageTime() <= time ){
+		var theTime = videoImageHandler.nextImageTime();
+		if(theTime !== null && theTime <= time ){
+			var fadeSpeed = 800;
+			var videoDuration = 5000;
 			var image = videoImageHandler.getNextImage();
-			console.log("****");
-			console.log(image);
-			console.log(videoImageHandler.nextImageTime());
-			console.log("****");
+
+			var imageView = imageTemplate.replace(":url:", image.url);
+			imageView = $(imageView);
+
+			video_.append(imageView);
+			imageView.fadeIn(fadeSpeed);
+
+			setTimeout(function(){
+				imageView.fadeOut(fadeSpeed, function(){
+					imageView.remove();
+				});
+			}, videoDuration);
 		}
 	}
 
@@ -291,8 +300,12 @@ define(function(require){
 					imagesToShow.push(image);
 				}
 			}
-			nextImageTime = imagesToShow[imagesToShow.length-1].time;
-			console.log(imagesToShow);
+			if(imagesToShow.length > 0){
+				nextImageTime = imagesToShow[imagesToShow.length-1].time;
+			}
+			else{
+				nextImageTime = null;
+			}
 		}
 
 		publics.nextImageTime = function(){
@@ -302,7 +315,6 @@ define(function(require){
 		publics.getNextImage = function(){
 			var next = imagesToShow.pop();
 			var lastIndex = imagesToShow.length-1;
-			console.log(imagesToShow);
 			if(lastIndex >= 0){
 				nextImageTime = imagesToShow[imagesToShow.length-1].time;
 			}

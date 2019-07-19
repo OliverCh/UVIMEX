@@ -34,7 +34,6 @@ define(function(require){
 	}
 
 	publics.setData = function(data){
-		console.log("mod Received" + data);
 		myData = data;
 		return this;
 	}

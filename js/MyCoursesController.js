@@ -7,6 +7,30 @@ define(function(require){
 	var courseContainer = null;
 	var myData = "";
 
+	var localCourseTemplate = 
+			`<div class="indiv-displaycurso">
+				<div class="curso-imagecontainer" style="background-image: url('https://uvimex.com.mx/dashboard/dashboard/assets/courseAssets/:idUsuario:/:idCurso:/portraits/:urlPortada:');">
+				</div>
+				<div class="curso-infocont">
+					<p class="categoria">:strCategoria:</p>
+					<h3>:nombre:</h3>
+				</div>
+				<button class="go-to-curso full-color-btn f_course" data-id=":idCurso:"><i class="fas fa-book"></i> Ir al Curso</button>
+				<button class="showme-info-btn course_details" data-id=":idCurso:"><i class="fas fa-arrow-circle-right"></i></button>
+			</div>`;
+	var nonLocalCourseTemplate = 
+		`<div class="indiv-displaycurso">
+			<div class="curso-imagecontainer"></div>
+			<div class="curso-infocont">
+				<p class="categoria">:strCategoria:</p>
+				<h3>:nombre:</h3>
+			</div>
+			<button class="go-to-curso full-color-btn f_course" data-id=":idCurso:" data-nonlocal="true"><i class="fas fa-book"></i> Ir al Curso</button>
+		</div>`;
+
+	var noCoursesTemplate = 
+		`No tienes cursos adquiridos. Visita <a href="uvimex.com.mx">uvimex.com.mx</a> para comprar cursos.`;
+
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
 		return this;
@@ -17,13 +41,12 @@ define(function(require){
 			findFields();
 			setEvents();
 			getCourses(function(d){
-				//console.log(d);
-				// Get logged usercourseContainer ID
-				if(d == null){
-					loadCourses(d);
+				courseContainer.html("");
+
+				if(d.error !== undefined && d.error === true){
+					courseContainer.append(noCoursesTemplate);
 					return;
 				}
-				d = d.courses;
 				loadCourses(d);
 			});
 		});
@@ -41,9 +64,15 @@ define(function(require){
 	var setEvents = function(){
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
+			var nonLocal = $(this).data("nonlocal");
+			console.log(nonLocal);
+
+			if(nonLocal !== undefined && nonLocal == true){
+				nonLocal = true;
+			}
 			require(["ModulesController"], function(ModulesController){
 				ModulesController.setParentNav(parentNav);
-				parentNav.pushScreen(ModulesController, idCourse);
+				parentNav.pushScreen(ModulesController, {idCourse:idCourse, nonLocal: nonLocal});
 			});
 		});
 
@@ -58,38 +87,36 @@ define(function(require){
 
 	var loadCourses = function(d){
 		courseContainer.html("");
-		if(d == null){
-			courseContainer.append(`No tienes cursos adquiridos. Visita <a href="uvimex.com.mx">uvimex.com.mx</a> para comprar cursos.`);
-			return;
-		}
 		if(d.length == 0){
-			courseContainer.append(`No tienes cursos adquiridos. Visita <a href="uvimex.com.mx">uvimex.com.mx</a> para comprar cursos.`);
+			courseContainer.append(noCoursesTemplate);
 		}
 		for (var i = 0; i < d.length; i++) {
 			var v = d[i];
-			courseContainer.append(
-			`<div class="indiv-displaycurso">
-				<div class="curso-imagecontainer" style="background-image: url('https://uvimex.com.mx/dashboard/dashboard/assets/courseAssets/${v.idUsuario}/${v.idCurso}/portraits/${v.urlPortada}');">
-				</div>
-				<div class="curso-infocont">
-					<p class="categoria">${v.strCategoria}</p>
-					<h3>${v.nombre}</h3>
-				</div>
-				<button class="go-to-curso full-color-btn f_course" data-id="${v.idCurso}"><i class="fas fa-book"></i> Ir al Curso</button>
-				<button class="showme-info-btn course_details" data-id="${v.idCurso}"><i class="fas fa-arrow-circle-right"></i></button>
-			</div>`);
-
-			/*courseContainer.append(`<li class="f_course" data-id="${v.idCurso}">
-				<img src="https://uvimex.com.mx/dashboard/dashboard/assets/courseAssets/${v.idUsuario}/${v.idCurso}/portraits/${v.urlPortada}">
-				${v.nombre}
-				</li>`);*/
+			var template = null;
+			if(v.isLocal === true){
+				template = localCourseTemplate
+												.replace(":idUsuario:", v.idUsuario)
+												.replace(":idCurso:", v.idCurso)
+												.replace(":urlPortada:", v.urlPortada)
+												.replace(":strCategoria:", v.strCategoria)
+												.replace(":nombre:", v.nombre)
+												.replace(":idCurso:", v.idCurso)
+												.replace(":idCurso:", v.idCurso);
+			}
+			else{
+				template = nonLocalCourseTemplate
+												.replace(":strCategoria:", v.strCategoria)
+												.replace(":nombre:", v.nombre)
+												.replace(":idCurso:", v.idCurso);
+			}
+			courseContainer.append(template);
 		}
 	}
 
 	var getCourses = function(callback){
 		$.ajax({
-			url: masterPath + "movileComms.php",
-			data: {idUser: localStorage.getItem("user_id")},
+			url: masterPath + movileComms,
+			data: {idUser: localStorage.getItem("user_id"), mode: "myCourses"},
 			success: callback
 		});
 	}

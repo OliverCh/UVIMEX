@@ -50,13 +50,15 @@ define(function(require){
 
 	var setEvents = function(){
 		screenContainer.find(".close-pop").click(function(){
-			parentNav.popPop(self.id);
+			console.log("close");
+			parentNav.popPop(publics.id);
 		});
 		screenContainer.on("click", ".watchFile", function(){
 			var id = $(this).data("id");
 			var file = files[id];
 			// Agregar otro popup
 			require(["SeeFileController_pop"], function(controller){
+				controller.setParentNav(parentNav);
 				parentNav.pushPop(controller, "file", {file: file});
 			});
 			

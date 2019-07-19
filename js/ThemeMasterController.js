@@ -78,7 +78,6 @@ define(function(require){
 		fillFields(theme);
 
 		require([themeController], function(ThemeController){
-			console.log(parentNav);
 			ThemeController.setContainer(themeContent_)
 							.setData({theme: theme})
 							.setParentNav(parentNav)

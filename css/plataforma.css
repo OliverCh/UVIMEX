@@ -315,10 +315,11 @@ button.nav-btn-style.bottom_btn.bottom_btn_slct {
     border:none;
     border-radius: 10px;
 }
-.popop{
-  position: fixed;
-  top: 0;
+
+.t1--video-display--image-display{
+  position: absolute;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }

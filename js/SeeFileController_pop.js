@@ -7,12 +7,15 @@ define(function(require){
 	var myData = null;
 	var file = null;
 
-	var fileViewerTemplate = `
-		:url:
-	`;
+	var fileViewerTemplate = `https://docs.google.com/viewer?url=:url:&embedded=true`;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
+		return this;
+	}
+
+	publics.setParentNav = function(nav){
+		parentNav = nav;
 		return this;
 	}
 
@@ -26,6 +29,7 @@ define(function(require){
 	publics.draw = function(){
 		screenContainer.load("secciones/platform/seeFile_pop.html", function(){
 			findFields();
+			setEvents();
 			fillFields();
 		});
 	}
@@ -34,28 +38,59 @@ define(function(require){
 		iFrameContainer_ = screenContainer.find("#iFrameContainer_");
 	}
 
+	var setEvents = function(){
+		screenContainer.click(function(){
+			parentNav.popPop(publics.id);
+		})
+	}
+
 	var fillFields = function(){
 		var url = file.url;
 		var format = getFormat(url);
 
-		var height = $(window).height();
-		var width = $(window).width();
+		var Wheight = $(window).height();
+		var Wwidth = $(window).width();
 
-		var viewHeigth = height*0.9;
-		var marginHeigth = height*0.05;
-
-		var viewWidth = width*0.9;
-		var marginWidth = width*0.05;
-
-		iFrameContainer_[0].height = viewHeigth;
-		iFrameContainer_[0].width = viewWidth;
-		
 		if(isImage(format)){
 			iFrameContainer_[0].src = url;
+			getSizes(url, function(sizes){
+				if(sizes.width <= Wwidth * .8){
+					iFrameContainer_[0].width = sizes.width;
+				}
+				else{
+					iFrameContainer_[0].width = Wwidth * .8;
+				}
+
+				if(sizes.height <= Wheight * .8){
+					iFrameContainer_[0].height = sizes.height;
+				}
+				else{
+					iFrameContainer_[0].height = Wheight * .8;
+				}
+				
+				var parent = iFrameContainer_.parent();
+				parent.css("padding-left", (Wwidth - iFrameContainer_[0].width)/2);
+			});
 		}
 		else{
 			iFrameContainer_[0].src = fileViewerTemplate.replace(":url:", file.url);
+			var viewWidth = Wwidth * .8;
+			iFrameContainer_[0].width = viewWidth;
+			iFrameContainer_[0].height = Wheight * .8;
+
+			var parent = iFrameContainer_.parent();
+			parent.css("padding-left", (Wwidth - viewWidth)/2);
 		}
+		
+	}
+
+	function getSizes(url, callback){
+		var img = new Image();
+	    img.onload = function(){
+	        console.log(this);
+			callback({width: this.width, height: this.height});
+	    };
+	    img.src = url;
 	}
 
 	var isImage = function(x){
@@ -65,7 +100,9 @@ define(function(require){
 	}
 
 	var getFormat = function(url){
-		return url.split(".")[1];
+		var points = url.split(".");
+
+		return points[points.length-1];
 	}
 
 

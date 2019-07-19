@@ -5,6 +5,7 @@ define(function(require){
 
 	//Controllers
 	var nav_buttons = null;
+	var nav_logout = null;
 	var myData = "";
 
 	publics.setContainer = function(cnt){
@@ -41,10 +42,17 @@ define(function(require){
 
 	var findFields = function(){
 		nav_buttons = container.find(".bottom_btn");
+		nav_logout = container.find("#nav_logout");
 	}
 
 	var setEvents = function(){
 		nav_buttons.click(navClick);
+		nav_logout.click(function(){
+			require(["LoginController"], function(LoginController){
+				localStorage.removeItem("user_id");
+				NavMaster.setHome(LoginController);
+			});
+		});
 	}
 
 	var loadMyCourses = function(){

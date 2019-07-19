@@ -6,6 +6,7 @@ define(function(require){
 	//Controllers
 	var modulesContainer = null;
 	var f_back = null;
+	var nonLocal = null;
 	var myData;
 
 	publics.setContainer = function(cnt){
@@ -15,6 +16,12 @@ define(function(require){
 
 	publics.setData = function(data){
 		myData = data;
+		if(myData.nonLocal !== undefined && myData.nonLocal === true){
+			nonLocal = true;
+		}
+		else{
+			nonLocal = false;
+		}
 		return this;
 	}
 
@@ -46,7 +53,7 @@ define(function(require){
 			require(["CourseBaseController"], function(CourseBaseController){
 
 				console.log(moduleID);
-				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName});
+				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
 				/*
 				NavController.setContainer($("#appContent"));
 				NavController.pushStack(AppBaseController, undefined, false);
@@ -54,7 +61,7 @@ define(function(require){
 				*/
 			});			
 		});
-		f_back.click(function(){NavController.popScreen();});
+		f_back.click(function(){parentNav.popScreen();});
 	}
 
 	var loadModules = function(d){
@@ -76,13 +83,28 @@ define(function(require){
 	}
 
 	var getModules = function(callback){
-		var courseID = myData;
-		console.log(courseID);
-		$.ajax({
-			url: masterPath + "getCourseModules.php",
-			data: {id: courseID},
-			success:callback
-		});
+		var courseID = null;
+		if(myData !== undefined && myData.idCourse !== undefined){
+			courseID = myData.idCourse;
+		}
+
+		console.log(myData);
+		if(nonLocal === true){
+			$.ajax({
+				url: masterPath + movileComms,
+				data: {idUser: localStorage.getItem("user_id"), mode: "myLessons"},
+				success:callback
+			});
+		}
+		else if(nonLocal === false){
+			$.ajax({
+				url: masterPath + "getCourseModules.php",
+				data: {id: courseID},
+				success:callback
+			});
+		}
+
+		
 	}
 	return publics;
 });

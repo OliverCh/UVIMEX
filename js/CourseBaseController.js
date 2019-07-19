@@ -21,7 +21,6 @@ define(function(require){
 
 			findFields();
 			setEvents();
-			console.log(myData);
 			loadModule(myData);
 		});
 	}
@@ -30,7 +29,6 @@ define(function(require){
 		console.log(data);
 		if(data.moduleID){
 			myData = data;
-			console.log(myData);
 		}
 		return this;
 	}
@@ -47,7 +45,7 @@ define(function(require){
 		nav_buttons.click(navClick);
 	}
 
-	var loadModule = function(idModule){
+	var loadModule = function(data){
 		require(["ModuleController"], function(ModuleController){
 			var button = container.find("#nav_modulo");
 			var barrita = container.find(".barrita-select-gen");
@@ -60,8 +58,7 @@ define(function(require){
 			},800);
 
 			ModuleController.setParentNav(nav);
-			console.log(idModule);
-			nav.pushScreen(ModuleController, idModule);
+			nav.pushScreen(ModuleController, data);
 		});
 	}
 
