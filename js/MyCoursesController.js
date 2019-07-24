@@ -65,7 +65,6 @@ define(function(require){
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
 			var nonLocal = $(this).data("nonlocal");
-			console.log(nonLocal);
 
 			if(nonLocal !== undefined && nonLocal == true){
 				nonLocal = true;

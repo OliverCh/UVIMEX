@@ -55,7 +55,7 @@ define(function(require){
 				ThemeController.setParentNav(parentNav);
 				parentNav.pushScreen(ThemeController, {themes: moduleThemes, id: id});
 			};
-			require(["ThemeMasterController"], loadThemeFunction);
+			require(["courseControllers/ThemeMasterController"], loadThemeFunction);
 
 			// var template = $(this).data("tmplt");
 			// var themeController = undefined;
@@ -95,7 +95,7 @@ define(function(require){
 		for (var i = 0; i < d.length; i++) {
 			var v = d[i];
 			themeContainer.append(`
-				<div class="con-indiv-tema" data-tmplt="${v.plantilla}" data-id="${i}">
+				<div class="con-indiv-tema" data-id="${i}">
 					<p class="injectnumber">${i+1}</p><h3>${v.nombre}</h3>
 				</div>
 			`);

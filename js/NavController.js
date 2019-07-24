@@ -6,7 +6,6 @@ var NavController = function(){
 	var self = this;
 
 	publics.pushScreen = function(obj, data, load = true){
-		console.log(obj);
 		screenStack.push(obj);
 		
 		var XD = obj.setContainer(container);
@@ -43,7 +42,6 @@ var NavController = function(){
 	publics.pushPop = function(popupObj, id, data, customClass="popop"){
 		popStack.push(popupObj);
 		popupObj.id = id;
-		console.log(popupObj);
 
 		var XD = popupObj.setContainer(container.prepend(`
 			<div class="${customClass} pop_`+id+`" style="z-index:${popStack.length*10};"></div>`).find(`.pop_${id}`)
