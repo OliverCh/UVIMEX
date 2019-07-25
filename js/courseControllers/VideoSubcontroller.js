@@ -26,7 +26,6 @@ define(function(require){
 	var stop_ = null;
 	var play_ = null;
 	var fullScreen_ = null;
-	var fileCount_ = null;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
@@ -94,7 +93,6 @@ define(function(require){
 		play_ = screenContainer.find("#play_");
 		fullScreen_ = screenContainer.find("#fullScreen_");
 		fileCount_ = screenContainer.find("#fileCount_");
-		fileCount_ = screenContainer.find("#fileCount_");
 		videoHTML = getVideoHTML();
 
 		timeControlObj = timeControl_[0];
@@ -103,7 +101,7 @@ define(function(require){
 
 	var fillFields = function(){
 		video_.append(videoHTML);
-		fileCount_.html(files.length);
+		files_.html(files.length);
 	}
 
 	var setChanges = function(bool){
@@ -182,13 +180,13 @@ define(function(require){
 
 	var muteAction = function(){
 		if(isMuted == true){
-			mute_.find("i").removeClass("fa-volume-mute");
-			mute_.find("i").addClass("fa-volume-up");
+			mute_.removeClass("fas fa-volume-mute");
+			mute_.addClass("fas fa-volume-up");
 			isMuted = !isMuted;
 		}
 		else if(isMuted == false){
-			mute_.find("i").removeClass("fa-volume-up");
-			mute_.find("i").addClass("fa-volume-mute");
+			mute_.removeClass("fas fa-volume-up");
+			mute_.addClass("fas fa-volume-mute");
 			isMuted = !isMuted;
 		}
 
@@ -196,15 +194,15 @@ define(function(require){
 	}
 
 	var playAction = function(){
-		play_.find("i").removeClass("fa-play");
-		play_.find("i").addClass("fa-pause");
+		play_.removeClass("fas fa-play");
+		play_.addClass("fas fa-pause");
 
 		videoObj.play();
 	}
 
 	var pauseAction = function(){
-		play_.find("i").removeClass("fa-pause");
-		play_.find("i").addClass("fa-play");
+		play_.removeClass("fas fa-pause");
+		play_.addClass("fas fa-play");
 
 		videoObj.pause();
 	}
@@ -237,7 +235,7 @@ define(function(require){
 	}
 
 	var showFilesAction = function(){
-		require(["courseControllers/FilesController_pop"], function(popController){
+		require(["FileViewerController_pop"], function(popController){
 			popController.setParentNav(parentNav);
 			parentNav.pushPop(popController, "files", {files: files}, "pop-white-full");
 		})
