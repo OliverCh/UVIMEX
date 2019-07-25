@@ -12,10 +12,12 @@ define(function(require){
 	}
 
 	publics.draw = function(){
-		screenContainer.load("secciones/platform/theme_template1.html", function(){
+		var base = $("<div></div>");
+		base.load("secciones/platform/videoSubcontroller.html", function(){
 			findFields();
 			initVideo();
 		});
+		base.appendTo(screenContainer);
 	}
 
 	publics.setData = function(data){
@@ -30,7 +32,7 @@ define(function(require){
 	}
 
 	var initVideo = function(){
-		require(["VideoSubcontroller"], function(VideoSubcontroller){
+		require(["courseControllers/VideoSubcontroller"], function(VideoSubcontroller){
 			videoController = VideoSubcontroller;
 			videoController.setContainer(themeVideo_)
 							.setParentNav(parentNav)

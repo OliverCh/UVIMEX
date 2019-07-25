@@ -50,9 +50,8 @@ define(function(require){
 			var moduleID = $(this).data("id");
 			var moduleName = $(this).parent().find(".moduleName").html();
 
-			require(["CourseBaseController"], function(CourseBaseController){
+			require(["courseControllers/CourseBaseController"], function(CourseBaseController){
 
-				console.log(moduleID);
 				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
 				/*
 				NavController.setContainer($("#appContent"));
@@ -88,7 +87,6 @@ define(function(require){
 			courseID = myData.idCourse;
 		}
 
-		console.log(myData);
 		if(nonLocal === true){
 			$.ajax({
 				url: masterPath + movileComms,

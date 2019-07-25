@@ -26,7 +26,6 @@ define(function(require){
 	}
 
 	publics.setData = function(data){
-		console.log(data);
 		if(data.moduleID){
 			myData = data;
 		}
@@ -46,7 +45,7 @@ define(function(require){
 	}
 
 	var loadModule = function(data){
-		require(["ModuleController"], function(ModuleController){
+		require(["courseControllers/ModuleController"], function(ModuleController){
 			var button = container.find("#nav_modulo");
 			var barrita = container.find(".barrita-select-gen");
 			
@@ -71,7 +70,6 @@ define(function(require){
 	}
 
 	var navClick = function(){
-		console.log("clicked bottom");
 		nav_buttons.removeClass('bottom_btn_slct');
 		$(this).addClass('bottom_btn_slct');
 
