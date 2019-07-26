@@ -30,13 +30,14 @@
         Uvimex
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access allows-arbitrary-loads-for-media="true" allows-arbitrary-loads-in-web-content="true" allows-local-networking="true" origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <icon height="180" src="icons/ios/icon-App-60x60@3x.png" width="180" />
@@ -46,8 +47,6 @@
     <icon height="152" src="icons/ios/icon-App-76x76@2x.png" width="152" />
     <icon height="40" src="icons/ios/icon-App-40x40@1x.png" width="40" />
     <icon height="80" src="icons/ios/icon-App-40x40@2x.png" width="80" />
-    <icon height="72" src="icons/ios/icon-App.png" width="72" />
-    <icon height="144" src="icons/ios/icon-App-72@2x.png" width="144" />
     <icon height="167" src="icons/ios/Icon-App-83.5x83.5@2x.png" width="167" />
     <icon height="29" src="icons/ios/icon-App-29x29@1x.png" width="29" />
     <icon height="58" src="icons/ios/icon-App-29x29@2x.png" width="58" />
