@@ -73,14 +73,15 @@ define(function(require){
 
 		var theme = themes[index];
 		var template = theme.plantilla;
-		//var themeController = "courseControllers/ThemeController_"+template;
-		var themeController = "courseControllers/ThemeController_template3";
+		console.log(theme);
+		var themeController = "courseControllers/ThemeController_"+template;
+		//var themeController = "courseControllers/ThemeController_template3";
 
 		fillFields(theme);
 
 		require([themeController], function(ThemeController){
 			ThemeController.setContainer(themeContent_)
-							.setData({theme: theme})
+							.setData({theme: theme, template. template})
 							.setParentNav(parentNav)
 							.draw();
 		});

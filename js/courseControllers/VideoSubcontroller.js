@@ -180,13 +180,13 @@ define(function(require){
 
 	var muteAction = function(){
 		if(isMuted == true){
-			mute_.removeClass("fas fa-volume-mute");
-			mute_.addClass("fas fa-volume-up");
+			mute_.find("i").removeClass("fas fa-volume-mute");
+			mute_.find("i").addClass("fas fa-volume-up");
 			isMuted = !isMuted;
 		}
 		else if(isMuted == false){
-			mute_.removeClass("fas fa-volume-up");
-			mute_.addClass("fas fa-volume-mute");
+			mute_.find("i").removeClass("fas fa-volume-up");
+			mute_.find("i").addClass("fas fa-volume-mute");
 			isMuted = !isMuted;
 		}
 
@@ -194,15 +194,15 @@ define(function(require){
 	}
 
 	var playAction = function(){
-		play_.removeClass("fas fa-play");
-		play_.addClass("fas fa-pause");
+		play_.find("i").removeClass("fas fa-play");
+		play_.find("i").addClass("fas fa-pause");
 
 		videoObj.play();
 	}
 
 	var pauseAction = function(){
-		play_.removeClass("fas fa-pause");
-		play_.addClass("fas fa-play");
+		play_.find("i").removeClass("fas fa-pause");
+		play_.find("i").addClass("fas fa-play");
 
 		videoObj.pause();
 	}

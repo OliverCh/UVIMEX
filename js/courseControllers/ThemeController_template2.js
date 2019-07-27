@@ -20,8 +20,7 @@ define(function(require){
 		base.appendTo(screenContainer);
 		var base2 = $("<div></div>");
 		base2.load("secciones/platform/activitySubcontroller.html", function(){
-			findFields();
-			initVideo();
+			
 		});
 		base2.appendTo(screenContainer);
 	}
