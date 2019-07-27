@@ -75,6 +75,8 @@ button:focus{
     top: 0;
     z-index: 2;
     background-color: var(--backcolorNavs);
+    top: constant(safe-area-inset-top); /* iOS 11.0 */
+    top: env(safe-area-inset-top); /* iOS 11.2 */
 }
 .left-top {
     width: 50%;
