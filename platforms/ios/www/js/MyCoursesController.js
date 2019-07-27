@@ -16,7 +16,7 @@ define(function(require){
 					<h3>:nombre:</h3>
 				</div>
 				<button class="go-to-curso full-color-btn f_course" data-id=":idCurso:"><i class="fas fa-book"></i> Ir al Curso</button>
-				<button class="showme-info-btn course_details" data-id=":idCurso:"><i class="fas fa-arrow-circle-right"></i></button>
+				<!--button class="showme-info-btn course_details" stlye="display:none;" data-id=":idCurso:"><i class="fas fa-arrow-circle-right"></i></button-->
 			</div>`;
 	var nonLocalCourseTemplate = 
 		`<div class="indiv-displaycurso">
