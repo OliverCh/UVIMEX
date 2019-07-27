@@ -73,10 +73,8 @@ define(function(require){
 
 		var theme = themes[index];
 		var template = theme.plantilla;
-		console.log(theme);
 		var themeController = "courseControllers/ThemeController_"+template;
 		//var themeController = "courseControllers/ThemeController_template3";
-
 		fillFields(theme);
 
 		require([themeController], function(ThemeController){
