@@ -4,6 +4,7 @@ define(function(require){
 
 	//Controllers
 	var nav_buttons = null;
+	var logOut = null;
 
 	publics.setContainer = function(cnt){
 		container = cnt;
@@ -24,16 +25,28 @@ define(function(require){
 
 	var findFields = function(){
 		nav_buttons = container.find(".bottom_btn");
+		logOut = container.find("#logOut");
 	}
 
 	var setEvents = function(){
 		nav_buttons.click(navClick);
+		logOut.click(endSession);
 	}
 
 	var loadMyCourses = function(){
 		require(["MyCoursesController"], function(MyCoursesController){
 			console.log("XD");
 			NavController.pushScreen(MyCoursesController);
+		});
+	}
+
+	var endSession = function(){
+		localStorage.clear();
+		sessionStorage.clear();
+		NavController.setHome();
+		require(['LoginController'], function(lc){
+			container.find('.inject-information').remove().find('nav').remove();
+			NavController.setContainer($("#content")).pushScreen(lc);
 		});
 	}
 
