@@ -83,5 +83,9 @@ var NavController = (function(window, document, undefined){
 
 	document.addEventListener("backbutton", popSomething, false);
 
+	$(document).on('click', '.closeCourse', function(){
+		popSomething();
+	});
+
 	return publics;
 })(window, document);
