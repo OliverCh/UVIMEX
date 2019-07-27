@@ -20,7 +20,7 @@ define(function(require){
 		var moduleID = myData.moduleID;
 		var userID = myData.userID;
 		screen.orientation.lock('landscape-primary');
-		screenContainer.prepend(`AAAAAAAAAAAAA<iframe src="https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${userID}"></iframe>`);
+		screenContainer.prepend(`<iframe src="https://uvimex.com.mx/dashboard/platform/php/preview.php?idmodule=${moduleID}&usr=${userID}"></iframe>`);
 	}
 	
 	return publics;
