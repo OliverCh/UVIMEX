@@ -1,0 +1,144 @@
+video#videoCurso {
+	width:  100%;
+	height:  100%;
+}
+@media print {
+	footer, #colorNavVertical, button, #seccionVideo, 	textarea {
+			display: none;
+		}
+		body {
+		background-image: none;
+	}
+	.respuestas{
+		border:none;
+	}
+	 #tituloCurso {
+			font-size: 2em;}
+			::-webkit-input-placeholder { /* WebKit browsers */
+				color: transparent;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			 color: transparent;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+			 color: transparent;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+			 color: transparent;
+		}
+
+		textarea::-webkit-input-placeholder { /* WebKit browsers */
+				color: transparent;
+		}
+		textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			 color: transparent;
+		}
+		textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+			 color: transparent;
+		}
+		textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+			 color: transparent;
+		}
+
+}
+button#imprimirActividad{
+	background-color: #53bfe2;
+		border: none;
+		    float: none;
+		padding: 5px 10px;
+		border-radius: 4px;
+		color: #2884a2;
+		font-weight: bold;
+		cursor: pointer;
+		outline: none;
+			margin: 10px 0;
+		box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset, 1px 1px 1px #CCC;
+}
+#seccionVideo{
+	display: inline-block;
+	width: 54%;
+}
+#seccionVideo{
+	display: inline-block;
+	width: 54%;
+}
+
+#seccionPreguntas{
+	display: inline-block;
+	padding: 8px;
+	position: absolute;
+	margin: 6% 12%;
+	width: 25%;
+}
+
+#seccionPreguntas li{
+	margin: 6% 2%;
+}
+
+#seccionPreguntas ul{
+	list-style: none;
+	list-style-type: none;
+}
+
+#seccionPreguntas button{
+	float: right;
+    margin: 2%;
+    background: white;
+    border: 1px solid orange;
+    padding: 11px;
+    border-radius: 10px;
+}
+
+#seccionPreguntas input[type="radio"]{
+	margin: 3px;
+}
+
+#videoCurso{
+	background: black;
+}
+
+
+#seccionPreguntas textarea{
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+    min-height: 20vh;
+    max-height: 20vh;
+    height: 20vh;
+    background: #ffffffab;
+    border-color: #0000000d;
+}
+
+@media (max-width: 1024px){
+	#seccionVideo{
+		padding: 1% 8%;
+		width: 100%;
+	}
+
+	#seccionPreguntas{
+		padding: 0;
+    	margin: 0;
+    	width: 100%;
+	}
+
+	#controlVideo, #videoCurso{
+		width: 90% !important;
+	}
+}
+
+.evalItem{
+	margin: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+	background: white;
+	border-color: black;
+	color: black;
+}
+
+.evalItem_selected{
+    background: #6d6d6d;
+    border: 1px solid #eee;
+    color: white;
+}

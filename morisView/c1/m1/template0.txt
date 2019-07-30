@@ -1,0 +1,18 @@
+<br><section id="contenedorCurso">
+		 		<section id="tituloCurso"></section>
+		 		<section id="subtituloCurso"></section>
+		 		<section id="temaCurso"></section>
+
+		 		<section id="seccionVideo">
+					<canvas id="videoCursoCanvas"></canvas>
+					<input type="range" min="0"   value="0" id="controlVideo" >
+					<label id="tiempoVideo"></label>
+		 		</section>
+
+		  
+		 		
+
+		 		 <link rel="stylesheet" href="css/template0.css" />
+		 	</section>
+
+		 		<video id="videoCurso" oncontextmenu="return false;" controls="false" controlsList="nodownload" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

@@ -1,0 +1,70 @@
+	<div id="contenedorCurso">
+					<div style="width: 100%;">
+						<section id="tituloCurso">ACTIVIDAD 2.2</section>
+		 				<section id="subtituloCurso"></section>
+						<section id="temaCurso"></section>
+					</div>
+
+					<div style="width:100%;">
+						 
+
+						<div id="tabla">
+							 
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+
+							 
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+
+							 
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+							<section>
+								 <input type="text" name="meta">
+								 <input type="date" name="fecha">
+								 <input type="text" name="monto" min="1" step="any" />
+							</section>
+
+						</div>
+						<!--<button id="addMeta" onclick="addCampos()"></button>-->
+						<button id="saveMetas" onclick="saveCampos()"></button>
+					</div>
+	 
+	
+ 	 <link rel="stylesheet" href="css/act2.css" />
+				</div>

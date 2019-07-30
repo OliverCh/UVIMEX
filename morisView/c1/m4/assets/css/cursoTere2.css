@@ -1,0 +1,287 @@
+
+
+
+
+
+
+
+@media   (min-width: 1366px) and (max-width: 1919px),print{
+
+    #tituloCurso {
+    font-size: 350%;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 1vh;
+    font-family: monospace;
+    width: 76%;
+}
+
+    #temaCurso{
+         
+    font-size: 300%;
+     
+    font-family: monospace;
+ 
+    }
+
+   #seccionVideo {
+    width: 57%;
+    height: 69%;
+    position: relative;
+    top: 3vh;
+    left: 20vw;
+    /* background: darkgoldenrod; */
+}
+
+    #seccionVideo > video{
+            width: 100%;
+    margin-top: 4%;
+    }
+
+
+    #seccionGaleria {
+    width: 43em;
+    height: 40em;
+     
+    position: absolute;
+    right: 0em;
+    top: 8em;
+}
+
+/*
+#txtImg0, #txtImg1 {
+        width: 50%;
+    float: left;
+      height: 3em; 
+    background-color: blue;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+#img0, #img1 {
+    width: 50%;
+    float: left;
+  
+    height: auto;
+}
+
+
+.imagenes {
+     width: auto;
+     height: 100%;
+      margin-left: 10%;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 2560px) ,print{
+
+
+   #tituloCurso {
+    font-size: 350%;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 1vh;
+    font-family: monospace;
+    width: 76%;
+}
+
+    #temaCurso {
+    font-size: 300%;
+    font-family: monospace;
+}
+
+  #seccionVideo {
+    width: 57%;
+    height: 69%;
+    position: relative;
+    top: 3vh;
+    left: 20vw;
+    /* background: darkgoldenrod; */
+}
+    #seccionVideo > video {
+    width: 100%;
+    margin-top: 0%;
+}
+
+
+    #seccionGaleria {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    right: 0em;
+    top: 15em;
+}
+
+/*
+#txtImg0, #txtImg1 {
+        width: 50%;
+    float: left;
+      height: 3em; 
+    background-color: blue;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+#img0, #img1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+
+.imagenes {
+    width: auto;
+    height: 100%;
+    margin-left: 25%;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 1440px), print{
+ #seccionVideo {
+    width: 57%;
+    height: 69%;
+    position: relative;
+    top: 3vh;
+    left: 20vw;
+    /* background: darkgoldenrod; */
+}
+#seccionVideo > video {
+    width: 100%;
+    margin-top: 6%;
+}
+
+
+    #seccionGaleria {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    right: 0em;
+    float: left;
+    top: 0em;
+}
+
+/*
+#txtImg0, #txtImg1 {
+        width: 50%;
+    float: left;
+      height: 3em; 
+    background-color: blue;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+#img0, #img1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+
+.imagenes {
+    width: auto;
+    height: 100%;
+    margin-left: 12%;
+}
+
+
+#contenedorCurso {
+    width: 90%;
+    height: 90vh;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+}
+
+
+
+
+@media  (max-width: 1024px) ,print{
+
+
+    #contenedorCurso {
+    width: 90%;
+    height: 70vh;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    
+}
+
+#tituloCurso {
+    font-size: 350%;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 1vh;
+    font-family: monospace;
+    width: 76%;
+}
+    #temaCurso{
+         font-size: 300%;
+         font-family: monospace;
+         padding-left: 4%;
+    }
+
+    #seccionVideo {
+    width: 50%;
+    height: 70%;
+    /* position: relative; */
+    /* top: 5em; */
+    /*background: darkgoldenrod;*/
+}
+    #seccionVideo > video {
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 4%;
+}
+
+
+    #seccionGaleria {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    right: 0em;
+    top: 5em;
+}
+
+/*
+#txtImg0, #txtImg1 {
+        width: 50%;
+    float: left;
+      height: 3em; 
+    background-color: blue;
+    font-size: 3em;
+    text-align: center;
+}
+*/
+
+#img0, #img1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+
+.imagenes {
+    width: auto;
+    height: 100%;
+    margin-left: 21%;
+    /* margin-top: 18%; */
+}
+}
+
+
+
+
+}

@@ -1,0 +1,1575 @@
+{
+   "contenido":{
+      "diap0":{
+         "idx":0,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"¿Qué es invertir y por qué es importante?",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/18-Qu%C3%A9EsInvertir_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-54-0209.jpg",
+               "time":"20"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-55-0212.jpg",
+               "time":"132"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-56-0353.jpg",
+               "time":"233"
+            }
+         }
+      },
+      "diap1":{
+         "idx":1,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Diferencia entre gastar e invertir",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/19-DiferenciaEntreGastarEInvertir_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-57-0020.jpg",
+               "time":"20"
+            }
+         }
+      },
+      "diap2":{
+         "idx":2,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Mitos sobre las inversiones ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/20-MitosSobreLasInversiones_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-58-0008.jpg",
+               "time":"8"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-59-0050.jpg",
+               "time":"50"
+            }
+         }
+      },
+      "diap3":{
+         "idx":3,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Paso 1: Define tu perfil de inversionista",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/21-DefiniendoTuPerfilDeRiesgo-1Trespersonas_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-60-0012.jpg",
+               "time":"5"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-61-0024.jpg",
+               "time":"15"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-66-0033%20(1).jpg",
+               "time":"28"
+            },
+            "3":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-112-0046.jpg",
+               "time":"46"
+            },
+            "4":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-126-0059.jpg",
+               "time":"60"
+            },
+            "5":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-62-0143.jpg",
+               "time":"98"
+            }
+         }
+      },
+      "diap4":{
+         "idx":4,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"4 Fundamentos de las inversiones",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/21-DefiniendoTuPerfilDeRiesgo-2_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-62-0012.jpg",
+               "time":"12"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-63-0110.jpg",
+               "time":"70"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-64-0310.jpg",
+               "time":"190"
+            }
+         },
+         "actividades":{
+            "tipo": 10
+         }
+      },
+      "diap5":{
+         "idx":5,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"¿Cuál es tu perfil de inversionista?",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/21-DefiniendoTuPerfilDeRiesgo-3_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-65-0011.jpg",
+               "time":"11"
+            }
+         }
+      },
+      "diap6":{
+         "idx":6,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Paso 2: ¿En qué puedo invertir?",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-%C2%BFEnQu%C3%A9PuedoInvertir-1rentafija-variable_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-66-0005.jpg",
+               "time":"5"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/67-0028.PNG",
+               "time":"28"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/67-1-0028.PNG",
+               "time":"38"
+            },
+            "3":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-68-0427.jpg",
+               "time":"267"
+            }
+         }
+      },
+      "diap7":{
+         "idx":7,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Instrumentos de inversión",
+         "subtema":"Instrumentos de inversión",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-%C2%BFEnQu%C3%A9PuedoInvertir-2instrumentosdeinversi%C3%B3n_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-69-0154.jpg",
+               "time":"114"
+            }
+         }
+      },
+      "diap8":{
+         "idx":8,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Renta fija: Explicación CETES",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-CETES-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-71-0322.jpg",
+               "time":"202"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-72-0458.jpg",
+               "time":"298"
+            }
+         }
+      },
+      "diap9":{
+         "idx":9,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Renta fija: Ejemplo práctico CETES",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-CETES-2ejemplopr%C3%A1ctico_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-73-0010.PNG",
+               "time":"10"
+            }
+         }
+      },
+      "diap10":{
+         "idx":10,
+         "curso":"7",
+         "template":"act0",
+         "titulo":"Actividad: Renta fija CETES",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-CETES-3ACTIVIDAD_c.mp4",
+         "actividades":{
+            "tipo":"3",
+            "reactivos":{
+               "0":{
+                  "0":"1.- ¿Cuál es una de las principales características de los instrumentos de renta fija?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Son relativamente seguros",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Dan rentabilidad superior a otros instrumentos",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Su rendimiento es variable",
+                     "1":"0"
+                  }
+               },
+               "1":{
+                  "0":"2.- Son ejemplos de instrumentos de renta fija (2 respuestas) ",
+                  "1":"2,3",
+                  "2":{
+                     "0":"a) Bonos y certificados del gobierno (CETEs)",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Pagarés bancarios",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Acciones en bolsa",
+                     "1":"0"
+                  }
+               },
+               "2":{
+                  "0":"3.- ¿Por qué se llaman instrumentos de renta fija?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Por que su rendimiento y plazo es fijo",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Por que se fija en un banco",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Por que yo puedo fijar el rendimiento ",
+                     "1":"0"
+                  }
+               },
+               "3":{
+                  "0":"4.- Cuando invierto en CETEs ¿A quién le estoy prestando mi dinero? ",
+                  "1":"3",
+                  "2":{
+                     "0":"a) A una empresa",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Al gobierno",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) A la bolsa de valores",
+                     "1":"0"
+                  }
+               },
+               "4":{
+                  "0":"5.- Son ventajas de tener un instrumento de renta fija (dos respuestas)",
+                  "1":"2,3",
+                  "2":{
+                     "0":"a) Conozco el rendimiento que obtendré por mi inversión",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Conozco el plazo de mi inversión",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Dan muy alto rendimiento",
+                     "1":"0"
+                  }
+               },
+               "5":{
+                  "0":"6.- Si la tasa de rendimiento de un CETEs es 7.5% anual. ¿Cuál es el rendimiento a 28 días? (365 días en un año)",
+                  "1":"3",
+                  "2":{
+                     "0":"a) 7.5%",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) 0.57%",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) 1.25%",
+                     "1":"0"
+                  },
+                  "5":{
+                     "0":"c) No se puede definir ",
+                     "1":"0"
+                  }
+               },
+               "6":{
+                  "0":"7.- Si la tasa de rendimiento de un CETEs es 7.8% anual. ¿Cuál será el rendimiento a 91 días? (365 días en un año)",
+                  "1":"4",
+                  "2":{
+                     "0":"a)  0.021%",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) 7.8%",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) 1.94%",
+                     "1":"1"
+                  },
+                  "5":{
+                     "0":"c) No se puede definir",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap11":{
+         "idx":11,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Bienes raíces: Explicación",
+         "subtema":"Instrumento de Bienes Raíces",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-BienesRa%C3%ADces-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-77-0028.jpg",
+               "time":"28"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-78-0037.jpg",
+               "time":"37"
+            }
+         }
+      },
+      "diap12":{
+         "idx":12,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Bienes raíces: Estrategias de inversión",
+         "subtema":"Estrategias de inversión en Bienes Raíces",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-BienesRa%C3%ADces-2_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-79.jpg",
+               "time":"1"
+            }
+         }
+      },
+      "diap13":{
+         "idx":13,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Bienes raíces: Fibras",
+         "subtema":"Pros y contras ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-BienesRa%C3%ADces-3_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-80-0042.jpg",
+               "time":"42"
+            }
+         }
+      },
+      "diap14":{
+         "idx":14,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Bienes raíces: Ejemplo práctico",
+         "subtema":"Ejemplo práctico del instrumento",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-BienesRa%C3%ADces-4Ejemplo_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-81-0033.PNG",
+               "time":"33"
+            }
+         }
+      },
+      "diap15":{
+         "idx":15,
+         "curso":"7",
+         "template":"act0",
+         "titulo":"Actividad: Bienes Raíces",
+         "subtema":"",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-BienesRa%C3%ADces-5yACTIVIDAD_c.mp4",
+         "actividades":{
+            "tipo":"6",
+            "reactivos":{
+               "0":{
+                  "0":"1.- Son tipos de bienes raíces (4 respuestas)",
+                  "1":"2,3,6,7",
+                  "2":{
+                     "0":"a) Casas",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Departamentos",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Pagarés bancarios",
+                     "1":"0"
+                  },
+                  "5":{
+                     "0":"d) Acciones en bolsa",
+                     "1":"0"
+                  },
+                  "6":{
+                     "0":"e) Naves industriales",
+                     "1":"1"
+                  },
+                  "7":{
+                     "0":"f) Locales comerciales",
+                     "1":"1"
+                  }
+               },
+               "1":{
+                  "0":"2.- Son ventajas de invertir en bienes raíces (3 respuestas)",
+                  "1":"3,4,5",
+                  "2":{
+                     "0":"a) Es un activo que reduce gastos personales",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Posibilidad de obtener rentas",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Posibilidad de incrementar su valor con el tiempo",
+                     "1":"1"
+                  },
+                  "5":{
+                     "0":"d) Bien físico y tangible",
+                     "1":"1"
+                  }
+               },
+               "2":{
+                  "0":"3.- ¿Por qué a los bienes raíces se les consideran inversiones nobles?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Suelen aumentar de valor fácilmente con el tiempo",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Son activos de fácil mantenimiento ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Se pueden adquirir con poco dinero",
+                     "1":"0"
+                  }
+               },
+               "3":{
+                  "0":"4.- ¿Cuáles de las siguientes son estrategias de inversión en bienes raíces? (2 respuestas)",
+                  "1":"2,4",
+                  "2":{
+                     "0":"a) Comprar en preventa",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Comprar una casa remodelada",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Comprar, remodelar y vender a un precio superior",
+                     "1":"1"
+                  }
+               },
+               "4":{
+                  "0":"5.- ¿Cómo puedo invertir en bienes raíces con poco dinero?  (2 respuestas)",
+                  "1":"2,4",
+                  "2":{
+                     "0":"a) Invirtiendo en FIBRAS ",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Ahorrando! ¡Los bienes raíces son caros!",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Utilizando plataformas de crowdfunding (fondeo colectivo) ",
+                     "1":"1"
+                  }
+               },
+               "5":{
+                  "0":"6.- ¿Cuál es una de las principales ventajas de las FIBRAS?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Estoy diversificado en todas las propiedades de las FIBRAS",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Varia mucho el precio de sus certificados",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Conozco el detalle de todas las propiedades que tiene la FIBRA",
+                     "1":"0"
+                  }
+               },
+               "6":{
+                  "0":"7.- ¿Cuál es una de las principales desventajas de las FIBRAS?",
+                  "1":"3",
+                  "2":{
+                     "0":"a) Un equipo profesional se encarga de mantener los inmuebles y cobrar a los inquilinos",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) El precio del certificado varía conforme a mercado",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) No se puede saber el detalle del esquema de repartición de utilidades de la FIBRA",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap16":{
+         "idx":16,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Acciones en bolsa: Explicación",
+         "subtema":"Explicación de instrumentos ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-AccionesEnBolsa-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/82.PNG",
+               "time":"55"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/83.PNG",
+               "time":"70"
+            }
+         }
+      },
+      "diap17":{
+         "idx":17,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Acciones en bolsa: Índices bursátiles ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-AccionesEnBolsa-2%C3%ADndices-tiempo_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-119-0520.jpg",
+               "time":"38"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales%20.ppt.jpg",
+               "time":"185"
+            }
+         }
+      },
+      "diap18":{
+         "idx":18,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Acciones en bolsa: Ejemplo práctico",
+         "subtema":"Ejemplo práctico del instrumento",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-AccionesEnBolsa-3ejemplo_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/84.PNG",
+               "time":"10"
+            }
+         }
+      },
+      "diap19":{
+         "idx":19,
+         "curso":"7",
+         "template":"act0",
+         "titulo":"Actividad: Acciones en bolsa",
+         "subtema":"Acciones en Bolsa",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-AccionesEnBolsa-4actividad_c.mp4",
+         "actividades":{
+            "tipo":"6",
+            "reactivos":{
+               "0":{
+                  "0":"1.- ¿Qué significa invertir en acciones de empresas?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Adquirir propiedad de una empresa (convertirme en accionista)",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Realizar actividades en beneficio de una empresa",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Adquirir las cuentas de una empresa",
+                     "1":"0"
+                  }
+               },
+               "1":{
+                  "0":"2.- ¿En qué tipo de empresas puedo invertir en la bolsa?",
+                  "1":"3",
+                  "2":{
+                     "0":"a) Empresas pequeñas y especializadas",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Todo tipo de empresa que esté listada en la bolsa de valores",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Empresas de tamaño medio y grandes",
+                     "1":"0"
+                  }
+               },
+               "2":{
+                  "0":"3.- ¿Qué beneficios tengo al tener acciones de una empresa? (2 respuestas)",
+                  "1":"2,4",
+                  "2":{
+                     "0":"a) Derecho a recibir dividendos",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Derechos sobre el dinero que tiene la empresa ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Posibilidad de que la acción aumente de valor con el tiempo",
+                     "1":"1"
+                  }
+               },
+               "3":{
+                  "0":"4.- ¿Por qué se dice que invertir en acciones en bolsa en el corto plazo es sumamente riesgoso? ",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Las acciones pueden perder valor con facilidad debido a la volatilidad del mercado",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Debido al elevado precio de las acciones",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Ya que en el largo plazo tenemos un rendimiento asegurado",
+                     "1":"0"
+                  }
+               },
+               "4":{
+                  "0":"5.- ¿Cómo puedo reducir el riesgo al invertir en acciones en bolsa?",
+                  "1":"4",
+                  "2":{
+                     "0":"a) Invirtiendo mucho dinero en una sola empresa",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Revisando detalladamente la información de una sola empresa",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Diversificándome (comprando acciones de distintas empresas)",
+                     "1":"1"
+                  }
+               },
+               "5":{
+                  "0":"6.- ¿Que es un índice bursátil?",
+                  "1":"3",
+                  "2":{
+                     "0":"a) El objetivo de rendimiento de las acciones que cotizan en bolsa.",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Un indicador de rendimiento grupal compuesto por los rendimientos individuales de los activos que componen el índice",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Un tipode acción en la bolsa de valores",
+                     "1":"0"
+                  }
+               },
+               "6":{
+                  "0":"7.- ¿Por qué se le llama renta variable a la inversión en acciones en bolsa?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) Porque el rendimiento de mi inversión puede variar por distintas razones",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Porque sé con certeza cuanto ganaré en mi inversión",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Porque mi ganancia varía conforme las variables de la empresa",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap20":{
+         "idx":20,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Inversiones alternativas: Crowdfounding y Criptomonedas",
+         "subtema":"Crowfunding ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Alternativas-1CrowdfundingCriptomoneda_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-90-0037.jpg",
+               "time":"37"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-91-0112.jpg",
+               "time":"72"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-92-0145.jpg",
+               "time":"105"
+            },
+            "3":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-94-0155.jpg",
+               "time":"115"
+            },
+            "4":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-98-0444.jpg",
+               "time":"284"
+            },
+            "5":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-99-0452.jpg",
+               "time":"292"
+            },
+            "6":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-100-0542.jpg",
+               "time":"342"
+            },
+            "7":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-101-0555.jpg",
+               "time":"355"
+            }
+         }
+      },
+      "diap21":{
+         "idx":21,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Emprender un negocio",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Alternativas-2EmprendimientoNegocio_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-102-0015.jpg",
+               "time":"15"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-103-0026.jpg",
+               "time":"26"
+            }
+         }
+      },
+      "diap22":{
+         "idx":22,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Emprender un negocio: Define tu QUÉ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Emprendimiento-1qu%C3%A9_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-105-0010.jpg",
+               "time":"10"
+            }
+         }
+      },
+      "diap23":{
+         "idx":23,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Emprender un negocio: Define tu CÓMO",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Emprendimiento-2C%C3%B3mo_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-106-0018.jpg",
+               "time":"18"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-107-0055.jpg",
+               "time":"55"
+            }
+         }
+      },
+      "diap24":{
+         "idx":24,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Emprender un negocio: Define CON QUÉ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Emprendimiento-3conqu%C3%A9-Actividad_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-108-0026.jpg",
+               "time":"26"
+            }
+         }
+      },
+      "diap25":{
+         "idx":25,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Emprender un negocio: Tips financieros",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/22-Emprendimiento-4tips-recomendaciones_c.mp4"
+      },
+      "diap26":{
+         "idx":26,
+         "curso":"7",
+         "template":"act1",
+         "titulo":"Actividad: Emprendimiento",
+         "actividades":{
+               "tipo":"6",
+               "reactivos":{
+                  "0":{
+                     "0":"1.- Al momento de emprender es importante tomar en cuenta que… (dos respuestas)",
+                     "1":"2,3",
+                     "2":{
+                        "0":"a) Emprender es riesgoso",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) Un emprendimiento exitoso da rendimientos sumamente altos",
+                        "1":"1"
+                     },
+                     "4":{
+                        "0":"c) Emprender es fácil ",
+                        "1":"0"
+                     }
+                  },
+                  "1":{
+                     "0":"2.- Es recomendable que, al emprender, busquemos mezclar:",
+                     "1":"5",
+                     "2":{
+                        "0":"a) Lo que nos gusta y apasiona",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Un buen equipo de trabajo",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Una oportunidad de mercado",
+                        "1":"0"
+                     },
+                     "5":{
+                        "0":"d) Todas las anteriores",
+                        "1":"1"
+                     }
+                  },
+                  "2":{
+                     "0":"3.- El primer paso de todo emprendimiento debe ser…",
+                     "1":"2",
+                     "2":{
+                        "0":"a) Validar nuestra propuesta de valor con nuestro mercado objetivo",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) Pedir dinero para iniciar",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Buscar las distintas formas de escalar nuestro negocio",
+                        "1":"0"
+                     }
+                  },
+                  "3":{
+                     "0":"4.- ¿Qué es un MVP? ",
+                     "1":"3",
+                     "2":{
+                        "0":"a) Un producto/servicio con todas las funcionalidades deseadas",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Un prototipo que tiene solo las funcionalidades básicas de nuestra oferta de valor para ser validado por nuestros clientes",
+                        "1":"1"
+                     },
+                     "4":{
+                        "0":"c) Nuestro producto más vendido",
+                        "1":"0"
+                     }
+                  },
+                  "4":{
+                     "0":"5.- ¿Cuáles son las principales formas de financiamiento? ",
+                     "1":"5",
+                     "2":{
+                        "0":"a) Recursos propios, FFF o recursos a fondo perdido",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Socios capitalistas",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Financiamiento",
+                        "1":"0"
+                     },
+                     "5":{
+                        "0":"d) Todas las anteriores",
+                        "1":"1"
+                     }
+                  },
+                  "5":{
+                     "0":"6.- Es recomendable que en etapas de validación de producto/servicio, busquemos utilizar esta fuente de recursos.",
+                     "1":"2",
+                     "2":{
+                        "0":"a) Recursos propios, FFF o recursos a fondo perdido",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) Préstamo bancario",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Socios capitalistas",
+                        "1":"0"
+                     }
+                  },
+                  "6":{
+                     "0":"7.- ¿Cuál es la clave de un emprendimiento exitoso?",
+                     "1":"4",
+                     "2":{
+                        "0":"a) Contar con muchos recursos",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Tener nuestros objetivos claros",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Ser perseverante y mejorar de forma continua.",
+                        "1":"1"
+                     }
+                  }
+                        }
+
+            }
+         },
+      "diap27":{
+         "idx":27,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Paso 3: Diversifícate",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/23-C%C3%B3moDiversificarnos_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-112-0011.jpg",
+               "time":"11"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-113-0128.jpg",
+               "time":"88"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-114-0542.jpg",
+               "time":"342"
+            }
+         }
+      },
+      "diap28":{
+         "idx":28,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"¿Cómo diversificamos?: Fondos de Inversión",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/23-FondoDeInversi%C3%B3n-ETF-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-117-116.jpg",
+               "time":"40"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-118-0640.jpg",
+               "time":"320"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%2520personales-121-0425.PNG",
+               "time":"325"
+            },
+            "3":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/125.PNG",
+               "time":"360"
+            }
+         },
+         "act":"30"
+      },
+      "diap29":{
+         "idx":29,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"¿Cómo diversificamos?: Ejemplo de portafolio",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/23-FondoDeInversi%C3%B3n-ETF-2ejemploportafolio_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-125-0010.jpg",
+               "time":"10"
+            }
+         }
+      },
+      "diap30":{
+         "idx":30,
+         "curso":"7",
+         "template":"actInversion",
+         "titulo":"Actividad: Construye tu portafolio",
+         "subtema":"Fondo de inversión",
+         "diapAnt":"29",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/23-FondoDeInversi%C3%B3n-ETF-3Actividad_c.mp4"
+      },
+      "diap31":{
+         "idx":31,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"Paso 4: Asesórate",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/24-BuscandoUnAsesor_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-126-0005.jpg",
+               "time":"5"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-127-0045.jpg",
+               "time":"45"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-128-0520.jpg",
+               "time":"320"
+            }
+         }
+      },
+      "diap32":{
+         "idx":32,
+         "curso":"7",
+         "template":"template0",
+         "titulo":"¿Cuáles mitos? ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/C5/C5-ElArteDeTenerSaludFinanciera-2mitosinversionista.mp4"
+      },
+      "diap33":{
+         "idx":33,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"El sistema de retiro en México",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/26-ElSistemaDeRetiroMX-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-132-0016.jpg",
+               "time":"16"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/image001.png",
+               "time":"224"
+            }
+         }
+      },
+      "diap34":{
+         "idx":34,
+         "curso":"7",
+         "diapAnt":"20",
+         "template":"act0",
+         "titulo":"Actividad: El sistema de retiro en México",
+         "subtema":"El sistema de retiro en México",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/26-ElSistemaDeRetiroMX-2Aactividad_c.mp4",
+         "actividades":{
+            "tipo":"3",
+            "reactivos":{
+               "0":{
+                  "0":"1.- ¿Por qué es importante invertir para el retiro?",
+                  "1":"5",
+                  "2":{
+                     "0":"a) Para poder disfrutar con tranquilidad la última etapa de la vida",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Para tener un ingreso que me mantenga cuando ya no trabaje ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Para hacer crecer mi patrimonio al momento de mi retiro",
+                     "1":"0"
+                  },
+                  "5":{
+                     "0":"d) Todas las anteriores",
+                     "1":"1"
+                  }
+               },
+               "1":{
+                  "0":"2.- ¿A qué edad me puedo retirar bajo el esquema del seguro social en México? (ley IMSS 97) (2 respuestas)",
+                  "1":"4,5",
+                  "2":{
+                     "0":"a) 70 años",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) 68 años",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) 65 años",
+                     "1":"1"
+                  },
+                  "5":{
+                     "0":"c) 60 años",
+                     "1":"1"
+                  }
+               },
+               "2":{
+                  "0":"3.- ¿Qué puedo hacer para incrementar mi pensión? (ley IMSS 97)",
+                  "1":"5",
+                  "2":{
+                     "0":"a) Cotizar más semanas",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Hacer aportaciones voluntarias ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Escoger una AFORE que de mejores rendimientos",
+                     "1":"0"
+                  },
+                  "5":{
+                     "0":"c) Todas las anteriores",
+                     "1":"1"
+                  }
+               },
+               "3":{
+                  "0":"4.- ¿Cómo debo escoger una AFORE?",
+                  "1":"4",
+                  "2":{
+                     "0":"a) Revisando su año de fundación",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) La que me den por default",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Por sus rendimientos y comisiones",
+                     "1":"1"
+                  }
+               },
+               "4":{
+                  "0":"5.- Si solo invierto a mi plan de retiro lo que toca por ley de mi sueldo, ¿con qué porcentaje de mi sueldo me estaría retirando? (ley IMSS 97)",
+                  "1":"4",
+                  "2":{
+                     "0":"a) Pensión completa",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Mi salario promedio de los últimos 5 años",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Entre 20-30% de mi sueldo promedio ",
+                     "1":"1"
+                  }
+               },
+               "5":{
+                  "0":"6.- ¿Cuántas semanas debo cotizar para poderme retirar con todos los beneficios? (ley IMSS 97)",
+                  "1":"3",
+                  "2":{
+                     "0":"a) 500",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) 1250",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) 750",
+                     "1":"0"
+                  },
+                  "5":{
+                     "0":"c) 1000",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap35":{
+         "idx":35,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"El poder del interés compuesto",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/27-ElPoderDelInter%C3%A9sCompuesto-1_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-139-0018.jpg",
+               "time":"18"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-140-0620.jpg",
+               "time":"300"
+            }
+         }
+      },
+      "diap36":{
+         "idx":36,
+         "curso":"7",
+         "template":"template1",
+         "titulo":"El poder del interés compuesto: Ejemplo práctico",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/27-ElPoderDelInter%C3%A9sCompuesto-2Ejemplo_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-144-0015-editado.jpg",
+               "time":"15"
+            }
+         }
+      },
+      "diap37":{
+         "idx":37,
+         "curso":"7",
+         "template":"act0",
+         "titulo":"Actividad: El poder del interés compuesto",
+         "subtema":"El poder del interés compuesto",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/27-ElPoderDelInter%C3%A9sCompuesto-3yActividad_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-144-0025.jpg",
+               "time":"25"
+            }
+         },
+         "actividades":{
+            "tipo":"6",
+            "reactivos":{
+               "0":{
+                  "0":"1.- ¿Qué es el interés compuesto?",
+                  "1":"4",
+                  "2":{
+                     "0":"a) La suma entre mi interés generado y mi capital inicial",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Un factor que multiplica mi interés otorgado ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Es el interés otorgado por la suma del capital inicial más los intereses generados previamente",
+                     "1":"1"
+                  },
+                  "5":{
+                     "0":"d) Un interés compuesto por distintos instrumentos de inversión",
+                     "1":"0"
+                  }
+               },
+               "1":{
+                  "0":"2.- ¿Por qué es importante el interés compuesto?",
+                  "1":"4",
+                  "2":{
+                     "0":"a) Convierte una mala inversión en buena",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Compromete menos capital al invertir",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Nos permite exponenciar los beneficios de una inversión en el largo plazo",
+                     "1":"1"
+                  }
+               },
+               "2":{
+                  "0":"3.- ¿Cómo puedo conseguir el interés compuesto en una inversión?",
+                  "1":"3",
+                  "2":{
+                     "0":"a) No se puede conseguir en los bancos comunes",
+                     "1":"0"
+                  },
+                  "3":{
+                     "0":"b) Una vez acabada cualquier inversión, reinvirtiendo tanto el capital inicial como las ganancias ",
+                     "1":"1"
+                  },
+                  "4":{
+                     "0":"c) Invirtiendo en cualquier instrumento",
+                     "1":"0"
+                  }
+               },
+               "3":{
+                  "0":"4.- ¿Cuáles son los factores clave en una inversión con el interés compuesto? (dos respuestas)",
+                  "1":"2,4",
+                  "2":{
+                     "0":"a) Reinversión de ganancias y capital inicial",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) Riesgo bajo",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Reinversión a largo plazo",
+                     "1":"1"
+                  },
+                  "5":{
+                     "0":"c) Inversiones alternativas",
+                     "1":"0"
+                  }
+               },
+               "4":{
+                  "0":"5.- ¿En qué institución puedo conseguir inversiones con interés compuesto?",
+                  "1":"2",
+                  "2":{
+                     "0":"a) En cualquier institución y en cualquier inversión",
+                     "1":"1"
+                  },
+                  "3":{
+                     "0":"b) No se pueden adquirir por personas comunes ",
+                     "1":"0"
+                  },
+                  "4":{
+                     "0":"c) Solamente en los bancos de inversión",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap38":{
+         "idx":38,
+         "curso":"7",
+         "act": "38",
+         "template":"template1",
+         "titulo":"¿Cómo tener libertad financiera?",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/28-C%C3%B3moTenerLibertadFinanciera_c.mp4",
+         "imagenes":{
+            "0":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-134-0005.jpg",
+               "time":"5"
+            },
+            "1":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-135-0022.jpg",
+               "time":"22"
+            },
+            "2":{
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-137-0215.jpg",
+               "time":"135"
+            }
+         }
+      },
+      "diap39":{
+         "idx":39,
+         "curso":"7",
+         "template":"act1",
+         "titulo":"Actividad: ¿Cómo tener libertad financiera?",
+         "actividades":{
+               "tipo":"6",
+               "reactivos":{
+                  "0":{
+                     "0":"1.- Seleccione cuáles de los siguientes activos son de ingreso pasivo (3 respuestas) ",
+                     "1":"2,4,6",
+                     "2":{
+                        "0":"a) Un bien inmueble que produce rentas ",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) El auto que conducimos",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Acciones de empresas que producen dividendos ",
+                        "1":"1"
+                     },
+                     "5":{
+                        "0":"d) La casa en la que vivimos",
+                        "1":"0"
+                     },
+                     "6":{
+                        "0":"e) Producto financiero que da intereses ",
+                        "1":"1"
+                     }
+                    }
+                  }
+               }
+            },
+      "diap40":{
+         "idx":40,
+         "curso":"7",
+         "template":"act1",
+         "titulo":"Quiz: Poniendo tu dinero a trabajar",
+         "actividades":{
+               "tipo":"6",
+               "reactivos":{
+                  "0":{
+                     "0":"2.- ¿Qué significa invertir?",
+                     "1":"4",
+                     "2":{
+                        "0":"a) Gastar dinero en cosas que necesito",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Ahorrar dinero para el largo plazo",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Emplear recursos en el presente para obtener un beneficio en el futuro",
+                        "1":"1"
+                     }
+                  },
+                  "1":{
+                     "0":"3.- ¿Cómo afecta la inflación nuestro dinero?",
+                     "1":"3",
+                     "2":{
+                        "0":"a) Hace que aumente su valor con el tiempo",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Hace que pierda valor con el tiempo",
+                        "1":"1"
+                     },
+                     "4":{
+                        "0":"c) Permite que tenga valor el dinero",
+                        "1":"0"
+                     }
+                  },
+                  "2":{
+                     "0":"4.- En las inversiones, ¿qué es el plazo?",
+                     "1":"3",
+                     "2":{
+                        "0":"a) El momento en que realizo una inversión",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) El tiempo en que finaliza una inversión y obtengo resultados",
+                        "1":"1"
+                     },
+                     "4":{
+                        "0":"c) El tiempo que tengo para modificar mi inversión",
+                        "1":"0"
+                     }
+                  },
+                  "3":{
+                     "0":"5.- ¿Cuáles de estas oraciones es correcta? ",
+                     "1":"2",
+                     "2":{
+                        "0":"a) En las inversiones, a mayor riesgo, mayor rendimiento",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) En las inversiones, menos riesgo es más rendimiento",
+                        "1":"0"
+                     }
+                  },
+                  "4":{
+                     "0":"6.- ¿Cuál es la diferencia entre renta fija y renta variable?",
+                     "1":"2",
+                     "2":{
+                        "0":"a) Inversiones en renta fija presentan condiciones de plazo y rendimiento fijas, mientras que las de renta variable no",
+                        "1":"1"
+                     },
+                     "3":{
+                        "0":"b) Inversiones en renta fija suelen dar mayor rendimiento que las de renta variable",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Inversiones en renta variable presentan condiciones de inversión previamente pactadas",
+                        "1":"0"
+                     }
+                  },
+                  "5":{
+                     "0":"7.- CETES, bonos gubernamentales, pagarés bancarios son ejemplos de",
+                     "1":"4",
+                     "2":{
+                        "0":"a) Instrumentos de renta variable",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Acciones en bolsa",
+                        "1":"0"
+                     },
+                     "4":{
+                        "0":"c) Instrumentos de renta fija",
+                        "1":"1"
+                     }
+                  },
+                  "6":{
+                     "0":"8.- ¿Cuál de estos NO es un beneficio de una inversión en bienes raíces? ",
+                     "1":"3",
+                     "2":{
+                        "0":"a)  Posibilidad de recibir rentas",
+                        "1":"0"
+                     },
+                     "3":{
+                        "0":"b) Son activos de alta liquidez",
+                        "1":"1"
+                     },
+                     "4":{
+                        "0":"c) Son bienes tangibles y físicos ",
+                        "1":"0"
+                     },
+                     "5":{
+                        "0":"c) Difícilmente se deprecian ",
+                        "1":"0"
+                     }
+                  },
+                     "7":{
+                        "0":"9.- ¿Cuál de estas oraciones respecto a las acciones en bolsa son ciertas?",
+                        "1":"5",
+                        "2":{
+                           "0":"a) Invertir en acciones individuales puede ser riesgoso en el corto plazo",
+                           "1":"0"
+                        },
+                        "3":{
+                           "0":"b) Al comprar acciones de diferentes empresas (diversificándome) puedo mitigar el riesgo",
+                           "1":"0"
+                        },
+                        "4":{
+                           "0":"c) Las acciones dan dividendos y plusvalía",
+                           "1":"0"
+                        },
+                        "5":{
+                           "0":"c) Todas las anteriores",
+                           "1":"1"
+                        }
+                     },
+                     "8":{
+                        "0":"10.- Son ejemplos de instrumentos de inversión diversificados (2 respuestas)",
+                        "1":"3,5",
+                        "2":{
+                           "0":"a) Un pagare bancario",
+                           "1":"0"
+                        },
+                        "3":{
+                           "0":"b) Fondos de inversión",
+                           "1":"1"
+                        },
+                        "4":{
+                           "0":"c) Un local comercial",
+                           "1":"0"
+                        },
+                        "5":{
+                           "0":"d) Fondos cotizados (ETFs)",
+                           "1":"1"
+                        }
+                     },
+                     "9":{
+                        "0":"11.- ¿Qué es el crowdfunding?",
+                        "1":"2",
+                        "2":{
+                           "0":"a) Plataformas de fondeo colectivo en donde puedo invertir mi dinero o solicitarlo",
+                           "1":"1"
+                        },
+                        "3":{
+                           "0":"b) Un esquema de tanda virtual",
+                           "1":"0"
+                        },
+                        "4":{
+                           "0":"c) Una caja de ahorro virtual",
+                           "1":"0"
+                        }
+                     },
+                        "10":{
+                           "0":"12.- Para muchos es la mejor inversión ya que nos ayuda a identificar y capitalizar oportunidades en nuestra vida…",
+                           "1":"3",
+                           "2":{
+                              "0":"a) Un pagaré bancario",
+                              "1":"0"
+                           },
+                           "3":{
+                              "0":"b) Las acciones en bolsa",
+                              "1":"1"
+                           },
+                           "4":{
+                              "0":"c) Bienes raíces",
+                              "1":"0"
+                           },
+                           "5":{
+                              "0":"c) La educación",
+                              "1":"0"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+}

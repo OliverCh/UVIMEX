@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Curso</title>
+
+        <!-- Our CSS stylesheet file -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <link rel="stylesheet" href="assets/css/stylesCursos.css" />
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+
+    <!-- Including Open Sans Condensed from Google Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic" />
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--
+       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+-->
+    </head>
+    
+    <body>
+
+      
+
+      <div id="seccionVideos" >
+
+        <div class="seccionVideos">
+            <section id="diapositivas" class="detalleDiap catalogoVideo" >
+              <div style="width: 100%; height: 50px;" ><center>Lista Anteriores</center></div>
+              <embed src="http://www.denlin.com.mx/marisela/curso1/marisela1-3/" style="width: 100%; height: 200px;"></embed>
+            </section>
+            <section id="catalogoDiap" class="tituloTop" >
+            <center>Videos Anterior</center>  
+            </section>
+        </div>
+
+        <div class="seccionVideos">
+           
+          <section class="detalleInstruccion catalogoVideo" >
+             <iframe width="100%" height="250px"  src="https://www.youtube.com/embed/VuZwD1z_5r4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </section>
+          <section id="instrucciones" class="tituloTop">
+            <center>Instrucciones</center>
+          </section>
+        </div>
+
+      </div>
+
+
+     <div id="contenedor"> 
+
+
+     </div>
+
+    <nav id="colorNavVertical" > 
+         
+      <ul>
+        <li class="green">
+          <a href="#" class="icon-search "></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="red">
+          <a href="#" class="icon-pencil "></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="blue">
+          <a href="#" class="icon-file "></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="yellow">
+          <a href="#" class="icon-edit "></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="purple">
+          <a href="#" class="icon-comment "></a>
+          <ul>
+             
+          </ul>
+        </li>
+      </ul>
+      <div class="icon-home-teme" > 
+        
+      </div>
+
+
+    </nav>
+
+      
+ <iframe id="iframePagina1" src="http://denlin.com.mx/alz_n/dvd1/inicio.html" style="width: 100vw; height: 100vh;"></iframe> 
+
+    
+
+        <footer>
+          
+          <nav id="colorNav">
+            <div class="icon-home-cont"> 
+      contenedor
+    </div>
+      <ul>
+        <li class="green">
+          <a href="#" id="diapMenu" class="icon-home " title="Inicio"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="red">
+          <a href="#" id="autoAvance" class="icon-arrow-right " title="Avance Automatico"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="blue">
+          <a href="#" id="diapAnt" class="icon-chevron-left " title="Diapositiva Anterior"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="yellow">
+          <a href="#" id="diapSig" class="icon-chevron-right " title="Diapositiva Siguiente"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="purple">
+          <a href="#" class="icon-"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="pink">
+          <a href="#" id="mediaPlay" class="icon-play " title="Reproducir Video"></a>
+          <ul>
+             
+          </ul>
+        </li>
+        <li class="strongBlue">
+          <a href="#" id="mediaStop" class="icon-stop " title="Detener Video"></a>
+          <ul>
+             
+          </ul>
+        </li>
+      </ul>
+      
+    </nav>
+        </footer>
+
+        <!-- BSA AdPacks code. Please ignore and remove.--> 
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        
+    
+
+    </body>
+
+
+    <script type="text/javascript">
+      
+
+      $(".icon-home").click(function(){
+
+        if($(".icon-home-cont").is(":hidden")){
+          $(".icon-home-cont").fadeIn();
+          $(".green").addClass("rotate");
+        }else{
+          $(".icon-home-cont").fadeOut();
+          $(".green").removeClass("rotate");
+        }
+
+
+        
+      });
+
+
+      $(".icon-search, .icon-pencil, .icon-file, .icon-edit").click(function(){
+
+        /*console.log($(this).attr("class") + ":" +  $(".icon-home-teme").attr("data-idMenu") )*/
+
+        if ($(this).attr("class") == $(".icon-home-teme").attr("data-idMenu") || $(".icon-home-teme").attr("data-idMenu") == null ) {
+
+          if($(".icon-home-teme").is(":hidden")){
+            $(".icon-home-teme").fadeIn();
+            $(".icon-home-teme").attr("data-idMenu", $(this).attr("class"));
+          }else{
+            $(".icon-home-teme").fadeOut();
+            $(".icon-home-teme").removeAttr("data-idMenu");
+          }
+
+        } else{
+          $(".icon-home-teme").attr("data-idMenu", $(this).attr("class"));
+        }
+
+ 
+        
+      });
+
+      
+
+      $("#catalogoDiap").click(function(){
+
+        if($(".detalleDiap").is(":hidden")){
+          $(".detalleDiap").fadeIn();
+        }else{
+          $(".detalleDiap").fadeOut();
+        }
+        
+      });
+
+      $("#instrucciones").click(function(){
+
+        if($(".detalleInstruccion").is(":hidden")){
+          $(".detalleInstruccion").fadeIn();
+        }else{
+          $(".detalleInstruccion").fadeOut();
+        }
+        
+      });
+
+
+       
+/*--------------------------------------------------*/
+
+
+
+var temas = ` <section>Temario del curso</section>
+        <section>
+          <div id="temasDelCurso">
+          <section style="width: 100%;">Tema 1</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 1.1</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 1.2</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 1.3</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 1.4</section>
+          <section style="width: 100%;">Tema 2</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 2.1</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 2.2</section>
+          <section style="padding-left: 10px; width: 100%;">Sub Tema 2.3</section>
+           
+        </div>
+        </section>`;
+
+var notas = `<section>Notas de diapositiva</section>
+        <section>
+          <textarea class="notasDiap" >
+            
+          </textarea>
+           
+         
+        </section>
+        `;
+
+var materialAdicional =`<div class="materialAdicional">
+          <div><img src="assets/images/ico-pdf.png" ><section>Libro 1</section></div>
+          <div><img src="assets/images/ico-png.png" ><section>Actividad</section></div>
+          <div><img src="assets/images/ico-jpg.png" ><section>Cuestionario</section></div>
+           </div> 
+           <div class="materialAdicional">
+          <div><img src="assets/images/ico-pdf.png" ><section>Libro 1</section></div>
+          <div><img src="assets/images/ico-png.png" ><section>Actividad</section></div>
+          <div><img src="assets/images/ico-jpg.png" ><section>Cuestionario</section></div>
+          </div>`;
+
+
+var guion = `<section>Contenido del Video</section>
+        <section>
+          <section>
+          Guion del cursos para poderrealizar lectura del contenido
+          </section>
+           
+         
+        </section>
+        `;
+        
+  
+       
+            $(".icon-search").click(function(){
+         
+        $(".icon-home-teme").html(temas);
+
+        });
+
+    $(".icon-pencil").click(function(){
+         
+        $(".icon-home-teme").html(notas);
+
+        });
+      
+
+    $(".icon-file").click(function(){
+             
+            $(".icon-home-teme").html(materialAdicional);
+
+            });
+
+    $(".icon-edit").click(function(){
+             
+            $(".icon-home-teme").html(guion);
+
+            });
+
+
+
+
+       $(document).ready(function(){
+
+        var autoplayDiap = 1;
+          
+ 
+
+        /*console.log(autoplayDiap);*/
+        $("#autoAvance").click(function(){
+
+          if (autoplayDiap == 0){
+            $("#autoAvance").removeAttr("class");
+            $("#autoAvance").attr("class", "icon-arrow-right");
+            autoplayDiap = 1;
+
+          }else{
+
+            $("#autoAvance").removeAttr("class");
+            $("#autoAvance").attr("class", "icon-repeat");
+            autoplayDiap = 0;
+
+          }
+
+
+         
+        });
+
+
+         
+        /*$("body").append($( window ).width() + ":" + $( window ).height());*/
+
+var duracionVideo ;
+
+
+        setTimeout(function(){
+         
+  
+
+  document.getElementById("videoCurso").play();
+
+  $("#mediaPlay").removeAttr("class");
+  $("#mediaPlay").attr("class", "icon-pause");
+
+
+
+  /*document.getElementById("videoCurso").currentTime = 50;*/
+  duracionVideo = document.getElementById("videoCurso").duration;
+  $("#controlVideo").attr("max", duracionVideo);
+                   
+   setInterval(actualizaBarraVideo, 100);
+
+}, 5000);
+
+
+
+    function actualizaBarraVideo (){
+      var tiempoVideo = document.getElementById("videoCurso").currentTime;
+      /*console.log(tiempoVideo);*/
+      $("#controlVideo").val(tiempoVideo);
+
+
+      duracionVideo = document.getElementById("videoCurso").duration;
+  $("#controlVideo").attr("max", duracionVideo);
+                   
+    } 
+
+
+        
+
+var numDiap = 0;
+
+
+cambiarDiap("diap"+numDiap);
+
+        $("#diapSig").click(function(){
+
+console.log(numDiap);
+                if (numDiap == totalDiap ) { numDiap = 0;}else{numDiap ++;}
+            
+                   $("#mediaPlay").removeAttr("class");
+                
+
+          $("#mediaPlay").attr("class", "icon-play");
+
+                  cambiarDiap("diap"+numDiap);
+
+                    setTimeout(function(){
+
+
+                   $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-pause");
+
+          document.getElementById("videoCurso").play();
+        }, 5000);
+
+        });
+
+
+        $("#diapAnt").click(function(){
+
+                  if (numDiap > 0){ numDiap --;}
+                   $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-play");
+
+                  cambiarDiap("diap"+numDiap);
+
+                    setTimeout(function(){
+          
+                   $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-pause");
+
+          document.getElementById("videoCurso").play();
+        }, 5000);
+
+
+        });
+
+
+
+
+        function cambiarDiap(diapositiva){
+
+     
+                    $.getJSON("curso.json",function(data){ 
+              
+                     
+
+                          jQuery.get(data.contenido[diapositiva].template  +'.txt', function(data) {
+               
+                      //process text file line by line
+                      $('#contenedor').html(data);
+                        });
+
+
+                          setTimeout(function(){
+              $("#tituloCurso").html(data.contenido[diapositiva].titulo );
+                    $("#temaCurso").html(data.contenido[diapositiva].descripcion );
+                    $("#urlVideo").removeAttr("src","");
+                    $("#urlVideo").attr("src",data.contenido[diapositiva].video );
+                    $("#videoCurso").load();
+                    $("#img0 img").attr("src","img/" + data.contenido[diapositiva].imagenes[0] );
+                    $("#img1 img").attr("src", "img/" + data.contenido[diapositiva].imagenes[1] );
+
+                    console.log(data.contenido[diapositiva].descripcion );
+
+                    $("#videoCurso").on('ended', function(){
+                      /*alert('El video ha finalizado!!!');*/
+
+                       $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-play");
+
+
+
+
+                      if (autoplayDiap != 0){numDiap++; cambiarDiap("diap"+numDiap); }
+                           
+                        });
+
+                  
+
+                  /*alert($("#controlVideo").attr("max", durac));*/
+
+
+
+   var rng = document.getElementById("controlVideo");
+
+var listener = function() {
+  window.requestAnimationFrame(function() {
+  /*  document.querySelector("div").innerHTML = rng.value;*/
+document.getElementById("videoCurso").currentTime = rng.value;
+  /*console.log(rng.value);*/
+  });
+};
+
+rng.addEventListener("mousedown", function() {
+  listener();
+  rng.addEventListener("mousemove", listener);
+});
+
+
+
+rng.addEventListener("mouseup", function() {
+  rng.removeEventListener("mousemove", listener);
+});
+
+
+
+            }, 100);
+
+
+                  
+
+  setTimeout(function(){
+
+
+                   $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-pause");
+
+          document.getElementById("videoCurso").play();
+        }, 5000);
+
+                    
+       
+ 
+                });
+
+        }
+
+
+
+        $("#mediaPlay").click(function(){
+          
+       
+
+
+       if ($("#mediaPlay").attr("class") == "icon-play" ) {
+
+        $("#mediaPlay").removeAttr("class");
+        $("#mediaPlay").attr("class", "icon-pause");
+        $("#videoCurso").trigger('play');
+
+        }else {
+
+            $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-play");
+          $("#videoCurso").trigger('pause');
+              /*  $('video').trigger('play');
+              $('video').trigger('pause');*/
+
+      }
+        });
+
+
+        $("#mediaStop").click(function(){
+          
+       
+
+
+            $("#mediaPlay").removeAttr("class");
+          $("#mediaPlay").attr("class", "icon-play");
+          $("#videoCurso").trigger('pause');
+              
+
+            document.getElementById("videoCurso").currentTime = 0;
+           
+
+      
+        });
+
+
+  var element = document.getElementById('element');
+            var fullscreen = document.getElementById('fullscreen');
+
+/* media fullscreen*/
+        $(".icon-").click(function(){
+          
+       
+               if(element.requestFullscreen){
+                    element.requestFullscreen();
+                } 
+                else if (element.webkitRequestFullscreen){
+                    element.webkitRequestFullscreen();
+                }
+                else if (element.mozRequestFullScreen){
+                    element.mozRequestFullScreen();
+                }
+                else if (element.msRequestFullscreen){
+                    element.msRequestFullscreen();
+                }   
+
+      
+        });
+
+
+
+
+
+        
+
+});
+
+
+
+var diap2 = `<section id="tituloCurso">AJUSTE DE LAS PRENDAS</section>
+        <section id="temaCurso">Como impacta el ajuste de mi ropa</section>
+
+        <section id="seccionVideo">
+          <video id="videoCurso"></video>
+        </section>
+
+        <section id="seccionGaleria">
+          
+        </section>`;
+    </script>
+
+
+
+
+    <script type="text/javascript">
+      var totalDiap;
+        function cargaMenu(diapositiva){
+
+                    
+                    $.getJSON("curso.json",function(data){ 
+              
+
+
+                       
+                      
+  var count = Object.keys(data.contenido).length;
+  /*console.log(count);*/
+
+  totalDiap = count;
+  /*
+                    $("#tituloCurso").html(data.contenido[diapositiva].titulo);
+                    $("#temaCurso").html(data.contenido[diapositiva].descripcion );
+                    $("#urlVideo").removeAttr("src","");
+                    $("#urlVideo").attr("src",data.contenido[diapositiva].video );
+                    $("#videoCurso").load();
+                    $("#img0 img").attr("src","img/" + data.contenido[diapositiva].imagenes[0] );
+                    $("#img1 img").attr("src", "img/" + data.contenido[diapositiva].imagenes[1] );*/
+ 
+                });
+                   }
+
+                   cargaMenu();
+
+    </script>
+
+
+
+     
+
+</html>

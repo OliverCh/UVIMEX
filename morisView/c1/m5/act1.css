@@ -1,0 +1,78 @@
+video#videoCurso {
+	width:  100%;
+	height:  100%;
+}
+
+#seccionVideo{
+	display: inline-block;
+	width: 54%;
+}
+
+#seccionPreguntas{
+	display: inline-block;
+	padding: 8px;
+	text-align: center;
+	position: absolute;
+	margin: 6% 12% !important;
+	width: 25%;
+}
+
+#seccionPreguntas li{
+	margin: 1%;
+}
+
+#seccionPreguntas ul{
+	list-style: none;
+	list-style-type: none;
+}
+
+#videoCurso{
+	background: black;
+}
+
+@media (max-width: 1024px){
+	#seccionVideo{
+		padding: 1% 8%;
+		width: 100%;
+	}
+
+	#seccionPreguntas{
+		padding: 0;
+    	margin: 0;
+    	width: 100%;
+	}
+
+	#controlVideo, #videoCurso{
+		width: 90% !important;
+	}
+}
+
+ .metos, .periodo{
+ 	display: inline-block !important;
+ 	width: 40% !important;
+ 	background: white;
+ 	font-size: 1rem;
+ }
+
+ 
+.seccionPreguntasContestadas{
+	width: 100%;
+	display: inline-block;
+}
+
+.respuestasSeleccionadas{
+	font-size: 1.15rem;
+}
+
+.respOkTitle, .respNokTitle{
+	font-size: 1.3rem;
+	font-weight: bolder;
+}
+
+.respOk{
+	color: green;
+}
+
+.respNok{
+	color: red;
+}

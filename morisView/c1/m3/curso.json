@@ -1,0 +1,635 @@
+ {
+   "contenido":{
+	  "diap0":{
+		 "idx":0,
+		 "curso":"6",
+		 "template":"template0",
+		 "titulo":"¿Qué es ahorrar y por qué es importante?",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/C3-ElArteDeAhorrarM%C3%A1sYMejor_c.mp4"
+	  },
+	  "diap1":{
+		 "idx":1,
+		 "curso":"6",
+		 "titulo":"¿Por qué es tan difícil ahorrar?",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/9-%C2%BFPorqu%C3%A9EsTanD%C3%ADficilAhorrar-_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-29-0023ERROR.jpg",
+						 "time":"23"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-30-0038.jpg",
+						  "time":"38"
+						 },
+					 "2":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-31-0326.jpg",
+						  "time":"206"
+						 }
+		}
+	  },
+	  "diap2":{
+		 "idx":2,
+		 "curso":"6",
+		 "titulo":"Elimina el gasto hormiga",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/10-ElGastoHormiga_c.mp4",
+		 "imagenes":{
+			"0":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-32-0005.jpg",
+				"time":"5"
+			},
+
+			"1":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-33-1-0017.PNG",
+				"time":"17"
+			},
+			"2":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-33-2-0017.PNG",
+				"time":"24"
+				},
+			"3":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-33-3-0017.PNG",
+				"time":"31"
+			},
+			"4":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-33-4-0017.PNG",
+				"time":"38"
+			},
+			"5":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-34-0048.jpg",
+				"time":"48"
+				}
+			},
+		"act": "3"
+	  },
+	  "diap3":{
+		 "idx":3,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Actividad: Selecciona los gastos hormiga",
+		 "diapAnt": "2",
+		 "actividades":{
+			"tipo":"3",
+			"reactivos":{
+			   "0":{
+				  "0":"Selecciona los gastos hormiga",
+				  "1":"3,4,6,7,9",
+				  "2":{
+					 "0":"a) Pago de inscripción a un curso educativo",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Comidas en restaurantes ",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Pagos de estacionamiento ",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) Pago del mantenimiento del auto",
+					 "1":"0"
+				  },
+				  "6":{
+					 "0":"e) Pago de comisiones en servicios",
+					 "1":"1"
+				  },
+				  "7":{
+					 "0":"f) Snacks",
+					 "1":"1"
+				  },
+				  "8":{
+					 "0":"g) Gasto médico de un accidente",
+					 "1":"0"
+				  },
+				  "9":{
+					 "0":"h) Cigarros ",
+					 "1":"1"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap4":{
+		 "idx":4,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Actividad: Escribe tus gastos hormiga",
+		 "diapAnt": "3",
+		  "actividades":{
+			"tipo":"0",
+			"reactivos":{
+			   "0":{
+				  "0":"Escribe los 3 gastos hormiga que más impactan tu vida"
+			   }           
+			}
+		 }
+	  },
+	  "diap5":{
+		 "idx":5,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Construyendo la bandera de México",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/11-ConstruyendoLaBanderaDeM%C3%A9xico_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-35-0148.jpg",
+						 "time":"108"
+						 }
+					 }
+	  },
+	  "diap6":{
+		 "idx":6,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Deseos vs Necesidades",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/12-DeseosVsNecesidades_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-36-0020.jpg",
+						 "time":"20"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-37-0124.jpg",
+						  "time":"84"
+						 }
+					 },
+		"act": "7"
+	  },
+	  "diap7":{
+		 "idx":7,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Actividad: ¿Qué es deseo y qué es necesidad?",
+		 "diapAnt": "5",
+		  "actividades":{
+			"tipo":"1",
+			"reactivos":{
+				"0":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 1) Auto lujoso",
+					"1": "2",
+					"2": {
+						"0": "Deseo",
+						"1":"1"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "0"
+					}
+				},
+				"1":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 2) Colegiatura de tu hijo",
+					"1": "3",
+					"2": {
+						"0": "Deseo",
+						"1":"0"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "1"
+					}
+				},
+				"2":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 3) Gasolina para el auto",
+					"1": "3",
+					"2": {
+						"0": "Deseo",
+						"1":"0"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "1"
+					}
+				},
+				"3":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 4) Ropa de lujo",
+					"1": "2",
+					"2": {
+						"0": "Deseo",
+						"1":"1"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "0"
+					}
+				},
+				"4":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 5) Cena en restaurante de alta gama",
+					"1": "2",
+					"2": {
+						"0": "Deseo",
+						"1":"1"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "0"
+					}
+				},
+				"5":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 6) Gasto del seguro del auto",
+					"1": "3",
+					"2": {
+						"0": "Deseo",
+						"1":"0"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "1"
+					}
+				},
+				"6":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 7) Pago el mantenimiento del auto",
+					"1": "3",
+					"2": {
+						"0": "Deseo",
+						"1":"0"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "1"
+					}
+				},
+				"7":{
+					"0": "Para cada gasto, define si es un deseo o una necesidad <br> 8) Hipoteca",
+					"1": "3",
+					"2": {
+						"0": "Deseo",
+						"1":"0"
+					},
+					"3": {
+						"0": "Necesidad",
+						"1": "1"
+					}
+				}
+			}
+		 }
+	
+	  },
+	  "diap8":{
+		 "idx":8,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Actividad: Escribe tus deseos y tus necesidades",
+		 "diapAnt": "7",
+		  "actividades":{
+			"tipo":"0",
+			"reactivos":{
+			   "0":{
+				  "0":"Escribe 3 gastos que consideras necesarios y 3 que son deseos"
+			   }           
+			}
+		 }
+	  },
+	  "diap9":{
+		 "idx":9,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Crea un presupuesto",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/13-CreaUnPresupuesto_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-38-0006.jpg",
+						 "time":"6"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-39-0226.jpg",
+						  "time":"146"
+						 }
+					 },
+		"act": "10"
+	  },
+	  "diap10":{
+		 "idx":10,
+		 "curso":"6",
+		 "diapAnt": "7",
+		 "template":"act1",
+		 "titulo":"Actividad: Crea tu propio presupuesto con apoyo de una plantilla",
+		 "actividades":{
+		 	"tipo": "aaaaaa"
+		 }
+	  },
+	  "diap11":{
+		 "idx":11,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Compras que reducen gastos",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/14-ComprasQueReducenGastos_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-40-0109.jpg",
+						 "time":"69"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-41-0150.jpg",
+						  "time":"110"
+						 }
+					 },
+		"act": "12"
+	  },
+	  "diap12":{
+		 "idx":12,
+		 "curso":"6",
+		 "template":"act1",
+		 "diapAnt": "9",
+		 "titulo":"Actividad: Compras que reducen gastos",
+		 "subtema":"Selecciona las compras que te reducirán gastos en el futuro",
+		  "actividades":{
+			"tipo":"3",
+			"reactivos":{
+			   "0":{
+				  "0":"Selecciona de las siguientes compras cuáles te reducirán gastos en el futuro",
+				  "1":"2,4,5",
+				  "2":{
+					 "0":"a) Reparación de goteras en la casa ",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Computadora",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Seguro de gastos médicos",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) Mantenimiento del auto",
+					 "1":"1"
+				  },
+				  "6":{
+					 "0":"e) Ropa y accesorios",
+					 "1":"0"
+				  },
+				  "7":{
+					 "0":"f) Muebles para el hogar",
+					 "1":"0"
+				  }
+			   }
+			
+			
+			}
+		 }
+	
+	  },
+	  "diap13":{
+		 "idx":13,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Hacks del ahorro",
+		 "act": "12",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/15-HacksDelAhorro_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-42-0051.jpg",
+						 "time":"51"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-43-0211.jpg",
+						  "time":"131"
+						 },
+					 "2":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-45-0233.jpg",
+						  "time":"153"
+						 },
+					 "3":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-44-0245.jpg",
+						  "time":"165"
+						 },
+					 "4":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-46-0254.jpg",
+						  "time":"174"
+						 },
+					 "5":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-47-0242-0303.jpg",
+						  "time":"183"
+						 }
+					 }
+	  },
+	  "diap14":{
+		 "idx":14,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Actividad: Escribe tus hacks favoritos",
+		 "subtema":"Escribe tus hacks favoritos",
+		 "diapAnt": "13",
+		  "actividades":{
+			"tipo":"0",
+			"reactivos":{
+			   "0":{
+				  "0":"Escribe los 5 hacks que te ayudarán a ahorrar más y mejor"
+			   }           
+			}
+		 }
+	  },
+	  "diap15":{
+		 "idx":15,
+		 "curso":"6",
+		 "template":"template1",
+		 "titulo":"Estrategias de ahorro",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/16-EstrategiasDeAhorro_c.mp4",
+		 "imagenes":{
+					 "0":{
+						 "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-50-0033.jpg",
+						 "time":"33"
+						 },
+
+					 "1":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-51-0417.jpg",
+						  "time":"257"
+						 },
+					 "2":{
+						  "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-52-0448.jpg",
+						  "time":"288"
+						 }
+					 }
+	  },
+	  "diap16":{
+		 "idx":16,
+		 "curso":"6",
+		 "template":"act1",
+		 "titulo":"Quiz: Ahorrando más y mejor",
+		 "actividades":{
+			"tipo":"6",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿Por qué a los seres humanos se nos dificulta tanto ahorrar? (2 respuestas)",
+				  "1":"2,3",
+				  "2":{
+					 "0":"a) Buscamos la satisfacción a corto plazo",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Se nos dificulta ver beneficios que no obtenemos en el presente",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Por qué tenemos muchas necesidades",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- Snacks, cigarros, pequeñas cuotas, comisiones, cafés, son ejemplos de…",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Productos de consumo",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Gastos recurrentes",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Gastos hormiga",
+					 "1":"1"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- Distinguir entre qué cosas son deseo y qué cosas en verdad necesitamos nos ayuda a… (2 respuestas)",
+				  "1":"3,4",
+				  "2":{
+					 "0":"a) Gastar más dinero",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Sacarle el mejor provecho a dinero",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Tomar mejores decisiones de compra ",
+					 "1":"1"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- Al hacer un presupuesto, los conceptos más importantes a incluir son:",
+				  "1":"5",
+				  "2":{
+					 "0":"a) Ingresos",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Gastos",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Meta de ahorro",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Todas las anteriores",
+					 "1":"1"
+				  }
+			   },
+			   "4":{
+				  "0":"5.- La diferencia entre gastos fijos y variables es:",
+				  "1":"3",
+				  "2":{
+					 "0":"a) Fijos producen ingresos",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Fijos son mis gastos recurrentes que no cambian mes a mes, variables son por eventualidades y dependen de cada mes.",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Gastos variables son por variables que impactan en mi estilo de vida.",
+					 "1":"0"
+				  }
+			   },
+			   "5":{
+				  "0":"6.- Cuál es una de las estrategias más efectivas para ahorra?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Eliminar nuestros gastos fijos a la mitad",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Tener nuestro dinero en efectivo",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Domiciliar nuestro ahorro, para que se automatice el monto que queremos ahorrar",
+					 "1":"1"
+				  }
+			   },
+			   "6":{
+				  "0":"7.- ¿Cuál debe ser nuestro primer objetivo de ahorro?",
+				  "1":"3",
+				  "2":{
+					 "0":"a)  Ahorrar para comprar activos",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Nuestro ahorro de emergencia",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Ahorrar para algún viaje ",
+					 "1":"0"
+				  }
+				},
+				"7":{
+					"0":"8.- Para poder ahorrar de forma efectiva debemos…",
+					"1":"2",
+					"2":{
+						"0":"a) Tener claro para qué estamos ahorrando (nuestro objetivo)",
+						"1":"1"
+					},
+					"3":{
+						"0":"b) Definir nuestro perfil de comprador",
+						"1":"0"
+					},
+					"4":{
+						"0":"c) Reducir nuestras necesidades",
+						"1":"0"
+					}
+				},
+			   "8":{
+				  "0":"9.- Un presupuesto nos ayuda a:",
+				  "1":"5",
+				  "2":{
+					 "0":"a) Tener claridad de lo que ingresamos y de la forma en que gastamos, con el objetivo de cumplir nuestra meta de ahorro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Poder reducir nuestros gastos innecesarios",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Conocer el estado de nuestras finanzas personales",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Todas las anteriores",
+					 "1":"1"
+				  }
+			   },
+			   "9":{
+				  "0":"10.- Por qué es importante ahorrar? (3 respuestas)",
+				  "1":"2,3,4",
+				  "2":{
+					 "0":"a)  Para tener dinero en caso de emergencias",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Para comprar cosas de gran valor sin pedir prestado",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Para invertir ",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) Para poder gastar más ",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  }
+   }
+}

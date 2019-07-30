@@ -1,0 +1,25 @@
+<div id="contenedorCurso">
+	<div style="width: 100%;">
+		<section id="tituloCurso"></section>
+		<section id="subtituloCurso"></section>		
+		<section id="temaCurso"></section>
+	</div>
+
+	<div style="width:100%;">
+		<div id="seccionVideo">
+			<canvas id="videoCursoCanvas"></canvas>
+			<input type="range" min="0"   value="0" id="controlVideo" >
+		</div>
+
+		<div id="seccionPreguntas">
+			<h2>pregunta</h2>
+			<br />
+			<div class="respuestas">
+				<textarea placeholder="Escribe aqui tu respuesta..."></textarea>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/act0.css" />
+	<link rel="stylesheet" href="css/act1.css" />
+</div>
+<video id="videoCurso" controls="false" controlsList="nodownload" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

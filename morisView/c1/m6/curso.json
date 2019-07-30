@@ -1,0 +1,332 @@
+{  
+   "contenido":{  
+      "diap0":{  
+         "idx":0,
+         "curso":"4",
+         "template":"template1",
+         "titulo":"Resumen del Curso",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/37-ResumenDelCurso_c.mp4",
+         "imagenes":{  
+            "0":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-23-0040.jpg",
+               "time":"40"
+            },
+            "1":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-180-0230.jpg",
+               "time":"150"
+            },
+            "2":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-181-0245.jpg",
+               "time":"165"
+            }
+         }
+      },
+      "diap1":{  
+         "idx":1,
+         "curso":"4",
+         "template":"act1",
+         "titulo":"Quiz: Final",
+         "actividades":{  
+            "tipo":"6",
+            "reactivos":{  
+               "0":{  
+                  "0":"1. El primer paso para alcanzar nuestras metas en la vida es:",
+                  "1":"3",
+                  "2":{  
+                     "0":"a) Invertir",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Definir correctamente nuestras metas y objetivos",
+                     "1":"1"
+                  },
+                  "4":{  
+                     "0":"c) Ahorrar ",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"d) Vivir una vida de salud financiera",
+                     "1":"0"
+                  }
+               },
+               "1":{  
+                  "0":"2.- Para alcanzar nuestras metas en la vida debemos generar riqueza, esta se genera:",
+                  "1":"3",
+                  "2":{  
+                     "0":"a) Trabajando en un empleo",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Aumentando nuestros ingresos y reduciendo nuestros gastos",
+                     "1":"1"
+                  },
+                  "4":{  
+                     "0":"c) Definiendo correctamente nuestras metas",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"c) Escogiendo bien nuestros créditos",
+                     "1":"0"
+                  }
+               },
+               "2":{  
+                  "0":"3.- La herramienta más importante para llevar una buena administración de recursos y poder ahorrar es:",
+                  "1":"5",
+                  "2":{  
+                     "0":"a) Una meta financiera",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Un instrumento de inversión",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) Una calculadora financiera",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"c) Un presupuesto",
+                     "1":"1"
+                  }
+               },
+               "3":{  
+                  "0":"4.- Domiciliar nuestro ahorro nos ayuda a:",
+                  "1":"2",
+                  "2":{  
+                     "0":"a) Ahorrar de forma automática",
+                     "1":"1"
+                  },
+                  "3":{  
+                     "0":"b) Poder distinguir entre deseo y necesidad",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) Darle seguimiento a nuestro presupuesto",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"d) Definir nuestro perfil de inversionista",
+                     "1":"0"
+                  }
+               },
+               "4":{  
+                  "0":"5.- ¿Por qué es importante invertir nuestro dinero? (2 respuestas)",
+                  "1":"2,5",
+                  "2":{  
+                     "0":"a) Para hacer crecer nuestro patrimonio",
+                     "1":"1"
+                  },
+                  "3":{  
+                     "0":"b) Para poder ahorrar mejor",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) Para no gastar todo nuestro ingreso",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"d) Para que nuestro dinero no pierda valor con el tiempo",
+                     "1":"1"
+                  }
+               },
+               "5":{  
+                  "0":"6.- El primer paso para empezar a invertir es…",
+                  "1":"3",
+                  "2":{  
+                     "0":"a) Escoger el instrumento de inversión",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Definir mi perfil de inversionistas",
+                     "1":"1"
+                  },
+                  "4":{  
+                     "0":"c) Diversificarme",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"c) Asesorarme",
+                     "1":"0"
+                  }
+               },
+               "6":{  
+                  "0":"7.- ¿Cuál es la principal estrategia para reducir el riesgo al invertir?",
+                  "1":"3",
+                  "2":{  
+                     "0":"a) Invertir mucho dinero",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Diversificar mis inversiones",
+                     "1":"1"
+                  },
+                  "4":{  
+                     "0":"c) Invertir al corto plazo",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"d) Invertir en bienes raíces",
+                     "1":"0"
+                  }
+               },
+               "7":{  
+                  "0":"8.- Para utilizar la tarjeta de crédito a mi favor debo…",
+                  "1":"4",
+                  "2":{  
+                     "0":"a) Usar todo mi crédito",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Solicitar un aumento de línea",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) Totalizarla y pagarla a tiempo",
+                     "1":"1"
+                  },
+                  "5":{  
+                     "0":"c) Usar mi tarjeta en todos mis gastos",
+                     "1":"0"
+                  }
+               },
+               "8":{  
+                  "0":"9.- ¿Cuáles son los conceptos más importantes que analizar al pedir un crédito?",
+                  "1":"5",
+                  "2":{  
+                     "0":"a) Tasa de interés y comisiones",
+                     "1":"0"
+                  },
+                  "3":{  
+                     "0":"b) Plazo de la deuda",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) CAT",
+                     "1":"0"
+                  },
+                  "5":{  
+                     "0":"d) Todas las anteriores",
+                     "1":"1"
+                  }
+               },
+               "9":{  
+                  "0":"10.- Los seguros nos ayudan a…",
+                  "1":"2",
+                  "2":{  
+                     "0":"a)  Protegernos de las repercusiones económicas de que le suceda una eventualidad a algún activo ",
+                     "1":"1"
+                  },
+                  "3":{  
+                     "0":"b) Poder prorratear gastos",
+                     "1":"0"
+                  },
+                  "4":{  
+                     "0":"c) Poder comprobar nuestros gastos",
+                     "1":"1"
+                  },
+                  "5":{  
+                     "0":"d) Protegernos de que alguna eventualidad no suceda",
+                     "1":"0"
+                  }
+               }
+            }
+         }
+      },
+      "diap2":{  
+         "idx":2,
+         "curso":"4",
+         "titulo":"Tarea",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/38-Tarea_c.mp4",
+         "template":"template1",
+         "imagenes":{  
+            "0":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-182-0004.jpg",
+               "time":"4"
+            },
+            "1":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-183-0011.jpg",
+               "time":"11"
+            },
+            "2":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-184-0041.jpg",
+               "time":"41"
+            },
+            "3":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-186-0108-ok.jpg",
+               "time":"68"
+            },
+            "4":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-185-VenderEnInternet-0152.jpg",
+               "time":"112"
+            },
+            "5":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-188-187-0314.jpg",
+               "time":"194"
+            },
+            "6":{  
+               "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-189-0401.jpg",
+               "time":"241"
+            }
+         },
+         "act":"3"
+      },
+      "diap3":{  
+         "idx":3,
+         "curso":"4",
+         "diapAnt":"1",
+         "titulo":"Actividad: Tarea",
+         "template":"act1",
+         "actividades":{  
+            "tipo":"0",
+            "reactivos":{  
+               "0":{  
+                  "0":"Escribe tu estrategia para lograr ahorrar 1 mes de sueldo"
+               },
+               "1":{  
+                  "0":"Escribe tu día para no gastar"
+               },
+               "2":{  
+                  "0":"Escribe qué producto/servicio venderás por internet"
+               },
+               "3":{  
+                  "0":"Escribe qué talento o habilidad venderás"
+               },
+               "4":{  
+                  "0":"Escribe el nombre de la persona que te ayudará a revisar cómo vas con tus metas"
+               }
+            }
+         }
+      },
+      "diap4":{  
+         "idx":4,
+         "curso":"4",
+         "template":"template0",
+         "titulo":"Para más información ",
+         "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/39-ParaM%C3%A1sInformaci%C3%B3n-Biblio_c.mp4"
+      },
+      "diap5":{  
+         "idx":4,
+         "curso":"4",
+         "template":"templateparrafo",
+         "titulo":"Bibliografía",
+         "parrafo":{  
+            "0":{  
+               "texto":"Generales: <br> Las 7 leyes espirituales del éxito – Deepak Chopra <br> Thinking Fast and Slow – Daniel Kahneman <br> Predictably Irrational –  Dan Ariely",
+               "time":"1"
+            },
+            "1":{  
+               "texto":"Finanzas personales: <br> El hombre más rico de Babilonia – George S. Clason <br> The Answer – John Assaraf & Murray Smith <br> Padre Rico Padre Pobre – Robert Kiyosaki <br> Retirate Joven, Retirate Rico – Robert Kiyosaki <br> I will teach you to be rich – Ramit Sethi",
+               "time":"1"
+            },
+            "2":{  
+               "texto":"Inversiones en Bolsa: <br> The Little Book that beats the market – Joel Greenblatt <br> The Intelligent Investor – Ben Graham",
+               "time":"1"
+            },
+            "3":{  
+               "texto":"Emprendimiento: <br> Value Proposition Design – Alex Osterwalder <br> Start with Why – Simon Sinek",
+               "time":"1"
+            }
+         }
+      }
+   }
+}

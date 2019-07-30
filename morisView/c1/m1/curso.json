@@ -1,0 +1,247 @@
+﻿{
+   "contenido":{
+	  "diap0":{
+		 "idx":0,
+		 "curso":"3",
+		 "template":"template0",
+		 "titulo":"Objetivos del curso",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/1-ObjetivosDelCurso_c.mp4",
+		 "act":"1"
+	  },
+	  "diap1":{
+		 "idx":3,
+		 "curso":"3",
+		 "template":"act1",
+		 "titulo":"Actividad: Expectativas del curso",
+		 "subtema":"Expectativas del curso",
+		 "diapAnt":"1",
+		 "actividades":{
+			"tipo":"0",
+			"reactivos":{
+			   "0":{
+				  "0":"Escribe 3 cosas que te gustaría aprender dentro del curso.",
+				  "1":"0",
+				  "2":{
+					 "0":"",
+					 "1":""
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap2":{
+		 "idx":1,
+		 "curso":"3",
+		 "titulo":"El problema de la educación financiera",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/2-ElProblemaDeLaEducaci%C3%B3nFinanciera_c.mp4",
+		 "template":"template1",
+		 "act":"3",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-06-0137.jpg",
+			   "time":"97"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-07-0348.jpg",
+			   "time":"228"
+			}
+		 }
+	  },
+	  "diap3":{
+		 "idx":4,
+		 "curso":"3",
+		 "diapAnt":"2",
+		 "template":"act1",
+		 "titulo":"Actividad: ¿Cuál es tu nivel de educación financiera?",
+		 "subtema":"Contesta a las siguientes preguntas para conocer tu nivel de educación financiera. ",
+		 "actividades":{
+			"tipo":"2",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿Tienes bien definidos tus objetivos financieros?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Tengo definidas mis metas, el plazo en que las debo cumplir y el dinero que necesito.",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Tengo definidas mis metas en la vida",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No tengo claro que quiero conseguir",
+					 "1":"1"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- ¿Sabes cuánto dinero ganas y cuánto dinero gastas en el mes?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Conozco a detalle cuánto gano y gasto, además sé de dónde vienen mis ingresos y gastos",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Conozco cuánto gano y gasto",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) Solo conozco cuanto dinero me queda al final de mes",
+					 "1":"1"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- ¿Llevas un presupuesto de ingresos, gastos y ahorro?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Llevo un presupuesto detallado, le doy seguimiento mes a mes",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Solo en ocasiones sigo un presupuesto",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No llevo un presupuesto",
+					 "1":"1"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- ¿Tienes alguna inversión?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Tengo inversiones a distintos plazos",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Solo invierto en mi retiro",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No tengo ninguna inversión",
+					 "1":"1"
+				  }
+			   },
+			   "4":{
+				  "0":"5.- ¿Cuentas con un ahorro de emergencias?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Tengo un ahorro de emergencias equivalente a varios meses de mis gastos",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Tengo un pequeño monto ahorrado por si sucede alguna emergencia",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No tengo un ahorro de emergencias",
+					 "1":"1"
+				  }
+			   },
+			   "5":{
+				  "0":"6.- ¿Conoces la diferencia entre activos y pasivos financieros?",
+				  "1":"0",
+				  "2":{
+					 "0":"a) Conozco a profundidad estos términos y el impacto que tienen en mis ingresos y gastos",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Conozco muy poco de estos términos",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) Nunca había escuchado estos términos",
+					 "1":"1"
+				  }
+			   },
+			   "6":{
+				  "0":"7.- ¿Guardas tus ahorros en un banco?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Guardo mis ahorros en el banco",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Solo guardo algo de mis ahorros en el banco",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No guardo mis ahorros en el banco",
+					 "1":"1"
+				  }
+			   },
+			   "7":{
+				  "0":"8.- ¿Conoces tu nivel optimo de endeudamiento?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Conozco a detalle el monto adecuado para endeudarme",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Conozco qué monto podría dedicar a deudas cada mes",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) No sé cuanto podría pagar en deudas cada mes",
+					 "1":"1"
+				  }
+			   },
+			   "8":{
+				  "0":"9.- ¿Conoces la diferencia entre instrumentos de renta fija y renta variable?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Conozco a detalle estos instrumentos y sé como funcionan ",
+					 "1":"3"
+				  },
+				  "3":{
+					 "0":"b) Tengo una ligera idea de estos instrumentos",
+					 "1":"2"
+				  },
+				  "4":{
+					 "0":"c) Nunca había escuchado estos términos",
+					 "1":"1"
+				  }
+			   }
+			},
+			"evaluacion": {
+				"0":{
+					"0": "27",
+					"1": "Tienes una educación financiera alta"
+				},
+				"1":{
+					"0": "21",
+					"1": "Tienes una educación financiera media"
+				},
+				"2":{
+					"0": "15",
+					"1": "Tienes una educación financiera baja"
+				}
+			}
+		 }
+	  },
+	  "diap4":{
+		 "idx":2,
+		 "curso":"3",
+		 "titulo":"Las finanzas y la vida ",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/3-LasFinanzasYLaVida_c.mp4",
+		 "template":"template1",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-12-0104.png",
+			   "time":"32"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-11-0104.png",
+			   "time":"92"
+			},
+			"2":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-12-0140.jpg",
+			   "time":"110"
+			},
+			"3":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-13-0453.jpg",
+			   "time":"293"
+			}
+		 }
+	  }
+   }
+}

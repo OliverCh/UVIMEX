@@ -1,0 +1,19 @@
+<div id="contenedorCurso">
+	<div style="width: 100%;">
+		<section id="tituloCurso"></section>
+		 <section id="subtituloCurso"></section>
+		<section id="temaCurso"></section>
+	</div>
+
+	<div style="width:100%;">
+
+		<div id="seccionPreguntas">
+
+		</div>
+
+		
+	</div>
+	<link rel="stylesheet" href="css/act0.css" />
+</div>
+
+<video id="videoCurso" controls="false" oncontextmenu="return false;" controlsList="nodownload" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

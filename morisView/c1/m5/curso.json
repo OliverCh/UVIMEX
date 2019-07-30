@@ -1,0 +1,1037 @@
+{
+   "contenido":{
+	  "diap0":{
+		 "idx":4,
+		 "curso":"8",
+		 "titulo":"El arte de tener salud financiera",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/C5/C5-ElArteDeTenerSaludFinanciera-1.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C5/img/145.PNG",
+			   "time":"4"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C5/img/146.PNG",
+			   "time":"100"
+			},
+			"2":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C5/img/148.PNG",
+			   "time":"200"
+			}
+		 }
+	  },
+	  "diap1":{
+		 "idx":1,
+		 "curso":"8",
+		 "template":"template1",
+		 "titulo":"Regla 1: ¿En dónde guardas tu dinero?",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/29-%C2%BFEnD%C3%B3ndeGuardasTuDinero-_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-148-0004.jpg",
+			   "time":"4"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-150-0039.jpg",
+			   "time":"39"
+			}
+		 }
+	  },
+	  "diap2":{
+		 "idx":2,
+		 "curso":"8",
+		 "titulo":"Regla 2: El ahorro de emergencias",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/30-ElAhorroDeEmergencias-1_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C5/img/151.PNG",
+			   "time":"4"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C5/img/152.PNG",
+			   "time":"70"
+			}
+		 }
+	  },
+	  "diap3":{
+		 "idx":3,
+		 "curso":"8",
+		 "titulo":"El ahorro de emergencias: Ejemplo",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/30-ElAhorroDeEmergencias-2Ejemplo_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-151-0004.jpg",
+			   "time":"4"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-152-0118.jpg",
+			   "time":"78"
+			}
+		 },
+		 "actividades":{
+			"tipo":"7"
+		 }
+	  },
+	  "diap4":{
+		 "idx":4,
+		 "curso":"8",
+		 "titulo":"Actividad: El ahorro de emergencias",
+		 "template":"act3",
+		 "diapAnt":"3",
+		 "actividades":{
+			"tipo":"7"
+		 }
+	  },
+	  "diap5":{
+		 "idx":5,
+		 "curso":"8",
+		 "titulo":"Regla 3: Dale seguimiento a tu presupuesto",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/31-DaleSeguimientoATuPresupuesto_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-153-0005.jpg",
+			   "time":"5"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-154-0122.jpg",
+			   "time":"88"
+			}
+		 }
+	  },
+	  "diap6":{
+		 "idx":6,
+		 "curso":"8",
+		 "titulo":"Actividad: Dale seguimiento a tu presupuesto",
+		 "template":"act1",
+		 "actividades":{
+			"tipo":"6",
+			"reactivos":{
+			   "0":{
+				  "0":"1.-¿Tu meta de ahorro es alcanzable con tus ingresos y gastos actuales?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Si",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) No",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.-En caso de que tu meta de ahorro no sea alcanzable con tus ingresos y gastos actuales ¿Qué debes hacer para alcanzarla?",
+				  "1":"3",
+				  "2":{
+					 "0":"a) Cambiar mi meta de ahorro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Aumentar ingresos o reducir gastos",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Reducir el monto de mi meta",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap7":{
+		 "idx":7,
+		 "curso":"3",
+		 "titulo":"Actividad: Dale seguimiento a tu presupuesto",
+		 "template":"act1",
+		 "actividades":{
+			"tipo":"0",
+			"reactivos":{
+			   "0":{
+				  "0":"Escribe el rubro de tus gastos en donde se te va más dinero",
+				  "1":"0",
+				  "2":{
+					 "0":"",
+					 "1":""
+				  }
+			   },
+			   "1":{
+				  "0":"Escribe el rubro de ingresos que te gustaría aumentar",
+				  "1":"0",
+				  "2":{
+					 "0":"",
+					 "1":""
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap8":{
+		 "idx":8,
+		 "curso":"8",
+		 "titulo":"Regla 4: ¿Qué son las tarjetas de crédito?",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/32-UsandoLasTarjetasDeCr%C3%A9ditoATuFavor-1Beneficios_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-155-0006.jpg",
+			   "time":"6"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-156-0045.jpg",
+			   "time":"45"
+			}
+		 }
+	  },
+	  "diap9":{
+		 "idx":9,
+		 "curso":"8",
+		 "titulo":"Conceptos de las tarjetas de crédito",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/32-UsandoLasTarjetasDeCr%C3%A9ditoATuFavor-2Conceptos_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-157-0011.jpg",
+			   "time":"11"
+			}
+		 }
+	  },
+	  "diap10":{
+		 "idx":10,
+		 "curso":"8",
+		 "titulo":"¿Cómo escoger una tarjeta de crédito?",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/32-UsandoLasTarjetasDeCr%C3%A9ditoATuFavor-3Escogerla_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-158-0240.jpg",
+			   "time":"11"
+			}
+		 }
+
+	  },
+	  "diap11":{
+		 "idx":11,
+		 "curso":"8",
+		 "titulo":"Usando la tarjeta de crédito a tu favor",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/32-UsandoLasTarjetasDeCr%C3%A9ditoATuFavor-4Atufavor_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-160-00017.jpg",
+			   "time":"17"
+			}
+		 },
+		 "act":"12"
+	  },
+	  "diap12":{
+		 "idx":12,
+		 "curso":"8",
+		 "titulo":"Actividad: Usando la tarjeta de crédito a tu favor",
+		 "diapAnt":"8",
+		 "subtema":"Usando la tarjeta de crédito a tu favor",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/32-UsandoLasTarjetasDeCr%C3%A9ditoATuFavor-5ACTIVIDAD_c.mp4",
+		 "template":"act0",
+		 "actividades":{
+			"tipo":"6",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿Qué es el pago mínimo?",
+				  "1":"3",
+				  "2":{
+					 "0":"a) Lo mínimo que debo pagar a mi deuda para que no genere intereses",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Lo mínimo que debo pagar para mantener vigente mi línea de crédito y que no sea reportado al buró de crédito",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Lo mínimo que debo pagar para saldar por completo mi deuda",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- ¿Qué es la fecha de corte?",
+				  "1":"3",
+				  "2":{
+					 "0":"a) La fecha limite para pagar mi tarjeta de crédito",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) La fecha en que el banco cierra el registro de las compras que realizaste y calcula la deuda",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) La fecha en que das de baja tu crédito",
+					 "1":"0"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- ¿Cuáles de estos NO es un objetivo de las tarjetas de crédito?",
+				  "1":"5",
+				  "2":{
+					 "0":"a) Recibir beneficios por mis compras",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Pagar sin necesitar efectivo",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Crear historial crediticio",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Utilizarla para sacar efectivo",
+					 "1":"1"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- ¿Cuál es uno de los principales objetivos de una tarjeta de crédito?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Pagar sin necesidad de tener efectivo al momento",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Comprar cosas fuera de mi capacidad de pago ",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Sacar efectivo",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Aumentar mi consumo",
+					 "1":"0"
+				  }
+			   },
+			   "4":{
+				  "0":"5.- ¿Cuál es una de las mejores formas para usar la tarjeta a mi favor?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Gastar mas de mi capacidad de ingreso",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Realizar compras por internet ",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Pagarla la deuda a tiempo y liquidarla para no generar intereses",
+					 "1":"1"
+				  }
+			   },
+			   "5":{
+				  "0":"6.- ¿Qué factores debo analizar al momento de escoger una tarjeta de crédito? ",
+				  "1":"6",
+				  "2":{
+					 "0":"a) La anualidad",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) La tasa de interés",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Las distintas comisiones que cobra",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Los beneficios que otorga",
+					 "1":"0"
+				  },
+				  "6":{
+					 "0":"e) Todas las anteriores",
+					 "1":"1"
+				  }
+			   },
+			   "6":{
+				  "0":"7.- ¿Para qué me sirve tener un buen historial crediticio (dos respuestas)?",
+				  "1":"2,4",
+				  "2":{
+					 "0":"a) Para ser candidato a obtener créditos",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Para que me perdonen alguna deuda",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Para obtener créditos con mejores condiciones y tasas",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) Para poder incrementar mis deudas",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap13":{
+		 "idx":13,
+		 "curso":"8",
+		 "titulo":"Regla 5: Manejando las deudas y escogiendo los creditos",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/33-ManejandoLasDeudas-1DeudaBuenaMala-ACTIVIDAD_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-161-0007.jpg",
+			   "time":"1"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-162-0058.jpg",
+			   "time":"58"
+			}
+		 }
+	  },
+	  "diap14":{
+		 "idx":14,
+		 "curso":"8",
+		 "titulo":"Capacidad de endeudamiento",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/33-ManejandoLasDeudas-2CapacidadDeEndeudamiento_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-163-0027.jpg",
+			   "time":"27"
+			}
+		 }
+	  },
+	  "diap15":{
+		 "idx":15,
+		 "curso":"8",
+		 "titulo":"Actividad: Calcula tu capacidad de endeudamiento",
+		 "subtema":"Libérate de las deudas",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/33-ManejandoLasDeudas-4ACTIVIDAD_c.mp4",
+		 "template":"act4"
+	  },
+	  "diap16":{
+		 "idx":16,
+		 "curso":"8",
+		 "titulo":"Manejando las deudas: “Método de eliminación de deudas”",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/33-ManejandoLasDeudas-3Gr%C3%A1fica_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-164-0048.jpg",
+			   "time":"48"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-165-0358.jpg",
+			   "time":"238"
+			},
+			"2":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-166-0649.jpg",
+			   "time":"409"
+			}
+		 },
+		 "act":"17"
+	  },
+	  "diap17":{
+		 "idx":17,
+		 "curso":"8",
+		 "titulo":"Actividad: Libérate de las deudas",
+		 "subtema":"Libérate de las deudas",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/33-ManejandoLasDeudas-4ACTIVIDAD_c.mp4",
+		 "template":"act0",
+		 "diapAnt":"11",
+		 "actividades":{
+			"tipo":"1",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- Si tu objetivo principal es reducir lo más rápido posible el número de deudas, ¿cuál de las siguientes deudas saldarías primero?",
+				  "1":"3",
+				  "2":{
+					 "0":"Deuda 1 <br> <p>Interes: 50% anual</p><p>Adeudo: $50,000</p>",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"Deuda 2 <br> <p>Interes: 45% anual</p><p>Adeudo: $10,000</p>",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"Deuda 3 <br> <p>Interes: 55% anual</p><p>Adeudo: $40,000</p>",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.-  Si tu objetivo principal es Reducir al máximo la cantidad de intereses a pagar, ¿Cuál de las siguientes deudas saldarías primero?",
+				  "1":"2",
+				  "2":{
+					 "0":"Deuda 1 <br> <p>Interes: 60% anual</p><p>Adeudo: $50,000</p>",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"Deuda 2 <br> <p>Interes: 40% anual</p><p>Adeudo: $55,000</p>",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"Deuda 3 <br> <p>Interes: 38% anual</p><p>Adeudo: $50,000</p>",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap18":{
+		 "idx":18,
+		 "curso":"8",
+		 "template":"template1",
+		 "titulo":"Aprovechando los créditos: Conceptos",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/34-AprovechandoLosCr%C3%A9ditos-1Importancia_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-166-0028.jpg",
+			   "time":"28"
+			}
+		 }
+	  },
+	  "diap19":{
+		 "idx":19,
+		 "curso":"8",
+		 "titulo":"Aprovechando los créditos: Conceptos parte II",
+		 "template":"template0",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/34-AprovechandoLosCr%C3%A9ditos-2Conceptos_c.mp4"
+	  },
+	  "diap20":{
+		 "idx":20,
+		 "curso":"8",
+		 "titulo":"Aprovechando los créditos: Tipos de créditos",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/34-AprovechandoLosCr%C3%A9ditos-3Tipos_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-168-0008.jpg",
+			   "time":"8"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-170-0300.jpg",
+			   "time":"180"
+			},
+			"2":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-171-0315.jpg",
+			   "time":"195"
+			}
+		 }
+	  },
+	  "diap21":{
+		 "idx":21,
+		 "curso":"8",
+		 "titulo":"Aprovechando los créditos: 10 mandamientos de los créditos",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/34-AprovechandoLosCr%C3%A9ditos-4Los10Mandamientos_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-169-0010.jpg",
+			   "time":"10"
+			}
+		 }
+	  },
+	  "diap22":{
+		 "idx":22,
+		 "curso":"8",
+		 "titulo":"Actividad: Aprovechando los créditos",
+		 "template":"act1",
+		 "diapAnt":"19",
+		 "actividades":{
+			"tipo":"1",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- Selecciona el crédito hipotecario con mejores condiciones",
+				  "1":"3",
+				  "2":{
+					 "0":"Crédito 1 <br> <p>Interés: 11% fija anual </p><p>Préstamo: $500,000</p>",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"Crédito 2 <br> <p>Interés 9.8% fija anual</p><p>Adeudo: $500,000</p>",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"Crédito 3 <br> <p>Interés: 12% fija anual</p><p>Adeudo $500,000</p>",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- Selecciona la tarjeta de crédito con mejores condiciones",
+				  "1":"2",
+				  "2":{
+					 "0":"CAT: 32.5% anual",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"CAT: 45% anual",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"CAT: 60% anual",
+					 "1":"0"
+				  }
+			   },
+			   "2":{
+				  "0":"2.- Selecciona el crédito personal con mejores condiciones",
+				  "1":"2",
+				  "2":{
+					 "0":"Crédito 1 <br> <p>Monto del préstamo: $50,000</p><p>Tasa de interés: 20%</p><p>Monto total a pagar: 55,000</p>",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"Crédito 2 <br> <p>Monto del préstamo: $50,000</p><p>Tasa de interés: 25%</p><p>Monto total a pagar: 60,000</p>",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"Crédito 3 <br> <p>Monto del préstamo: $50,000</p><p>Tasa de interés: 23%</p><p>Monto total a pagar: 70,000</p>",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap23":{
+		 "idx":23,
+		 "curso":"8",
+		 "titulo":"Regla 6: La importancia de los seguros",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/35-ImportanciaDeLosSeguros-1Riesgo_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-172-0010.jpg",
+			   "time":"10"
+			}
+		 }
+	  },
+	  "diap24":{
+		 "idx":24,
+		 "curso":"8",
+		 "titulo":"La importancia de los seguros: Conceptos",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/35-ImportanciaDeLosSeguros-2Seguros_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-174-0010.jpg",
+			   "time":"10"
+			}
+		 }
+	  },
+	  "diap25":{
+		 "idx":25,
+		 "curso":"8",
+		 "titulo":"La importancia de los seguros: Tipos de seguros",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/35-ImportanciaDeLosSeguros-3Tipos_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-173-0018.jpg",
+			   "time":"18"
+			}
+		 }
+	  },
+	  "diap26":{
+		 "idx":26,
+		 "curso":"8",
+		 "titulo":"La importancia de los seguros: Recomendaciones",
+		 "template":"template1",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/35-ImportanciaDeLosSeguros-4Recomendaciones_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-175-0009.jpg",
+			   "time":"9"
+			}
+		 }
+	  },
+	  "diap27":{
+		 "idx":27,
+		 "curso":"8",
+		 "titulo":"Actividad: La importancia de los seguros",
+		 "subtema":"La importancia de los seguros",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/35-ImportanciaDeLosSeguros-5ACTIVIDAD_c.mp4",
+		 "template":"act0",
+		 "actividades":{
+			"tipo":"1",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿Cuál es el primer paso que debo seguir al momento de querer asegurarme?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) Definir qué vale la pena asegurar",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Buscar la mejor aseguradora",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Revisar las coberturas",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- ¿Qué factores es importante comparar al momento revisar distintos seguros?",
+				  "1":"6",
+				  "2":{
+					 "0":"a) La cobertura del seguro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) La prima a pagar",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Los deducibles que debo pagaro",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Compromisos y responsabilidades",
+					 "1":"0"
+				  },
+				  "6":{
+					 "0":"e) Todas las anteriores",
+					 "1":"1"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- ¿Qué es el deducible?",
+				  "1":"3",
+				  "2":{
+					 "0":"a) El monto que debes pagar mes a mes por la cobertura de tu seguro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Monto que debe pagar la persona que adquirió el seguro en caso de una eventualidad",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Los términos que se deducen de una póliza de seguro",
+					 "1":"0"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- ¿Qué es la cobertura?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) El monto que se debe pagar mes a mes en un seguro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) La superficie del activo asegurado ",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Las eventualidades que se compromete a cubrir la aseguradora",
+					 "1":"1"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap28":{
+		 "idx":28,
+		 "curso":"8",
+		 "template":"template1",
+		 "titulo":"Regla 7: Dejemos de aparentar ",
+		 "video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/36-DejemosDeAparentar_c.mp4",
+		 "imagenes":{
+			"0":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-176-0138.jpg",
+			   "time":"2"
+			},
+			"1":{
+			   "ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C4/img/FInanzas%20personales-177-0155.jpg",
+			   "time":"135"
+			}
+		 },
+		 "act":"29"
+	  },
+	  "diap29":{
+		 "idx":29,
+		 "curso":"8",
+		 "titulo":"Actividad: Dejemos de aparentar",
+		 "subtema":" Dejemos de aparentar",
+		 "template":"act1",
+		 "diapAnt":"27",
+		 "actividades":{
+			"tipo":"6",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿Por qué el ser humano busca aparentar? (2 respuestas)",
+				  "1":"2,3",
+				  "2":{
+					 "0":"a) Para buscar pertenecer a un circulo social",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Para complacer a alguien",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Para demostrar quién es en verdad",
+					 "1":"0"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- ¿Qué tienen que ver las finanzas con el buscar aparentar/pertenecer?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Nada",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Ambas son malas",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c)  El buscar aparentar nos hace tomar malas decisiones financieras",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d)  Es necesario buscar aparentar para tener finanzas sanas",
+					 "1":"0"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- ¿Es malo aparentar? (2 respuestas)",
+				  "1":"2,3",
+				  "2":{
+					 "0":"a) Cuando nos hace gastar fuera de nuestras posibilidades",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Cuando nos hace adquirir cosas que no agregan valor a nuestra vida",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) No es malo aparentar ",
+					 "1":"0"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- ¿En qué debemos enfocar nuestros recursos económicos? (2 respuestas)",
+				  "1":"2,4",
+				  "2":{
+					 "0":"a) En cosas que necesitamos",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) En deseos ",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) En cosas que agreguen valor a nuestra vida",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) En gastos personales",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  },
+	  "diap30":{
+		 "idx":30,
+		 "curso":"8",
+		 "titulo":"Quiz: Salud financiera",
+		 "subtema":"Dejemos de aparentar",
+		 "template":"act1",
+		 "diapAnt":"29",
+		 "actividades":{
+			"tipo":"6",
+			"reactivos":{
+			   "0":{
+				  "0":"1.- ¿En dónde es bueno guardar mi dinero?",
+				  "1":"5",
+				  "2":{
+					 "0":"a) Debajo del colchón",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) En mi cartera",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) En una tanda",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"c) En el banco",
+					 "1":"1"
+				  }
+			   },
+			   "1":{
+				  "0":"2.- El primer ahorro que debemos hacer y el más importante es…",
+				  "1":"4",
+				  "2":{
+					 "0":"a) El ahorro de inversión",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) El ahorro hipotecario",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) El ahorro de emergencias",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) El ahorro variable",
+					 "1":"0"
+				  }
+			   },
+			   "2":{
+				  "0":"3.- ¿Qué herramientas nos facilitan darle el seguimiento a nuestro presupuesto?",
+				  "1":"2",
+				  "2":{
+					 "0":"a) APPs de seguimiento financiero",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Una calculadora",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Bosquejos en una hoja",
+					 "1":"0"
+				  }
+			   },
+			   "3":{
+				  "0":"4.- ¿Para qué sirve una tarjeta de crédito (3 respuestas)?",
+				  "1":"2,3,4",
+				  "2":{
+					 "0":"a) Recibir beneficios por mis compras",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Pagar sin necesitar efectivo",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Crear historial crediticio",
+					 "1":"1"
+				  },
+				  "5":{
+					 "0":"d) Utilizarla para sacar efectivo",
+					 "1":"0"
+				  }
+			   },
+			   "4":{
+				  "0":"5.- ¿Por qué es malo pagar el mínimo en nuestra tarjeta de crédito?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Es el mínimo para totalizar la deuda",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Es el mínimo para incrementar mi saldo",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) La mayoría del pago va a intereses y comisiones, la deuda no se reduce",
+					 "1":"1"
+				  }
+			   },
+			   "5":{
+				  "0":"6.- ¿Cuáles de estas NO son recomendaciones para usar la tarjeta de crédito a nuestro favor? (3 respuestas)",
+				  "1":"3,6,7",
+				  "2":{
+					 "0":"a) Págala a tiempo",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Paga el mínimo",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Totaliza la deuda",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Utiliza los beneficios que te da tu tarjeta",
+					 "1":"0"
+				  },
+				  "6":{
+					 "0":"e) Saca efectivo con tu tarjeta",
+					 "1":"1"
+				  },
+				  "7":{
+					 "0":"f) Gasta fuera de tus niveles de ingreso",
+					 "1":"1"
+				  }
+			   },
+			   "6":{
+				  "0":"7.- ¿Cuál de estas NO es una característica de una buena deuda?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) La uso para adquirir cosas que aumentan de valor con el tiempo",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) La uso para adquirir cosas que reducirán gastos a futuro",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) La uso para adquirir cosas que no van acorde a mi nivel de ingresos",
+					 "1":"1"
+				  }
+			   },
+			   "7":{
+				  "0":"8.- ¿Qué conceptos de nuestra vida financiera debemos analizar al momento de medir nuestra capacidad de endeudamiento?",
+				  "1":"5",
+				  "2":{
+					 "0":"a) Nuestros gastos fijos",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Nuestros gastos variables",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Nuestros ingresos",
+					 "1":"0"
+				  },
+				  "5":{
+					 "0":"d) Todos los anteriores",
+					 "1":"1"
+				  }
+			   },
+			   "8":{
+				  "0":"9.- ¿Por qué se dice que tener un seguro es una forma de ahorrar?",
+				  "1":"4",
+				  "2":{
+					 "0":"a) Porque me dan dinero al adquirir mi seguro",
+					 "1":"0"
+				  },
+				  "3":{
+					 "0":"b) Porque ahorro todos los meses",
+					 "1":"0"
+				  },
+				  "4":{
+					 "0":"c) Porque al suceder una eventualidad, el seguro me protegerá de tener que gastar una cantidad grande",
+					 "1":"1"
+				  }
+			   },
+			   "9":{
+				  "0":"10.- ¿Por qué es malo buscar aparentar? (2 respuestas) ",
+				  "1":"2,3",
+				  "2":{
+					 "0":"a) Nos hace adquirir cosas fuera de nuestras posibilidades",
+					 "1":"1"
+				  },
+				  "3":{
+					 "0":"b) Porque nos hace adquirir cosas innecesarias y que no agregan valor a nuestra vida",
+					 "1":"1"
+				  },
+				  "4":{
+					 "0":"c) Porque es solo beneficioso en el largo plazo ",
+					 "1":"0"
+				  }
+			   }
+			}
+		 }
+	  }
+   }
+}

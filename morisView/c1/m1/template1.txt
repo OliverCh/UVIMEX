@@ -1,0 +1,26 @@
+<div id="contenedorCurso">
+				<div style="width: 100%;">
+					<section id="tituloCurso"></section>
+					<section id="subtituloCurso"></section>
+					<section id="temaCurso"></section>
+				</div>
+
+				<div class="cont-videomasimagenes">
+					<div id="seccionVideo">
+						<canvas id="videoCursoCanvas"></canvas>
+						<input type="range" min="0"   value="0" id="controlVideo" >
+						<label id="tiempoVideo"></label>
+					</div>
+
+					<div id="seccionGaleria">
+
+						<div id="img0" style="display:none;"><img src="" class="imagenes"></div>
+					</div>
+
+				</div>
+
+
+				 <link rel="stylesheet" href="css/template1.css" />
+
+			</div>
+		 		<video id="videoCurso" oncontextmenu="return false;" controls="false" controlsList="nodownload" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

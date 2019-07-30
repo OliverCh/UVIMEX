@@ -1,0 +1,35 @@
+<div id="contenedorCurso">
+	<div style="width: 100%;">
+		<section id="tituloCurso"></section>
+		<section id="temaCurso"></section>
+	</div>
+
+	<div style="width:100%;">
+		<div id="seccionVideo">
+			<canvas id="videoCursoCanvas"></canvas>
+			<input type="range" min="0"   value="0" id="controlVideo" >
+		</div>
+
+		<div id="seccionPreguntas">
+			<div id="tabla" style="text-align: center;font-size:  1.1rem;">
+				<section>
+					<h3 style="margin: 3%; ">Introduce tu ingreso mensual</h3> 
+					<input type="text" style="margin: 3%; " id="ingreso" min="1" step="any" />
+				</section>
+				<section>
+					<h3 style="margin: 3%; ">Introduce tu monto de gastos fijos mensuales</h3> 
+					<input type="text" style="margin: 3%; " id="gasto" min="1" step="any" />
+				</section>
+				<section>
+					 <label id="endeudamiento"></label>
+				</section>
+				<button id="calcDeuda" style="margin: 5%;padding:  2.5%;border-radius:  20px;color:  white;background:  #127a5d;border: none;" onclick="calcdeuda()">Calcular capacidad de endeudamiento</button>
+			</div>
+		</div>
+
+		
+	</div>
+	<link rel="stylesheet" href="css/act4.css" />
+</div>
+
+<video id="videoCurso" controls="false" controlsList="nodownload" oncontextmenu="return false;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

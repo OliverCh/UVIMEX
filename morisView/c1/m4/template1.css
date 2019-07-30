@@ -1,0 +1,21 @@
+div#seccionVideo {
+    float: left;
+    width: 50vw;
+}
+
+div#seccionGaleria {
+    width: 50vw;
+    max-width: 346px;
+    float: left;
+}
+
+div#img0 {
+    width: 44vw;
+ 
+}
+
+img.imagenes {
+    display: inline;
+    width: 100%;
+    height: 540px;
+}

@@ -1,0 +1,55 @@
+div#seccionVideo {
+    float: left;
+    width: 50vw;
+}
+
+div#seccionGaleria {
+  width: 50%;
+  position: relative;
+}
+
+div#img0  {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+img.imagenes {
+  width: 100%;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.cont-videomasimagenes{
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+@media screen and (max-width: 767px),print{
+  .cont-videomasimagenes {
+    display: block;
+}
+div#seccionVideo {
+    float: none;
+    width: 80%;
+    margin: auto;
+}
+div#seccionGaleria {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 240px;
+}
+img.imagenes {
+    width: auto;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+}

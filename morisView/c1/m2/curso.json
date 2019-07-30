@@ -1,0 +1,247 @@
+{
+	"contenido":{
+		"diap0":{
+			"idx":0,
+			"curso":"5",
+			"titulo":"Definiendo tus metas en la vida ",
+			"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/C2-DefiniendoMetasEnLaVida_c.mp4",
+			"template":"template0"
+		},
+		"diap1":{
+			"idx":1,
+			"curso":"5",
+			"template":"template1",
+			"titulo":"Visualiza tus metas",
+			"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/4-VisualizaTusMetas_c.mp4",
+			"imagenes":{
+				"0":{
+					"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-14-0020.PNG",
+					"time":"20"
+				},
+				"1":{
+					"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-15-0041.PNG",
+					"time":"41"
+				}
+			},
+			"act": "2"
+		},
+		"diap2":{
+			"idx":2,
+			"curso":"5",
+			"template":"act0",
+			"titulo":"Actividad: Define tus metas financieras (por plazo)",
+			"diapAnt": "1",
+			"subtema":"Escribe 3 metas para cada plazo en el tiempo",
+			"actividades":{
+				"tipo":"3",
+				"reactivos":{
+					"0":{
+						"0":"Metas a corto plazo (a 1 año)",
+						"1":"0",
+						"2":{
+							"0":"",
+							"1":""
+						}
+					},
+					"1":{
+						"0":"Metas a mediano plazo (de 1 a 5 años)",
+						"1":"0",
+						"2":{
+							"0":"",
+							"1":""
+						}
+					},
+					"2":{
+						"0":"Metas a largo plazo (mayor a 5 años)",
+						"1":"0",
+						"2":{
+							"0":"",
+							"1":""
+						}
+					}
+				}
+			}
+		},
+		"diap3":{
+			"idx":3,
+			"curso":"5",
+			"template":"template1",
+			"titulo":"Haciendo tangibles tus metas",
+			"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/5-HaciendoTangibleTusMetas_c.mp4",
+			"imagenes":{
+				"0":{
+					"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-16-0038.jpg",
+					"time":"38"
+				}
+			},
+			"act": "4"
+		},
+		"diap4":{
+			"idx":4,
+			"curso":"5",
+			"template":"act2",
+			"diapAnt": "1",
+			"titulo":"Actividad: A cada meta define tiempo y monto",
+			"actividades":{
+				"tipo":"0",
+				"reactivos":{
+					
+				}
+			}
+		}
+	,
+
+
+	"diap5":{
+		"idx":5,
+		"curso":"5",
+		"template":"template1",
+		"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/6-HaciendoRevisionesPeri%C3%B3dicas_c.mp4",
+		"titulo":"Haciendo revisiones periódicas",
+		"imagenes":{
+			"0":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-17-0045.jpg",
+				"time":"45"
+			}
+		},
+		"act": "6"
+	},
+	"diap6":{
+		"idx":6,
+		"curso":"5",
+		"template":"act1",
+		"diapAnt": "1",
+		"titulo":"Actividad: A cada meta define periodo de revisión",
+		"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/6-HaciendoRevisionesPeri%C3%B3dicas-ACTIVIDAD_c.mp4",
+		"actividades":{
+			"tipo":"4",
+			"reactivos":{
+				"0":{
+					"0": "Metas a corto plazo (a 1 año)"
+				},
+				"1":{
+					"0": "Metas a mediano plazo (de 1 a 5 años)"
+				},
+				"2":{
+					"0": "Metas a largo plazo (de 5 a 10 años)"
+				}
+			}
+		}
+	},
+	"diap7":{
+		"idx":7,
+		"curso":"5",
+		"template":"template1",
+		"titulo":"¿Cómo se genera riqueza?",
+		"act": "8",
+		"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/7-%C2%BFC%C3%B3moSeGeneraRiqueza-_c.mp4",
+		"imagenes":{
+			"0":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-18-0012.jpg",
+				"time":"12"
+			},
+			"1":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-19-0048.jpg",
+				"time":"48"
+			},
+			"2":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-20-0142-ERRORVIDEO.jpg",
+				"time":"102"
+			},
+			"3":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-21-0205.jpg",
+				"time":"125"
+			},
+			"4":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C1/img/FInanzas%20personales-07-0348.jpg",
+				"time":"228"
+			}
+		}
+	},
+	"diap8":{
+		"idx":8,
+		"curso":"5",
+		"template":"act0",
+		"titulo":"Actividad: ¿Cuáles aumentan ingresos y cuáles aumentan gastos?",
+		"diapAnt": "1",
+		"actividades":{
+			"tipo":"6",
+			"reactivos":{
+				"0":{
+					"0":"¿Cuáles de estas actividades incrementan tus ingresos?",
+					"1":"2,4,6,7",
+					"2":{
+						"0":"1.- Vender un producto/servicio ",
+						"1":"1"
+					},
+					"3":{
+						"0":"2.- Comprar un televisor ",
+						"1":"0"
+					},
+					"4":{
+						"0":"3.- Adquirir un producto de inversión",
+						"1":"1"
+					},
+					"5":{
+						"0":"4.- Comprar un auto ",
+						"1":"0"
+					},
+					"6":{
+						"0":"5.- Obtener un aumento de sueldo en tu trabajo",
+						"1":"1"
+					},
+					"7":{
+						"0":"6.- Poner un bien inmueble a rentar",
+						"1":"1"
+					}
+				},
+				"1":{
+					"0":"¿Cuáles de estas actividades ayudan a reducir tus gastos?",
+					"1":"3,4,6",
+					"2":{
+						"0":"1.- Endeudarnos con el banco",
+						"1":"0"
+					},
+					"3":{
+						"0":"2.- Ahorrar en los gastos del hogar ",
+						"1":"1"
+					},
+					"4":{
+						"0":"3.- Llevar un registro detallado de cada uno de nuestros gastos ",
+						"1":"1"
+					},
+					"5":{
+						"0":"4.- Irnos de vacaciones ",
+						"1":"0"
+					},
+					"6":{
+						"0":"5.- Distinguir entre las cosas que necesito y las que deseo",
+						"1":"1"
+					}
+				}
+			}
+		}
+	},
+	"diap9":{
+		"idx":9,
+		"curso":"5",
+		"template":"template1",
+		"video":"https://storage.googleapis.com/denlin-cursos/Moris/moris420/8-MarcoConceptual%20MAIS_c.mp4",
+		"titulo":"Marco conceptual MAIS para alcanzar el éxito financiero",
+		"imagenes":{
+			"0":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-22-0030.jpg",
+				"time":"30"
+			},
+			"1":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-23-0107.jpg",
+				"time":"67"
+			},
+			"2":{
+				"ruta":"https://storage.googleapis.com/denlin-cursos/Moris/C2/img/FInanzas%20personales-24-0235.jpg",
+				"time":"155"
+			}
+		}
+	}
+}
+}

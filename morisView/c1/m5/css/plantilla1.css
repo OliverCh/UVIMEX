@@ -1,0 +1,51 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+.video{
+	padding-top: 5%;
+	background: #ece8e9;
+}
+
+svg{
+	cursor: pointer;
+}
+
+video{
+	width: 100%;
+}
+
+.video_controls{
+	font-size: 2rem;
+	padding: 1%;
+	text-align: center;
+	color: #8a8e8f;
+}
+
+.video_progress{
+	width: 50%;
+	height: 5px;
+	background-color: red;
+}
+
+.miniDiap{
+	display: block;
+	padding: 1%;
+	width: 100%;
+}
+
+.diap_title{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	padding: 1%;
+	background-color: red;
+	color: white;
+}
+
+.images_slide, .images_captation{
+	display: inline-block;
+	width: 100%;
+	padding: 1%;
+}

@@ -1,0 +1,20 @@
+<div id="contenedorCurso">
+
+	<div style="width: 100%;">
+		<section id="tituloCurso">Calcula tu ahorro de emergencias.</section>
+			<section id="subtituloCurso"></section>
+		<section id="temaCurso"></section>
+	</div>
+	<div style="width:100%;">
+		<div id="tabla" style="padding: 7% 30%; text-align: center;font-size:  1.2rem;">
+			<section>
+				<h3 style="margin: 3%; ">Introduce tu monto de gastos fijos mensuales</h3> 
+				<input type="text" style="margin: 3%; " id="monto" min="1" step="any" />
+			</section>
+			<section>
+				 <label id="ahorro"></label>
+			</section>
+			<button id="calcAhorro" style="margin: 5%;padding:  2%;border-radius:  20px;color:  white;background:  #127a5d;border: none;" onclick="calcahorro()">Calcular ahorro de emergencia</button>
+		</div>
+	</div>
+</div>

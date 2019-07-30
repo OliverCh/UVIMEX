@@ -1,0 +1,119 @@
+<div id="contenedorCurso">
+        <div style="width: 100%;">
+          <section id="tituloCurso"></section>
+          <section id="subtituloCurso"></section>
+          <section id="temaCurso"></section>
+        </div>
+
+        <div style="width:100%;">
+          <div id="tabla">
+            <section>
+              <h3>Metas a corto plazo (a 1 año)</h3>
+
+              <table>
+                <tr style="text-align: center;">
+                  <td></td>
+                  <td><h2>Fecha</h2></td>
+                  <td><h2>Monto</h2></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="meta" id="m0" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+            <section>
+
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m1" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m2" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+
+            <br>
+            <hr>
+
+            <section>
+              <h3>Metas a mediano plazo (de 1 a 5 años)</h3>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m3" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td> <input type="text" name="meta" id="m4" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td> <input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m5" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+
+            <br>
+            <hr>
+
+            <section>
+              <h3>Metas a largo plazo (de 5 a 10 años)</h3>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m6" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m7" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td><input type="text" name="meta" id="m8" disabled></td>
+                  <td><input type="date" name="fecha"></td>
+                  <td><input type="text" name="monto" min="1" max="9999" step="any" /></td>
+                </tr>
+              </table>
+
+
+
+            </section>
+
+          </div>
+          <!--<button id="addMeta" onclick="addCampos()"></button>-->
+          <button id="saveMetas" onclick="saveCampos()"></button>
+        </div>
+        <link rel="stylesheet" href="css/act2.css" />
+      </div>

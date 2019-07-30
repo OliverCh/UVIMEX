@@ -1,0 +1,87 @@
+<div id="contenedorCurso">
+	<div style="width: 100%;">
+		<section id="tituloCurso"></section>
+		<section id="temaCurso"></section>
+	</div>
+
+	<div style="width:100%;">
+		<div id="seccionVideo">
+			<canvas id="videoCursoCanvas"></canvas>
+			<input type="range" min="0"   value="0" id="controlVideo" >
+		</div>
+
+		<div id="seccionPreguntas">
+			<h1>Construye tu portafolio de inversion</h1>
+			<div id="table">
+				<div class="col">
+					<h3>Instrumentos de inversion:</h3>
+					<select class="full">
+						<option value="0">Renta Fija</option>
+						<option value="1">Bienes raíces</option>
+						<option value="2">Acciones en bolsa</option>
+						<option value="3">Crowfunding</option>
+						<option value="4">Emprendimientos</option>
+					</select>
+				</div>
+				<div class="col">
+					<h3>Porcentaje del total:</h3>
+					<input class="full" id="porcentajeP" onchange="validarTot(false)" type="text" min="1" max="100">
+				</div>
+				<div class="full" style="padding: 1%;">
+					<label id="totalPortafolio">Total: 0%</label>
+					<button onclick="guardarPortafolio();">Agregar</div>
+				</div>
+
+				<div id="portafolio">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/act0.css" />
+	<style>
+		.col{
+			display: inline-block;
+			width: 39%;
+			height: 12vh;
+			padding: 0%;
+			text-align: center;
+			margin: 5%;
+		}
+
+		.full{
+			display: block;
+			width: 100%;
+		}
+
+		button{
+			padding: 8px;
+			position: relative;
+			left: 50%;
+			float: none !important ;
+		}
+
+		.portafolioItem{
+			width: 100%;
+			padding: 2%;
+		}
+
+		.portafolioItem button{
+			border: none !important ;
+			color: gray !important ;
+			right: 0 !important ;
+			display: inline-block !important ;
+			width: auto !important ;
+			padding: 0 !important ;
+			margin: 0 !important ;
+			left: 0;
+			border: 1px solid #eee;
+		}
+
+		.portafolioItem p{
+			display: inline-block;
+		}
+	</style>
+</div>
+
+<video id="videoCurso" controls="false" oncontextmenu="return false;" controlsList="nodownload" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></video>

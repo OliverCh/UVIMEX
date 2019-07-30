@@ -1,0 +1,55 @@
+#tabla input{
+    font-size: 22px;
+    margin-top: 17px;
+    border-style: none;
+    background-color: white;
+    height: 28px;
+    border-bottom: 1px solid;
+    }
+
+#tabla label{
+
+    font-size: 24px;
+
+}
+
+    input[name="meta"]{
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    input[name="fecha"]{
+        text-align: right;
+    }
+
+    input[name="fecha"],input[name="monto"]{
+        margin-left: 60px;
+    }
+
+    #addMeta{
+    background-image: url(../ico/add.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    position: fixed;
+    right: 70px;
+
+    }
+
+#saveMetas{
+    background-image: url(../ico/save.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    position: fixed;
+    right: 1%;
+    bottom: 15%;
+}
