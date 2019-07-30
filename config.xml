@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="uvimex.com" version="2.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="uvimex.com" version="2.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Uvimex</name>
     <description>
        App de cursos Uvimex
@@ -26,6 +26,9 @@
         <icon src="icons/android/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
         <icon src="icons/android/mipmap-xxhdpi/ic_launcher.png" density="xxhdpi" />
         <icon src="icons/android/mipmap-xxxhdpi/ic_launcher.png" density="xxxhdpi" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+          <application android:usesCleartextTraffic="true" />
+        </edit-config>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
