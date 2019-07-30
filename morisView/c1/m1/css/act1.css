@@ -81,9 +81,10 @@ button#imprimirActividad{
 }
 #seccionPreguntas{
 	width: 80%;
-margin: auto;
-left: 0;
-right: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	margin-bottom: 131px;
 }
 @media (max-width: 1024px){
 	#seccionVideo{

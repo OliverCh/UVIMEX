@@ -71,6 +71,7 @@ button#imprimirActividad{
 	width: 80%;
 	left: 0;
 	right: 0;
+		margin-bottom: 131px;
 }
 
 #seccionPreguntas li{

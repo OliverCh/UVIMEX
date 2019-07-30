@@ -69,6 +69,7 @@ button#imprimirActividad{
 	position: absolute;
 	margin: 6% 12%;
 	width: 25%;
+		margin-bottom: 131px;
 }
 
 #seccionPreguntas li{
@@ -119,6 +120,7 @@ button#imprimirActividad{
 		padding: 0;
     	margin: 0;
     	width: 100%;
+				margin-bottom: 131px;
 	}
 
 	#controlVideo, #videoCurso{

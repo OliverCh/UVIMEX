@@ -1000,6 +1000,7 @@ height: auto;
 					    top: auto;
 					    height: fit-content;
 							width: 100%;
+							 background-color: #e2e2e2;
 					}
 					#colorNavVertical {
 						left: auto;
@@ -1080,18 +1081,17 @@ section#tituloCurso{
 						z-index: 4;
 					}
 
-					#colorNavVertical {
+					nav#colorNavVertical {
+					    height: 50px;
 					    position: fixed;
-					    /* left: 1%; */
-					    top: 76%;
-					    float: left;
-					    /* width: 100%; */
+					    text-align: center;
+					    top: 0;
 					}
-
 					#colorNavVertical > ul {
 					    margin: 0 auto;
 					    float: left;
 					    width: 100vw;
+							    background-color: #636363;
 					}
 
 					#colorNavVertical > ul > li {
@@ -1100,7 +1100,7 @@ section#tituloCurso{
 					    display: inline-block;
 					    line-height: 1;
 					        margin: 5px 2px;
-					    width: 3.5em;
+					    width: 40px;
 					    border-radius: 3px;
 					    position: relative;
 					}
@@ -1109,7 +1109,7 @@ section#tituloCurso{
 					    color: inherit;
 					    text-decoration: none !important;
 					    font-size: 170%;
-					    /* padding: 0em; */
+							padding: 7px 0;
 					}
 
 					#colorNav > ul {
@@ -1148,7 +1148,6 @@ section#tituloCurso{
 
 					.tituloCurso {
 					    font-size: 6em;
-					    /* position: fixed; */
 					}
 
 }

@@ -89,6 +89,7 @@ button#imprimirActividad{
 		left:0;
 		right: 0;
 		position: absolute;
+			margin-bottom: 131px;
 }
 @media (max-width: 1024px){
 	#seccionVideo{

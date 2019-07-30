@@ -114,6 +114,7 @@ button#imprimirActividad{
 		padding: 0;
     	margin: 0;
     	width: 100%;
+				margin-bottom: 131px;
 	}
 
 	#controlVideo, #videoCurso{
