@@ -5,6 +5,8 @@ define(function(require){
 
 	var videoController = null;
 	var themeVideo_ = null;
+	var theme = null;
+	var template = null;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
@@ -15,12 +17,18 @@ define(function(require){
 		var base = $("<div></div>");
 		base.load("secciones/platform/videoSubcontroller.html", function(){
 			findFields();
-			initVideo();
+			getFullContent(myData.theme);
 		});
 		base.appendTo(screenContainer);
 	}
 
 	publics.setData = function(data){
+		if(data.theme !== undefined){
+			theme = data.theme;
+		}
+		if(data.template !== undefined){
+			template = data.template;
+		}
 		myData = data;
 		return this;
 	}
@@ -67,15 +75,16 @@ define(function(require){
 
 	var getFullContent = function(){
 		$.ajax({
-			url: masterURL + "getFullContent.php",
-			data: {themeID: theme.id},
+			url: masterPath + "getFullContent.php",
+			data: {themeID: theme.id, themeTemplate: template},
 			success: function(data){
-				if(data.url === undefined || data.images === undefined || data.files === undefined){
+				if(data.content === undefined || data.images === undefined || data.files === undefined){
 					throw new Error("Wrong data");
 					console.error(data);
 					return;
 				}
-				initVideo(data.url, data.images, data.files);
+				console.log(data);
+				initVideo(data.content, data.images, data.files);
 			}
 		});
 	}

@@ -23,7 +23,13 @@ define(function(require){
 			fillFields();
 			getThemes(function(themes){
 				moduleThemes = (themes != null)? themes:[];
-				loadThemes(themes);
+				// PARA MUESTRA
+				moduleThemes.push({nombre: "* video", plantilla: "template1"});
+				moduleThemes.push({nombre: "* video con actividad", plantilla: "template2"});
+				moduleThemes.push({nombre: "* audio", plantilla: "template3"});
+				moduleThemes.push({nombre: "* texto", plantilla: "template7"});
+				console.log(moduleThemes);
+				loadThemes(moduleThemes);
 			})
 		});
 	}

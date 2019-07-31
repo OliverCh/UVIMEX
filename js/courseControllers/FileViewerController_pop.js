@@ -57,7 +57,7 @@ define(function(require){
 			var id = $(this).data("id");
 			var file = files[id];
 			// Agregar otro popup
-			require(["SeeFileController_pop"], function(controller){
+			require(["courseControllers/SeeFileController_pop"], function(controller){
 				controller.setParentNav(parentNav);
 				parentNav.pushPop(controller, "file", {file: file});
 			});

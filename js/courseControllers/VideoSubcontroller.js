@@ -101,7 +101,7 @@ define(function(require){
 
 	var fillFields = function(){
 		video_.append(videoHTML);
-		files_.html(files.length);
+		fileCount_.html(files.length);
 	}
 
 	var setChanges = function(bool){
@@ -235,7 +235,7 @@ define(function(require){
 	}
 
 	var showFilesAction = function(){
-		require(["FileViewerController_pop"], function(popController){
+		require(["courseControllers/FileViewerController_pop"], function(popController){
 			popController.setParentNav(parentNav);
 			parentNav.pushPop(popController, "files", {files: files}, "pop-white-full");
 		})
@@ -281,7 +281,7 @@ define(function(require){
 
 
 	var getVideoHTML = function(){
-		var str = `<video class="daVideo" src="${videoURL}" id="video_">No se soporta. Contacte administrador</video>`;
+		var str = `<video class="daVideo" src="${videoURL}">No se soporta. Contacte administrador</video>`;
 		return $($.parseHTML(str)[0]);
 	}
 
