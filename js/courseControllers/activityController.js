@@ -40,14 +40,14 @@ define(function(require){
 		var activityData = getActivityData();
 		console.log(myData);
 		switch(myData.template){
-			case 1:
-				activityParser.parseType1(activityData); //no puedo pensar
+			case 'template1':
+				screenContainer.html(activityParser.parseType1(activityData)); //no puedo pensar
 			break;
 			case 'template2':
 				screenContainer.html(activityParser.parseType2(activityData));
 			break;
-			case 3:
-				activityParser.parseType3(activityData);
+			case 'template3':
+				screenContainer.html(activityParser.parseType3(activityData));
 			break;
 			default:
 				screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");

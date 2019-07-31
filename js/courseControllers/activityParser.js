@@ -6,7 +6,7 @@ define(function(require){
 		for (var i in data){
 			html += `
 				<div class="renglonAct">
-					<h2><span class="numberAct">`+i+`</span>`+data[i].questionString+`</h2>
+					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
 					<input class="activityAnswer" placeholder="Escribe tu respuesta...">
 				</div>`;
 		}
@@ -18,7 +18,7 @@ define(function(require){
 		for (var i in data){
 			var current = `
 				<div class="renglonAct">
-					<h2><span class="numberAct">`+(i + 1)+`</span>`+data[i].questionString+`</h2>
+					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
 					:answers:
 				</div>`;
 			var answersHTML = "";
@@ -42,7 +42,7 @@ define(function(require){
 		for (var i in data){
 			var current = `
 				<div class="renglonAct">
-					<h2><span class="numberAct">`+i+`</span>`+data[i].questionString+`</h2>
+					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
 					:answers:
 				</div>`;
 			var answersHTML = "";
@@ -50,7 +50,7 @@ define(function(require){
 				answersHTML += `
 					<div class="multianswerdRow">
 						<div class="actfb">
-							<p data-ansid="`+data[j].answers[j].answerID+`">`+data[j].answers[j].answerStr+`</p>
+							<p data-ansid="`+data[i].answers[j].answerID+`">`+data[i].answers[j].answerStr+`</p>
 						</div>
 						
 					</div>`;
