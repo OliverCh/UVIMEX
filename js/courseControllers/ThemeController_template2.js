@@ -6,6 +6,10 @@ define(function(require){
 	var videoController = null;
 	var themeVideo_ = null;
 
+	var validateActs = function(){
+		return true;
+	}
+
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
 		return this;
@@ -18,15 +22,24 @@ define(function(require){
 			initVideo();
 		});
 		base.appendTo(screenContainer);
-		var base2 = $("<div></div>");
-		base2.load("secciones/platform/activitySubcontroller.html", function(){
-			
-		});
-		base2.appendTo(screenContainer);
+		var hasActs = validateActs();
+		if(hasActs){
+			require(['courseControllers/activityController'], function(activityController){
+				var base2 = $("<div></div>");
+				base2.appendTo(screenContainer);
+				base2.load("secciones/platform/activitySubcontroller.html", function(){
+					console.log(myData);
+					activityController.setData({
+						template: myData.template,
+						theme: myData.theme.id
+					}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
+				});
+			});
+		}
 	}
 
 	publics.setData = function(data){
-		console.log("mod Received" + data);
+		console.log("mod Received", data);
 		myData = data;
 		return this;
 	}

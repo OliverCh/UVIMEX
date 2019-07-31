@@ -18,7 +18,7 @@ define(function(require){
 		for (var i in data){
 			var current = `
 				<div class="renglonAct">
-					<h2><span class="numberAct">`+i+`</span>`+data[i].questionString+`</h2>
+					<h2><span class="numberAct">`+(i + 1)+`</span>`+data[i].questionString+`</h2>
 					:answers:
 				</div>`;
 			var answersHTML = "";
@@ -26,9 +26,9 @@ define(function(require){
 				answersHTML += `
 					<div class="multianswerdRow">
 						<div class="actContainer">
-							<input class="actInput" type="radio" value="`+data[j].answers[j].answerID+`">
+							<input class="actInput" type="radio" value="`+data[i].answers[j].answerID+`">
 						</div>
-						<p>`+data[j].answers[j].answerStr+`</p>
+						<p>`+data[i].answers[j].answerStr+`</p>
 					</div>`;
 			}
 

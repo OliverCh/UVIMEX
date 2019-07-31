@@ -6,15 +6,22 @@ define(function(require){
 	var f_back = null;
 	var nonLocal = null;
 	var myData;
-	var activityParser = require('activityParser');
+	var activityParser = require('courseControllers/activityParser');
+	var currentPage = 0;
+
+	var getActivityData = function(){
+		return JSON.parse('[{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]}]');
+	};
 
 	publics.setContainer = function(cnt){
+		console.log(cnt);
 		screenContainer = cnt;
 		return this;
 	};
 
 	publics.setData = function(data){
-		if((data.activity != undefined || data.activity != null) && (data.theme != undefined || data.theme != null)){
+		console.log(data);
+		if((data.template == undefined || data.template == null) && (data.theme == undefined || data.theme == null)){
 			throw new Error("Wrong data");
 			return null;
 		}
@@ -31,12 +38,13 @@ define(function(require){
 
 	publics.draw = function(){
 		var activityData = getActivityData();
-		switch(myData.activity){
+		console.log(myData);
+		switch(myData.template){
 			case 1:
 				activityParser.parseType1(activityData); //no puedo pensar
 			break;
-			case 2:
-				activityParser.parseType2(activityData);
+			case 'template2':
+				screenContainer.html(activityParser.parseType2(activityData));
 			break;
 			case 3:
 				activityParser.parseType3(activityData);

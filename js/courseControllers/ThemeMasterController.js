@@ -74,12 +74,12 @@ define(function(require){
 		var theme = themes[index];
 		var template = theme.plantilla;
 		var themeController = "courseControllers/ThemeController_"+template;
-		//var themeController = "courseControllers/ThemeController_template3";
+		//var themeController = "courseControllers/ThemeController_template2";
 		fillFields(theme);
 
 		require([themeController], function(ThemeController){
 			ThemeController.setContainer(themeContent_)
-							.setData({theme: theme, template. template})
+							.setData({theme: theme, template: template})
 							.setParentNav(parentNav)
 							.draw();
 		});
