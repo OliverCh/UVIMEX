@@ -14,8 +14,8 @@ define(function(require){
 	};
 
 	publics.setContainer = function(cnt){
-		console.log(cnt);
 		screenContainer = cnt;
+		setControls();
 		return this;
 	};
 
