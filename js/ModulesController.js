@@ -47,18 +47,26 @@ define(function(require){
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
-			var moduleID = $(this).data("id");
-			var moduleName = $(this).parent().find(".moduleName").html();
+			if(nonLocal === true){
+				var moduleID = $(this).data("id");
+				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					parentNav.pushPop(WatchCourseController_pop, "course", {moduleID: moduleID});
+				})
+			}
+			else{
+				var moduleID = $(this).data("id");
+				var moduleName = $(this).parent().find(".moduleName").html();
 
-			require(["courseControllers/CourseBaseController"], function(CourseBaseController){
+				require(["courseControllers/CourseBaseController"], function(CourseBaseController){
 
-				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
-				/*
-				NavController.setContainer($("#appContent"));
-				NavController.pushStack(AppBaseController, undefined, false);
-				NavController.pushStack(CourseBaseController);
-				*/
-			});			
+					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
+					/*
+					NavController.setContainer($("#appContent"));
+					NavController.pushStack(AppBaseController, undefined, false);
+					NavController.pushStack(CourseBaseController);
+					*/
+				});			
+			}
 		});
 		f_back.click(function(){parentNav.popScreen();});
 	}
