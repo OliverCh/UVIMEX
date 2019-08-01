@@ -90,7 +90,7 @@ define(function(require){
 		if(nonLocal === true){
 			$.ajax({
 				url: masterPath + movileComms,
-				data: {idUser: localStorage.getItem("user_id"), mode: "myLessons"},
+				data: {mode: "getMorisLessons"},
 				success:callback
 			});
 		}
