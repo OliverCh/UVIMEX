@@ -72,6 +72,7 @@ define(function(require){
 		}
 
 		var theme = themes[index];
+		console.log("Thema", theme);
 		var template = theme.plantilla;
 		var themeController = "courseControllers/ThemeController_"+template;
 		//var themeController = "courseControllers/ThemeController_template2";
