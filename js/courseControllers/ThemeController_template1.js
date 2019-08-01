@@ -83,6 +83,14 @@ define(function(require){
 					console.error(data);
 					return;
 				}
+				// convert from min:sec format
+				for (var i = data.images.length - 1; i >= 0; i--) {
+					var crudeTime = data.images[i].time;
+					var splited = crudeTime.split(":");
+					var min = parseInt(splited[0]);
+					var sec = parseInt(splited[1]);
+					data.images[i].time = min * 60 + sec; 
+				}
 				console.log(data);
 				initVideo(data.content, data.images, data.files);
 			}

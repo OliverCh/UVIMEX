@@ -17,7 +17,7 @@ define(function(require){
 	}
 
 	publics.draw = function(){
-		screen.orientation.lock('landscape-primary');
+		//screen.orientation.lock('landscape-primary');
 		var moduleID = myData.moduleID;
 		var morisID = moduleID;
 		screenContainer.prepend(`<iframe src="http://104.154.247.218/cursoprueba/c1/m${morisID}/"></iframe>`);

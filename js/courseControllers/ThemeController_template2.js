@@ -104,6 +104,14 @@ define(function(require){
 					return;
 				}
 				console.log(data);
+				// convert from min:sec format
+				for (var i = data.images.length - 1; i >= 0; i--) {
+					var crudeTime = data.images[i].time;
+					var splited = crudeTime.split(":");
+					var min = parseInt(splited[0]);
+					var sec = parseInt(splited[1]);
+					data.images[i].time = min * 60 + sec; 
+				}
 				initVideo(data.content, data.images, data.files);
 			}
 		});
