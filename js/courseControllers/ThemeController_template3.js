@@ -15,12 +15,16 @@ define(function(require){
 		var base = $("<div></div>");
 		base.load("secciones/platform/audioSubcontroller.html", function(){
 			findFields();
-			initVideo();
+			$.post(masterPath + "getFullContent.php", {themeID: myData.theme.id, themeTemplate: myData.template}, function(data){
+				console.log(data);
+				initVideo();
+			});
 		});
 		base.appendTo(screenContainer);
 	}
 
 	publics.setData = function(data){
+		console.log('a', data);
 		myData = data;
 		return this;
 	}
