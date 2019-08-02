@@ -440,3 +440,9 @@ textarea.text-area {
     text-align: right;
     margin-right: 10px;
 }
+video.daVideo {
+    height: 100%;
+}
+div#video_ {
+    height: 100%;
+}
