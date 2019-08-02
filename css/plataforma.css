@@ -131,7 +131,7 @@ button.nav-btn-style.bottom_btn.bottom_btn_slct {
     color:#857373;
 }
 .plant-txt-cont p {
-    text-align: center;
+    text-align: left;
     font-size: .8em;
     margin: 0;
     margin-top: 7px;
@@ -322,4 +322,121 @@ button.nav-btn-style.bottom_btn.bottom_btn_slct {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+/**PARA ACTIVIDADES**/
+.con-general-actividad {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background: #fff;
+    padding-top: 23px;
+}
+.con-gen-askqu {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.row-pregunta h2 {
+    margin: 0;
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
+    font-size: .9em;
+    margin-left: 10px;
+    color: #008c39;
+    font-weight: normal;
+    font-family: 'OpenSansBold';
+}
+.num-pregunta {
+    background-color: #008c39;
+    font-family: 'OpenSansBold';
+    color: #fff;
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.row-respuesta {
+    background-color: #f1f1f1;
+    width: 90%;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+.short-answerd {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+.row-respuesta:first-child{
+  margin-top: 10px;
+}
+}
+.row-pregunta {
+    margin-bottom: 10px;
+}
+.respuesta-txt p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    margin: 0;
+    font-size: .8em;
+    text-align: left;
+}
+.respuesta-txt{
+  display: flex;
+}
+p.verdadero-option {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.respuesta-option {
+    display: inline-block;
+    vertical-align: middle;
+    width: 29%;
+    margin-left: 1%;
+    text-align: 0;
+    text-align: right;
+}
+.falsoverdadero p {
+    display: inline-block;
+    width: fit-content;
+    vertical-align: middle;
+    padding: 6px;
+    text-transform: uppercase;
+    font-size: .65em;
+    margin-bottom: 8px;
+    color: #fff;
+    background-color: #8a8a8a;
+    cursor: pointer;
+}
+.falso-option{
+    border-radius: 5px 0 0 5px;
+}
+.verdadero-option {
+  border-radius: 0 5px 5px 0;
+}
+.falso-option.selected-fv{
+  background-color: red;
+}
+.verdadero-option.selected-fv{
+  background-color: green;
+}
+textarea.text-area {
+    width: 99%;
+    resize: none;
+    height: 70px;
+}
+.opcion-multiple .fa-check-square{
+  color: green;
+}
+.opcion-multiple p {
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 10px;
 }

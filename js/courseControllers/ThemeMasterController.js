@@ -73,8 +73,12 @@ define(function(require){
 
 		var theme = themes[index];
 		var template = theme.plantilla;
-		var themeController = "courseControllers/ThemeController_"+template;
-		//var themeController = "courseControllers/ThemeController_template2";
+		//var themeController = "courseControllers/ThemeController_"+template;
+		var themeController = "courseControllers/ThemeController_template2";
+		//template1: video
+		//template2: video con actividad
+		//template3: audio
+		//template7: texto
 		fillFields(theme);
 
 		console.log(theme);
