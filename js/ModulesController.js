@@ -50,6 +50,7 @@ define(function(require){
 			if(nonLocal === true){
 				var moduleID = $(this).data("id");
 				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					WatchCourseController_pop.setParentNav(parentNav);
 					parentNav.pushPop(WatchCourseController_pop, "course", {moduleID: moduleID});
 				})
 			}

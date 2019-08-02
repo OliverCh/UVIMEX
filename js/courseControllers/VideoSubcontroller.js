@@ -281,7 +281,7 @@ define(function(require){
 
 
 	var getVideoHTML = function(){
-		var str = `<video class="daVideo" src="${videoURL}">No se soporta. Contacte administrador</video>`;
+		var str = `<video class="daVideo" controlslist="nodownload" src="${videoURL}">No se soporta. Contacte administrador</video>`;
 		return $($.parseHTML(str)[0]);
 	}
 
