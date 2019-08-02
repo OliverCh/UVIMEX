@@ -153,6 +153,9 @@ button.nav-btn-style.bottom_btn.bottom_btn_slct {
     left: 0;
     right: 0;
     display: flex;
+    background-color: #0000001f;
+color: #fff;
+border-radius: 7px;
 }
 .avance-contianer input{
   width: 80%;
