@@ -8,10 +8,6 @@ define(function(require){
 		var theme = null;
 	var template = null;
 
-	var validateActs = function(){
-		return true;
-	}
-
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
 		return this;
@@ -24,23 +20,25 @@ define(function(require){
 			getFullContent();
 		});
 		base.appendTo(screenContainer);
-		var hasActs = validateActs();
-		if(hasActs){
-			require(['courseControllers/activityController'], function(activityController){
-				var base2 = $("<div></div>");
-				base2.appendTo(screenContainer);
-				base2.load("secciones/platform/activitySubcontroller.html", function(){
-					console.log(myData);
-					activityController.setData({
-						//template: myData.template, descomenta los templates de abajo para ver los diferentes tipos de actividades, recuerda tener solo uno a la vez o se muere
-						template: "template1",
-						//template: "template2", 
-						//template: 'template3',
-						theme: myData.theme.id
-					}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
+		$.post(masterPath + "activityCentre.php", {theme: myData.theme.id, action: 'verifActs'}, function(data){
+			if(data.hasActs){
+				require(['courseControllers/activityController'], function(activityController){
+					var base2 = $("<div></div>");
+					base2.appendTo(screenContainer);
+					base2.load("secciones/platform/activitySubcontroller.html", function(){
+						console.log(myData);
+						activityController.setData({
+							//template: data.template,
+							//template: myData.template, descomenta los templates de abajo para ver los diferentes tipos de actividades, recuerda tener solo uno a la vez o se muere
+							template: "template1",
+							//template: "template2", 
+							//template: 'template3',
+							theme: myData.theme.id
+						}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
+					});
 				});
-			});
-		}
+			}
+		});
 	}
 
 	publics.setData = function(data){
