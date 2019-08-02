@@ -30,8 +30,8 @@ define(function(require){
 						activityController.setData({
 							//template: data.template,
 							//template: myData.template, descomenta los templates de abajo para ver los diferentes tipos de actividades, recuerda tener solo uno a la vez o se muere
-							template: "template1",
-							//template: "template2", 
+							//template: "template1",
+							template: "template2", 
 							//template: 'template3',
 							theme: myData.theme.id
 						}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
