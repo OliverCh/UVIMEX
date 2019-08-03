@@ -37,22 +37,22 @@ define(function(require){
 	};
 
 	publics.draw = function(){
-		var activityData = getActivityData();
-		console.log(myData);
-		switch(myData.template){
-			case 'template1':
-				screenContainer.html(activityParser.parseType1(activityData)); //no puedo pensar
-			break;
-			case 'template2':
-				screenContainer.html(activityParser.parseType2(activityData));
-			break;
-			case 'template3':
-				screenContainer.html(activityParser.parseType3(activityData));
-			break;
-			default:
-				screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
-			break;
-		}
+		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'loadAct', page: currentPage}, function(data){
+			switch(myData.template){
+				case 'actividad6':
+					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar
+				break;
+				case 'template2':
+					screenContainer.html(activityParser.parseType2(data));
+				break;
+				case 'template3':
+					screenContainer.html(activityParser.parseType3(data));
+				break;
+				default:
+					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
+				break;
+			}
+		});
 	};
 
 	return publics;

@@ -5,7 +5,7 @@ define(function(require){
 
 	var videoController = null;
 	var themeVideo_ = null;
-		var theme = null;
+	var theme = null;
 	var template = null;
 
 	publics.setContainer = function(cnt){
@@ -26,13 +26,13 @@ define(function(require){
 					var base2 = $("<div></div>");
 					base2.appendTo(screenContainer);
 					base2.load("secciones/platform/activitySubcontroller.html", function(){
-						console.log(myData);
 						activityController.setData({
-							//template: data.template,
+							template: data.template.template,
 							//template: myData.template, descomenta los templates de abajo para ver los diferentes tipos de actividades, recuerda tener solo uno a la vez o se muere
 							//template: "template1",
-							template: "template2", 
+							//template: "template2", 
 							//template: 'template3',
+							pageCount: data.pageCount,
 							theme: myData.theme.id
 						}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
 					});
