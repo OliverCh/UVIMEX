@@ -5,19 +5,24 @@ define(function(require){
 		var html = "";
 		for (var i in data){
 			var current = `
-				<div class="renglonAct">
-					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
+				<div class="con-gen-askqu">
+					<div class="row-pregunta">
+						<span class="num-pregunta">`+(parseInt(i) + 1)+`</span><h2>`+data[i].questionString+`</h2>
+					</div>
 					:answers:
 				</div>`;
 			var answersHTML = "";
 			for (var j in data[i].answers){
 				answersHTML += `
-					<div class="multianswerdRow">
-						<div class="actContainer">
-							<input class="actInput" type="radio" value="`+data[i].answers[j].answerID+`">
+				<div class="row-respuesta">
+					<div class="respuesta-txt" data-ansid="`+data[i].answers[j].answerID+`"><p>`+data[i].answers[j].answerStr+`</p>
+						<div class="respuesta-option">
+							<div class="opcion-multiple">
+								<p><i class="far fa-square"></i></p>
+							</div>
 						</div>
-						<p>`+data[i].answers[j].answerStr+`</p>
-					</div>`;
+					</div>
+				</div>`;
 			}
 
 			html += current.replace(':answers:', answersHTML);
@@ -28,11 +33,28 @@ define(function(require){
 	publics.parseType2 = function(data){
 		var html = "";
 		for (var i in data){
-			html += `
-				<div class="renglonAct">
-					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
-					<input class="activityAnswer" placeholder="Escribe tu respuesta...">
+			var current = `
+				<div class="con-gen-askqu">
+					<div class="row-pregunta">
+						<span class="num-pregunta">`+(parseInt(i) + 1)+`</span><h2>`+data[i].questionString+`</h2>
+					</div>
+					:answers:
 				</div>`;
+			var answersHTML = "";
+			for (var j in data[i].answers){
+				answersHTML += `
+				<div class="row-respuesta row-opcion-unica">
+					<div class="respuesta-txt" data-ansid="`+data[i].answers[j].answerID+`"><p>`+data[i].answers[j].answerStr+`</p>
+						<div class="respuesta-option">
+							<div class="opcion-unica">
+								<i class="fas fa-circle"></i>
+							</div>
+						</div>
+					</div>
+				</div>`;
+			}
+
+			html += current.replace(':answers:', answersHTML);
 		}
 		return html;
 	};
@@ -41,18 +63,23 @@ define(function(require){
 		var html = "";
 		for (var i in data){
 			var current = `
-				<div class="renglonAct">
-					<h2><span class="numberAct">`+(parseInt(i) + 1)+`) </span>`+data[i].questionString+`</h2>
+				<div class="con-gen-askqu">
+					<div class="row-pregunta">
+						<span class="num-pregunta">`+(parseInt(i) + 1)+`</span><h2>`+data[i].questionString+`</h2>
+					</div>
 					:answers:
 				</div>`;
 			var answersHTML = "";
 			for (var j in data[i].answers){
 				answersHTML += `
-					<div class="multianswerdRow">
-						<div class="actfb">
-							<p data-ansid="`+data[i].answers[j].answerID+`">`+data[i].answers[j].answerStr+`</p>
+					<div class="row-respuesta">
+						<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
+							<div class="respuesta-option">
+								<div class="opcion-multiple">
+									<p data-ansid="`+data[i].answers[j].answerID+`"><i class="far fa-square"></i></p>
+								</div>
+							</div>
 						</div>
-						
 					</div>`;
 			}
 

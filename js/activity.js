@@ -16,7 +16,7 @@ $(document).on('click', '.opcion-multiple p', function(){
     hijo.removeClass('fa-check-square');
   }
 });
-});
+
 $(document).on('click', '.row-opcion-unica', function(){
   if ($(this).hasClass('selected-option-unica')) {
   }else{

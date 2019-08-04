@@ -8,14 +8,21 @@ define(function(require){
 	var myData;
 	var activityParser = require('courseControllers/activityParser');
 	var currentPage = 0;
+	var btns = null;
 
 	var getActivityData = function(){
 		return JSON.parse('[{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]}]');
 	};
 
+	var setControls = function(){
+		var actBack = screenContainer.parent().find('#prevAct_');
+		var actFw = screenContainer.parent().find('#nextAct_');
+
+	};
+
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
-		//setControls();
+		setControls();
 		return this;
 	};
 
@@ -42,10 +49,10 @@ define(function(require){
 				case 'actividad6':
 					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar
 				break;
-				case 'template2':
+				case 'actividad5':
 					screenContainer.html(activityParser.parseType2(data));
 				break;
-				case 'template3':
+				case 'actividad2':
 					screenContainer.html(activityParser.parseType3(data));
 				break;
 				default:
