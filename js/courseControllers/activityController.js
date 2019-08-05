@@ -14,10 +14,36 @@ define(function(require){
 		return JSON.parse('[{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]}]');
 	};
 
+	var previousPage = function(){
+		if(currentPage != 0){
+			currentPage--;
+			publics.draw();
+		}
+	};
+
+	var nextPage = function(){
+		if(currentPage != (myData.pageCount - 1)){
+			currentPage++;
+			publics.draw();
+		}
+	};
+
 	var setControls = function(){
+		currentPage = 0;
 		var actBack = screenContainer.parent().find('#prevAct_');
 		var actFw = screenContainer.parent().find('#nextAct_');
-
+		if(myData.pageCount == 1){
+			actBack.remove();
+			actFw.remove();
+		}
+		else{
+			btns = {
+				bk: actBack,
+				fw: actFw
+			}
+			actBack.on('click', previousPage);
+			actFw.on('click', nextPage);
+		}
 	};
 
 	publics.setContainer = function(cnt){
@@ -27,7 +53,6 @@ define(function(require){
 	};
 
 	publics.setData = function(data){
-		console.log(data);
 		if((data.template == undefined || data.template == null) && (data.theme == undefined || data.theme == null)){
 			throw new Error("Wrong data");
 			return null;
