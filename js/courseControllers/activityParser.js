@@ -1,5 +1,10 @@
 define(function(require){
 	var publics = {};
+	var myAnswers = {};
+
+	publics.setAnswers = function(data){
+		myAnswers = data;
+	};
 
 	publics.parseType1 = function(data){
 		var html = "";
@@ -15,10 +20,10 @@ define(function(require){
 			for (var j in data[i].answers){
 				answersHTML += `
 				<div class="row-respuesta">
-					<div class="respuesta-txt" data-ansid="`+data[i].answers[j].answerID+`"><p>`+data[i].answers[j].answerStr+`</p>
+					<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 						<div class="respuesta-option">
 							<div class="opcion-multiple">
-								<p><i class="far fa-square"></i></p>
+								<p data-ansid="`+data[i].answers[j].answerID+`" data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+`"></i></p>
 							</div>
 						</div>
 					</div>
@@ -43,11 +48,11 @@ define(function(require){
 			var answersHTML = "";
 			for (var j in data[i].answers){
 				answersHTML += `
-				<div class="row-respuesta row-opcion-unica">
-					<div class="respuesta-txt" data-ansid="`+data[i].answers[j].answerID+`"><p>`+data[i].answers[j].answerStr+`</p>
+				<div class="row-respuesta row-opcion-unica" data-ansid="`+data[i].answers[j].answerID+`" data-qid="`+data[i].questionID+`">
+					<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 						<div class="respuesta-option">
 							<div class="opcion-unica">
-								<i class="fas fa-circle"></i>
+								<i class="fas `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-circle' : 'fa-dot-circle')+`"></i>
 							</div>
 						</div>
 					</div>
@@ -76,7 +81,7 @@ define(function(require){
 						<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 							<div class="respuesta-option">
 								<div class="opcion-multiple">
-									<p data-ansid="`+data[i].answers[j].answerID+`"><i class="far fa-square"></i></p>
+									<p data-ansid="`+data[i].answers[j].answerID+`" data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+`"></i></p>
 								</div>
 							</div>
 						</div>

@@ -6,7 +6,6 @@ var NavMaster = (function(window, document, undefined){
 	publics.pushScreen = function(obj, data, load = true){
 		//if(screenStack.length != 0)
 			//screenStack[screenStack.length-1].setBackground(true);
-		
 		screenStack.push(obj);
 		var XD = obj.setContainer(container);
 		if(data !== undefined){
@@ -17,7 +16,6 @@ var NavMaster = (function(window, document, undefined){
 	}
 
 	publics.popScreen = function(data){
-		console.log(screenStack);
 		if(screenStack.length > 0){
 			screenStack.pop();
 		}
@@ -82,11 +80,11 @@ var NavMaster = (function(window, document, undefined){
 		}
 	}
 
-	document.addEventListener("backbutton", popClicked, false);
+	/*document.addEventListener("backbutton", popClicked, false);
 
 	var popClicked = function(){
 		screenStack[screenStack.length-1].popSubscreen();
-	}
+	}*/
 
 	return publics;
 })(window, document);

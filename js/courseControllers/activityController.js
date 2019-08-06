@@ -9,6 +9,11 @@ define(function(require){
 	var activityParser = require('courseControllers/activityParser');
 	var currentPage = 0;
 	var btns = null;
+	var actualAnswers = {};
+
+	/*
+		FUNCTIONS
+	*/
 
 	var getActivityData = function(){
 		return JSON.parse('[{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]}]');
@@ -46,6 +51,58 @@ define(function(require){
 		}
 	};
 
+	/*
+		LISTENERS
+	*/
+/*
+	$(document).on('click', '.falsoverdadero p', function(){
+		if ($(this).hasClass('selected-fv')) {
+
+		}
+		else{
+			$('.falsoverdadero p').removeClass('selected-fv');
+			$(this).addClass('selected-fv');
+		}
+	});*/
+
+	$(document).on('click', '.opcion-multiple p', function(){
+		var answerID = parseInt($(this).data('ansid'));
+		var questionID = $(this).data('qid');
+		var hijo = $(this).find('i');
+		if (hijo.hasClass('fa-square')) {
+			delete actualAnswers[answerID];
+		}
+		else{
+			actualAnswers[answerID] = {
+				aID: answerID,
+				qID: questionID,
+				theme: myData.theme,
+				time: Date.now()
+			};
+		}
+		console.log(actualAnswers);
+	});
+
+	$(document).on('click', '.row-opcion-unica', function(){
+		if ($(this).hasClass('selected-option-unica')) {
+			console.log($(this));
+			var answerID = parseInt($(this).data('ansid'));
+			var questionID = $(this).data('qid');
+			actualAnswers[questionID] = {
+				aID: answerID,
+				qID: questionID,
+				theme: myData.theme,
+				time: Date.now()
+			};
+		}
+		console.log(actualAnswers);
+	});
+
+
+	/*
+		PUBLICS
+	*/
+
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
 		setControls();
@@ -58,6 +115,8 @@ define(function(require){
 			return null;
 		}
 		else{
+			if(myData != null && myData.theme != data.theme)
+				actualAnswers = {};
 			myData = data;
 			return this;
 		}
@@ -70,6 +129,7 @@ define(function(require){
 
 	publics.draw = function(){
 		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'loadAct', page: currentPage}, function(data){
+			activityParser.setAnswers(actualAnswers);
 			switch(myData.template){
 				case 'actividad6':
 					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar

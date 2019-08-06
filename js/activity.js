@@ -20,9 +20,10 @@ $(document).on('click', '.opcion-multiple p', function(){
 $(document).on('click', '.row-opcion-unica', function(){
   if ($(this).hasClass('selected-option-unica')) {
   }else{
-    $('.row-opcion-unica').removeClass('selected-option-unica');
-    $('.row-opcion-unica i').removeClass('').addClass('');
-    $(this).find('i').removeClass('').addClass('');
-    $(this).removeClass('');
+    $(this).parent().find('.row-opcion-unica').removeClass('selected-option-unica');
+    $(this).parent().find('.row-opcion-unica i').removeClass('fa-dot-circle').addClass('fa-circle');
+
+    $(this).find('i').removeClass('fa-circle').addClass('fa-dot-circle');
+    $(this).addClass('selected-option-unica');
   }
 });
