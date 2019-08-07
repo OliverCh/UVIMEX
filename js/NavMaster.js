@@ -80,11 +80,9 @@ var NavMaster = (function(window, document, undefined){
 		}
 	}
 
-	/*document.addEventListener("backbutton", popClicked, false);
-
-	var popClicked = function(){
+	window.popClicked = function(){
 		screenStack[screenStack.length-1].popSubscreen();
-	}*/
-
+	}
+	
 	return publics;
 })(window, document);

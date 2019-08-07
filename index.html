@@ -29,6 +29,10 @@
     <script type="text/javascript">
 			window.masterPath = "https://uvimex.com.mx/movimex/";
       window.movileComms = "movileComms_v3.php";
+
+      window.popClicked = function(){return false;};
+      document.addEventListener("backbutton", window.popClicked, false);
+
       $(document).ready(function(){
 				$.ajaxSetup({
 					type: "pOst",
