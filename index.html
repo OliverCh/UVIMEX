@@ -30,8 +30,7 @@
 			window.masterPath = "https://uvimex.com.mx/movimex/";
       window.movileComms = "movileComms_v3.php";
 
-      window.popClicked = function(){return false;};
-      document.addEventListener("backbutton", window.popClicked, false);
+      document.addEventListener("backbutton", NavMaster.popScreen, false);
 
       $(document).ready(function(){
 				$.ajaxSetup({

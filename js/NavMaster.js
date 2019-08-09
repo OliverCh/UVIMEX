@@ -16,6 +16,7 @@ var NavMaster = (function(window, document, undefined){
 	}
 
 	publics.popScreen = function(data){
+		console.log('aaa');
 		if(screenStack.length > 0){
 			screenStack.pop();
 		}
@@ -80,9 +81,9 @@ var NavMaster = (function(window, document, undefined){
 		}
 	}
 
-	window.popClicked = function(){
+	publics.popClicked = function(){
 		screenStack[screenStack.length-1].popSubscreen();
 	}
-	
+
 	return publics;
 })(window, document);
