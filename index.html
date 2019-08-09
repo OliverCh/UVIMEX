@@ -29,9 +29,13 @@
     <script type="text/javascript">
 			window.masterPath = "https://uvimex.com.mx/movimex/";
       window.movileComms = "movileComms_v3.php";
+      var onDeviceReady = function(){
 
-      window.popClicked = function(){return false;};
-      document.addEventListener("backbutton", window.popClicked, false);
+        window.device = device.platform;
+      }
+
+      document.addEventListener("deviceready", onDeviceReady, false);
+      document.addEventListener("backbutton", NavMaster.popClicked, false);
 
       $(document).ready(function(){
 				$.ajaxSetup({

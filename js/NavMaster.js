@@ -80,8 +80,11 @@ var NavMaster = (function(window, document, undefined){
 		}
 	}
 
-	window.popClicked = function(){
-		screenStack[screenStack.length-1].popSubscreen();
+	publics.popClicked = function(){
+		var hasPoped = screenStack[screenStack.length-1].popSubscreen();
+		if(!hasPoped){
+			hasPoped = publics.popScreen();
+		}
 	}
 	
 	return publics;

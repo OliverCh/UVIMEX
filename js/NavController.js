@@ -17,17 +17,20 @@ var NavController = function(){
 	}
 
 	publics.popScreen = function(data){
-		if(screenStack.length > 0){
+		var hasPoped = false;
+		if(screenStack.length > 1){
+			// poping
 			screenStack.pop();
-		}
-		
-		if(screenStack.length != 0){
+
+			// loading screen
 			var XD = screenStack[screenStack.length-1].setContainer(container);
 			if(data !== undefined){
 				XD = XD.setData(data);
 			}
 			XD = XD.draw();
+			hasPoped = true;
 		}
+		return hasPoped;
 	}
 
 	publics.pushStack = function(obj){
@@ -54,8 +57,13 @@ var NavController = function(){
 	}
 
 	publics.popPop = function(id){
-		popStack.pop();
-		container.find(".pop_"+id).remove();
+		var hasPoped = false;
+		if(popStack > 0){
+			hasPoped = true;
+			popStack.pop();
+			container.find(".pop_"+id).remove();
+		}
+		return hasPoped;
 	}
 
 	publics.setHome = function(obj){
@@ -86,13 +94,13 @@ var NavController = function(){
 		return screenStack[screenStack.length-1];
 	}
 
-	var popSomething = function(){
-		if(popStack.length > 0){
-			popPop(popStack[popStack.length -1].id);
+	publics.popSomething = function(){
+		var hasPoped = publics.popPop();
+		if(!hasPoped){
+			hasPoped = publics.popScreen();
 		}
-		else{
-			popScreen();
-		}
+
+		return hasPoped;
 	}
 
 //	document.addEventListener("backbutton", popSomething, false);

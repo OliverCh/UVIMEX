@@ -33,7 +33,7 @@ define(function(require){
 	}
 
 	publics.popSubscreen = function(){
-		nav.popSomething();
+		return nav.popSomething();
 	}
 
 	var findFields = function(){
