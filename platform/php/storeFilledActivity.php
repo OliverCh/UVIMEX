@@ -35,6 +35,7 @@ include_once("../classes/clsTheme.php");
                 $activity->set_strTemplate($_REQUEST["templateActivity"]);
                 $activity->set_intPage($value);
                 $activity->set_intValor(null);
+              case 'actividad0':
               case 'actividad1':
               case 'actividad2':
               case 'actividad6':

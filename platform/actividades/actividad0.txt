@@ -1,23 +1,30 @@
+<input type="hidden" name="belongerActivity[]" id="" value="" >
+<input type="hidden" name="templateActivity" id="" value="" >
+<input type="hidden" name="idTemaActivity"  id="" value="" >
 <div class="act-column-right">
-  <input type="text" name="" value="" class="act-input-question" placeholder="Ingresa Una Pregunta">
-  <div class='act-valor-hover'>
-    <input type='number' min='0' class='act-valor-pregunta' value='0'>
-    <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
-  </div>
+    <div class='act-pregunta-row act-pregunta-oculta'>
+      <div class="base-filedelete act-delete-question tooltip den-hide">
+        <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+      </div>
+      <input type="text" name="" value="" class="act-input-question" placeholder="Ingresa Una Pregunta">
+      <div class='act-valor-hover preguntahover'>
+        <input type='number' min='0' class='act-input-qavalor quest-va-input' value='0'>
+        <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+      </div>
+      <div class="qAndA-row act-respuesta-row act-respuesta-oculta">
+          <div class="base-filedelete act-delete-answer tooltip">
+            <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+          </div>
+          <label class="container">
+          <input type="radio"  name="falseTrue" class="asignatename-group an-input-name radioB" value="1">
+          <span class="checkmark2"></span>
+          </label>
+          <input type="text" name="" value="" class="act-input-respuesta" placeholder="Respuesta">
+      </div>
+    </div>
 </div>
 <div class="act-btns-container">
-  <button class="act-green-btnstyle" type="button">Agregar Pregunta</button>
-  <button class="act-green-btnstyle" type="button">Agregar Rrespuesta</button>
-  <div class="act-valorSection">
-    <p>Valor</p>
-    <label class="containerValor"> Pregunta
-    <input type="radio" checked="checked" name="radio" value="valoraPregunta">
-    <span class="checkmarkValor"></span>
-    </label>
-    <label class="containerValor"> Respuesta
-    <input type="radio" name="radio" value="valoraRespuesta">
-    <span class="checkmarkValor"></span>
-    </label>
-  </div>
+  <div class="den-help effect-1 sub-a" title="¿Qué es esto?" id="helpActivbtn">?</div>
+  <button class="act-green-btnstyle act-btn-plus-pregunta" type="button">Agregar Pregunta</button>
 </div>
-<link rel="stylesheet" href="../css/actividad0.css" />
+<link rel="stylesheet" href="../css/actividad2.css" />

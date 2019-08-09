@@ -386,10 +386,9 @@ function plantillaPrev(id){
       if(idPlantillaActividad){
         var printActivity="";
         switch(idPlantillaActividad){
-          case "actividad0":
-          break;
           case "actividad1":
           break;
+          case "actividad0":
           case "actividad3":
             for (var i = 0; i < activityContent.length; i++) {
               printActivity+=`<div class="renglonAct">
@@ -1770,6 +1769,9 @@ $(document).on('click', '.act-btn-plus-pregunta', function() {
   var questVal="";
   switch(templateActivity){
     case "actividad0":
+      temporal=$('.tipo-de-actividad.pagina-actividad-visible').first().children('input').val();
+      assignedName = `question${temporal}`;
+      questVal=`qValue${temporal}`;
     break;
     case "actividad1":
       temporal=$('.tipo-de-actividad.pagina-actividad-visible').first().children('input').val();
@@ -3125,7 +3127,19 @@ $.ajax({
           if(paginaActual==activitiesArray[i].numPag){
             // console.warn('entro al if i=',i);
             switch(selectedActivity){
-              case "actividad0": break;
+              case "actividad0":
+                        contentData+=`<div class="act-pregunta-row">
+                                            <div class="base-filedelete act-delete-question tooltip">
+                                              <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+                                            </div>
+                                            <input type="hidden" name="hIdActivity${activitiesArray[i].numPag}[${contador}]"  value="${activitiesArray[i].idActividad}" >
+                                            <input type="text" name="question${activitiesArray[i].numPag}[${contador}]" value="${activitiesArray[i].strPregunta}" class="act-input-question" placeholder="Pregunta">
+                                            <div class="act-valor-hover preguntahover">
+                                                <input type="number" min="0" class="act-input-qavalor" value="${activitiesArray[i].valorPreg}" name="qValue${activitiesArray[i].numPag}[${contador}]">
+                                                <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+                                            </div>
+                                        </div>`;
+              break;
               case "actividad1":
                     var nameInputValue=null;
                     var valoraRespuesta=null;
@@ -3378,7 +3392,19 @@ $.ajax({
                         $(`#actividadPagina_${parseInt(paginaActual)+1}`).find('input[name^="templateActivity"]').val(activitiesArray[i].plantillaActividad);
                         $(`#actividadPagina_${parseInt(paginaActual)+1}`).find('input[name^="idTemaActivity"]').val(activitiesArray[i].idTema);
                           switch(selectedActivity){
-                            case "actividad0": break;
+                            case "actividad0":
+                            contentData+=`<div class="act-pregunta-row">
+                                                <div class="base-filedelete act-delete-question tooltip">
+                                                  <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
+                                                </div>
+                                                <input type="hidden" name="hIdActivity${activitiesArray[i].numPag}[${contador}]"  value="${activitiesArray[i].idActividad}" >
+                                                <input type="text" name="question${activitiesArray[i].numPag}[${contador}]" value="${activitiesArray[i].strPregunta}" class="act-input-question" placeholder="Pregunta">
+                                                <div class="act-valor-hover preguntahover">
+                                                    <input type="number" min="0" class="act-input-qavalor" value="${activitiesArray[i].valorPreg}" name="qValue${activitiesArray[i].numPag}[${contador}]">
+                                                    <span class="act-span-valor">Ingresa el valor de esta pregunta</span>
+                                                </div>
+                                            </div>`;
+                            break;
                             case "actividad1":
                                 var  nameInputValue=null;
                                 var valoraRespuesta=null;
