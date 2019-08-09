@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Uvimex",
+  "short_name": "Uvimex",
+  "version": "uvimex.com",
+  "description": "App de cursos Uvimex",
+  "author": "Uvimex",
+  "icons": [],
+  "start_url": "index.html"
+}

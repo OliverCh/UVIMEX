@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<!--holacrayola-->
+  <head>
+    <meta charset="utf-8">
+    <title>U V I M E X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="icon/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/plataforma.css">
+    <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/media.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/> -->
+  </head>
+  <body>
+  	<div id="content"></div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery_ui.js"></script>
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script type="text/javascript" src="js/NavMaster.js"></script>
+    <script type="text/javascript" src="js/activity.js"></script>
+    <script type="text/javascript" src="js/NavController.js"></script>
+    <!-- <script type="text/javascript" src="js\script.js"></script> -->
+    <script type="text/javascript">
+			window.masterPath = "http://uvimex.com.mx/movimex/";
+      window.movileComms = "movileComms_v3.php";
+      $(document).ready(function(){
+				$.ajaxSetup({
+					type: "pOst",
+					dataType: "json",
+					error: function(d){
+						console.log(d);
+					}
+				});
+				require.config({baseUrl: "js"});
+				require(["LoginController"], function(LoginController){
+          LoginController.setContainer($("#content"));
+					NavMaster.setContainer($("#content")).pushScreen(LoginController);
+				});
+			});
+    </script>
+  </body>
+</html>

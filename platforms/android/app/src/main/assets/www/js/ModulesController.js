@@ -1,10 +1,12 @@
 define(function(require){
 	var publics = {};
 	var screenContainer = null;
+	var parentNav = null;
 
 	//Controllers
 	var modulesContainer = null;
 	var f_back = null;
+	var nonLocal = null;
 	var myData;
 
 	publics.setContainer = function(cnt){
@@ -14,6 +16,17 @@ define(function(require){
 
 	publics.setData = function(data){
 		myData = data;
+		if(myData.nonLocal !== undefined && myData.nonLocal === true){
+			nonLocal = true;
+		}
+		else{
+			nonLocal = false;
+		}
+		return this;
+	}
+
+	publics.setParentNav = function(nav){
+		parentNav = nav;
 		return this;
 	}
 
@@ -34,13 +47,29 @@ define(function(require){
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
+			if(nonLocal === true){
 				var moduleID = $(this).data("id");
-			require(["WatchCourseController_pop"], function(WatchCourseController_pop){
-				NavController.pushPop(WatchCourseController_pop, "course",
-					{userID: localStorage.getItem("user_id"), moduleID: moduleID});
-			});
+				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					WatchCourseController_pop.setParentNav(parentNav);
+					parentNav.pushPop(WatchCourseController_pop, "course", {moduleID: moduleID});
+				})
+			}
+			else{
+				var moduleID = $(this).data("id");
+				var moduleName = $(this).parent().find(".moduleName").html();
+
+				require(["courseControllers/CourseBaseController"], function(CourseBaseController){
+
+					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
+					/*
+					NavController.setContainer($("#appContent"));
+					NavController.pushStack(AppBaseController, undefined, false);
+					NavController.pushStack(CourseBaseController);
+					*/
+				});			
+			}
 		});
-		f_back.click(function(){NavController.popScreen();});
+		f_back.click(function(){parentNav.popScreen();});
 	}
 
 	var loadModules = function(d){
@@ -53,7 +82,7 @@ define(function(require){
 			modulesContainer.append(
 			`
 			<div class="modulocontainer">
-				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p>${v.nombre}</p>
+				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p class="moduleName">${v.nombre}</p>
 				<button class="go-tomarcurso f_module" data-id="${v.idModulo}"><i class="fas fa-arrow-circle-right"></i></button>
 			</div>
 			`);
@@ -62,13 +91,27 @@ define(function(require){
 	}
 
 	var getModules = function(callback){
-		var courseID = myData;
-		console.log(courseID);
-		$.ajax({
-			url: masterPath + "getCourseModules.php",
-			data: {id: courseID},
-			success:callback
-		});
+		var courseID = null;
+		if(myData !== undefined && myData.idCourse !== undefined){
+			courseID = myData.idCourse;
+		}
+
+		if(nonLocal === true){
+			$.ajax({
+				url: masterPath + movileComms,
+				data: {mode: "getMorisLessons"},
+				success:callback
+			});
+		}
+		else if(nonLocal === false){
+			$.ajax({
+				url: masterPath + "getCourseModules.php",
+				data: {id: courseID},
+				success:callback
+			});
+		}
+
+		
 	}
 	return publics;
 });

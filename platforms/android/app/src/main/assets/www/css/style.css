@@ -105,6 +105,7 @@ button:focus{
     background-color: var(--backcolorNavs);
     width: 100%;
     height: 50px;
+    z-index: 1;
 }
 .all-bottom-cont{
   height: 100%;
@@ -473,9 +474,41 @@ button:focus{
   width: 100%;
   height: 100%;
   z-index: 999;
+  background-color: #1214;
 }
 
 .popop > iframe{
   width: 100%;
   height: 100%;
 }
+
+
+.frameCourseViewer{
+  width: 100%;
+  height: 100%;
+}
+
+.frameCourseViewer .frameTop{
+  display: inline-block;
+  width: 100%;
+  height: 5%;
+  background: black;
+  padding: 1%;
+  padding-top: constant(safe-area-inset-top); /* iOS 11.0 */
+  padding-top: env(safe-area-inset-top); /* iOS 11.2 */
+}
+
+.frameCourseViewer .closeCourse{
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.frameCourseViewer iframe{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+

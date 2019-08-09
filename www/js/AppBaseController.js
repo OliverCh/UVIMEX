@@ -1,9 +1,12 @@
 define(function(require){
 	var publics = {};
 	var container = null;
+	var nav = new NavController();
 
 	//Controllers
 	var nav_buttons = null;
+	var nav_logout = null;
+	var myData = "";
 
 	publics.setContainer = function(cnt){
 		container = cnt;
@@ -13,27 +16,49 @@ define(function(require){
 	publics.draw = function(){
 		container.load("appBase.html" ,function(){
 			alturaInjec();
-			NavController.setHome();
-			NavController.setContainer(container.find("#appContent"));
-			console.log(container.find("#appContent"));
-			loadMyCourses();
+			nav.setContainer(container.find("#appContent"));
+
 			findFields();
 			setEvents();
+
+			if(nav.isStackEmpty())
+				loadMyCourses();
+			else
+				nav.reloadActual();
 		});
+	}
+
+	publics.setData = function(data){
+		if(data.restartNav && data.restartNav === true){
+			nav.goHome();
+		}
+		myData = data;
+		return this;
+	}
+
+	publics.popSubscreen = function(){
+		return nav.popSomething();
 	}
 
 	var findFields = function(){
 		nav_buttons = container.find(".bottom_btn");
+		nav_logout = container.find("#nav_logout");
 	}
 
 	var setEvents = function(){
 		nav_buttons.click(navClick);
+		nav_logout.click(function(){
+			require(["LoginController"], function(LoginController){
+				localStorage.removeItem("user_id");
+				NavMaster.setHome(LoginController);
+			});
+		});
 	}
 
 	var loadMyCourses = function(){
 		require(["MyCoursesController"], function(MyCoursesController){
-			console.log("XD");
-			NavController.pushScreen(MyCoursesController);
+			MyCoursesController.setParentNav(nav);
+			nav.pushScreen(MyCoursesController);
 		});
 	}
 
@@ -50,7 +75,7 @@ define(function(require){
 			screen = screen[1];
 			switch(screen){
 				case "miscursos":
-					NavController.pushScreen(MyCoursesController);
+					loadMyCourses();
 					break;
 				case "allcursos":
 
@@ -66,8 +91,8 @@ define(function(require){
 
 	// FUncs Mei
 	function alturaInjec(){
-		var altura = $(window).height()-100;
-		$('.inject-information').height(altura);
+    	var altura = $(window).height()-100;
+	    $('.inject-information').height(altura);
 	}
 
 	return publics;
