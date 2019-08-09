@@ -1,7 +1,4 @@
 define(function(require){
-
-	var imageTemplate = `<img class="f_image t1--video-display--image-display" style="display:none" src=":url:"/>`;
-
 	var publics = {};
 	var screenContainer = null;
 	var videoURL = null;
@@ -249,15 +246,13 @@ define(function(require){
 			var videoDuration = 5000;
 			var image = videoImageHandler.getNextImage();
 
-			var imageView = imageTemplate.replace(":url:", image.url);
-			imageView = $(imageView);
-
-			video_.append(imageView);
-			imageView.fadeIn(fadeSpeed);
+			video_.append(image.imgDOM);
+			image.imgDOM.fadeIn(fadeSpeed);
 
 			setTimeout(function(){
-				imageView.fadeOut(fadeSpeed, function(){
-					imageView.remove();
+				image.imgDOM.fadeOut(fadeSpeed, function(){
+					video_.find('image').remove();
+					console.log(videoImageHandler.getImages());
 				});
 			}, videoDuration);
 		}
@@ -291,6 +286,7 @@ define(function(require){
 		var mainImages = [];
 		var imagesToShow = [];
 		var nextImageTime = 0;
+		var imageTemplate = `<img class="f_image t1--video-display--image-display" style="display:none" src=":url:"/>`;
 
 		publics.refreshToTime = function(time){
 			imagesToShow = [];
@@ -335,9 +331,15 @@ define(function(require){
 				}
 			}
 			if(added == false){
+				var imageView = imageTemplate.replace(":url:", newImage.url);
+				imageView = $(imageView);
+				newImage.imgDOM = imageView;
 				mainImages.push(newImage);
 			}
-			
+		}
+
+		publics.getImages = function(){
+			return mainImages;
 		}
 		return publics;
 

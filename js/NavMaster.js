@@ -16,6 +16,7 @@ var NavMaster = (function(window, document, undefined){
 	}
 
 	publics.popScreen = function(data){
+		console.log('aaa');
 		if(screenStack.length > 0){
 			screenStack.pop();
 		}
@@ -86,6 +87,6 @@ var NavMaster = (function(window, document, undefined){
 			hasPoped = publics.popScreen();
 		}
 	}
-	
+
 	return publics;
 })(window, document);
