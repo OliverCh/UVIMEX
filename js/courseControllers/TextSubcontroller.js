@@ -21,7 +21,6 @@ define(function(require){
 
 	publics.setText = function(txt){
 		text = txt;
-		alert(text);
 		return this;
 	}
 
