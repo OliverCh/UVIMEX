@@ -12,6 +12,12 @@
     },
     "cordova-plugin-screen-orientation": {
       "PACKAGE_NAME": "uvimex.com"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "uvimex.com"
+    },
+    "cordova-plugin-tts": {
+      "PACKAGE_NAME": "uvimex.com"
     }
   },
   "dependent_plugins": {

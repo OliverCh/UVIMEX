@@ -22,6 +22,12 @@
     <feature name="CDVOrientation">
         <param name="ios-package" value="CDVOrientation" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="TTS">
+        <param name="ios-package" value="CDVTTS" />
+    </feature>
     <name>Uvimex</name>
     <description>
        App de cursos Uvimex

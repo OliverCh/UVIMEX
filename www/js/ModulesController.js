@@ -47,22 +47,29 @@ define(function(require){
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
-			var moduleID = $(this).data("id");
-			if(nonLocal === false){
+			if(nonLocal === true){
+				var moduleID = $(this).data("id");
 				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
-					NavController.pushPop(WatchCourseController_pop, "course",
-						{nonLocal: false, userID: localStorage.getItem("user_id"), moduleID: moduleID});
-				});
+					WatchCourseController_pop.setParentNav(parentNav);
+					parentNav.pushPop(WatchCourseController_pop, "course", {moduleID: moduleID});
+				})
 			}
-			else if(nonLocal === true){
-				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
-					NavController.pushPop(WatchCourseController_pop, "course",
-						{nonLocal: true, moduleID: moduleID});
-				});
+			else{
+				var moduleID = $(this).data("id");
+				var moduleName = $(this).parent().find(".moduleName").html();
+
+				require(["courseControllers/CourseBaseController"], function(CourseBaseController){
+
+					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
+					/*
+					NavController.setContainer($("#appContent"));
+					NavController.pushStack(AppBaseController, undefined, false);
+					NavController.pushStack(CourseBaseController);
+					*/
+				});			
 			}
-			
 		});
-		f_back.click(function(){NavController.popScreen();});
+		f_back.click(function(){parentNav.popScreen();});
 	}
 
 	var loadModules = function(d){
@@ -92,7 +99,7 @@ define(function(require){
 		if(nonLocal === true){
 			$.ajax({
 				url: masterPath + movileComms,
-				data: {idUser: localStorage.getItem("user_id"), mode: "myLessons"},
+				data: {mode: "getMorisLessons"},
 				success:callback
 			});
 		}

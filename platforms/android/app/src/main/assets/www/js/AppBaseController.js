@@ -1,10 +1,16 @@
 define(function(require){
 	var publics = {};
 	var container = null;
+	var nav = new NavController();
 
 	//Controllers
 	var nav_buttons = null;
+<<<<<<< HEAD
+	var nav_logout = null;
+	var myData = "";
+=======
 	var logOut = null;
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 
 	publics.setContainer = function(cnt){
 		container = cnt;
@@ -14,29 +20,57 @@ define(function(require){
 	publics.draw = function(){
 		container.load("appBase.html" ,function(){
 			alturaInjec();
-			NavController.setHome();
-			NavController.setContainer(container.find("#appContent"));
-			console.log(container.find("#appContent"));
-			loadMyCourses();
+			nav.setContainer(container.find("#appContent"));
+
 			findFields();
 			setEvents();
+
+			if(nav.isStackEmpty())
+				loadMyCourses();
+			else
+				nav.reloadActual();
 		});
+	}
+
+	publics.setData = function(data){
+		if(data.restartNav && data.restartNav === true){
+			nav.goHome();
+		}
+		myData = data;
+		return this;
+	}
+
+	publics.popSubscreen = function(){
+		return nav.popSomething();
 	}
 
 	var findFields = function(){
 		nav_buttons = container.find(".bottom_btn");
+<<<<<<< HEAD
+		nav_logout = container.find("#nav_logout");
+=======
 		logOut = container.find("#logOut");
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 	}
 
 	var setEvents = function(){
 		nav_buttons.click(navClick);
+<<<<<<< HEAD
+		nav_logout.click(function(){
+			require(["LoginController"], function(LoginController){
+				localStorage.removeItem("user_id");
+				NavMaster.setHome(LoginController);
+			});
+		});
+=======
 		logOut.click(endSession);
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 	}
 
 	var loadMyCourses = function(){
 		require(["MyCoursesController"], function(MyCoursesController){
-			console.log("XD");
-			NavController.pushScreen(MyCoursesController);
+			MyCoursesController.setParentNav(nav);
+			nav.pushScreen(MyCoursesController);
 		});
 	}
 
@@ -63,7 +97,7 @@ define(function(require){
 			screen = screen[1];
 			switch(screen){
 				case "miscursos":
-					NavController.pushScreen(MyCoursesController);
+					loadMyCourses();
 					break;
 				case "allcursos":
 
@@ -79,8 +113,8 @@ define(function(require){
 
 	// FUncs Mei
 	function alturaInjec(){
-		var altura = $(window).height()-100;
-		$('.inject-information').height(altura);
+    	var altura = $(window).height()-100;
+	    $('.inject-information').height(altura);
 	}
 
 	return publics;

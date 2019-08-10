@@ -14,6 +14,8 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		9EEC933D10B24975A7109F39 /* CDVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C534AD253B3477D97DE165D /* CDVOrientation.m */; };
+		99D1E7015F164F10B6506EB9 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E11129FE64C4CD9A2784681 /* CDVDevice.m */; };
+		8E935342F97445E88D1D22CE /* CDVTTS.m in Sources */ = {isa = PBXBuildFile; fileRef = DB155F0716BB46F8BA234231 /* CDVTTS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Uvimex/config.xml"; sourceTree = "<group>"; };
 		9C534AD253B3477D97DE165D /* CDVOrientation.m */ = {isa = PBXFileReference; name = "CDVOrientation.m"; path = "cordova-plugin-screen-orientation/CDVOrientation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		C52A39506EB84CE187C36BD5 /* CDVOrientation.h */ = {isa = PBXFileReference; name = "CDVOrientation.h"; path = "cordova-plugin-screen-orientation/CDVOrientation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4E11129FE64C4CD9A2784681 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5B4B85EF609B481499FDEAE1 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DB155F0716BB46F8BA234231 /* CDVTTS.m */ = {isa = PBXFileReference; name = "CDVTTS.m"; path = "cordova-plugin-tts/CDVTTS.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		24A25822BA5942269D97DD66 /* CDVTTS.h */ = {isa = PBXFileReference; name = "CDVTTS.h"; path = "cordova-plugin-tts/CDVTTS.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,10 @@
 			children = (
 				9C534AD253B3477D97DE165D /* CDVOrientation.m */,
 				C52A39506EB84CE187C36BD5 /* CDVOrientation.h */,
+				4E11129FE64C4CD9A2784681 /* CDVDevice.m */,
+				5B4B85EF609B481499FDEAE1 /* CDVDevice.h */,
+				DB155F0716BB46F8BA234231 /* CDVTTS.m */,
+				24A25822BA5942269D97DD66 /* CDVTTS.h */,
 			);
 			name = Plugins;
 			path = "Uvimex/Plugins";
@@ -294,6 +304,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				9EEC933D10B24975A7109F39 /* CDVOrientation.m in Sources */,
+				99D1E7015F164F10B6506EB9 /* CDVDevice.m in Sources */,
+				8E935342F97445E88D1D22CE /* CDVTTS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
+<!--holacrayola-->
   <head>
     <meta charset="utf-8">
     <title>U V I M E X</title>
@@ -7,26 +8,44 @@
     <link href="icon/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/plataforma.css">
+    <link rel="stylesheet" href="css/all.css">
+      <link rel="stylesheet" href="css/media.css">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
+<<<<<<< HEAD
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/> -->
+=======
     <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
   </head>
   <body>
-  	<div id="content">
-  		
-  	</div>
+  	<div id="content"></div>
     <script type="text/javascript" src="cordova.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery_ui.js"></script>
     <script type="text/javascript" src="js/lib/require.js"></script>
+    <script type="text/javascript" src="js/NavMaster.js"></script>
+    <script type="text/javascript" src="js/activity.js"></script>
     <script type="text/javascript" src="js/NavController.js"></script>
     <!-- <script type="text/javascript" src="js\script.js"></script> -->
     <script type="text/javascript">
 			window.masterPath = "https://uvimex.com.mx/movimex/";
+<<<<<<< HEAD
+      window.movileComms = "movileComms_v3.php";
+      var onDeviceReady = function(){
+
+        window.device = device.platform;
+      }
+
+      document.addEventListener("deviceready", onDeviceReady, false);
+      document.addEventListener("backbutton", NavMaster.popClicked, false);
+
+=======
       window.movileComms = "movileComms_sandbox.php";
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
       $(document).ready(function(){
-				window.masterPath = "https://uvimex.com.mx/movimex/";
 				$.ajaxSetup({
 					type: "pOst",
 					dataType: "json",
@@ -36,7 +55,8 @@
 				});
 				require.config({baseUrl: "js"});
 				require(["LoginController"], function(LoginController){
-					NavController.setContainer($("#content")).pushScreen(LoginController);
+          LoginController.setContainer($("#content"));
+					NavMaster.setContainer($("#content")).pushScreen(LoginController);
 				});
 			});
     </script>

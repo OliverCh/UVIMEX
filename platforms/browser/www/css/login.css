@@ -1,0 +1,124 @@
+/* FUENTES */
+@font-face {
+ font-family: 'OpenSansBold';
+ src: url('./../OpenSans/OpenSans-Bold.ttf');
+}
+@font-face {
+ font-family: 'OpenSansExtraBold';
+ src: url('./../OpenSans/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+ font-family: 'OpenSansLight';
+ src: url('./../OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+ font-family: 'OpenSansRegular';
+ src: url('./../OpenSans/OpenSans-Regular.ttf');
+}
+@font-face {
+ font-family: 'OpenSansSemiBold';
+ src: url('./../OpenSans/OpenSans-emiBold.ttf');
+}
+:root{
+  --backcolorNavs:#000;
+  --colorBtnsNavs:#fff;
+  --colorTitles:#54c76c;
+  --colorBorderTitles:#ececec;
+  --search-inputborder:#54c76c;
+  --inputBackground:#f7fff3;
+  --fullColorBtn:#008c39;
+  --links:#008c39;
+}
+body, html {
+    margin: auto;
+    height: 100%;
+}
+body{
+  background-image: url(../img/back.jpg);
+  font-family: 'OpenSansRegular';
+  overflow-y: hidden;
+}
+.login-bgfullcont {
+    background: #fff;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+}
+.login-bgfullcont figure {
+    margin: 0;
+    background-color: #000;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+.login-bgfullcont figure img{
+  height: 90%;
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.login-bgfullcont h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: 'OpenSansBold';
+    font-size: 1.2em;
+    color: var(--colorTitles);
+    margin-bottom: 25px;
+}
+.row-login {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.row-login label {
+    display: block;
+    color: #adadad;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 2px;
+    font-family: 'OpenSansBold';
+    margin-bottom: 5px;
+}
+.row-login input {
+    padding: 10px 15px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.login-stylelink {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: var(--colorTitles);
+    cursor: pointer;
+}
+.login-styleSend {
+    margin: auto;
+    display: block;
+    margin-bottom: 25px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    font-family: 'OpenSansBold';
+    background-color: #54c76c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
