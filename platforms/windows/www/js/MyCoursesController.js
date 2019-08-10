@@ -16,7 +16,11 @@
 					<h3>:nombre:</h3>
 				</div>
 				<button class="go-to-curso full-color-btn f_course" data-id=":idCurso:"><i class="fas fa-book"></i> Ir al Curso</button>
+<<<<<<< HEAD
 				<button class="showme-info-btn course_details" data-id=":idCurso:"><i class="fas fa-arrow-circle-right"></i></button>
+=======
+				<!--button class="showme-info-btn course_details" stlye="display:none;" data-id=":idCurso:"><i class="fas fa-arrow-circle-right"></i></button-->
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 			</div>`;
 	var nonLocalCourseTemplate = 
 		`<div class="indiv-displaycurso">
@@ -65,22 +69,32 @@
 		courseContainer.on("click", ".f_course",function(){
 			var idCourse = $(this).data("id");
 			var nonLocal = $(this).data("nonlocal");
-			console.log(nonLocal);
 
 			if(nonLocal !== undefined && nonLocal == true){
 				nonLocal = true;
 			}
 			require(["ModulesController"], function(ModulesController){
+<<<<<<< HEAD
 				ModulesController.setParentNav(parentNav);
 				parentNav.pushScreen(ModulesController, {idCourse:idCourse, nonLocal: nonLocal});
+=======
+				//ModulesController.setParentNav(parentNav);
+				NavController.pushScreen(ModulesController, {idCourse:idCourse, nonLocal: nonLocal});
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 			});
 		});
 
 		courseContainer.on('click', '.course_details', function(){
 			var idCourse = $(this).data("id");
 			require(["detailsController"], function(detailsController){
+<<<<<<< HEAD
 				detailsController.setParentNav(parentNav);
 				parentNav.pushScreen(detailsController, idCourse);
+=======
+				//detailsController.setParentNav(parentNav);
+				console.log(idCourse);
+				NavController.pushScreen(detailsController, idCourse);
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 			});
 		});
 	}

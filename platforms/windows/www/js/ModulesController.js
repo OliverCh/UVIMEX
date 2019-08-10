@@ -47,19 +47,44 @@
 
 	var setEvents = function(){
 		modulesContainer.on("click", ".f_module",function(){
+<<<<<<< HEAD
+			if(nonLocal === true){
+				var moduleID = $(this).data("id");
+				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					WatchCourseController_pop.setParentNav(parentNav);
+					parentNav.pushPop(WatchCourseController_pop, "course", {moduleID: moduleID});
+				})
+			}
+			else{
+				var moduleID = $(this).data("id");
+				var moduleName = $(this).parent().find(".moduleName").html();
+
+				require(["courseControllers/CourseBaseController"], function(CourseBaseController){
+
+					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
+					/*
+					NavController.setContainer($("#appContent"));
+					NavController.pushStack(AppBaseController, undefined, false);
+					NavController.pushStack(CourseBaseController);
+					*/
+				});			
+			}
+=======
 			var moduleID = $(this).data("id");
-			var moduleName = $(this).parent().find(".moduleName").html();
-
-			require(["CourseBaseController"], function(CourseBaseController){
-
-				console.log(moduleID);
-				NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
-				/*
-				NavController.setContainer($("#appContent"));
-				NavController.pushStack(AppBaseController, undefined, false);
-				NavController.pushStack(CourseBaseController);
-				*/
-			});			
+			if(nonLocal === false){
+				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					NavController.pushPop(WatchCourseController_pop, "course",
+						{nonLocal: false, userID: localStorage.getItem("user_id"), moduleID: moduleID});
+				});
+			}
+			else if(nonLocal === true){
+				require(["WatchCourseController_pop"], function(WatchCourseController_pop){
+					NavController.pushPop(WatchCourseController_pop, "course",
+						{nonLocal: true, moduleID: moduleID});
+				});
+			}
+			
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 		});
 		f_back.click(function(){parentNav.popScreen();});
 	}
@@ -88,11 +113,14 @@
 			courseID = myData.idCourse;
 		}
 
-		console.log(myData);
 		if(nonLocal === true){
 			$.ajax({
 				url: masterPath + movileComms,
+<<<<<<< HEAD
+				data: {mode: "getMorisLessons"},
+=======
 				data: {idUser: localStorage.getItem("user_id"), mode: "myLessons"},
+>>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 				success:callback
 			});
 		}

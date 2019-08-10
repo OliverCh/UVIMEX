@@ -1,12 +1,11 @@
 ﻿var NavMaster = (function(window, document, undefined){
 	var publics = {};
 	var screenStack = [];
-	var container = $("#content");
+	var container = $("#appContent");
 
 	publics.pushScreen = function(obj, data, load = true){
 		//if(screenStack.length != 0)
 			//screenStack[screenStack.length-1].setBackground(true);
-		
 		screenStack.push(obj);
 		var XD = obj.setContainer(container);
 		if(data !== undefined){
@@ -14,10 +13,10 @@
 		}
 		if(load)
 			XD = XD.draw();
-	};
+	}
 
 	publics.popScreen = function(data){
-		console.log(screenStack);
+		console.log('aaa');
 		if(screenStack.length > 0){
 			screenStack.pop();
 		}
@@ -30,16 +29,16 @@
 			}
 			XD = XD.draw();
 		}
-	};
+	}
 
 	publics.pushStack = function(obj){
 		screenStack.push(obj);
-	};
+	}
 
 	publics.setContainer = function(cnt){
-		// container = cnt;
-		// return this;
-	};
+		container = cnt;
+		return this;
+	}
 
 	publics.pushPop = function(popupObj, id, data){
 		popStack.push(popupObj);
@@ -51,12 +50,12 @@
 		}
 
 		XD = XD.draw();
-	};
+	}
 
 	publics.popPop = function(id){
 		popStack.pop();
 		container.find(".pop_"+id).remove();
-	};
+	}
 
 	publics.setHome = function(obj){
 		if(!obj){
@@ -65,13 +64,13 @@
 		}
 		screenStack = [];
 		publics.pushScreen(obj);
-	};
+	}
 
 	publics.goHome = function(){
 		var screen = screenStack[0];
 		screenStack = [];
 		publics.pushScreen(screen);
-	};
+	}
 
 	var popSomething = function(){
 		if(popStack.length > 0){
@@ -80,14 +79,14 @@
 		else{
 			popScreen();
 		}
-	};
+	}
 
-	document.addEventListener("backbutton", popClicked, false);
+	publics.popClicked = function(){
+		var hasPoped = screenStack[screenStack.length-1].popSubscreen();
+		if(!hasPoped){
+			hasPoped = publics.popScreen();
+		}
+	}
 
-	var popClicked = function(){
-		screenStack[screenStack.length-1].popSubscreen();
-	};
-
-	alert('EEEE');
 	return publics;
 })(window, document);

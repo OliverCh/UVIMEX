@@ -6,7 +6,6 @@
 	var self = this;
 
 	publics.pushScreen = function(obj, data, load = true){
-		console.log(obj);
 		screenStack.push(obj);
 		
 		var XD = obj.setContainer(container);
@@ -18,17 +17,20 @@
 	}
 
 	publics.popScreen = function(data){
-		if(screenStack.length > 0){
+		var hasPoped = false;
+		if(screenStack.length > 1){
+			// poping
 			screenStack.pop();
-		}
-		
-		if(screenStack.length != 0){
+
+			// loading screen
 			var XD = screenStack[screenStack.length-1].setContainer(container);
 			if(data !== undefined){
 				XD = XD.setData(data);
 			}
 			XD = XD.draw();
+			hasPoped = true;
 		}
+		return hasPoped;
 	}
 
 	publics.pushStack = function(obj){
@@ -43,7 +45,6 @@
 	publics.pushPop = function(popupObj, id, data, customClass="popop"){
 		popStack.push(popupObj);
 		popupObj.id = id;
-		console.log(popupObj);
 
 		var XD = popupObj.setContainer(container.prepend(`
 			<div class="${customClass} pop_`+id+`" style="z-index:${popStack.length*10};"></div>`).find(`.pop_${id}`)
@@ -56,8 +57,13 @@
 	}
 
 	publics.popPop = function(id){
-		popStack.pop();
-		container.find(".pop_"+id).remove();
+		var hasPoped = false;
+		if(popStack > 0){
+			hasPoped = true;
+			popStack.pop();
+			container.find(".pop_"+id).remove();
+		}
+		return hasPoped;
 	}
 
 	publics.setHome = function(obj){
@@ -88,16 +94,20 @@
 		return screenStack[screenStack.length-1];
 	}
 
-	var popSomething = function(){
-		if(popStack.length > 0){
-			popPop(popStack[popStack.length -1].id);
+	publics.popSomething = function(){
+		var hasPoped = publics.popPop();
+		if(!hasPoped){
+			hasPoped = publics.popScreen();
 		}
-		else{
-			popScreen();
-		}
+
+		return hasPoped;
 	}
 
 //	document.addEventListener("backbutton", popSomething, false);
+
+	$(document).on('click', '.closeCourse', function(){
+		popSomething();
+	});
 
 	return publics;
 };
