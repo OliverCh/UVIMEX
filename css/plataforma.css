@@ -449,3 +449,6 @@ video.daVideo {
 div#video_ {
     height: 100%;
 }
+.multimedia-container {
+    margin-bottom: 10px;
+}

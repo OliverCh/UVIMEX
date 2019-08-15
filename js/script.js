@@ -17,6 +17,9 @@ $(document).ready(function(){
     alturaInjec();
 });
 
+$(window).resize(function(){
+  alturaInjec();
+});
 // funcionalidad de los bottones del nav bottom
 /// DONE
 $(document).on('click', '.bottom_btn', function(){
