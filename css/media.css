@@ -41,6 +41,25 @@
   .formcontacto{
     margin-left: 15%;
   }
+  .multimedia-container.hermano-de-img {
+    display: inline-block;
+    vertical-align: middle;
+    }
+    .container-image {
+    width: 45%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 262px;
+  }
+  .container-image img {
+    width: 90%;
+    margin: auto;
+    max-height: 100%;
+}
+.cont-plantilla {
+    text-align: center;
+}
 }
 @media  only screen and (max-width: 1266px){
   .texto-middlecont p{
@@ -53,6 +72,7 @@
   .containerMenu ul li{
     margin: 0 7px;
   }
+
 }
 @media  only screen and (max-width: 1044px){
   .topnavul{
@@ -205,6 +225,13 @@
   }
 }
 @media  only screen and (max-width: 576px){
+  .container-image{
+    width: 90%;
+    margin: auto;
+  }
+  .multimedia-container.hermano-de-img {
+    display: block;
+    }
   .respuesta-option {
     text-align: left;
   }
