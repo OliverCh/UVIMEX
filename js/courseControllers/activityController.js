@@ -7,17 +7,15 @@ define(function(require){
 	var nonLocal = null;
 	var myData;
 	var activityParser = require('courseControllers/activityParser');
+	var answersParser = require('courseControllers/answersParser');
 	var currentPage = 0;
 	var btns = null;
 	var actualAnswers = {};
+	var currentActivity = {};
 
 	/*
 		FUNCTIONS
 	*/
-
-	var getActivityData = function(){
-		return JSON.parse('[{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]},{"questionString":"OLA","answers":[{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"},{"answerID":69,"answerStr":"me gustan los onvres"}]}]');
-	};
 
 	var previousPage = function(){
 		if(currentPage != 0){
@@ -51,6 +49,25 @@ define(function(require){
 		}
 	};
 
+	var saveActivity = function(){
+		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
+			switch(myData.template){
+				case 'actividad6':
+					screenContainer.html(answersParser.parseType1(currentActivity, data));
+				break;
+				case 'actividad5':
+					screenContainer.html(answersParser.parseType2(currentActivity, data));
+				break;
+				case 'actividad2':
+					screenContainer.html(answersParser.parseType3(currentActivity, data));
+				break;
+				default:
+					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
+				break;
+			}
+		});
+	};
+
 	/*
 		LISTENERS
 	*/
@@ -80,7 +97,6 @@ define(function(require){
 				time: Date.now()
 			};
 		}
-		console.log(actualAnswers);
 	});
 
 	$(document).on('click', '.row-opcion-unica', function(){
@@ -95,9 +111,9 @@ define(function(require){
 				time: Date.now()
 			};
 		}
-		console.log(actualAnswers);
 	});
 
+	$(document).on('click', '._saveAct', saveActivity);
 
 	/*
 		PUBLICS
@@ -133,12 +149,18 @@ define(function(require){
 			switch(myData.template){
 				case 'actividad6':
 					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar
+					currentActivity = data;
+					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
 				break;
 				case 'actividad5':
 					screenContainer.html(activityParser.parseType2(data));
+					currentActivity = data;
+					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
 				break;
 				case 'actividad2':
 					screenContainer.html(activityParser.parseType3(data));
+					currentActivity = data;
+					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
 				break;
 				default:
 					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
