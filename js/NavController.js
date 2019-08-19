@@ -58,7 +58,8 @@ var NavController = function(){
 
 	publics.popPop = function(id){
 		var hasPoped = false;
-		if(popStack > 0){
+		console.log(popStack);
+		if(popStack.length > 0){
 			hasPoped = true;
 			popStack.pop();
 			container.find(".pop_"+id).remove();

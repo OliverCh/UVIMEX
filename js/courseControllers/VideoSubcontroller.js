@@ -23,6 +23,7 @@ define(function(require){
 	var stop_ = null;
 	var play_ = null;
 	var fullScreen_ = null;
+	var imageContainer_ = null;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
@@ -90,10 +91,19 @@ define(function(require){
 		play_ = screenContainer.find("#play_");
 		fullScreen_ = screenContainer.find("#fullScreen_");
 		fileCount_ = screenContainer.find("#fileCount_");
+		imageContainer_ = screenContainer.find("#imageContainer_");
 		videoHTML = getVideoHTML();
 
+		console.log(screenContainer);
 		timeControlObj = timeControl_[0];
 		videoObj = videoHTML[0];
+
+		console.log(videoImageHandler.getImages());
+		console.log(imageContainer_);
+		if(videoImageHandler.getImages().length == 0){
+			
+			imageContainer_.remove();
+		}
 	}
 
 	var fillFields = function(){
@@ -245,14 +255,15 @@ define(function(require){
 			var fadeSpeed = 800;
 			var videoDuration = 5000;
 			var image = videoImageHandler.getNextImage();
-
-			video_.append(image.imgDOM);
+			console.log(image);
+			console.log(image.imgDOM);
+			console.log(imageContainer_.children());
+			imageContainer_.append(image.imgDOM);
 			image.imgDOM.fadeIn(fadeSpeed);
 
 			setTimeout(function(){
 				image.imgDOM.fadeOut(fadeSpeed, function(){
-					video_.find('image').remove();
-					console.log(videoImageHandler.getImages());
+					imageContainer_.find('image').remove();
 				});
 			}, videoDuration);
 		}
