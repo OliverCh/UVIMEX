@@ -51,6 +51,7 @@ define(function(require){
 
 	var saveActivity = function(){
 		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
+			answersParser.setAnswers(actualAnswers);
 			switch(myData.template){
 				case 'actividad6':
 					screenContainer.html(answersParser.parseType1(currentActivity, data));
