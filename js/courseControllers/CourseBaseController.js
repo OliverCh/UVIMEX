@@ -53,7 +53,7 @@ define(function(require){
 			var position = button.parent().offset();
 			position = (position.left);
 			barrita.animate({
-				left:0
+				left:position
 			},800);
 
 			ModuleController.setParentNav(nav);
