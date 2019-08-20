@@ -1854,6 +1854,7 @@ $(document).on('click', '.act-btn-plus-respuesta', function() {
   respuesta.find('.act-input-respuesta').attr("name",`respuesta${noQuest}[${belongsToQuestion}][${counterInput-1}]`);
   respuesta.find('.act-input-qavalor').attr("name",`rValue${noQuest}[${belongsToQuestion}][${counterInput-1}]`);
   respuesta.find('.multichoiceansw').attr("name",`rSelected${noQuest}[${belongsToQuestion}][${counterInput-1}]`);
+  respuesta.find('.answerFunctionality').attr("name",`rSelected${noQuest}[${belongsToQuestion}][${counterInput-1}]`);
   if($('[name="templateActivity"]').val()=="actividad2"){
     respuesta.find('.container input').attr("name",`rSelected${noQuest}[${belongsToQuestion}][${counterInput-1}]`);
   }
@@ -3235,10 +3236,15 @@ $.ajax({
                   {
                       contentDataAnswer="";
                       for (var j = 0; j < activitiesArray[i].respuestasArr.length; j++) {
+                        var checkedcheckbox= activitiesArray[i].respuestasArr[j].correcta ? 'checked' : '';
                         contentDataAnswer+=`<div class="qAndA-row act-respuesta-row">
                                               <div class="base-filedelete act-delete-answer tooltip">
                                                 <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
                                               </div>
+                                              <label class="container showLabel" style="display: inline-block;">
+                                                <input type="radio" ${checkedcheckbox} name="rSelected${activitiesArray[i].numPag}[${contador}][${j}]" class="an-input-name radioB answerFunctionality" value="1">
+                                                <span class="checkmark2"></span>
+                                               </label>
                                               <input type="hidden" value="${activitiesArray[i].respuestasArr[j].idRespuesta}" name="hidRespuesta${activitiesArray[i].numPag}[${contador}][${j}]">
                                               <input type="text" name="respuesta${activitiesArray[i].numPag}[${contador}][${j}]" value="${activitiesArray[i].respuestasArr[j].strRespuesta}" class="act-input-respuesta" placeholder="Respuesta">
                                               <div class="act-valor-hover respuestahover">
@@ -3493,11 +3499,15 @@ $.ajax({
                                 {
                                     contentDataAnswer="";
                                     for (var j = 0; j < activitiesArray[i].respuestasArr.length; j++) {
-                                      console.log('entro',activitiesArray[i].respuestasArr);
+                                      var checkedcheckbox= activitiesArray[i].respuestasArr[j].correcta ? 'checked' : '';
                                       contentDataAnswer+=`<div class="qAndA-row act-respuesta-row">
                                                             <div class="base-filedelete act-delete-answer tooltip">
                                                               <i class="fas fa-trash-alt"></i><span class="tooltiptext">Eliminar</span>
                                                             </div>
+                                                            <label class="container showLabel" style="display: inline-block;">
+                                                              <input type="radio" ${checkedcheckbox} name="rSelected${activitiesArray[i].numPag}[${contador}][${j}]" class="an-input-name radioB answerFunctionality" value="1">
+                                                              <span class="checkmark2"></span>
+                                                             </label>
                                                             <input type="hidden" value="${activitiesArray[i].respuestasArr[j].idRespuesta}" name="hidRespuesta${activitiesArray[i].numPag}[${contador}][${j}]">
                                                             <input type="text" name="respuesta${activitiesArray[i].numPag}[${contador}][${j}]" value="${activitiesArray[i].respuestasArr[j].strRespuesta}" class="act-input-respuesta" placeholder="Respuesta">
                                                             <div class="act-valor-hover respuestahover">

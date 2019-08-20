@@ -39,7 +39,8 @@ padding-right: 0;
 }
 input.act-input-respuesta{
   font-size: 17px;
-margin-left: 50px;
+  margin-left: 50px;
+  width: 320px;
 }
 .respuestahover.act-valor-hover{
   position: absolute;
@@ -73,29 +74,7 @@ span.act-span-valor, span.act-span-valor:hover{
 .act-valor-hover:hover .act-span-valor{
   display: block;
 }
-.act-pregunta-row {
-  padding: 15px 0;
-  padding-left: 10px;
-  position: relative;
-}
-.act-respuesta-row{
-    position: relative;
-    width: fit-content;
-    max-width: 550px;
-    margin: 10px 0;
-}
-.act-delete-question{
-  background-color: #ede8e8;
-  padding: 5px 10px 7px 10px;
-  border-radius: 7px;
-}
-.base-filedelete.act-delete-answer{
-  background-color: #ede8e8;
-    padding: 5px 10px 7px 10px;
-    border-radius: 7px;
-    top: -11px;
-    right: -11px;
-}
+
 /* ///checked */
 .container {
     display: inline-block;
@@ -160,13 +139,34 @@ span.act-span-valor, span.act-span-valor:hover{
 	border-radius: 50%;
 	background: white;
 }
-
+.act-pregunta-row {
+  padding: 15px 0;
+  padding-left: 10px;
+  position: relative;
+}
+.act-respuesta-row{
+    position: relative;
+    width: fit-content;
+    margin: 10px 0;
+}
+.act-delete-question{
+  background-color: #ede8e8;
+  padding: 5px 10px 7px 10px;
+  border-radius: 7px;
+}
+.base-filedelete.act-delete-answer{
+  background-color: #ede8e8;
+    padding: 5px 10px 7px 10px;
+    border-radius: 7px;
+    top: -4px;
+    right: -14px;
+}
 /* ////// BOTONES SECCIÓN */
 .act-btns-container{
     width: fit-content;
     display: inline-block;
     float: right;
-      position: fixed;
+    position: fixed;
 }
 .den-popup-estilo button.act-green-btnstyle{
       margin: 20px 20px;
@@ -217,9 +217,7 @@ padding: 4px 0;
 }
 
 .containerValor input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+
         display: none;
 }
 
@@ -234,8 +232,7 @@ padding: 4px 0;
 }
 
 
-
-.qa-selected-value .checkmarkValor {
+ .qa-selected-value .checkmarkValor {
     background-color: #555;
 }
 
@@ -258,18 +255,37 @@ padding: 4px 0;
   background: white;
 }
 @media (min-width: 1300px) and (max-width:1721px){
-  .act-column-right{
-    width: 74%;
-  }
-  .den-popup-estilo input{
-        width: 265px;
-  }
-  input.act-input-respuesta{
-        margin-left: 26px;
-  }
-  .respuestahover.act-valor-hover{
-    width: 13%;
-    top: 17px;
-    right: -55px;
-  }
+.act-column-right{
+  width: 73%;
+}
+input.act-input-question{
+  width: 66%;
+}
+.checkmark{
+      top: 36px;
+          left: 14px;
+}
+input.act-input-respuesta{
+      width: 272px;
+}
+.act-respuesta-row{
+  max-width: 90%;
+}
+.preguntahover.act-valor-hover{
+  width: 9%;
+}
+}
+
+.checkmark2{
+  position: absolute;
+  top: 21px;
+  left: 70px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.showLabel{
+  display:inline-block!important;
 }
