@@ -1188,6 +1188,7 @@ font-family: 'Open Sans', sans-serif;
     }
     .den-plantilla-title img, .den-actividad-title img{
       max-width: 90%;
+      height:89%; 
     }
     .den-carousel-plantillas{
       padding: 10px;
