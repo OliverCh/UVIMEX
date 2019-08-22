@@ -53,6 +53,8 @@ define(function(require){
 				NavMaster.setHome(LoginController);
 			});
 		});
+
+		$(window).resize(alturaInjec);
 	}
 
 	var loadMyCourses = function(){

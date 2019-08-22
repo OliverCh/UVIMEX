@@ -70,7 +70,7 @@ define(function(require){
 	}
 
 	var findFields = function(){
-		themeVideo_ = $("#themeVideo_");
+		themeVideo_ = $("#themeVideo_").parent();
 	}
 
 	var getFullContent = function(){

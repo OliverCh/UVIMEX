@@ -72,12 +72,12 @@ define(function(require){
 		}
 
 		var theme = themes[index];
-		console.log("Thema", theme);
 		var template = theme.plantilla;
 		var themeController = "courseControllers/ThemeController_"+template;
 		//var themeController = "courseControllers/ThemeController_template2";
-		//template1: video
-		//template2: video con actividad
+		//template1: video | video sin imagenes
+		//template2: video con actividad 	// tiene implementadas las imagenes pero nunca funcionaran porque 
+											// nunca tendra imagenes xde
 		//template3: audio
 		//template7: texto
 		fillFields(theme);
