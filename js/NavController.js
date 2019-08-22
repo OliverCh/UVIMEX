@@ -67,13 +67,13 @@ var NavController = function(){
 		return hasPoped;
 	}
 
-	publics.setHome = function(obj){
+	publics.setHome = function(obj, data){
 		if(!obj){
 			console.error("SetHome debe tener una pantalla", 
 				console.trace());
 		}
 		screenStack = [];
-		publics.pushScreen(obj);
+		publics.pushScreen(obj, data);
 	}
 
 	publics.goHome = function(){
