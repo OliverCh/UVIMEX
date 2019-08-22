@@ -25,6 +25,8 @@ define(function(require){
 	var fullScreen_ = null;
 	var imageContainer_ = null;
 
+	var onvideoready_callback = null;
+
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
 		init();
@@ -69,6 +71,10 @@ define(function(require){
 	publics.setData = function(data){
 		myData = data;
 		return this;
+	}
+
+	publics.onvideoready = function(callback){
+		onvideoready_callback = callback;
 	}
 
 	var init = function(){	
@@ -159,8 +165,14 @@ define(function(require){
 			timeControlObj.min = 0;
 			timeControlObj.max = videoObj.duration;
 			timeControlObj.step = videoObj.duration/100;
+
+			if(onvideoready_callback !== null){
+				onvideoready_callback();
+			}
 		}
 	}
+
+
 
 	var changeTimeAction = function(time, updateVideo=true){
 

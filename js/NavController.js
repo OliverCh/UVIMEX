@@ -6,14 +6,18 @@ var NavController = function(){
 	var self = this;
 
 	publics.pushScreen = function(obj, data, load = true){
+		window.loadingScreen.toggle();
+		console.log(window.loadingScreen);
 		screenStack.push(obj);
 		
 		var XD = obj.setContainer(container);
 		if(data !== undefined){
 			XD = XD.setData(data);
 		}
-		if(load)
+		if(load){
 			XD = XD.draw();
+			window.loadingScreen.toggle();
+		}
 	}
 
 	publics.popScreen = function(data){
