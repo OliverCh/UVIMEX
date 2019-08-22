@@ -1,3 +1,23 @@
+function popdeConfirmacion(pregunta,detalles){
+  // ejemplo de pregunta ¿Estas seguro que quieres salir del tema?
+  // ejemplo de detalles: si ahces eso tus cambios no se guardarán
+  var pop = `<div class="pantalladecarga"">
+    <div class="pop-container">
+      <div class="pop-tops-button">
+        <button type="button" name="button"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="pop-white-cont">
+          <h2>`+pregunta+`</h2>
+          <p>`+detalles+`</p>
+      </div>
+      <div class="pop-bottom-buttons">
+        <button type="button" name="button">Cancelar</button>
+        <button type="button" name="button" class="positive-btn-pop">Aceptar</button>
+      </div>
+    </div>
+  </div>`;
+  $(pop).prependTo('body');
+}
 //alertapositiva
 function alertapositiva(texto){
   $('.alert-top').remove();

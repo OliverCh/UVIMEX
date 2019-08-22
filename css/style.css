@@ -52,13 +52,13 @@ button:focus{
 }
 .pantalladecarga {
     background-color: #00000061;
-    position: absolute;
+    position: fixed;
     z-index: 6;
     width: 100%;
     height: 100%;
 }
 .pantalladecarga img {
-    position: absolute;
+    position: fixed;
     width: 200px;
     margin: auto;
     top: 0;
@@ -556,4 +556,58 @@ button:focus{
 }
 .aret-negativo {
     background-color: #ff0000;
+}
+.pop-container {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+}
+.pop-tops-button {
+    text-align: right;
+}
+.pop-tops-button button {
+    color: #fff;
+    border: none;
+    background-color: #000;
+    padding: 6px 14px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+.pop-white-cont h2 {
+    font-size: .8em;
+    font-weight: normal;
+    background-color: var(--fullColorBtn);
+    margin: 0;
+    padding: 7px 10px;
+    color: #fff;
+    font-family: 'OpenSansBold';
+}
+.pop-white-cont p {
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+.pop-bottom-buttons {
+    text-align: right;
+}
+.pop-bottom-buttons button {
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: .7em;
+    border-radius: 0 0 10px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4e4e4e;
+}
+button.positive-btn-pop {
+    background-color: var(--fullColorBtn);
 }
