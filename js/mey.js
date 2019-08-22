@@ -4,14 +4,14 @@ function popdeConfirmacion(pregunta,detalles){
   var pop = `<div class="pantalladecarga"">
     <div class="pop-container">
       <div class="pop-tops-button">
-        <button type="button" name="button"><i class="fas fa-times"></i></button>
+        <button type="button" name="button" class="cerrar-pop"><i class="fas fa-times"></i></button>
       </div>
       <div class="pop-white-cont">
           <h2>`+pregunta+`</h2>
           <p>`+detalles+`</p>
       </div>
       <div class="pop-bottom-buttons">
-        <button type="button" name="button">Cancelar</button>
+        <button type="button" name="button" class="cerrar-pop">Cancelar</button>
         <button type="button" name="button" class="positive-btn-pop">Aceptar</button>
       </div>
     </div>
@@ -79,4 +79,7 @@ $(window).resize(function(){
 
 $(document).on('click', '.remove-alert', function(){
     $('.alert-top').remove();
+});
+$(document).on('click', '.cerrar-pop', function(){
+    $('.pantalladecarga').remove();
 });
