@@ -1,3 +1,29 @@
+//alertapositiva
+function alertapositiva(texto){
+  $('.alert-top').remove();
+  var alerta = '<div class="alert-top aret-positiva display-none"><p>'+texto+'</p><button class="remove-alert"><i class="fas fa-times"></i></button></div>';
+  $(alerta).prependTo('body');
+  var altura = $('.alert-top').outerHeight();
+  altura = altura * -1;
+  $('.alert-top').css('top', altura);
+  $('.alert-top').removeClass('display-none');
+  $('.alert-top').animate({
+    top:0
+  },1500);
+}
+//alertaNegativa
+function alertanegativa(texto){
+  $('.alert-top').remove();
+  var alerta = '<div class="alert-top aret-positiva display-none"><p>'+texto+'</p><button class="remove-alert"><i class="fas fa-times"></i></button></div>';
+  $(alerta).prependTo('body');
+  var altura = $('.alert-top').outerHeight();
+  altura = altura * -1;
+  $('.alert-top').css('top', altura);
+  $('.alert-top').removeClass('display-none');
+  $('.alert-top').animate({
+    top:0
+  },1500);
+}
 function alturaInjecInformation(){
     var altura = $(window).height()-100;
     $('.inject-information').height(altura);
@@ -25,7 +51,12 @@ function alturaInjec(){
       }
    }
     }
+
 $(window).resize(function(){
   alturaInjec();
   alturaInjecInformation();
+});
+
+$(document).on('click', '.remove-alert', function(){
+    $('.alert-top').remove();
 });

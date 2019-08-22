@@ -519,10 +519,41 @@ button:focus{
   color: white;
   outline: none;
 }
-
 .frameCourseViewer iframe{
   display: inline-block;
   width: 100%;
   height: 100%;
   border: none;
+}
+.alert-top {
+    position: fixed;
+    background-color: #cecece;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+}
+.alert-top.display-none{
+  display: none;
+}
+.alert-top p {
+    width: 80%;
+    margin: 0;
+    padding: 10px;
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+.alert-top.aret-positiva button {
+    background-color: #777;
+    border: none;
+    width: 20%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+}
+.aret-positiva {
+    background-color: #1eb15a;
+}
+.aret-negativo {
+    background-color: #ff0000;
 }
