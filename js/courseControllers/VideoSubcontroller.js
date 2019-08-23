@@ -167,7 +167,7 @@ define(function(require){
 			timeControlObj.step = videoObj.duration/100;
 
 			if(onvideoready_callback !== null){
-				onvideoready_callback();
+				onvideoready_callback(false);
 			}
 		}
 	}
@@ -300,7 +300,22 @@ define(function(require){
 
 	var getVideoHTML = function(){
 		var str = `<video class="daVideo" controlslist="nodownload" src="${videoURL}">No se soporta. Contacte administrador</video>`;
-		return $($.parseHTML(str)[0]);
+
+		var obj = $($.parseHTML(str)[0]);
+
+		obj[0].addEventListener("error", function(){
+			reportBrokenVideo();
+		});
+		return obj;
+	}
+
+	var reportBrokenVideo = function(){
+		onvideoready_callback(true);
+
+		video_.find(".daVideo").remove();
+
+		var html = `<i class="far fa-file-excel video-audio--icon-display"></i>`;
+		video_.append(html);
 	}
 
 	function ImageHandler(){

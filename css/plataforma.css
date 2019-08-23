@@ -469,3 +469,9 @@ div#video_ {
 .plantilla-title-cont.activity-btns-cont button .act-left{
   border-radius: 10px 0 0 10px;
 }
+
+.video-audio--icon-display{
+  font-size: 8em;
+  color: #045b27;
+  line-height: 170px !important;
+}
