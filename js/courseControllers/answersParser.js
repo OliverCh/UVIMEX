@@ -18,12 +18,17 @@ define(function(require){
 				</div>`;
 			var answersHTML = "";
 			for (var j in data[i].answers){
+				console.log(data[i].questionID, corrects[data[i].questionID], corrects[data[i].questionID] == undefined);
+				console.log(data[i].answers[j].answerID+`" style="color:`+(corrects[data[i].questionID] == undefined ? 'black' : (corrects[data[i].questionID] == data[i].answers[j].answerID ? 'green' : 'red')));
+				if(!(corrects[data[i].questionID] == undefined)){
+					console.log((corrects[data[i].questionID] == undefined ? 'black' : (corrects[data[i].questionID] == data[i].answers[j].answerID ? 'green' : 'red')));
+				}
 				answersHTML += `
 				<div class="row-respuesta">
 					<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 						<div class="respuesta-option">
 							<div class="opcion-multiple">
-								<p data-ansid="`+data[i].answers[j].answerID+`" style="color:`+(corrects[data[i].questionID] == undefined ? '' : (corrects[data[i].questionID][data[i].answers[j].answerID] == undefined ? 'red' : 'green'))+`" data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+`"></i></p>
+								<p data-ansid="`+data[i].answers[j].answerID+`" style="color:`+(corrects[data[i].questionID] == undefined ? 'black' : (corrects[data[i].questionID] == data[i].answers[j].answerID ? 'green' : 'red'))+` !important;" class="answered" data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+` answered"></i></p>
 							</div>
 						</div>
 					</div>
@@ -48,11 +53,11 @@ define(function(require){
 			var answersHTML = "";
 			for (var j in data[i].answers){
 				answersHTML += `
-				<div class="row-respuesta row-opcion-unica" data-ansid="`+data[i].answers[j].answerID+`" data-qid="`+data[i].questionID+`">
+				<div class="row-respuesta row-opcion-unica answered" data-ansid="`+data[i].answers[j].answerID+`" data-qid="`+data[i].questionID+`">
 					<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 						<div class="respuesta-option">
 							<div class="opcion-unica">
-								<i class="fas `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-circle' : 'fa-dot-circle')+`"></i>
+								<i class="fas `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-circle' : 'fa-dot-circle')+` answered"></i>
 							</div>
 						</div>
 					</div>
@@ -77,12 +82,13 @@ define(function(require){
 				</div>`;
 			var answersHTML = "";
 			for (var j in data[i].answers){
+				console.log(data[i].questionID, corrects[data[i].questionID], corrects[data[i].questionID] == undefined);
 				answersHTML += `
 					<div class="row-respuesta">
 						<div class="respuesta-txt"><p>`+data[i].answers[j].answerStr+`</p>
 							<div class="respuesta-option">
 								<div class="opcion-multiple">
-									<p data-ansid="`+data[i].answers[j].answerID+`" style="color:`+(corrects[data[i].questionID] == undefined ? '' : (corrects[data[i].questionID][data[i].answers[j].answerID] == undefined ? 'red' : 'green'))+`"  data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+`"></i></p>
+									<p data-ansid="`+data[i].answers[j].answerID+`" style="color:`+(corrects[data[i].questionID] == undefined ? 'black' : (corrects[data[i].questionID] == data[i].answers[j].answerID ? 'green' : 'red'))+` !important;" class="answered" data-qid="`+data[i].questionID+`"><i class="far `+(myAnswers[data[i].answers[j].answerID] == undefined ? 'fa-square' : 'fa-check-square')+` answered"></i></p>
 								</div>
 							</div>
 						</div>
