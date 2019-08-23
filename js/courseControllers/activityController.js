@@ -3,15 +3,13 @@ define(function(require){
 	var screenContainer = null;
 	var parentNav = null;
 
-	var f_back = null;
 	var nonLocal = null;
 	var myData;
 	var activityParser = require('courseControllers/activityParser');
 	var answersParser = require('courseControllers/answersParser');
 	var currentPage = 0;
-	var btns = null;
 	var actualAnswers = {};
-	var currentActivity = {};
+	var currentActivity = [];
 	var canSave = false;
 
 	/*
@@ -20,9 +18,10 @@ define(function(require){
 
 	var previousPage = function(){
 		if(currentPage != 0){
+			canSave = false;
 			currentPage--;
 			screenContainer.parent().find('#nextAct_').text('Siguiente').removeClass('_saveAct');
-			publics.draw();
+			publics.draw(true);
 		}
 	};
 
@@ -47,10 +46,6 @@ define(function(require){
 			canSave = true;
 		}
 		else{
-			btns = {
-				bk: actBack,
-				fw: actFw
-			}
 			actBack.on('click', previousPage);
 			actFw.on('click', nextPage);
 		}
@@ -62,6 +57,9 @@ define(function(require){
 		}
 		else{
 			$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
+				console.log(data);
+				screenContainer.parent().find('#prevAct_').remove();
+				screenContainer.parent().find('#nextAct_').remove();
 				answersParser.setAnswers(actualAnswers);
 				switch(myData.template){
 					case 'actividad6':
@@ -162,30 +160,30 @@ define(function(require){
 		return this;
 	};
 
-	publics.draw = function(){
+	publics.draw = function(isBack){
 		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'loadAct', page: currentPage}, function(data){
 			activityParser.setAnswers(actualAnswers);
-			console.log(data);
 			switch(myData.template){
 				case 'actividad6':
 					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar
-					currentActivity = data;
-					//screenContainer.append('<button class="_saveAct">Terminar</button>');
+					if(!isBack)
+						currentActivity = currentActivity.concat(data);
 				break;
 				case 'actividad5':
 					screenContainer.html(activityParser.parseType2(data));
-					currentActivity = data;
-					//screenContainer.append('<button class="_saveAct">Terminar</button>');
+					if(!isBack)
+						currentActivity = currentActivity.concat(data);
 				break;
 				case 'actividad2':
 					screenContainer.html(activityParser.parseType3(data));
-					currentActivity = data;
-					//screenContainer.append('<button class="_saveAct">Terminar</button>');
+					if(!isBack)
+						currentActivity = currentActivity.concat(data);
 				break;
 				default:
 					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
 				break;
 			}
+			console.log(currentActivity);
 		});
 	};
 
