@@ -5,6 +5,7 @@ define(function(require){
 
 	//Controllers
 	var f_back = null;
+	var goToCourse_ = null;
 	var myData;
 
 	publics.setContainer = function(cnt){
@@ -23,6 +24,8 @@ define(function(require){
 
 	publics.draw = function(){
 		screenContainer.load("secciones/indivcurso.html", function(){
+			goToCourse_ = screenContainer.find("#goToCourse_");
+			console.log(goToCourse_);
 			$.ajax({
 				type: 'POST',
 				url: masterPath + 'courseDetails.php',
@@ -64,6 +67,13 @@ define(function(require){
 			});
 		});*/
 		f_back.click(function(){parentNav.popScreen();});
+		goToCourse_.click(function(){
+			require(["ModulesController"], function(ModulesController){
+				console.log("XD");
+				ModulesController.setParentNav(parentNav);
+				parentNav.pushScreen(ModulesController, {idCourse:myData, nonLocal: false});
+			});
+		});
 		modulocontainer.on('click', '.go-tomarcurso', function(){
 			var moduleID = $(this).data('id');
 			var moduleName = $(this).data('name');
