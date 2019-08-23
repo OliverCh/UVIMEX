@@ -12,6 +12,7 @@ define(function(require){
 	var btns = null;
 	var actualAnswers = {};
 	var currentActivity = {};
+	var canSave = false;
 
 	/*
 		FUNCTIONS
@@ -20,6 +21,7 @@ define(function(require){
 	var previousPage = function(){
 		if(currentPage != 0){
 			currentPage--;
+			screenContainer.parent().find('#nextAct_').text('Siguiente').removeClass('_saveAct');
 			publics.draw();
 		}
 	};
@@ -29,6 +31,10 @@ define(function(require){
 			currentPage++;
 			publics.draw();
 		}
+
+		if(currentPage == (myData.pageCount - 1)){
+			screenContainer.parent().find('#nextAct_').text('Terminar').addClass('_saveAct');
+		}
 	};
 
 	var setControls = function(){
@@ -37,7 +43,8 @@ define(function(require){
 		var actFw = screenContainer.parent().find('#nextAct_');
 		if(myData.pageCount == 1){
 			actBack.remove();
-			actFw.remove();
+			actFw.text('Terminar').addClass('_saveAct');
+			canSave = true;
 		}
 		else{
 			btns = {
@@ -50,23 +57,28 @@ define(function(require){
 	};
 
 	var saveActivity = function(){
-		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
-			answersParser.setAnswers(actualAnswers);
-			switch(myData.template){
-				case 'actividad6':
-					screenContainer.html(answersParser.parseType1(currentActivity, data));
-				break;
-				case 'actividad5':
-					screenContainer.html(answersParser.parseType2(currentActivity, data));
-				break;
-				case 'actividad2':
-					screenContainer.html(answersParser.parseType3(currentActivity, data));
-				break;
-				default:
-					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
-				break;
-			}
-		});
+		if(canSave == false){
+			canSave = true;
+		}
+		else{
+			$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
+				answersParser.setAnswers(actualAnswers);
+				switch(myData.template){
+					case 'actividad6':
+						screenContainer.html(answersParser.parseType1(currentActivity, data));
+					break;
+					case 'actividad5':
+						screenContainer.html(answersParser.parseType2(currentActivity, data));
+					break;
+					case 'actividad2':
+						screenContainer.html(answersParser.parseType3(currentActivity, data));
+					break;
+					default:
+						screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
+					break;
+				}
+			});
+		}
 	};
 
 	/*
@@ -84,33 +96,37 @@ define(function(require){
 	});*/
 
 	$(document).on('click', '.opcion-multiple p', function(){
-		var answerID = parseInt($(this).data('ansid'));
-		var questionID = $(this).data('qid');
-		var hijo = $(this).find('i');
-		if (hijo.hasClass('fa-square')) {
-			delete actualAnswers[answerID];
-		}
-		else{
-			actualAnswers[answerID] = {
-				aID: answerID,
-				qID: questionID,
-				theme: myData.theme,
-				time: Date.now()
-			};
+		if(!($(this).hasClass('answered'))){
+			var answerID = parseInt($(this).data('ansid'));
+			var questionID = $(this).data('qid');
+			var hijo = $(this).find('i');
+			if (hijo.hasClass('fa-square')) {
+				delete actualAnswers[answerID];
+			}
+			else{
+				actualAnswers[answerID] = {
+					aID: answerID,
+					qID: questionID,
+					theme: myData.theme,
+					time: Date.now()
+				};
+			}
 		}
 	});
 
 	$(document).on('click', '.row-opcion-unica', function(){
-		if ($(this).hasClass('selected-option-unica')) {
-			console.log($(this));
-			var answerID = parseInt($(this).data('ansid'));
-			var questionID = $(this).data('qid');
-			actualAnswers[questionID] = {
-				aID: answerID,
-				qID: questionID,
-				theme: myData.theme,
-				time: Date.now()
-			};
+		if(!($(this).hasClass('answered'))){
+			if ($(this).hasClass('selected-option-unica')) {
+				console.log($(this));
+				var answerID = parseInt($(this).data('ansid'));
+				var questionID = $(this).data('qid');
+				actualAnswers[questionID] = {
+					aID: answerID,
+					qID: questionID,
+					theme: myData.theme,
+					time: Date.now()
+				};
+			}
 		}
 	});
 
@@ -132,8 +148,10 @@ define(function(require){
 			return null;
 		}
 		else{
-			if(myData != null && myData.theme != data.theme)
+			if(myData != null && myData.theme != data.theme){
 				actualAnswers = {};
+				canSave = false;
+			}
 			myData = data;
 			return this;
 		}
@@ -147,21 +165,22 @@ define(function(require){
 	publics.draw = function(){
 		$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'loadAct', page: currentPage}, function(data){
 			activityParser.setAnswers(actualAnswers);
+			console.log(data);
 			switch(myData.template){
 				case 'actividad6':
 					screenContainer.html(activityParser.parseType1(data)); //no puedo pensar
 					currentActivity = data;
-					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
+					//screenContainer.append('<button class="_saveAct">Terminar</button>');
 				break;
 				case 'actividad5':
 					screenContainer.html(activityParser.parseType2(data));
 					currentActivity = data;
-					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
+					//screenContainer.append('<button class="_saveAct">Terminar</button>');
 				break;
 				case 'actividad2':
 					screenContainer.html(activityParser.parseType3(data));
 					currentActivity = data;
-					screenContainer.append('<button class="_saveAct">Terminar</button>'); // este es el boton
+					//screenContainer.append('<button class="_saveAct">Terminar</button>');
 				break;
 				default:
 					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");

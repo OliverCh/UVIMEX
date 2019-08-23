@@ -6,14 +6,18 @@ var NavController = function(){
 	var self = this;
 
 	publics.pushScreen = function(obj, data, load = true){
+		window.loadingScreen.toggle();
+		console.log(window.loadingScreen);
 		screenStack.push(obj);
 		
 		var XD = obj.setContainer(container);
 		if(data !== undefined){
 			XD = XD.setData(data);
 		}
-		if(load)
+		if(load){
 			XD = XD.draw();
+			window.loadingScreen.toggle();
+		}
 	}
 
 	publics.popScreen = function(data){
@@ -67,13 +71,13 @@ var NavController = function(){
 		return hasPoped;
 	}
 
-	publics.setHome = function(obj){
+	publics.setHome = function(obj, data){
 		if(!obj){
 			console.error("SetHome debe tener una pantalla", 
 				console.trace());
 		}
 		screenStack = [];
-		publics.pushScreen(obj);
+		publics.pushScreen(obj, data);
 	}
 
 	publics.goHome = function(){

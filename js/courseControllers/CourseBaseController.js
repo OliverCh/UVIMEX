@@ -57,7 +57,7 @@ define(function(require){
 			},800);
 
 			ModuleController.setParentNav(nav);
-			nav.pushScreen(ModuleController, data);
+			nav.setHome(ModuleController, data);
 		});
 	}
 
@@ -83,7 +83,7 @@ define(function(require){
 				loadStart();
 				break;
 			case "modulo":
-				loadModule(myData);
+				nav.goHome();
 				break;
 			case "micursos":
 				loadCourse();
