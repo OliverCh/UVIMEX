@@ -86,7 +86,7 @@ include_once("../classes/clsCourseFiles.php");
     //[insert-Edit videos or videos+images]
         // echo 'entro a video';
         $directoryVideos="../uploads/videos/";
-        if(!empty($_REQUEST['belonger']) && ($_REQUEST['temaPadre']=="template0" || $_REQUEST['temaPadre']=="template1")){
+        if(!empty($_REQUEST['belonger']) && ($_REQUEST['temaPadre']=="template0" || $_REQUEST['temaPadre']=="template1" || $_REQUEST['temaPadre']=="template8") ){
           foreach($_REQUEST['belonger'] as $llave => $key){
               $hidContenido=null;
               $idContenido=null;
