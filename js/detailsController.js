@@ -39,7 +39,7 @@ define(function(require){
 					screenContainer.find('#description').text(data.descripcion);
 					screenContainer.find('#totalCourseTimeD').text(data.totalCourseTime);
 					screenContainer.find('#activities').text(data.totalActivities);
-					screenContainer.find('#duration').text(data.totalCourseMedia == null ? 'N/A' : data.totalCourseMedia);
+					screenContainer.find('#duration').text(data.totalCourseMedia == null ? 'N/A' : data.totalCourseMedia.replace('.', ':'));
 					screenContainer.find('#tag').text(data.tags.join(", "));
 					screenContainer.find('#mandatoryCourses').text(data.mandatoryCourses.length == 0 ? 'N/A' : data.mandatoryCourses.join(", "));
 					screenContainer.find('#streaming').text(data.streaming == 1 ? 'Si' : "No");

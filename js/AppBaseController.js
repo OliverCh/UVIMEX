@@ -8,6 +8,10 @@ define(function(require){
 	var nav_logout = null;
 	var myData = "";
 
+	publics.init = function(){
+		nav = new NavController();
+	};
+
 	publics.setContainer = function(cnt){
 		container = cnt;
 		return this;
@@ -50,6 +54,7 @@ define(function(require){
 		nav_logout.click(function(){
 			require(["LoginController"], function(LoginController){
 				localStorage.removeItem("user_id");
+				localStorage.clear();
 				NavMaster.setHome(LoginController);
 			});
 		});

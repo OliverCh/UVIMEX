@@ -16,7 +16,6 @@ var NavMaster = (function(window, document, undefined){
 	}
 
 	publics.popScreen = function(data){
-		console.log('aaa');
 		if(screenStack.length > 0){
 			screenStack.pop();
 		}
@@ -60,7 +59,7 @@ var NavMaster = (function(window, document, undefined){
 	publics.setHome = function(obj){
 		if(!obj){
 			console.error("SetHome debe tener una pantalla", 
-				console.trace());
+			console.trace());
 		}
 		screenStack = [];
 		publics.pushScreen(obj);

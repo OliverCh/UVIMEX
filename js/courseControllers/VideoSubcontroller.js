@@ -241,6 +241,7 @@ define(function(require){
 	}
 
 	var fullScreenAction = function(){
+		history.pushState({video: true}, "Fullvideo", "videosubcontroller.html");
 		var elem = videoObj;
 		if (elem.requestFullscreen) {
 			elem.requestFullscreen();
