@@ -324,7 +324,19 @@ border-radius: 7px;
   left: 0;
   right: 0;
   width: 100%;
+  height: 33%;
+}
+
+.t1--audio-display--image-display{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 100%;
+}
+
+[role="toolbar"]{
+  display: none !important;
 }
 
 /**PARA ACTIVIDADES**/
