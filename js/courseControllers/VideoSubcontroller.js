@@ -169,6 +169,7 @@ define(function(require){
 			if(onvideoready_callback !== null){
 				onvideoready_callback(false);
 			}
+			togglePlayAction();
 		}
 	}
 
@@ -241,7 +242,6 @@ define(function(require){
 	}
 
 	var fullScreenAction = function(){
-		history.pushState({video: true}, "Fullvideo", "videosubcontroller.html");
 		var elem = videoObj;
 		if (elem.requestFullscreen) {
 			elem.requestFullscreen();
