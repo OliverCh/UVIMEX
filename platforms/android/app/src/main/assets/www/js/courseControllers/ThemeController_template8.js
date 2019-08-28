@@ -20,25 +20,6 @@ define(function(require){
 			getFullContent();
 		});
 		base.appendTo(screenContainer);
-		$.post(masterPath + "activityCentre.php", {theme: myData.theme.id, action: 'verifActs'}, function(data){
-			if(data.hasActs){
-				require(['courseControllers/activityController'], function(activityController){
-					var base2 = $("<div></div>");
-					base2.appendTo(screenContainer);
-					base2.load("secciones/platform/activitySubcontroller.html", function(){
-						activityController.setData({
-							template: data.template.template,
-							//template: myData.template, descomenta los templates de abajo para ver los diferentes tipos de actividades, recuerda tener solo uno a la vez o se muere
-							//template: "template1",
-							//template: "template2", 
-							//template: 'template3',
-							pageCount: data.pageCount,
-							theme: myData.theme.id
-						}).setContainer(base2.find('#actCont')).setParentNav(parentNav).draw();
-					});
-				});
-			}
-		});
 	}
 
 	publics.setData = function(data){

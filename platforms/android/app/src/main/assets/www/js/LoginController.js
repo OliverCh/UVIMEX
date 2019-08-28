@@ -37,7 +37,8 @@ define(function(require){
 	}
 
 	var goToApp = function(){
-		window.require(["AppBaseController"], function(AppBaseController){
+		require(["AppBaseController"], function(AppBaseController){
+			AppBaseController.init();
 			NavMaster.setHome(AppBaseController);
 		});
 	}

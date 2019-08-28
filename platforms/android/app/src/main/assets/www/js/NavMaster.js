@@ -60,7 +60,7 @@ var NavMaster = (function(window, document, undefined){
 	publics.setHome = function(obj){
 		if(!obj){
 			console.error("SetHome debe tener una pantalla", 
-				console.trace());
+			console.trace());
 		}
 		screenStack = [];
 		publics.pushScreen(obj);
@@ -82,6 +82,7 @@ var NavMaster = (function(window, document, undefined){
 	}
 
 	publics.popClicked = function(){
+		alert('aaaaa');
 		var hasPoped = screenStack[screenStack.length-1].popSubscreen();
 		if(!hasPoped){
 			hasPoped = publics.popScreen();

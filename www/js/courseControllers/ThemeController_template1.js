@@ -40,6 +40,7 @@ define(function(require){
 
 	var initVideo = function(url, images, files){
 		require(["courseControllers/VideoSubcontroller"], function(VideoSubcontroller){
+			window.loadingScreen.show();
 			videoController = VideoSubcontroller;
 			videoController = videoController.setContainer(themeVideo_)
 							.setParentNav(parentNav)
@@ -53,7 +54,9 @@ define(function(require){
 				var file = files[i];
 				videoController = videoController.addFile(file.name, file.url);
 			}
-
+			videoController.onvideoready(function(){
+				window.loadingScreen.hide();
+			});
 			videoController.draw();
 			// videoController.setContainer(themeVideo_)
 			// 				.setParentNav(parentNav)
@@ -70,7 +73,7 @@ define(function(require){
 	}
 
 	var findFields = function(){
-		themeVideo_ = $("#themeVideo_");
+		themeVideo_ = $("#themeVideo_").parent();
 	}
 
 	var getFullContent = function(){

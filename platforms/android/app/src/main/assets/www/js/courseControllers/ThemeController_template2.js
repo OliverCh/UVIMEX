@@ -59,6 +59,7 @@ define(function(require){
 
 	var initVideo = function(url, images, files){
 		require(["courseControllers/VideoSubcontroller"], function(VideoSubcontroller){
+			window.loadingScreen.show();
 			videoController = VideoSubcontroller;
 			videoController.setContainer(themeVideo_)
 							.setParentNav(parentNav);
@@ -83,12 +84,15 @@ define(function(require){
 							// .addFile("pronombres", "https://uvimex.com.mx/dashboard/platform/uploads/372/Files/15627828930bc732e562be.pdf")
 							// .addFile("AAA", "https://docs.google.com/document/d/e/2PACX-1vRJVgVwOWeaNUf1ew6Ir8nHO18RqlEhz_Bd7Gsa1e58aj8hdvNs8tKfIZPocmF0cJae5JHM3-uvyqRo/pub")
 							// .addFile("Un dox", "https://uvimex.com.mx/dashboard/platform/uploads/Análisis-de-consumo-hídrico.docx")
+			videoController.onvideoready(function(){
+				window.loadingScreen.hide();
+			});
 			videoController.draw();
 		});
 	}
 
 	var findFields = function(){
-		themeVideo_ = $("#themeVideo_");
+		themeVideo_ = $("#themeVideo_").parent();
 	}
 
 	var getFullContent = function(){

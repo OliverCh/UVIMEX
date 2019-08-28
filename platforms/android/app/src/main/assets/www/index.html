@@ -13,42 +13,47 @@
       <link rel="stylesheet" href="css/media.css">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-<<<<<<< HEAD
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/> -->
-=======
-    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
->>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
   </head>
   <body>
+    <div class="pantalladecarga" style="display: none;">
+      <img src="img/uvimex_load.gif" alt="Cargando...">
+    </div>
   	<div id="content"></div>
+
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery_ui.js"></script>
+    <script src="js/lib/christa.js"></script>
     <script type="text/javascript" src="js/lib/require.js"></script>
     <script type="text/javascript" src="js/NavMaster.js"></script>
     <script type="text/javascript" src="js/activity.js"></script>
     <script type="text/javascript" src="js/NavController.js"></script>
+    <script type="text/javascript" src="js/mey.js"></script>
     <!-- <script type="text/javascript" src="js\script.js"></script> -->
     <script type="text/javascript">
-			window.masterPath = "https://uvimex.com.mx/movimex/";
-<<<<<<< HEAD
-      window.movileComms = "movileComms_v3.php";
+			window.masterPath = "https://uvimex.com.mx/movimex_sandbox/"; // Desarrollo
+      //window.masterPath = "https://uvimex.com.mx/movimex/"; // Produccion
+      window.movileComms = "movileComms.php";
       var onDeviceReady = function(){
-
         window.device = device.platform;
       }
 
       document.addEventListener("deviceready", onDeviceReady, false);
       document.addEventListener("backbutton", NavMaster.popClicked, false);
 
-=======
-      window.movileComms = "movileComms_sandbox.php";
->>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
       $(document).ready(function(){
+        window.loadingScreen = $(".pantalladecarga");
 				$.ajaxSetup({
 					type: "pOst",
 					dataType: "json",
+          beforeSend: function(){
+            window.loadingScreen.show();
+          },
+          complete: function(){
+            window.loadingScreen.hide();
+          },
 					error: function(d){
 						console.log(d);
 					}

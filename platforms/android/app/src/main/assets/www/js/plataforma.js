@@ -11,6 +11,10 @@ function alturaInjec(){
     $('.inject-info').height(altura);
 }
 ///
+$(window).resize(function(){
+  alturaInjec();
+});
+//
 $(document).ready(function(){
 alturaInjec();
 var id = 'plantillas/indicetemas.html';

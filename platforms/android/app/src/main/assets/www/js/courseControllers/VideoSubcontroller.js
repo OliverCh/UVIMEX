@@ -23,6 +23,9 @@ define(function(require){
 	var stop_ = null;
 	var play_ = null;
 	var fullScreen_ = null;
+	var imageContainer_ = null;
+
+	var onvideoready_callback = null;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
@@ -70,6 +73,10 @@ define(function(require){
 		return this;
 	}
 
+	publics.onvideoready = function(callback){
+		onvideoready_callback = callback;
+	}
+
 	var init = function(){	
 		isMuted = false;
 		isVideoReady = false;
@@ -90,10 +97,19 @@ define(function(require){
 		play_ = screenContainer.find("#play_");
 		fullScreen_ = screenContainer.find("#fullScreen_");
 		fileCount_ = screenContainer.find("#fileCount_");
+		imageContainer_ = screenContainer.find("#imageContainer_");
 		videoHTML = getVideoHTML();
 
+		console.log(screenContainer);
 		timeControlObj = timeControl_[0];
 		videoObj = videoHTML[0];
+
+		console.log(videoImageHandler.getImages());
+		console.log(imageContainer_);
+		if(videoImageHandler.getImages().length == 0){
+			
+			imageContainer_.remove();
+		}
 	}
 
 	var fillFields = function(){
@@ -149,8 +165,14 @@ define(function(require){
 			timeControlObj.min = 0;
 			timeControlObj.max = videoObj.duration;
 			timeControlObj.step = videoObj.duration/100;
+
+			if(onvideoready_callback !== null){
+				onvideoready_callback(false);
+			}
 		}
 	}
+
+
 
 	var changeTimeAction = function(time, updateVideo=true){
 
@@ -219,6 +241,7 @@ define(function(require){
 	}
 
 	var fullScreenAction = function(){
+		history.pushState({video: true}, "Fullvideo", "videosubcontroller.html");
 		var elem = videoObj;
 		if (elem.requestFullscreen) {
 			elem.requestFullscreen();
@@ -245,14 +268,15 @@ define(function(require){
 			var fadeSpeed = 800;
 			var videoDuration = 5000;
 			var image = videoImageHandler.getNextImage();
-
-			video_.append(image.imgDOM);
+			console.log(image);
+			console.log(image.imgDOM);
+			console.log(imageContainer_.children());
+			imageContainer_.append(image.imgDOM);
 			image.imgDOM.fadeIn(fadeSpeed);
 
 			setTimeout(function(){
 				image.imgDOM.fadeOut(fadeSpeed, function(){
-					video_.find('image').remove();
-					console.log(videoImageHandler.getImages());
+					imageContainer_.find('image').remove();
 				});
 			}, videoDuration);
 		}
@@ -277,7 +301,22 @@ define(function(require){
 
 	var getVideoHTML = function(){
 		var str = `<video class="daVideo" controlslist="nodownload" src="${videoURL}">No se soporta. Contacte administrador</video>`;
-		return $($.parseHTML(str)[0]);
+
+		var obj = $($.parseHTML(str)[0]);
+
+		obj[0].addEventListener("error", function(){
+			reportBrokenVideo();
+		});
+		return obj;
+	}
+
+	var reportBrokenVideo = function(){
+		onvideoready_callback(true);
+
+		video_.find(".daVideo").remove();
+
+		var html = `<i class="far fa-file-excel video-audio--icon-display"></i>`;
+		video_.append(html);
 	}
 
 	function ImageHandler(){

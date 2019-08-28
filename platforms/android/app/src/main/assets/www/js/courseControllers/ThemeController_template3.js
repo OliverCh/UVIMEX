@@ -72,6 +72,10 @@ define(function(require){
 				var file = files[i];
 				audioController = audioController.addFile(file.name, file.url);
 			}
+			audioController.onaudioready(function(){
+				window.loadingScreen.hide();
+			});
+
 			audioController.draw();
 		});
 	}

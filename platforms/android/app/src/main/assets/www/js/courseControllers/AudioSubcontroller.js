@@ -6,30 +6,6 @@ define(function(require){
 	var screenContainer = null;
 	var parentNav = null;
 
-	// var isMuted = null;
-	// var files = null;
-	// var videoImageHandler = null;
-	// var isVideoReady = null;
-	// var isOnChange = null;
-	// var videoURL = null;
-
-	// var videoHTML = null;
-	// var videoObj = null;
-	// var timeControlObj = null;
-	// var video_ = null;
-	// var timeLeft_ = null;
-	// var totalTime_ = null;
-	// var timeControl_ = null;
-	// var files_ = null;
-	// var fileCount_ = null;
-	// var mute_ = null;
-	// var stop_ = null;
-	// var play_ = null;
-	// var fullScreen_ = null;
-	// var fileCount_ = null;
-
-	//*******//
-
 	var isMuted = null;
 	var files = null;
 	var audioImageHandler = null;
@@ -51,6 +27,8 @@ define(function(require){
 	var play_ = null;
 	var fullScreen_ = null;
 	var fileCount_ = null;
+
+	var onaudioready_callback = null;
 
 	publics.setContainer = function(cnt){
 		screenContainer = cnt;
@@ -102,6 +80,10 @@ define(function(require){
 	publics.setData = function(data){
 		myData = data;
 		return this;
+	}
+
+	publics.onvideoready = function(callback){
+		onaudioready_callback = callback;
 	}
 
 	var init = function(){	
@@ -206,6 +188,10 @@ define(function(require){
 			timeControlObj.min = 0;
 			timeControlObj.max = audioObj.duration;
 			timeControlObj.step = audioObj.duration/100;
+
+			if(onaudioready_callback !== null){
+				onaudioready_callback(false);
+			}
 		}
 	}
 
@@ -335,8 +321,23 @@ define(function(require){
 
 
 	var getAudioHTML = function(){
-		var str = `<audio class="daAudio" src="${audioURL}" id="audio_">No se soporta. Contacte administrador</audio>`;
-		return $($.parseHTML(str)[0]);
+		var str = `<audio class="daAudio" src="${audioURL}">No se soporta. Contacte administrador</audio>`;
+
+		var obj = $($.parseHTML(str)[0]);
+
+		obj[0].addEventListener("error", function(){
+			reportBrokenAudio();
+		});
+		return obj;
+	}
+
+	var reportBrokenAudio = function(){
+		onaudioready_callback(true);
+
+		audio_.find(".daAudio").remove();
+
+		var html = `<i class="far fa-file-excel video-audio--icon-display"></i>`;
+		audio_.append(html);
 	}
 
 	function ImageHandler(){

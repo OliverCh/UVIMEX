@@ -110,8 +110,6 @@ define(function(require){
 				success:callback
 			});
 		}
-
-		
 	}
 	return publics;
 });

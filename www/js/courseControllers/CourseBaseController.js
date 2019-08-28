@@ -53,11 +53,11 @@ define(function(require){
 			var position = button.parent().offset();
 			position = (position.left);
 			barrita.animate({
-				left:0
+				left:position
 			},800);
 
 			ModuleController.setParentNav(nav);
-			nav.pushScreen(ModuleController, data);
+			nav.setHome(ModuleController, data);
 		});
 	}
 
@@ -83,7 +83,7 @@ define(function(require){
 				loadStart();
 				break;
 			case "modulo":
-				loadModule(myData);
+				nav.goHome();
 				break;
 			case "micursos":
 				loadCourse();
