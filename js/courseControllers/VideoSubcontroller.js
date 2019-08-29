@@ -242,16 +242,30 @@ define(function(require){
 	}
 
 	var fullScreenAction = function(){
-		var elem = videoObj;
-		if (elem.requestFullscreen) {
-			elem.requestFullscreen();
-		} else if (elem.mozRequestFullScreen) {
-			elem.mozRequestFullScreen();
-		} else if (elem.webkitRequestFullscreen) {
-			elem.webkitRequestFullscreen();
-		} else if (elem.msRequestFullscreen) { 
-			elem.msRequestFullscreen();
-		}
+		// var elem = videoObj;
+		// $(elem).css({
+		// 	'position': 'fixed',
+		// 	'width': '100%',
+		// 	'top': '0',
+		// 	'left': '0',
+		// 	'z-index': '999',
+		// 	'background': 'black',
+		// 	'height': '100%'
+		// });
+		// return;
+		// if (elem.requestFullscreen) {
+		// 	elem.requestFullscreen();
+		// } else if (elem.mozRequestFullScreen) {
+		// 	elem.mozRequestFullScreen();
+		// } else if (elem.webkitRequestFullscreen) {
+		// 	elem.webkitRequestFullscreen();
+		// } else if (elem.msRequestFullscreen) { 
+		// 	elem.msRequestFullscreen();
+		// }
+		require(["courseControllers/fullScreenController_pop"], function(popController){
+			popController.setParentNav(parentNav);
+			parentNav.pushPop(popController, "video", null, "pop-white-full");
+		})
 	}
 
 	var showFilesAction = function(){
