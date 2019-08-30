@@ -80,7 +80,7 @@ define(function(require){
 
 			var parent = iFrameContainer_.parent();
 			parent.css("padding-left", (Wwidth - viewWidth)/2);
-			console.log(iFrameContainer_.find('div[role="toolbar"]'));
+			console.log($('div[role="toolbar"]'));
 		}
 		
 	}
