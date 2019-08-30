@@ -41,7 +41,7 @@ define(function(require){
 	var setEvents = function(){
 		screenContainer.click(function(){
 			parentNav.popPop(publics.id);
-		})
+		});
 	}
 
 	var fillFields = function(){
@@ -80,6 +80,7 @@ define(function(require){
 
 			var parent = iFrameContainer_.parent();
 			parent.css("padding-left", (Wwidth - viewWidth)/2);
+			console.log(iFrameContainer_.find('div[role="toolbar"]'));
 		}
 		
 	}
