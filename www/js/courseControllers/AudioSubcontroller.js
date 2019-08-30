@@ -1,6 +1,6 @@
 define(function(require){
 
-	var imageTemplate = `<img class="f_image t1--video-display--image-display" style="display:none" src=":url:"/>`;
+	var imageTemplate = `<img class="f_image t1--audio-display--image-display" style="display:none" src=":url:"/>`;
 
 	var publics = {};
 	var screenContainer = null;
@@ -82,7 +82,7 @@ define(function(require){
 		return this;
 	}
 
-	publics.onvideoready = function(callback){
+	publics.onaudioready = function(callback){
 		onaudioready_callback = callback;
 	}
 

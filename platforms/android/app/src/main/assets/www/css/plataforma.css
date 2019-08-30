@@ -324,7 +324,19 @@ border-radius: 7px;
   left: 0;
   right: 0;
   width: 100%;
+  height: 33%;
+}
+
+.t1--audio-display--image-display{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 100%;
+}
+
+[role="toolbar"]{
+  display: none !important;
 }
 
 /**PARA ACTIVIDADES**/
@@ -474,4 +486,13 @@ div#video_ {
   font-size: 8em;
   color: #045b27;
   line-height: 170px !important;
+}
+.pop-white-full #fullScreen{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9999;
+  background: black;
+  width: 100%;
+  height: 100%;
 }

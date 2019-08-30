@@ -39,9 +39,12 @@ define(function(require){
 	}
 
 	var setEvents = function(){
-		screenContainer.click(function(){
+		screenContainer.find("#NO").click(function(e){
+			alertanegativa("Caracteristica aún no disponible en movil")
+		});
+		screenContainer.find(".close-pop").click(function(){
 			parentNav.popPop(publics.id);
-		})
+		});
 	}
 
 	var fillFields = function(){
@@ -80,6 +83,7 @@ define(function(require){
 
 			var parent = iFrameContainer_.parent();
 			parent.css("padding-left", (Wwidth - viewWidth)/2);
+			console.log($('div[role="toolbar"]'));
 		}
 		
 	}

@@ -62,11 +62,10 @@ var NavController = function(){
 
 	publics.popPop = function(id){
 		var hasPoped = false;
-		console.log(popStack);
 		if(popStack.length > 0){
 			hasPoped = true;
-			popStack.pop();
-			container.find(".pop_"+id).remove();
+			var myPoop = popStack.pop();
+			container.find(".pop_"+myPoop.id).remove();
 		}
 		return hasPoped;
 	}
