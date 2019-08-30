@@ -39,9 +39,13 @@ define(function(require){
 	}
 
 	var setEvents = function(){
-		screenContainer.click(function(){
+		screenContainer.find("#NO").click(function(e){
+			alertanegativa("Caracteristica aún no disponible en movil")
+		});
+		screenContainer.find(".close-pop").click(function(){
 			parentNav.popPop(publics.id);
-		})
+		});
+
 	}
 
 	var fillFields = function(){
