@@ -37,8 +37,6 @@ body{
   background-image: url(../img/back.jpg);
   font-family: 'OpenSansRegular';
   overflow-y: hidden;
-  padding-top: constant(safe-area-inset-top) !important; /* iOS 11.0 */
-  padding-top: env(safe-area-inset-top) !important; /* iOS 11.2 */
 }
 
 button{
@@ -75,8 +73,6 @@ button:focus{
     top: 0;
     z-index: 2;
     background-color: var(--backcolorNavs);
-    top: constant(safe-area-inset-top) !important; /* iOS 11.0 */
-    top: env(safe-area-inset-top) !important; /* iOS 11.2 */
 }
 .left-top {
     width: 50%;
@@ -486,10 +482,7 @@ button:focus{
   height: 100%;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
 .frameCourseViewer{
   width: 100%;
   height: 100%;
@@ -517,9 +510,5 @@ button:focus{
   width: 100%;
   height: 100%;
   border: none;
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> c79d9689ddc110a6b8d049209e68e6790acb9b33
