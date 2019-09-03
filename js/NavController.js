@@ -22,6 +22,13 @@ var NavController = function(){
 
 	publics.popScreen = function(data){
 		var hasPoped = false;
+
+		var screenToPop = screenStack[screenStack.length-1];
+
+		if(screenToPop.onClose !== undefined && screenToPop.onClose() === false){
+			return;
+		}
+
 		if(screenStack.length > 1){
 			// poping
 			screenStack.pop();
