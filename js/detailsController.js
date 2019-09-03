@@ -25,7 +25,6 @@ define(function(require){
 	publics.draw = function(){
 		screenContainer.load("secciones/indivcurso.html", function(){
 			goToCourse_ = screenContainer.find("#goToCourse_");
-			console.log(goToCourse_);
 			$.ajax({
 				type: 'POST',
 				url: masterPath + 'courseDetails.php',
@@ -69,7 +68,6 @@ define(function(require){
 		f_back.click(function(){parentNav.popScreen();});
 		goToCourse_.click(function(){
 			require(["ModulesController"], function(ModulesController){
-				console.log("XD");
 				ModulesController.setParentNav(parentNav);
 				parentNav.pushScreen(ModulesController, {idCourse:myData, nonLocal: false});
 			});

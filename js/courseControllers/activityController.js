@@ -57,7 +57,6 @@ define(function(require){
 		}
 		else{
 			$.post(masterPath + "activityCentre.php", {theme: myData.theme, action: 'saveAct', userID: localStorage.getItem('user_id'), answers: actualAnswers}, function(data){
-				console.log(data);
 				screenContainer.parent().find('#prevAct_').remove();
 				screenContainer.parent().find('#nextAct_').remove();
 				answersParser.setAnswers(actualAnswers);
@@ -115,7 +114,6 @@ define(function(require){
 	$(document).on('click', '.row-opcion-unica', function(){
 		if(!($(this).hasClass('answered'))){
 			if ($(this).hasClass('selected-option-unica')) {
-				console.log($(this));
 				var answerID = parseInt($(this).data('ansid'));
 				var questionID = $(this).data('qid');
 				actualAnswers[questionID] = {
@@ -148,7 +146,9 @@ define(function(require){
 		else{
 			if(myData != null && myData.theme != data.theme){
 				actualAnswers = {};
+				currentActivity = [];
 				canSave = false;
+				isBack = false;
 			}
 			myData = data;
 			return this;
@@ -183,7 +183,6 @@ define(function(require){
 					screenContainer.html("<h1>Error</h1><br><h2>Invalid activity type</h2>");
 				break;
 			}
-			console.log(currentActivity);
 		});
 	};
 
