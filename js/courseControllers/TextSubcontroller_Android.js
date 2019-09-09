@@ -57,6 +57,11 @@ define(function(require){
 		return this;
 	}
 
+	publics.onClose = function(){
+		stopAction();
+		return;
+	}
+
 	var init = function(){
 		files = [];
 		isPlaying = false;

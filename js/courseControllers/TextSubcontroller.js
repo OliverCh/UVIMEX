@@ -60,6 +60,11 @@ define(function(require){
 		return this;
 	}
 
+	publics.onClose = function(){
+		stopAction();
+		return true;
+	}
+
 	var init = function(){
 		files = [];
 		isReadSummoned = false;
@@ -166,6 +171,7 @@ define(function(require){
 	    var pattRegex = new RegExp('^.{' + Math.floor(chunkLength / 2) + ',' + chunkLength + '}[\.\!\?\,]{1}|^.{1,' + chunkLength + '}$|^.{1,' + chunkLength + '} ');
 	    var txt = (settings && settings.offset !== undefined ? utt.text.substring(settings.offset) : utt.text);
 	    var chunkArr = txt.match(pattRegex);
+	    console.log(txt);
 
 	    if (chunkArr[0] !== undefined && chunkArr[0].length > 2 && isReadSummoned === true) {
 	        var chunk = chunkArr[0];
