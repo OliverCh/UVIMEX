@@ -48,7 +48,7 @@ define(function(require){
 		require(["courseControllers/ModuleController"], function(ModuleController){
 			var button = container.find("#nav_modulo");
 			var barrita = container.find(".barrita-select-gen");
-			
+			ModuleController.setData({moduleIDX: myData.moduleIDX});
 			button.addClass('bottom_btn_slct');
 			var position = button.parent().offset();
 			position = (position.left);

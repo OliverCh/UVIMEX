@@ -57,10 +57,10 @@ define(function(require){
 			else{
 				var moduleID = $(this).data("id");
 				var moduleName = $(this).parent().find(".moduleName").html();
-
+				var moduleIndex = $(this).data('idx');
 				require(["courseControllers/CourseBaseController"], function(CourseBaseController){
 
-					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal});
+					NavMaster.pushScreen(CourseBaseController, {moduleID:moduleID, moduleName: moduleName, nonLocal: nonLocal,  moduleIDX: moduleIndex});
 					/*
 					NavController.setContainer($("#appContent"));
 					NavController.pushStack(AppBaseController, undefined, false);
@@ -82,8 +82,8 @@ define(function(require){
 			modulesContainer.append(
 			`
 			<div class="modulocontainer">
-				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p class="moduleName">${v.nombre}</p>
-				<button class="go-tomarcurso f_module" data-id="${v.idModulo}"><i class="fas fa-arrow-circle-right"></i></button>
+				<h3><i class="fas fa-book"></i> MODULO ${i+1}</h3><p class="moduleName f_module" data-id="${v.idModulo}" data-idx="${i+1}">${v.nombre}</p>
+				<button class="go-tomarcurso f_module" data-id="${v.idModulo}" data-idx="${i+1}"><i class="fas fa-arrow-circle-right"></i></button>
 			</div>
 			`);
 			//modulesContainer.append(`<li class="f_module" data-id="${v.idModulo}">${v.nombre}</li>`);

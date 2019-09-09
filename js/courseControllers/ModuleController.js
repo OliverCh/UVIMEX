@@ -22,16 +22,9 @@ define(function(require){
 			setEvents();
 			fillFields();
 			getThemes(function(themes){
-				console.log(themes);
 				moduleThemes = (themes != null)? themes:[];
-				// PARA MUESTRA
-				// moduleThemes.push({nombre: "* video", plantilla: "template1", id: 371});
-				// moduleThemes.push({nombre: "* video con actividad", plantilla: "template2", id: 375});
-				// moduleThemes.push({nombre: "* audio", plantilla: "template3", id: 374});
-				// moduleThemes.push({nombre: "* texto", plantilla: "template7", id: 373}); no martin no
-				console.log(moduleThemes);
 				loadThemes(moduleThemes);
-			})
+			});
 		});
 	}
 
@@ -47,6 +40,7 @@ define(function(require){
 
 	var fillFields = function(){
 		moduleName_.html(myData.moduleName);
+		moduleID_.text(myData.moduleIDX);
 	}
 
 	var findFields = function(){
